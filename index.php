@@ -36,10 +36,18 @@
         $L2Lun__tipo=strtoupper($_POST['L2Lun__tipo']);
         $L3Lun__tipo=strtoupper($_POST['L3Lun__tipo']);
         $L4Lun__tipo=strtoupper($_POST['L4Lun__tipo']);
+
+        $ProLun__cocido=strtoupper($_POST['ProLun__cocido']);
+        $ProLun__embarque=strtoupper($_POST['ProLun__embarque']);
+
         $L1Lun__proceso=strtoupper($_POST['L1Lun__proceso']);
         $L2Lun__proceso=strtoupper($_POST['L2Lun__proceso']);
         $L3Lun__proceso=strtoupper($_POST['L3Lun__proceso']);
         $L4Lun__proceso=strtoupper($_POST['L4Lun__proceso']);
+
+        $OpLun__cocido=strtoupper($_POST['OpLun__cocido']);
+        $OpLun__embarque=strtoupper($_POST['OpLun__embarque']);
+
         $L1Lun__granja=strtoupper($_POST['L1Lun__granja']);
         $L2Lun__granja=strtoupper($_POST['L2Lun__granja']);
         $L3Lun__granja=strtoupper($_POST['L3Lun__granja']);
@@ -49,10 +57,18 @@
         $L2Mar__tipo=strtoupper($_POST['L2Mar__tipo']);
         $L3Mar__tipo=strtoupper($_POST['L3Mar__tipo']);
         $L4Mar__tipo=strtoupper($_POST['L4Mar__tipo']);
+
+        $ProMar__cocido=strtoupper($_POST['ProMar__cocido']);
+        $ProMar__embarque=strtoupper($_POST['ProMar__embarque']);
+
         $L1Mar__proceso=strtoupper($_POST['L1Mar__proceso']);
         $L2Mar__proceso=strtoupper($_POST['L2Mar__proceso']);
         $L3Mar__proceso=strtoupper($_POST['L3Mar__proceso']);
         $L4Mar__proceso=strtoupper($_POST['L4Mar__proceso']);
+
+        $OpMar__cocido=strtoupper($_POST['OpMar__cocido']);
+        $OpMar__embarque=strtoupper($_POST['OpMar__embarque']);
+
         $L1Mar__granja=strtoupper($_POST['L1Mar__granja']);
         $L2Mar__granja=strtoupper($_POST['L2Mar__granja']);
         $L3Mar__granja=strtoupper($_POST['L3Mar__granja']);
@@ -62,10 +78,18 @@
         $L2Mie__tipo=strtoupper($_POST['L2Mie__tipo']);
         $L3Mie__tipo=strtoupper($_POST['L3Mie__tipo']);
         $L4Mie__tipo=strtoupper($_POST['L4Mie__tipo']);
+
+        $ProMie__cocido=strtoupper($_POST['ProMie__cocido']);
+        $ProMie__embarque=strtoupper($_POST['ProMie__embarque']);
+
         $L1Mie__proceso=strtoupper($_POST['L1Mie__proceso']);
         $L2Mie__proceso=strtoupper($_POST['L2Mie__proceso']);
         $L3Mie__proceso=strtoupper($_POST['L3Mie__proceso']);
         $L4Mie__proceso=strtoupper($_POST['L4Mie__proceso']);
+
+        $OpMie__cocido=strtoupper($_POST['OpMie__cocido']);
+        $OpMie__embarque=strtoupper($_POST['OpMie__embarque']);
+
         $L1Mie__granja=strtoupper($_POST['L1Mie__granja']);
         $L2Mie__granja=strtoupper($_POST['L2Mie__granja']);
         $L3Mie__granja=strtoupper($_POST['L3Mie__granja']);
@@ -75,10 +99,18 @@
         $L2Jue__tipo=strtoupper($_POST['L2Jue__tipo']);
         $L3Jue__tipo=strtoupper($_POST['L3Jue__tipo']);
         $L4Jue__tipo=strtoupper($_POST['L4Jue__tipo']);
+
+        $ProJue__cocido=strtoupper($_POST['ProJue__cocido']);
+        $ProJue__embarque=strtoupper($_POST['ProJue__embarque']);
+
         $L1Jue__proceso=strtoupper($_POST['L1Jue__proceso']);
         $L2Jue__proceso=strtoupper($_POST['L2Jue__proceso']);
         $L3Jue__proceso=strtoupper($_POST['L3Jue__proceso']);
         $L4Jue__proceso=strtoupper($_POST['L4Jue__proceso']);
+
+        $OpJue__cocido=strtoupper($_POST['OpJue__cocido']);
+        $OpJue__embarque=strtoupper($_POST['OpJue__embarque']);
+
         $L1Jue__granja=strtoupper($_POST['L1Jue__granja']);
         $L2Jue__granja=strtoupper($_POST['L2Jue__granja']);
         $L3Jue__granja=strtoupper($_POST['L3Jue__granja']);
@@ -88,10 +120,18 @@
         $L2Vie__tipo=strtoupper($_POST['L2Vie__tipo']);
         $L3Vie__tipo=strtoupper($_POST['L3Vie__tipo']);
         $L4Vie__tipo=strtoupper($_POST['L4Vie__tipo']);
+
+        $ProVie__cocido=strtoupper($_POST['ProVie__cocido']);
+        $ProVie__embarque=strtoupper($_POST['ProVie__embarque']);
+
         $L1Vie__proceso=strtoupper($_POST['L1Vie__proceso']);
         $L2Vie__proceso=strtoupper($_POST['L2Vie__proceso']);
         $L3Vie__proceso=strtoupper($_POST['L3Vie__proceso']);
         $L4Vie__proceso=strtoupper($_POST['L4Vie__proceso']);
+
+        $OpVie__cocido=strtoupper($_POST['OpVie__cocido']);
+        $OpVie__embarque=strtoupper($_POST['OpVie__embarque']);
+
         $L1Vie__granja=strtoupper($_POST['L1Vie__granja']);
         $L2Vie__granja=strtoupper($_POST['L2Vie__granja']);
         $L3Vie__granja=strtoupper($_POST['L3Vie__granja']);
@@ -101,16 +141,25 @@
         $L2Sab__tipo=strtoupper($_POST['L2Sab__tipo']);
         $L3Sab__tipo=strtoupper($_POST['L3Sab__tipo']);
         $L4Sab__tipo=strtoupper($_POST['L4Sab__tipo']);
+
+        $ProSab__cocido=strtoupper($_POST['ProSab__cocido']);
+        $ProSab__embarque=strtoupper($_POST['ProSab__embarque']);
+
         $L1Sab__proceso=strtoupper($_POST['L1Sab__proceso']);
         $L2Sab__proceso=strtoupper($_POST['L2Sab__proceso']);
         $L3Sab__proceso=strtoupper($_POST['L3Sab__proceso']);
         $L4Sab__proceso=strtoupper($_POST['L4Sab__proceso']);
+
+        $OpSab__cocido=strtoupper($_POST['OpSab__cocido']);
+        $OpSab__embarque=strtoupper($_POST['OpSab__embarque']);
+
         $L1Sab__granja=strtoupper($_POST['L1Sab__granja']);
         $L2Sab__granja=strtoupper($_POST['L2Sab__granja']);
         $L3Sab__granja=strtoupper($_POST['L3Sab__granja']);
         $L4Sab__granja=strtoupper($_POST['L4Sab__granja']);
 
         ?>
+        <input type="button" value="Volver" onClick="history.go(-1);"></td>
         <table class="table table__font">
             <thead>
                 <tr class="table__font">
@@ -130,8 +179,8 @@
                     <td><?php echo($L2Lun__tipo)?></td>
                     <td><?php echo($L3Lun__tipo)?></td>
                     <td><?php echo($L4Lun__tipo)?></td>
-                    <td>sdf</td>
-                    <td>vbn</td>
+                    <td><?php echo($ProLun__cocido)?></td>
+                    <td><?php echo($ProLun__embarque)?></td>
                 </tr>
                 <tr>
                     <th scope="row"></th>
@@ -139,8 +188,8 @@
                     <td><?php echo($L2Lun__proceso)?></td>
                     <td><?php echo($L3Lun__proceso)?></td>
                     <td><?php echo($L4Lun__proceso)?></td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <td><?php echo($OpLun__cocido)?></td>
+                    <td><?php echo($OpLun__embarque)?></td>                
                 </tr>
                 <tr>
                     <th scope="row"></th>
@@ -148,35 +197,143 @@
                     <td><?php echo($L2Lun__granja)?></td>
                     <td><?php echo($L3Lun__granja)?></td>
                     <td><?php echo($L4Lun__granja)?></td>
-                    <td>Larry the Bird</td>
-                    <td>Larry the Bird</td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <th scope="row">MAR</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td><?php echo($L1Mar__tipo)?></td>
+                    <td><?php echo($L2Mar__tipo)?></td>
+                    <td><?php echo($L3Mar__tipo)?></td>
+                    <td><?php echo($L4Mar__tipo)?></td>
+                    <td><?php echo($ProMar__cocido)?></td>
+                    <td><?php echo($ProMar__embarque)?></td>
                 </tr>
                 <tr>
                     <th scope="row"></th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <td><?php echo($L1Mar__proceso)?></td>
+                    <td><?php echo($L2Mar__proceso)?></td>
+                    <td><?php echo($L3Mar__proceso)?></td>
+                    <td><?php echo($L4Mar__proceso)?></td>
+                    <td><?php echo($OpMar__cocido)?></td>
+                    <td><?php echo($OpMar__embarque)?></td>                
                 </tr>
                 <tr>
                     <th scope="row"></th>
-                    <td>Larry the Bird</td>
-                    <td>Larry the Bird</td>
-                    <td>Larry the Bird</td>
-                    <td>Larry the Bird</td>
-                    <td>Larry the Bird</td>
-                    <td>Larry the Bird</td>
+                    <td><?php echo($L1Mar__granja)?></td>
+                    <td><?php echo($L2Mar__granja)?></td>
+                    <td><?php echo($L3Mar__granja)?></td>
+                    <td><?php echo($L4Mar__granja)?></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">MIE</th>
+                    <td><?php echo($L1Mie__tipo)?></td>
+                    <td><?php echo($L2Mie__tipo)?></td>
+                    <td><?php echo($L3Mie__tipo)?></td>
+                    <td><?php echo($L4Mie__tipo)?></td>
+                    <td><?php echo($ProMie__cocido)?></td>
+                    <td><?php echo($ProMie__embarque)?></td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td><?php echo($L1Mie__proceso)?></td>
+                    <td><?php echo($L2Mie__proceso)?></td>
+                    <td><?php echo($L3Mie__proceso)?></td>
+                    <td><?php echo($L4Mie__proceso)?></td>
+                    <td><?php echo($OpMie__cocido)?></td>
+                    <td><?php echo($OpMie__embarque)?></td>                
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td><?php echo($L1Mie__granja)?></td>
+                    <td><?php echo($L2Mie__granja)?></td>
+                    <td><?php echo($L3Mie__granja)?></td>
+                    <td><?php echo($L4Mie__granja)?></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">JUE</th>
+                    <td><?php echo($L1Jue__tipo)?></td>
+                    <td><?php echo($L2Jue__tipo)?></td>
+                    <td><?php echo($L3Jue__tipo)?></td>
+                    <td><?php echo($L4Jue__tipo)?></td>
+                    <td><?php echo($ProJue__cocido)?></td>
+                    <td><?php echo($ProJue__embarque)?></td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td><?php echo($L1Jue__proceso)?></td>
+                    <td><?php echo($L2Jue__proceso)?></td>
+                    <td><?php echo($L3Jue__proceso)?></td>
+                    <td><?php echo($L4Jue__proceso)?></td>
+                    <td><?php echo($OpJue__cocido)?></td>
+                    <td><?php echo($OpJue__embarque)?></td>                
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td><?php echo($L1Jue__granja)?></td>
+                    <td><?php echo($L2Jue__granja)?></td>
+                    <td><?php echo($L3Jue__granja)?></td>
+                    <td><?php echo($L4Jue__granja)?></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">VIE</th>
+                    <td><?php echo($L1Vie__tipo)?></td>
+                    <td><?php echo($L2Vie__tipo)?></td>
+                    <td><?php echo($L3Vie__tipo)?></td>
+                    <td><?php echo($L4Vie__tipo)?></td>
+                    <td><?php echo($ProVie__cocido)?></td>
+                    <td><?php echo($ProVie__embarque)?></td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td><?php echo($L1Vie__proceso)?></td>
+                    <td><?php echo($L2Vie__proceso)?></td>
+                    <td><?php echo($L3Vie__proceso)?></td>
+                    <td><?php echo($L4Vie__proceso)?></td>
+                    <td><?php echo($OpVie__cocido)?></td>
+                    <td><?php echo($OpVie__embarque)?></td>                
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td><?php echo($L1Vie__granja)?></td>
+                    <td><?php echo($L2Vie__granja)?></td>
+                    <td><?php echo($L3Vie__granja)?></td>
+                    <td><?php echo($L4Vie__granja)?></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">SAB</th>
+                    <td><?php echo($L1Sab__tipo)?></td>
+                    <td><?php echo($L2Sab__tipo)?></td>
+                    <td><?php echo($L3Sab__tipo)?></td>
+                    <td><?php echo($L4Sab__tipo)?></td>
+                    <td><?php echo($ProSab__cocido)?></td>
+                    <td><?php echo($ProSab__embarque)?></td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td><?php echo($L1Sab__proceso)?></td>
+                    <td><?php echo($L2Sab__proceso)?></td>
+                    <td><?php echo($L3Sab__proceso)?></td>
+                    <td><?php echo($L4Sab__proceso)?></td>
+                    <td><?php echo($OpSab__cocido)?></td>
+                    <td><?php echo($OpSab__embarque)?></td>                
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td><?php echo($L1Sab__granja)?></td>
+                    <td><?php echo($L2Sab__granja)?></td>
+                    <td><?php echo($L3Sab__granja)?></td>
+                    <td><?php echo($L4Sab__granja)?></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
