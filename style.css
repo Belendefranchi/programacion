@@ -7,6 +7,7 @@ main{
 .table__font{
     color: white;
     background-color: #1A1F73;
+/*     font-size: 50px; */
 }
 
 @media (min-width: 768px){
@@ -18,14 +19,21 @@ main{
         }
     }
     
-    @media (min-width: 992px) {
-        .seven-cols .col-md-1,
-        .seven-cols .col-sm-1,
-        .seven-cols .col-lg-1 {
+@media (min-width: 992px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
         width: 14.285714285714285714285714285714%;
         *width: 14.285714285714285714285714285714%;
-        }
     }
+}
+
+@media (min-width: 1400px) {
+    .table__font{
+        font-size: 100px;
+    }
+}
+
 
 /* select option:nth-child(1) {
     background-color: rgb(184, 16, 16) !important;
