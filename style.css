@@ -1,0 +1,48 @@
+main{
+    height: 100vh;
+    background-color: #1A1F73;
+    color: white;
+}
+
+.table__font{
+    color: white;
+    background-color: #1A1F73;
+}
+
+@media (min-width: 768px){
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1  {
+        width: 100%;
+        *width: 100%;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .seven-cols .col-md-1,
+        .seven-cols .col-sm-1,
+        .seven-cols .col-lg-1 {
+        width: 14.285714285714285714285714285714%;
+        *width: 14.285714285714285714285714285714%;
+        }
+    }
+
+/* select option:nth-child(1) {
+    background-color: rgb(184, 16, 16) !important;
+    color: white !important;
+} */
+
+/* option[value="2"] {
+    background-color: rgb(17, 134, 33) !important;
+    color: white !important;
+}
+
+option[value="3"] {
+    background-color: rgb(31, 141, 214) !important;
+    color: white !important;
+} */
+
+
+/* select { color:blue; }
+option { color:red; background-color:yellow; }
+option:hover { color:yellow; background-color:red; } */
