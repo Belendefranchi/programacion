@@ -58,7 +58,7 @@
 <!-- ---------------------------------------------------------------------------------------------------------- -->
             <div class="container text-center">
                 <div class="row seven-cols align-items-center">
-                    <input type="text" class="col-md-1 fw-bold form-control" value="LUN    TIPO" readonly>
+                    <input type="text" class="col-md-1 fw-bold form-control" value="LUN" readonly>
                     <select class="col-md-1 form-select" name="L1Lun__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
@@ -90,7 +90,7 @@
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control" value="PROCESO">
+                    <input type="text" class="col-md-1 form-control" value="">
                     <select class="col-md-1 form-select" name="L1Lun__proceso" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
@@ -130,13 +130,13 @@
 <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control" name="" value="GRANJA">
+                    <input type="text" class="col-md-1 form-control" name="" value="">
                     <input type="text" class="col-md-1 form-control" name="L1Lun__granja" value="1">
                     <input type="text" class="col-md-1 form-control" name="L2Lun__granja" value="2">
                     <input type="text" class="col-md-1 form-control" name="L3Lun__granja" value="3">
                     <input type="text" class="col-md-1 form-control" name="L4Lun__granja" value="4">
-                    <input type="text" class="col-md-1 form-control" name="" value="">
-                    <input type="text" class="col-md-1 form-control" name="" value="">
+                    <input type="text" class="col-md-1 form-control" name="ExtraLun__cocido" value="ExtraLun__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ExtraLun__embarque" value="ExtraLun__embarque">
                 </div>
             </div>
             <br>
@@ -228,8 +228,8 @@
                     <input type="text" class="col-md-1 form-control" name="L2Mar__granja" value="2">
                     <input type="text" class="col-md-1 form-control" name="L3Mar__granja" value="3">
                     <input type="text" class="col-md-1 form-control" name="L4Mar__granja" value="4">
-                    <input type="text" class="col-md-1 form-control" value="">
-                    <input type="text" class="col-md-1 form-control" value="">
+                    <input type="text" class="col-md-1 form-control" name="ExtraMar__cocido" value="ExtraMar__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ExtraMar__embarque" value="ExtraMar__embarque">
                 </div>
             </div>
             <br>
@@ -318,8 +318,8 @@
                     <input type="text" class="col-md-1 form-control" name="L2Mie__granja" value="2">
                     <input type="text" class="col-md-1 form-control" name="L3Mie__granja" value="3">
                     <input type="text" class="col-md-1 form-control" name="L4Mie__granja" value="4">
-                    <input type="text" class="col-md-1 form-control" value="">
-                    <input type="text" class="col-md-1 form-control" value="">
+                    <input type="text" class="col-md-1 form-control" name="ExtraMie__cocido" value="ExtraMie__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ExtraMie__embarque" value="ExtraMie__embarque">
                 </div>
             </div>
             <br>
@@ -408,8 +408,8 @@
                     <input type="text" class="col-md-1 form-control" name="L2Jue__granja" value="2">
                     <input type="text" class="col-md-1 form-control" name="L3Jue__granja" value="3">
                     <input type="text" class="col-md-1 form-control" name="L4Jue__granja" value="4">
-                    <input type="text" class="col-md-1 form-control" value="">
-                    <input type="text" class="col-md-1 form-control" value="">
+                    <input type="text" class="col-md-1 form-control" name="ExtraJue__cocido" value="ExtraJue__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ExtraJue__embarque" value="ExtraJue__embarque">
                 </div>
             </div>
             <br>
@@ -498,8 +498,8 @@
                     <input type="text" class="col-md-1 form-control" name="L2Vie__granja" value="2">
                     <input type="text" class="col-md-1 form-control" name="L3Vie__granja" value="3">
                     <input type="text" class="col-md-1 form-control" name="L4Vie__granja" value="4">
-                    <input type="text" class="col-md-1 form-control" value="">
-                    <input type="text" class="col-md-1 form-control" value="">
+                    <input type="text" class="col-md-1 form-control" name="ExtraVie__cocido" value="ExtraVie__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ExtraVie__embarque" value="ExtraVie__embarque">
                 </div>
             </div>
             <br>
@@ -588,8 +588,8 @@
                     <input type="text" class="col-md-1 form-control" name="L2Sab__granja" value="2">
                     <input type="text" class="col-md-1 form-control" name="L3Sab__granja" value="3">
                     <input type="text" class="col-md-1 form-control" name="L4Sab__granja" value="4">
-                    <input type="text" class="col-md-1 form-control" value="">
-                    <input type="text" class="col-md-1 form-control" value="">
+                    <input type="text" class="col-md-1 form-control" name="ExtraSab__cocido" value="ExtraSab__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ExtraSab__embarque" value="ExtraSab__embarque">
                 </div>
             </div>
 

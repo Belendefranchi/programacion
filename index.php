@@ -53,6 +53,9 @@
         $L3Lun__granja=strtoupper($_POST['L3Lun__granja']);
         $L4Lun__granja=strtoupper($_POST['L4Lun__granja']);
 
+        $ExtraLun__cocido=strtoupper($_POST['ExtraLun__cocido']);
+        $ExtraLun__embarque=strtoupper($_POST['ExtraLun__embarque']);
+
         $L1Mar__tipo=strtoupper($_POST['L1Mar__tipo']);
         $L2Mar__tipo=strtoupper($_POST['L2Mar__tipo']);
         $L3Mar__tipo=strtoupper($_POST['L3Mar__tipo']);
@@ -73,6 +76,9 @@
         $L2Mar__granja=strtoupper($_POST['L2Mar__granja']);
         $L3Mar__granja=strtoupper($_POST['L3Mar__granja']);
         $L4Mar__granja=strtoupper($_POST['L4Mar__granja']);
+
+        $ExtraMar__cocido=strtoupper($_POST['ExtraMar__cocido']);
+        $ExtraMar__embarque=strtoupper($_POST['ExtraMar__embarque']);
 
         $L1Mie__tipo=strtoupper($_POST['L1Mie__tipo']);
         $L2Mie__tipo=strtoupper($_POST['L2Mie__tipo']);
@@ -95,6 +101,9 @@
         $L3Mie__granja=strtoupper($_POST['L3Mie__granja']);
         $L4Mie__granja=strtoupper($_POST['L4Mie__granja']);
 
+        $ExtraMie__cocido=strtoupper($_POST['ExtraMie__cocido']);
+        $ExtraMie__embarque=strtoupper($_POST['ExtraMie__embarque']);
+
         $L1Jue__tipo=strtoupper($_POST['L1Jue__tipo']);
         $L2Jue__tipo=strtoupper($_POST['L2Jue__tipo']);
         $L3Jue__tipo=strtoupper($_POST['L3Jue__tipo']);
@@ -115,6 +124,9 @@
         $L2Jue__granja=strtoupper($_POST['L2Jue__granja']);
         $L3Jue__granja=strtoupper($_POST['L3Jue__granja']);
         $L4Jue__granja=strtoupper($_POST['L4Jue__granja']);
+
+        $ExtraJue__cocido=strtoupper($_POST['ExtraJue__cocido']);
+        $ExtraJue__embarque=strtoupper($_POST['ExtraJue__embarque']);
 
         $L1Vie__tipo=strtoupper($_POST['L1Vie__tipo']);
         $L2Vie__tipo=strtoupper($_POST['L2Vie__tipo']);
@@ -137,6 +149,9 @@
         $L3Vie__granja=strtoupper($_POST['L3Vie__granja']);
         $L4Vie__granja=strtoupper($_POST['L4Vie__granja']);
 
+        $ExtraVie__cocido=strtoupper($_POST['ExtraVie__cocido']);
+        $ExtraVie__embarque=strtoupper($_POST['ExtraVie__embarque']);
+
         $L1Sab__tipo=strtoupper($_POST['L1Sab__tipo']);
         $L2Sab__tipo=strtoupper($_POST['L2Sab__tipo']);
         $L3Sab__tipo=strtoupper($_POST['L3Sab__tipo']);
@@ -157,6 +172,9 @@
         $L2Sab__granja=strtoupper($_POST['L2Sab__granja']);
         $L3Sab__granja=strtoupper($_POST['L3Sab__granja']);
         $L4Sab__granja=strtoupper($_POST['L4Sab__granja']);
+
+        $ExtraSab__cocido=strtoupper($_POST['ExtraSab__cocido']);
+        $ExtraSab__embarque=strtoupper($_POST['ExtraSab__embarque']);
 
         ?>
         <input type="button" value="Volver" onClick="history.go(-1);"></td>
@@ -197,8 +215,8 @@
                     <td><?php echo($L2Lun__granja)?></td>
                     <td><?php echo($L3Lun__granja)?></td>
                     <td><?php echo($L4Lun__granja)?></td>
-                    <td></td>
-                    <td></td>
+                    <td><?php echo($ExtraLun__cocido)?></td>
+                    <td><?php echo($ExtraLun__embarque)?></td>
                 </tr>
                 <tr>
                     <th scope="row">MAR</th>
@@ -224,8 +242,8 @@
                     <td><?php echo($L2Mar__granja)?></td>
                     <td><?php echo($L3Mar__granja)?></td>
                     <td><?php echo($L4Mar__granja)?></td>
-                    <td></td>
-                    <td></td>
+                    <td><?php echo($ExtraMar__cocido)?></td>
+                    <td><?php echo($ExtraMar__embarque)?></td>
                 </tr>
                 <tr>
                     <th scope="row">MIE</th>
@@ -251,8 +269,8 @@
                     <td><?php echo($L2Mie__granja)?></td>
                     <td><?php echo($L3Mie__granja)?></td>
                     <td><?php echo($L4Mie__granja)?></td>
-                    <td></td>
-                    <td></td>
+                    <td><?php echo($ExtraMie__cocido)?></td>
+                    <td><?php echo($ExtraMie__embarque)?></td>
                 </tr>
                 <tr>
                     <th scope="row">JUE</th>
@@ -278,8 +296,8 @@
                     <td><?php echo($L2Jue__granja)?></td>
                     <td><?php echo($L3Jue__granja)?></td>
                     <td><?php echo($L4Jue__granja)?></td>
-                    <td></td>
-                    <td></td>
+                    <td><?php echo($ExtraJue__cocido)?></td>
+                    <td><?php echo($ExtraJue__embarque)?></td>
                 </tr>
                 <tr>
                     <th scope="row">VIE</th>
@@ -305,8 +323,8 @@
                     <td><?php echo($L2Vie__granja)?></td>
                     <td><?php echo($L3Vie__granja)?></td>
                     <td><?php echo($L4Vie__granja)?></td>
-                    <td></td>
-                    <td></td>
+                    <td><?php echo($ExtraVie__cocido)?></td>
+                    <td><?php echo($ExtraVie__embarque)?></td>
                 </tr>
                 <tr>
                     <th scope="row">SAB</th>
@@ -332,8 +350,8 @@
                     <td><?php echo($L2Sab__granja)?></td>
                     <td><?php echo($L3Sab__granja)?></td>
                     <td><?php echo($L4Sab__granja)?></td>
-                    <td></td>
-                    <td></td>
+                    <td><?php echo($ExtraSab__cocido)?></td>
+                    <td><?php echo($ExtraSab__embarque)?></td>
                 </tr>
             </tbody>
         </table>
