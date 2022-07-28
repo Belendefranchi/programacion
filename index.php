@@ -32,6 +32,17 @@
     </header>
     <main>
         <?php
+
+        include("conexion.php");
+
+        $query="SELECT * FROM datos";
+        $resultado=$base->prepare($query);
+        $resultado->execute(array());     
+        $registros=$resultado->fetchAll(PDO::FETCH_OBJ);
+        $resultado->closeCursor();
+        
+        print_r ($registros);
+        
         $L1Lun__tipo=strtoupper($_POST['L1Lun__tipo']);
         $L2Lun__tipo=strtoupper($_POST['L2Lun__tipo']);
         $L3Lun__tipo=strtoupper($_POST['L3Lun__tipo']);

@@ -31,7 +31,7 @@
         </nav>
     </header>
     <main>
-        <form action="index.php" method="post">
+        <form action="enviar.php" method="post">
             <div>
                 <input type="submit" value="Enviar">
             </div>
