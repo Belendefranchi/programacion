@@ -161,69 +161,73 @@ $ExtraSab__embarque=strtoupper($_POST['ExtraSab__embarque']);
 $queryf="INSERT INTO faena
             (sem, dia, fecha, lote, tipo, proceso, granja) 
         VALUES
-            ('30','jueves','2022-07-28','1','$L1Lun__tipo','$L1Lun__proceso','$L1Lun__granja')
-            ('30','jueves','2022-07-28','1','$L2Lun__tipo','$L2Lun__proceso','$L2Lun__granja')
-            ('30','jueves','2022-07-28','1','$L3Lun__tipo','$L3Lun__proceso','$L3Lun__granja')
-            ('30','jueves','2022-07-28','1','$L4Lun__tipo','$L4Lun__proceso','$L4Lun__granja')
+            ('30','jueves','2022-07-28','1','$L1Lun__tipo','$L1Lun__proceso','$L1Lun__granja'),
+            ('30','jueves','2022-07-28','1','$L2Lun__tipo','$L2Lun__proceso','$L2Lun__granja'),
+            ('30','jueves','2022-07-28','1','$L3Lun__tipo','$L3Lun__proceso','$L3Lun__granja'),
+            ('30','jueves','2022-07-28','1','$L4Lun__tipo','$L4Lun__proceso','$L4Lun__granja'),
 
-            ('30','jueves','2022-07-28','1','$L1Mar__tipo','$L1Mar__proceso','$L1Mar__granja')
-            ('30','jueves','2022-07-28','1','$L2Mar__tipo','$L2Mar__proceso','$L2Mar__granja')
-            ('30','jueves','2022-07-28','1','$L3Mar__tipo','$L3Mar__proceso','$L3Mar__granja')
-            ('30','jueves','2022-07-28','1','$L4Mar__tipo','$L4Mar__proceso','$L4Mar__granja')
+            ('30','jueves','2022-07-28','1','$L1Mar__tipo','$L1Mar__proceso','$L1Mar__granja'),
+            ('30','jueves','2022-07-28','1','$L2Mar__tipo','$L2Mar__proceso','$L2Mar__granja'),
+            ('30','jueves','2022-07-28','1','$L3Mar__tipo','$L3Mar__proceso','$L3Mar__granja'),
+            ('30','jueves','2022-07-28','1','$L4Mar__tipo','$L4Mar__proceso','$L4Mar__granja'),
 
-            ('30','jueves','2022-07-28','1','$L1Mie__tipo','$L1Mie__proceso','$L1Mie__granja')
-            ('30','jueves','2022-07-28','1','$L2Mie__tipo','$L2Mie__proceso','$L2Mie__granja')
-            ('30','jueves','2022-07-28','1','$L3Mie__tipo','$L3Mie__proceso','$L3Mie__granja')
-            ('30','jueves','2022-07-28','1','$L4Mie__tipo','$L4Mie__proceso','$L4Mie__granja')
+            ('30','jueves','2022-07-28','1','$L1Mie__tipo','$L1Mie__proceso','$L1Mie__granja'),
+            ('30','jueves','2022-07-28','1','$L2Mie__tipo','$L2Mie__proceso','$L2Mie__granja'),
+            ('30','jueves','2022-07-28','1','$L3Mie__tipo','$L3Mie__proceso','$L3Mie__granja'),
+            ('30','jueves','2022-07-28','1','$L4Mie__tipo','$L4Mie__proceso','$L4Mie__granja'),
 
-            ('30','jueves','2022-07-28','1','$L1Jue__tipo','$L1Jue__proceso','$L1Jue__granja')
-            ('30','jueves','2022-07-28','1','$L2Jue__tipo','$L2Jue__proceso','$L2Jue__granja')
-            ('30','jueves','2022-07-28','1','$L3Jue__tipo','$L3Jue__proceso','$L3Jue__granja')
-            ('30','jueves','2022-07-28','1','$L4Jue__tipo','$L4Jue__proceso','$L4Jue__granja')
+            ('30','jueves','2022-07-28','1','$L1Jue__tipo','$L1Jue__proceso','$L1Jue__granja'),
+            ('30','jueves','2022-07-28','1','$L2Jue__tipo','$L2Jue__proceso','$L2Jue__granja'),
+            ('30','jueves','2022-07-28','1','$L3Jue__tipo','$L3Jue__proceso','$L3Jue__granja'),
+            ('30','jueves','2022-07-28','1','$L4Jue__tipo','$L4Jue__proceso','$L4Jue__granja'),
 
-            ('30','jueves','2022-07-28','1','$L1Vie__tipo','$L1Vie__proceso','$L1Vie__granja')
-            ('30','jueves','2022-07-28','1','$L2Vie__tipo','$L2Vie__proceso','$L2Vie__granja')
-            ('30','jueves','2022-07-28','1','$L3Vie__tipo','$L3Vie__proceso','$L3Vie__granja')
-            ('30','jueves','2022-07-28','1','$L4Vie__tipo','$L4Vie__proceso','$L4Vie__granja')
+            ('30','jueves','2022-07-28','1','$L1Vie__tipo','$L1Vie__proceso','$L1Vie__granja'),
+            ('30','jueves','2022-07-28','1','$L2Vie__tipo','$L2Vie__proceso','$L2Vie__granja'),
+            ('30','jueves','2022-07-28','1','$L3Vie__tipo','$L3Vie__proceso','$L3Vie__granja'),
+            ('30','jueves','2022-07-28','1','$L4Vie__tipo','$L4Vie__proceso','$L4Vie__granja'),
 
-            ('30','jueves','2022-07-28','1','$L1Sab__tipo','$L1Sab__proceso','$L1Sab__granja')
-            ('30','jueves','2022-07-28','1','$L2Sab__tipo','$L2Sab__proceso','$L2Sab__granja')
-            ('30','jueves','2022-07-28','1','$L3Sab__tipo','$L3Sab__proceso','$L3Sab__granja')
+            ('30','jueves','2022-07-28','1','$L1Sab__tipo','$L1Sab__proceso','$L1Sab__granja'),
+            ('30','jueves','2022-07-28','1','$L2Sab__tipo','$L2Sab__proceso','$L2Sab__granja'),
+            ('30','jueves','2022-07-28','1','$L3Sab__tipo','$L3Sab__proceso','$L3Sab__granja'),
             ('30','jueves','2022-07-28','1','$L4Sab__tipo','$L4Sab__proceso','$L4Sab__granja')
         ";
 
-$resultado=$base->prepare($queryf);     
-$resultado->execute(array());
-$resultado->closeCursor();
+$resultadof=$base->prepare($queryf);     
+$resultadof->execute(array());
+$resultadof->closeCursor();
 
 
 $queryc="INSERT INTO cocido
             (sem, dia, fecha, pro_cocido, op_cocido, ext_cocido)
         VALUES
-            ('$ProLun__cocido', '$OpLun__cocido', '$ExtraLun__cocido')
-            ('$ProLun__cocido', '$OpLun__cocido', '$ExtraLun__cocido')
-            ('$ProLun__cocido', '$OpLun__cocido', '$ExtraLun__cocido')
-            ('$ProLun__cocido', '$OpLun__cocido', '$ExtraLun__cocido')
+            ('30','jueves','2022-07-28','$ProLun__cocido','$OpLun__cocido','$ExtraLun__cocido'),
+            ('30','jueves','2022-07-28','$ProMar__cocido','$OpMar__cocido','$ExtraMar__cocido'),
+            ('30','jueves','2022-07-28','$ProMie__cocido','$OpMie__cocido','$ExtraMie__cocido'),
+            ('30','jueves','2022-07-28','$ProJue__cocido','$OpJue__cocido','$ExtraJue__cocido'),
+            ('30','jueves','2022-07-28','$ProVie__cocido','$OpVie__cocido','$ExtraVie__cocido'),
+            ('30','jueves','2022-07-28','$ProSab__cocido','$OpSab__cocido','$ExtraSab__cocido')
         ";
 
-$resultado=$base->prepare($queryc);     
-$resultado->execute(array());
-$resultado->closeCursor();
+$resultadoc=$base->prepare($queryc);     
+$resultadoc->execute(array());
+$resultadoc->closeCursor();
 
 $querye="INSERT INTO embarque
             (sem, dia, fecha, pro_embarque, op_embarque, ext_embarque) 
         VALUES
-            ('$ProLun__embarque', '$OpLun__embarque', '$ExtraLun__embarque')
-            ('$ProLun__embarque', '$OpLun__embarque', '$ExtraLun__embarque')
-            ('$ProLun__embarque', '$OpLun__embarque', '$ExtraLun__embarque')
-            ('$ProLun__embarque', '$OpLun__embarque', '$ExtraLun__embarque')
+            ('30','jueves','2022-07-28','$ProLun__embarque','$OpLun__embarque','$ExtraLun__embarque'),
+            ('30','jueves','2022-07-28','$ProMar__embarque','$OpMar__embarque','$ExtraMar__embarque'),
+            ('30','jueves','2022-07-28','$ProMie__embarque','$OpMie__embarque','$ExtraMie__embarque'),
+            ('30','jueves','2022-07-28','$ProJue__embarque','$OpJue__embarque','$ExtraJue__embarque'),
+            ('30','jueves','2022-07-28','$ProVie__embarque','$OpVie__embarque','$ExtraVie__embarque'),
+            ('30','jueves','2022-07-28','$ProSab__embarque','$OpSab__embarque','$ExtraSab__embarque')
             ";
 
-$resultado=$base->prepare($querye);     
-$resultado->execute(array());
-$resultado->closeCursor();
+$resultadoe=$base->prepare($querye);     
+$resultadoe->execute(array());
+$resultadoe->closeCursor();
 
-$query="SELECT * FROM datos";
+$query="SELECT * FROM faena";
 
 $resultado=$base->prepare($query);     
 $resultado->execute(array());
