@@ -35,13 +35,13 @@
 
         include("conexion.php");
 
-        $query="SELECT * FROM faena";
+/*         $query="SELECT * FROM faena";
         $resultado=$base->prepare($query);
         $resultado->execute(array());     
         $registros=$resultado->fetchAll(PDO::FETCH_OBJ);
-        $resultado->closeCursor();
+        $resultado->closeCursor(); */
         
-        print_r ($registros);
+/*         print_r ($registros); */
         
         ?>
         <input type="button" value="Volver" onClick="history.go(-1);"></td>

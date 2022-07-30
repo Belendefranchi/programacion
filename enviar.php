@@ -2,13 +2,15 @@
 
     include("conexion.php");
 
+    $semana=($_POST['sem']);
+    $sem=substr($semana,-2);
+
     $lun=($_POST['lun']);
     $mar=($_POST['mar']);
     $mie=($_POST['mie']);
     $jue=($_POST['jue']);
     $vie=($_POST['vie']);
     $sab=($_POST['sab']);
-
 
     $L1Lun__tipo=strtoupper($_POST['L1Lun__tipo']);
     $L2Lun__tipo=strtoupper($_POST['L2Lun__tipo']);
