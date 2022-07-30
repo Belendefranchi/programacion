@@ -57,7 +57,7 @@
 
             <div class="container text-center">
                 <div class="row seven-cols align-items-center">
-                <input type="text" class="col-md-1 fs-4 fw-bold form-control" value="<?php echo "Sem:  " . $sem?>">
+                <input type="text" class="col-md-1 fs-4 form-control fw-bold text-center" value="<?php echo "Sem:    " . $sem?>">
                     <div class="col-md-1 fs-4 fw-bold">LOTE 1</div>
                     <div class="col-md-1 fs-4 fw-bold">LOTE 2</div>
                     <div class="col-md-1 fs-4 fw-bold">LOTE 3</div>
@@ -107,7 +107,7 @@
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control" name="lun" value="<?php echo (substr($lun,0,5));?>">
+                    <input type="text" class="col-md-1 form-control fw-bold text-center " name="lun" value="<?php echo (substr($lun,0,5));?>">
                     <select class="col-md-1 form-select" name="L1Lun__proceso" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
@@ -198,7 +198,7 @@
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo (substr($mar,0,5))?>">
+                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="mar" value="<?php echo (substr($mar,0,5))?>">
                     <select class="col-md-1 form-select" name="L1Mar__proceso" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
@@ -290,7 +290,7 @@
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo (substr($mie,0,5))?>">
+                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="mie" value="<?php echo (substr($mie,0,5))?>">
                     <select class="col-md-1 form-select" name="L1Mie__proceso" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
@@ -380,7 +380,7 @@
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo (substr($jue,0,5))?>">
+                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="jue" value="<?php echo (substr($jue,0,5))?>">
                     <select class="col-md-1 form-select" name="L1Jue__proceso" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
@@ -470,7 +470,7 @@
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo (substr($vie,0,5))?>">
+                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="vie" value="<?php echo (substr($vie,0,5))?>">
                     <select class="col-md-1 form-select" name="L1Vie__proceso" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
@@ -560,7 +560,7 @@
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo (substr($sab,0,5))?>">
+                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="sab" value="<?php echo (substr($sab,0,5))?>">
                     <select class="col-md-1 form-select" name="L1Sab__proceso" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
