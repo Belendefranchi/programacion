@@ -32,6 +32,16 @@
     </header>
     <main>
         <?php
+<<<<<<< HEAD
+
+        include("conexion.php");
+        
+        $L1Lun__tipo=strtoupper($_POST['L1Lun__tipo']);
+        $L2Lun__tipo=strtoupper($_POST['L2Lun__tipo']);
+        $L3Lun__tipo=strtoupper($_POST['L3Lun__tipo']);
+        $L4Lun__tipo=strtoupper($_POST['L4Lun__tipo']);
+=======
+>>>>>>> 2dbb0796bcb2253d16b75825ddc53012d90bba53
 
         include("conexion.php");
         
