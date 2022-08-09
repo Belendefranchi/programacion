@@ -173,7 +173,7 @@
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
-$query="SELECT cocido, Id
+$query="SELECT pro_cocido, Id
 FROM cocido 
 where sem='$sem'
     and dia='lun' 
@@ -199,7 +199,7 @@ $resultado->closeCursor();
 /* ############################################################## */
 /* ---------------------------MARTES----------------------------- */
 /* ############################################################## */
-        
+
 /* ---------------------------tipo------------------------------- */ 
 /* -------------------------------------------------------------- */       
         $query="SELECT tipo, Id
@@ -652,7 +652,7 @@ $resultado->closeCursor();
             and lote='1' ORDER BY Id DESC";
         $resultado=$base->prepare($query);
         $resultado->execute();     
-        $L1Vie__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
+        $L1Jue__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
         $resultado->closeCursor();
 
         $query="SELECT proceso, Id
