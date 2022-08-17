@@ -31,6 +31,8 @@
         </nav>
     </header>
     <main>
+
+    <!-- 1315 lineas -->
         <?php
 
         include("conexion.php");
@@ -41,828 +43,661 @@
 /* ---------------------------LUNES------------------------------ */
 /* ############################################################## */
         
-/* ---------------------------tipo------------------------------- */ 
-/* -------------------------------------------------------------- */       
-        $query="SELECT tipo, Id
-                FROM faena 
-                where sem='$sem'
-                    and dia='lun' 
-                    and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Lun__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
-        
-        $query="SELECT tipo, Id
-                FROM faena 
-                where sem='$sem'
-                    and dia='lun' 
-                    and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Lun__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+/* ---------------------------faena------------------------------ */ 
+/* -------------------------------------------------------------- */
 
-        $query="SELECT tipo, Id 
+/* ---------------------------lote 1----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
-        where sem='$sem'
-            and dia='lun' 
-            and lote='3' ORDER BY Id DESC";
-        
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Lun__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
-
-        $query="SELECT tipo, Id
-                FROM faena 
-                where sem='$sem'
-                    and dia='lun' 
-                    and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Lun__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
-
-/* -------------------------proceso----------------------------- */
-/* -------------------------------------------------------------- */ 
-
-        $query="SELECT proceso, Id
-        FROM faena 
-        where sem='$sem'
+            where sem='$sem'
             and dia='lun' 
             and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Lun__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-        $query="SELECT proceso, Id
-                FROM faena 
-                where sem='$sem'
-                    and dia='lun' 
-                    and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Lun__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L1Lun__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
 
-        $query="SELECT proceso, Id 
+$L1Lun__tipo=$L1Lun__faena["tipo"];
+$L1Lun__proceso=$L1Lun__faena["proceso"];
+$L1Lun__granja=$L1Lun__faena["granja"];
+
+/* ---------------------------lote 2----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
-        where sem='$sem'
+            where sem='$sem'
+            and dia='lun' 
+            and lote='2' ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L2Lun__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L2Lun__tipo=$L2Lun__faena["tipo"];
+$L2Lun__proceso=$L2Lun__faena["proceso"];
+$L2Lun__granja=$L2Lun__faena["granja"];
+
+/* ---------------------------lote 3----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id 
+        FROM faena 
+            where sem='$sem'
             and dia='lun' 
             and lote='3' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Lun__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-        $query="SELECT proceso, Id
-                FROM faena 
-                where sem='$sem'
-                    and dia='lun' 
-                    and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Lun__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L3Lun__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
 
-/* ---------------------------granja----------------------------- */
-/* -------------------------------------------------------------- */ 
+$L3Lun__tipo=$L3Lun__faena["tipo"];
+$L3Lun__proceso=$L3Lun__faena["proceso"];
+$L3Lun__granja=$L3Lun__faena["granja"];
 
-        $query="SELECT granja, Id
-                FROM faena 
-                where sem='$sem'
-                    and dia='lun' 
-                    and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Lun__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+/* ---------------------------lote 4----------------------------- */ 
 
-        $query="SELECT granja, Id
-                FROM faena 
-                where sem='$sem'
-                    and dia='lun' 
-                    and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Lun__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
-
-        $query="SELECT granja, Id 
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
-        where sem='$sem'
+            where sem='$sem'
             and dia='lun' 
-            and lote='3' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Lun__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+            and lote='4' ORDER BY Id DESC";
 
-        $query="SELECT granja, Id
-                FROM faena 
-                where sem='$sem'
-                    and dia='lun' 
-                    and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Lun__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L4Lun__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L4Lun__tipo=$L4Lun__faena["tipo"];
+$L4Lun__proceso=$L4Lun__faena["proceso"];
+$L4Lun__granja=$L4Lun__faena["granja"];
 
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
-$query="SELECT pro_cocido, Id
-FROM cocido 
-where sem='$sem'
-    and dia='lun' 
-    and lote='1' ORDER BY Id DESC";
+$query="SELECT pro_cocido, op_cocido, ext_cocido, Id
+        FROM cocido 
+            where sem='$sem'
+            and dia='lun' ORDER BY Id DESC";
+
 $resultado=$base->prepare($query);
-$resultado->execute();     
-$ProLun__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->execute();
+$Lun__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
 $resultado->closeCursor();
+
+$ProLun__cocido=$Lun__cocido["pro_cocido"];
+$OpeLun__cocido=$Lun__cocido["op_cocido"];
+$ExtLun__cocido=$Lun__cocido["ext_cocido"];
+
 
 /* ---------------------------embarque--------------------------- */
 /* -------------------------------------------------------------- */ 
 
-$query="SELECT granja, Id
-FROM faena 
-where sem='$sem'
-    and dia='lun' 
-    and lote='1' ORDER BY Id DESC";
+$query="SELECT pro_embarque, op_embarque, ext_embarque, Id
+        FROM embarque
+            where sem='$sem'
+            and dia='lun' ORDER BY Id DESC";
+
 $resultado=$base->prepare($query);
-$resultado->execute();     
-$ProLun__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->execute();
+$Lun__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
 $resultado->closeCursor();
+
+$ProLun__embarque=$Lun__embarque["pro_embarque"];
+$OpeLun__embarque=$Lun__embarque["op_embarque"];
+$ExtLun__embarque=$Lun__embarque["pro_embarque"];
+
 
 /* ############################################################## */
 /* ---------------------------MARTES----------------------------- */
 /* ############################################################## */
 
-/* ---------------------------tipo------------------------------- */ 
-/* -------------------------------------------------------------- */       
-        $query="SELECT tipo, Id
+/* ---------------------------faena------------------------------ */ 
+/* -------------------------------------------------------------- */
+/* ---------------------------lote 1----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
-        where sem='$sem'
-            and dia='mar' 
+            where sem='$sem'
+            and dia='Mar' 
             and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Mar__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-        $query="SELECT tipo, Id
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L1Mar__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L1Mar__tipo=$L1Mar__faena["tipo"];
+$L1Mar__proceso=$L1Mar__faena["proceso"];
+$L1Mar__granja=$L1Mar__faena["granja"];
+
+/* ---------------------------lote 2----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
-        where sem='$sem'
-            and dia='mar' 
+            where sem='$sem'
+            and dia='Mar' 
             and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Mar__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-        $query="SELECT tipo, Id 
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L2Mar__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L2Mar__tipo=$L2Mar__faena["tipo"];
+$L2Mar__proceso=$L2Mar__faena["proceso"];
+$L2Mar__granja=$L2Mar__faena["granja"];
+
+/* ---------------------------lote 3----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id 
         FROM faena 
-        where sem='$sem'
-        and dia='mar' 
-        and lote='3' ORDER BY Id DESC";
+            where sem='$sem'
+            and dia='mar' 
+            and lote='3' ORDER BY Id DESC";
 
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Mar__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L3Mar__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
 
-        $query="SELECT tipo, Id
+$L3Mar__tipo=$L3Mar__faena["tipo"];
+$L3Mar__proceso=$L3Mar__faena["proceso"];
+$L3Mar__granja=$L3Mar__faena["granja"];
+
+/* ---------------------------lote 4----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
-        where sem='$sem'
+            where sem='$sem'
             and dia='mar' 
             and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Mar__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-/* -------------------------proceso----------------------------- */
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L4Mar__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L4Mar__tipo=$L4Mar__faena["tipo"];
+$L4Mar__proceso=$L4Mar__faena["proceso"];
+$L4Mar__granja=$L4Mar__faena["granja"];
+
+/* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
-        $query="SELECT proceso, Id
-        FROM faena 
-        where sem='$sem'
-        and dia='mar' 
-        and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Mar__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$query="SELECT pro_cocido, op_cocido, ext_cocido, Id
+        FROM cocido 
+            where sem='$sem'
+            and dia='mar' ORDER BY Id DESC";
 
-        $query="SELECT proceso, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='mar' 
-            and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Mar__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Mar__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
 
-        $query="SELECT proceso, Id 
-        FROM faena 
-        where sem='$sem'
-        and dia='mar' 
-        and lote='3' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Mar__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$ProMar__cocido=$Mar__cocido["pro_cocido"];
+$OpeMar__cocido=$Mar__cocido["op_cocido"];
+$ExtMar__cocido=$Mar__cocido["ext_cocido"];
 
-        $query="SELECT proceso, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='mar' 
-            and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Mar__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-/* ---------------------------granja----------------------------- */
+/* ---------------------------embarque--------------------------- */
 /* -------------------------------------------------------------- */ 
 
-        $query="SELECT granja, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='mar' 
-            and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Mar__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$query="SELECT pro_embarque, op_embarque, ext_embarque, Id
+        FROM embarque 
+            where sem='$sem'
+            and dia='mar' ORDER BY Id DESC";
 
-        $query="SELECT granja, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='mar' 
-            and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Mar__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Mar__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
 
-        $query="SELECT granja, Id 
-        FROM faena 
-        where sem='$sem'
-        and dia='mar' 
-        and lote='3' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Mar__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$ProMar__embarque=$Mar__embarque["pro_embarque"];
+$OpeMar__embarque=$Mar__embarque["op_embarque"];
+$ExtMar__embarque=$Mar__embarque["pro_embarque"];
 
-        $query="SELECT granja, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='mar' 
-            and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Mar__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
-        
 /* ############################################################## */
 /* -------------------------MIERCOLES---------------------------- */
 /* ############################################################## */
         
-/* ---------------------------tipo------------------------------- */ 
+/* ---------------------------faena------------------------------ */ 
 /* -------------------------------------------------------------- */       
-        $query="SELECT tipo, Id
+/* ---------------------------lote 1----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
-        where sem='$sem'
+            where sem='$sem'
             and dia='mie' 
             and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Mie__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-        $query="SELECT tipo, Id
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L1Mie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L1Mie__tipo=$L1Mie__faena["tipo"];
+$L1Mie__proceso=$L1Mie__faena["proceso"];
+$L1Mie__granja=$L1Mie__faena["granja"];
+
+/* ---------------------------lote 2----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
-        where sem='$sem'
+            where sem='$sem'
             and dia='mie' 
             and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Mie__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-        $query="SELECT tipo, Id 
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L2Mie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L2Mie__tipo=$L2Mie__faena["tipo"];
+$L2Mie__proceso=$L2Mie__faena["proceso"];
+$L2Mie__granja=$L2Mie__faena["granja"];
+
+/* ---------------------------lote 3----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id 
         FROM faena 
-        where sem='$sem'
-        and dia='mie' 
-        and lote='3' ORDER BY Id DESC";
+            where sem='$sem'
+            and dia='mie' 
+            and lote='3' ORDER BY Id DESC";
 
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Mie__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L3Mie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
 
-        $query="SELECT tipo, Id
+$L3Mie__tipo=$L3Mie__faena["tipo"];
+$L3Mie__proceso=$L3Mie__faena["proceso"];
+$L3Mie__granja=$L3Mie__faena["granja"];
+
+/* ---------------------------lote 4----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
-        where sem='$sem'
+            where sem='$sem'
             and dia='mie' 
             and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Mie__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-/* -------------------------proceso----------------------------- */
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L4Mie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L4Mie__tipo=$L4Mie__faena["tipo"];
+$L4Mie__proceso=$L4Mie__faena["proceso"];
+$L4Mie__granja=$L4Mie__faena["granja"];
+
+/* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
-        $query="SELECT proceso, Id
-        FROM faena 
-        where sem='$sem'
-        and dia='mie' 
-        and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Mie__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$query="SELECT pro_cocido, op_cocido, ext_cocido, Id
+        FROM cocido 
+            where sem='$sem'
+            and dia='mie' ORDER BY Id DESC";
 
-        $query="SELECT proceso, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='mie' 
-            and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Mie__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Mie__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
 
-        $query="SELECT proceso, Id 
-        FROM faena 
-        where sem='$sem'
-        and dia='mie' 
-        and lote='3' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Mie__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$ProMie__cocido=$Mie__cocido["pro_cocido"];
+$OpeMie__cocido=$Mie__cocido["op_cocido"];
+$ExtMie__cocido=$Mie__cocido["ext_cocido"];
 
-        $query="SELECT proceso, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='mie' 
-            and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Mie__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-/* ---------------------------granja----------------------------- */
+/* ---------------------------embarque--------------------------- */
 /* -------------------------------------------------------------- */ 
 
-        $query="SELECT granja, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='mie' 
-            and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Mie__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$query="SELECT pro_embarque, op_embarque, ext_embarque, Id
+        FROM embarque 
+            where sem='$sem'
+            and dia='mie' ORDER BY Id DESC";
 
-        $query="SELECT granja, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='mie' 
-            and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Mie__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Mie__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
 
-        $query="SELECT granja, Id 
-        FROM faena 
-        where sem='$sem'
-        and dia='mie' 
-        and lote='3' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Mie__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
-
-        $query="SELECT granja, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='mie' 
-            and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Mie__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$ProMie__embarque=$Mie__embarque["pro_embarque"];
+$OpeMie__embarque=$Mie__embarque["op_embarque"];
+$ExtMie__embarque=$Mie__embarque["pro_embarque"];
 
 /* ############################################################## */
 /* --------------------------JUEVES------------------------------ */
 /* ############################################################## */
         
-/* ---------------------------tipo------------------------------- */ 
+/* ---------------------------faena------------------------------ */ 
 /* -------------------------------------------------------------- */       
-        $query="SELECT tipo, Id
+/* ---------------------------lote 1----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
-        where sem='$sem'
+            where sem='$sem'
             and dia='jue' 
             and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Jue__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-        $query="SELECT tipo, Id
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L1Jue__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L1Jue__tipo=$L1Jue__faena["tipo"];
+$L1Jue__proceso=$L1Jue__faena["proceso"];
+$L1Jue__granja=$L1Jue__faena["granja"];
+
+/* ---------------------------lote 2----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
-        where sem='$sem'
+            where sem='$sem'
             and dia='jue' 
             and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Jue__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-        $query="SELECT tipo, Id 
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L2Jue__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L2Jue__tipo=$L2Jue__faena["tipo"];
+$L2Jue__proceso=$L2Jue__faena["proceso"];
+$L2Jue__granja=$L2Jue__faena["granja"];
+
+/* ---------------------------lote 3----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id 
         FROM faena 
-        where sem='$sem'
+            where sem='$sem'
             and dia='jue' 
             and lote='3' ORDER BY Id DESC";
 
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Jue__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L3Jue__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
 
-        $query="SELECT tipo, Id
+$L3Jue__tipo=$L3Jue__faena["tipo"];
+$L3Jue__proceso=$L3Jue__faena["proceso"];
+$L3Jue__granja=$L3Jue__faena["granja"];
+
+/* ---------------------------lote 4----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
-        where sem='$sem'
+            where sem='$sem'
             and dia='jue' 
             and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Jue__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-/* -------------------------proceso----------------------------- */
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L4Jue__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L4Jue__tipo=$L4Jue__faena["tipo"];
+$L4Jue__proceso=$L4Jue__faena["proceso"];
+$L4Jue__granja=$L4Jue__faena["granja"];
+
+/* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
-        $query="SELECT proceso, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='jue' 
-            and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Jue__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$query="SELECT pro_cocido, op_cocido, ext_cocido, Id
+        FROM cocido 
+            where sem='$sem'
+            and dia='jue' ORDER BY Id DESC";
 
-        $query="SELECT proceso, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='jue' 
-            and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Jue__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Jue__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
 
-        $query="SELECT proceso, Id 
-        FROM faena 
-        where sem='$sem'
-            and dia='jue' 
-            and lote='3' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Jue__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$ProJue__cocido=$Jue__cocido["pro_cocido"];
+$OpeJue__cocido=$Jue__cocido["op_cocido"];
+$ExtJue__cocido=$Jue__cocido["ext_cocido"];
 
-        $query="SELECT proceso, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='jue'
-            and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Jue__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-/* ---------------------------granja----------------------------- */
+/* ---------------------------embarque--------------------------- */
 /* -------------------------------------------------------------- */ 
 
-        $query="SELECT granja, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='jue' 
-            and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Jue__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$query="SELECT pro_embarque, op_embarque, ext_embarque, Id
+        FROM embarque 
+            where sem='$sem'
+            and dia='jue' ORDER BY Id DESC";
 
-        $query="SELECT granja, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='jue' 
-            and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Jue__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Jue__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
 
-        $query="SELECT granja, Id 
-        FROM faena 
-        where sem='$sem'
-            and dia='jue' 
-            and lote='3' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Jue__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
-
-        $query="SELECT granja, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='jue' 
-            and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Jue__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$ProJue__embarque=$Jue__embarque["pro_embarque"];
+$OpeJue__embarque=$Jue__embarque["op_embarque"];
+$ExtJue__embarque=$Jue__embarque["pro_embarque"];
 
 /* ############################################################## */
 /* --------------------------VIERNES----------------------------- */
 /* ############################################################## */
         
-/* ---------------------------tipo------------------------------- */ 
+/* ---------------------------faena------------------------------ */ 
 /* -------------------------------------------------------------- */       
-        $query="SELECT tipo, Id
+/* ---------------------------lote 1----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
-        where sem='$sem'
+            where sem='$sem'
             and dia='vie' 
             and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Vie__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-        $query="SELECT tipo, Id
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L1Vie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L1Vie__tipo=$L1Vie__faena["tipo"];
+$L1Vie__proceso=$L1Vie__faena["proceso"];
+$L1Vie__granja=$L1Vie__faena["granja"];
+
+/* ---------------------------lote 2----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
-        where sem='$sem'
+            where sem='$sem'
             and dia='vie' 
             and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Vie__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-        $query="SELECT tipo, Id 
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L2Vie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L2Vie__tipo=$L2Vie__faena["tipo"];
+$L2Vie__proceso=$L2Vie__faena["proceso"];
+$L2Vie__granja=$L2Vie__faena["granja"];
+
+/* ---------------------------lote 3----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id 
         FROM faena 
-        where sem='$sem'
+            where sem='$sem'
             and dia='vie' 
             and lote='3' ORDER BY Id DESC";
 
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Vie__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L3Vie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
 
-        $query="SELECT tipo, Id
+$L3Vie__tipo=$L3Vie__faena["tipo"];
+$L3Vie__proceso=$L3Vie__faena["proceso"];
+$L3Vie__granja=$L3Vie__faena["granja"];
+
+/* ---------------------------lote 4----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
-        where sem='$sem'
-            and dia='vie'
+            where sem='$sem'
+            and dia='vie' 
             and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Vie__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-/* -------------------------proceso----------------------------- */
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L4Vie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L4Vie__tipo=$L4Vie__faena["tipo"];
+$L4Vie__proceso=$L4Vie__faena["proceso"];
+$L4Vie__granja=$L4Vie__faena["granja"];
+
+/* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
-        $query="SELECT proceso, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='vie' 
-            and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Jue__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$query="SELECT pro_cocido, op_cocido, ext_cocido, Id
+        FROM cocido 
+            where sem='$sem'
+            and dia='vie' ORDER BY Id DESC";
 
-        $query="SELECT proceso, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='vie' 
-            and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Vie__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Vie__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
 
-        $query="SELECT proceso, Id 
-        FROM faena 
-        where sem='$sem'
-            and dia='vie' 
-            and lote='3' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Vie__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$ProVie__cocido=$Vie__cocido["pro_cocido"];
+$OpeVie__cocido=$Vie__cocido["op_cocido"];
+$ExtVie__cocido=$Vie__cocido["ext_cocido"];
 
-        $query="SELECT proceso, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='vie'
-            and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Vie__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-/* ---------------------------granja----------------------------- */
+/* ---------------------------embarque--------------------------- */
 /* -------------------------------------------------------------- */ 
 
-        $query="SELECT granja, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='vie' 
-            and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Vie__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$query="SELECT pro_embarque, op_embarque, ext_embarque, Id
+        FROM embarque 
+            where sem='$sem'
+            and dia='vie' ORDER BY Id DESC";
 
-        $query="SELECT granja, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='vie' 
-            and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Vie__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Vie__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
 
-        $query="SELECT granja, Id 
-        FROM faena 
-        where sem='$sem'
-            and dia='vie' 
-            and lote='3' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Vie__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
-
-        $query="SELECT granja, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='vie' 
-            and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Vie__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$ProVie__embarque=$Vie__embarque["pro_embarque"];
+$OpeVie__embarque=$Vie__embarque["op_embarque"];
+$ExtVie__embarque=$Vie__embarque["pro_embarque"];
 
 /* ############################################################## */
 /* --------------------------SABADO------------------------------ */
 /* ############################################################## */
         
-/* ---------------------------tipo------------------------------- */ 
+/* ---------------------------faena------------------------------ */ 
 /* -------------------------------------------------------------- */       
-        
-        $query="SELECT tipo, Id
+/* ---------------------------lote 1----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
-        where sem='$sem'
+            where sem='$sem'
             and dia='sab' 
             and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Sab__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-        $query="SELECT tipo, Id
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L1Sab__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L1Sab__tipo=$L1Sab__faena["tipo"];
+$L1Sab__proceso=$L1Sab__faena["proceso"];
+$L1Sab__granja=$L1Sab__faena["granja"];
+
+/* ---------------------------lote 2----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
-        where sem='$sem'
+            where sem='$sem'
             and dia='sab' 
             and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Sab__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-        $query="SELECT tipo, Id 
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L2Sab__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L2Sab__tipo=$L2Sab__faena["tipo"];
+$L2Sab__proceso=$L2Sab__faena["proceso"];
+$L2Sab__granja=$L2Sab__faena["granja"];
+
+/* ---------------------------lote 3----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id 
         FROM faena 
-        where sem='$sem'
+            where sem='$sem'
             and dia='sab' 
             and lote='3' ORDER BY Id DESC";
 
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Sab__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L3Sab__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
 
-        $query="SELECT tipo, Id
+$L3Sab__tipo=$L3Sab__faena["tipo"];
+$L3Sab__proceso=$L3Sab__faena["proceso"];
+$L3Sab__granja=$L3Sab__faena["granja"];
+
+/* ---------------------------lote 4----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, Id
         FROM faena 
         where sem='$sem'
-            and dia='sab'
+            and dia='sab' 
             and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Sab__tipo=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-/* -------------------------proceso----------------------------- */
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L4Sab__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L4Sab__tipo=$L4Sab__faena["tipo"];
+$L4Sab__proceso=$L4Sab__faena["proceso"];
+$L4Sab__granja=$L4Sab__faena["granja"];
+
+/* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
-        $query="SELECT proceso, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='sab' 
-            and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Sab__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$query="SELECT pro_cocido, op_cocido, ext_cocido, Id
+        FROM cocido 
+            where sem='$sem'
+            and dia='sab' ORDER BY Id DESC";
 
-        $query="SELECT proceso, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='sab' 
-            and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Sab__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Sab__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
 
-        $query="SELECT proceso, Id 
-        FROM faena 
-        where sem='$sem'
-            and dia='sab' 
-            and lote='3' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Sab__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$ProSab__cocido=$Sab__cocido["pro_cocido"];
+$OpeSab__cocido=$Sab__cocido["op_cocido"];
+$ExtSab__cocido=$Sab__cocido["ext_cocido"];
 
-        $query="SELECT proceso, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='sab'
-            and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Sab__proceso=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
 
-/* ---------------------------granja----------------------------- */
+/* ---------------------------embarque--------------------------- */
 /* -------------------------------------------------------------- */ 
 
-        $query="SELECT granja, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='sab' 
-            and lote='1' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L1Sab__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$query="SELECT pro_embarque, op_embarque, ext_embarque, Id
+        FROM embarque 
+            where sem='$sem'
+            and dia='sab' ORDER BY Id DESC";
 
-        $query="SELECT granja, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='sab' 
-            and lote='2' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L2Sab__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Sab__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
 
-        $query="SELECT granja, Id 
-        FROM faena 
-        where sem='$sem'
-            and dia='sab' 
-            and lote='3' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L3Sab__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
+$ProSab__embarque=$Sab__embarque["pro_embarque"];
+$OpeSab__embarque=$Sab__embarque["op_embarque"];
+$ExtSab__embarque=$Sab__embarque["ext_embarque"];
 
-        $query="SELECT granja, Id
-        FROM faena 
-        where sem='$sem'
-            and dia='sab' 
-            and lote='4' ORDER BY Id DESC";
-        $resultado=$base->prepare($query);
-        $resultado->execute();     
-        $L4Sab__granja=$resultado->fetch(PDO::FETCH_ASSOC);
-        $resultado->closeCursor();
-
-
+/* ############################################################## */
+/* -------------------------------------------------------------- */
+/* ############################################################## */
 
         ?>
         <input type="button" value="Volver" onClick="history.go(-1);"></td>
@@ -881,165 +716,165 @@ $resultado->closeCursor();
             <tbody>
                 <tr>
                     <th scope="row">LUN</th>
-                    <td><?php print_r ($L1Lun__tipo["tipo"])?></td>
-                    <td><?php print_r ($L2Lun__tipo["tipo"])?></td>
-                    <td><?php print_r ($L3Lun__tipo["tipo"])?></td>
-                    <td><?php print_r ($L4Lun__tipo["tipo"])?></td>
-                    <td><?php print_r ($ProLun__cocido["tipo"])?></td>
-                    <td><?php print_r ($ProLun__embarque["tipo"])?></td>
+                    <td><?php echo $L1Lun__tipo?></td>
+                    <td><?php echo $L2Lun__tipo?></td>
+                    <td><?php echo $L3Lun__tipo?></td>
+                    <td><?php echo $L4Lun__tipo?></td>
+                    <td><?php echo $ProLun__cocido?></td>
+                    <td><?php echo $ProLun__embarque?></td>
                 </tr>
                 <tr>
                     <th scope="row"></th>
-                    <td><?php print_r ($L1Lun__proceso["proceso"])?></td>
-                    <td><?php print_r ($L2Lun__proceso["proceso"])?></td>
-                    <td><?php print_r ($L3Lun__proceso["proceso"])?></td>
-                    <td><?php print_r ($L4Lun__proceso["proceso"])?></td>
-                    <td><?php print_r ($OpLun__cocido["proceso"])?></td>
-                    <td><?php print_r ($OpLun__embarque["proceso"])?></td>               
+                    <td><?php echo $L1Lun__proceso?></td>
+                    <td><?php echo $L2Lun__proceso?></td>
+                    <td><?php echo $L3Lun__proceso?></td>
+                    <td><?php echo $L4Lun__proceso?></td>
+                    <td><?php echo $OpeLun__cocido?></td>
+                    <td><?php echo $OpeLun__embarque?></td>               
                 </tr>
                 <tr>
                     <th scope="row"></th>
-                    <td><?php print_r ($L1Lun__granja["granja"])?></td>
-                    <td><?php print_r ($L2Lun__granja["granja"])?></td>
-                    <td><?php print_r ($L3Lun__granja["granja"])?></td>
-                    <td><?php print_r ($L4Lun__granja["granja"])?></td>
-                    <td><?php print_r ($ExtLun__cocido["granja"])?></td>
-                    <td><?php print_r ($ExtLun__embarque["granja"])?></td> 
+                    <td><?php echo $L1Lun__granja?></td>
+                    <td><?php echo $L2Lun__granja?></td>
+                    <td><?php echo $L3Lun__granja?></td>
+                    <td><?php echo $L4Lun__granja?></td>
+                    <td><?php echo $ExtLun__cocido?></td>
+                    <td><?php echo $ExtLun__embarque?></td> 
                 </tr>
                 <tr>
                     <th scope="row">MAR</th>
-                    <td><?php print_r ($L1Mar__tipo["tipo"])?></td>
-                    <td><?php print_r ($L2Mar__tipo["tipo"])?></td>
-                    <td><?php print_r ($L3Mar__tipo["tipo"])?></td>
-                    <td><?php print_r ($L4Mar__tipo["tipo"])?></td>
-                    <td><?php print_r ($ProMar__cocido["tipo"])?></td>
-                    <td><?php print_r ($ProMar__embarque["tipo"])?></td>
+                    <td><?php echo $L1Mar__tipo?></td>
+                    <td><?php echo $L2Mar__tipo?></td>
+                    <td><?php echo $L3Mar__tipo?></td>
+                    <td><?php echo $L4Mar__tipo?></td>
+                    <td><?php echo $ProMar__cocido?></td>
+                    <td><?php echo $ProMar__embarque?></td>
                 </tr>
                 <tr>
                     <th scope="row"></th>
-                    <td><?php print_r ($L1Mar__proceso["proceso"])?></td>
-                    <td><?php print_r ($L2Mar__proceso["proceso"])?></td>
-                    <td><?php print_r ($L3Mar__proceso["proceso"])?></td>
-                    <td><?php print_r ($L4Mar__proceso["proceso"])?></td>
-                    <td><?php print_r ($OpMar__cocido["proceso"])?></td>
-                    <td><?php print_r ($OpMar__embarque["proceso"])?></td>               
+                    <td><?php echo $L1Mar__proceso?></td>
+                    <td><?php echo $L2Mar__proceso?></td>
+                    <td><?php echo $L3Mar__proceso?></td>
+                    <td><?php echo $L4Mar__proceso?></td>
+                    <td><?php echo $OpeMar__cocido?></td>
+                    <td><?php echo $OpeMar__embarque?></td>               
                 </tr>
                 <tr>
                     <th scope="row"></th>
-                    <td><?php print_r ($L1Mar__granja["granja"])?></td>
-                    <td><?php print_r ($L2Mar__granja["granja"])?></td>
-                    <td><?php print_r ($L3Mar__granja["granja"])?></td>
-                    <td><?php print_r ($L4Mar__granja["granja"])?></td>
-                    <td><?php print_r ($ExtMar__cocido["granja"])?></td>
-                    <td><?php print_r ($ExtMar__embarque["granja"])?></td> 
+                    <td><?php echo $L1Mar__granja?></td>
+                    <td><?php echo $L2Mar__granja?></td>
+                    <td><?php echo $L3Mar__granja?></td>
+                    <td><?php echo $L4Mar__granja?></td>
+                    <td><?php echo $ExtMar__cocido?></td>
+                    <td><?php echo $ExtMar__embarque?></td> 
                 </tr>
                 <tr>
                     <th scope="row">MIE</th>
-                    <td><?php print_r ($L1Mie__tipo["tipo"])?></td>
-                    <td><?php print_r ($L2Mie__tipo["tipo"])?></td>
-                    <td><?php print_r ($L3Mie__tipo["tipo"])?></td>
-                    <td><?php print_r ($L4Mie__tipo["tipo"])?></td>
-                    <td><?php print_r ($ProMie__cocido["tipo"])?></td>
-                    <td><?php print_r ($ProMie__embarque["tipo"])?></td>
+                    <td><?php echo $L1Mie__tipo?></td>
+                    <td><?php echo $L2Mie__tipo?></td>
+                    <td><?php echo $L3Mie__tipo?></td>
+                    <td><?php echo $L4Mie__tipo?></td>
+                    <td><?php echo $ProMie__cocido?></td>
+                    <td><?php echo $ProMie__embarque?></td>
                 </tr>
                 <tr>
                     <th scope="row"></th>
-                    <td><?php print_r ($L1Mie__proceso["proceso"])?></td>
-                    <td><?php print_r ($L2Mie__proceso["proceso"])?></td>
-                    <td><?php print_r ($L3Mie__proceso["proceso"])?></td>
-                    <td><?php print_r ($L4Mie__proceso["proceso"])?></td>
-                    <td><?php print_r ($OpMie__cocido["proceso"])?></td>
-                    <td><?php print_r ($OpMie__embarque["proceso"])?></td>               
+                    <td><?php echo $L1Mie__proceso?></td>
+                    <td><?php echo $L2Mie__proceso?></td>
+                    <td><?php echo $L3Mie__proceso?></td>
+                    <td><?php echo $L4Mie__proceso?></td>
+                    <td><?php echo $OpeMie__cocido?></td>
+                    <td><?php echo $OpeMie__embarque?></td>               
                 </tr>
                 <tr>
                     <th scope="row"></th>
-                    <td><?php print_r ($L1Mie__granja["granja"])?></td>
-                    <td><?php print_r ($L2Mie__granja["granja"])?></td>
-                    <td><?php print_r ($L3Mie__granja["granja"])?></td>
-                    <td><?php print_r ($L4Mie__granja["granja"])?></td>
-                    <td><?php print_r ($ExtMie__cocido["granja"])?></td>
-                    <td><?php print_r ($ExtMie__embarque["granja"])?></td> 
+                    <td><?php echo $L1Mie__granja?></td>
+                    <td><?php echo $L2Mie__granja?></td>
+                    <td><?php echo $L3Mie__granja?></td>
+                    <td><?php echo $L4Mie__granja?></td>
+                    <td><?php echo $ExtMie__cocido?></td>
+                    <td><?php echo $ExtMie__embarque?></td> 
                 </tr>
                 <tr>
                     <th scope="row">JUE</th>
-                    <td><?php print_r ($L1Jue__tipo["tipo"])?></td>
-                    <td><?php print_r ($L2Jue__tipo["tipo"])?></td>
-                    <td><?php print_r ($L3Jue__tipo["tipo"])?></td>
-                    <td><?php print_r ($L4Jue__tipo["tipo"])?></td>
-                    <td><?php print_r ($ProJue__cocido["tipo"])?></td>
-                    <td><?php print_r ($ProJue__embarque["tipo"])?></td>
+                    <td><?php echo $L1Jue__tipo?></td>
+                    <td><?php echo $L2Jue__tipo?></td>
+                    <td><?php echo $L3Jue__tipo?></td>
+                    <td><?php echo $L4Jue__tipo?></td>
+                    <td><?php echo $ProJue__cocido?></td>
+                    <td><?php echo $ProJue__embarque?></td>
                 </tr>
                 <tr>
                     <th scope="row"></th>
-                    <td><?php print_r ($L1Jue__proceso["proceso"])?></td>
-                    <td><?php print_r ($L2Jue__proceso["proceso"])?></td>
-                    <td><?php print_r ($L3Jue__proceso["proceso"])?></td>
-                    <td><?php print_r ($L4Jue__proceso["proceso"])?></td>
-                    <td><?php print_r ($OpJue__cocido["proceso"])?></td>
-                    <td><?php print_r ($OpJue__embarque["proceso"])?></td>               
+                    <td><?php echo $L1Jue__proceso?></td>
+                    <td><?php echo $L2Jue__proceso?></td>
+                    <td><?php echo $L3Jue__proceso?></td>
+                    <td><?php echo $L4Jue__proceso?></td>
+                    <td><?php echo $OpeJue__cocido?></td>
+                    <td><?php echo $OpeJue__embarque?></td>               
                 </tr>
                 <tr>
                     <th scope="row"></th>
-                    <td><?php print_r ($L1Jue__granja["granja"])?></td>
-                    <td><?php print_r ($L2Jue__granja["granja"])?></td>
-                    <td><?php print_r ($L3Jue__granja["granja"])?></td>
-                    <td><?php print_r ($L4Jue__granja["granja"])?></td>
-                    <td><?php print_r ($ExtJue__cocido["granja"])?></td>
-                    <td><?php print_r ($ExtJue__embarque["granja"])?></td> 
+                    <td><?php echo $L1Jue__granja?></td>
+                    <td><?php echo $L2Jue__granja?></td>
+                    <td><?php echo $L3Jue__granja?></td>
+                    <td><?php echo $L4Jue__granja?></td>
+                    <td><?php echo $ExtJue__cocido?></td>
+                    <td><?php echo $ExtJue__embarque?></td> 
                 </tr>
                 <tr>
                     <th scope="row">VIE</th>
-                    <td><?php print_r ($L1Vie__tipo["tipo"])?></td>
-                    <td><?php print_r ($L2Vie__tipo["tipo"])?></td>
-                    <td><?php print_r ($L3Vie__tipo["tipo"])?></td>
-                    <td><?php print_r ($L4Vie__tipo["tipo"])?></td>
-                    <td><?php print_r ($ProVie__cocido["tipo"])?></td>
-                    <td><?php print_r ($ProVie__embarque["tipo"])?></td>
+                    <td><?php echo $L1Vie__tipo?></td>
+                    <td><?php echo $L2Vie__tipo?></td>
+                    <td><?php echo $L3Vie__tipo?></td>
+                    <td><?php echo $L4Vie__tipo?></td>
+                    <td><?php echo $ProVie__cocido?></td>
+                    <td><?php echo $ProVie__embarque?></td>
                 </tr>
                 <tr>
                     <th scope="row"></th>
-                    <td><?php print_r ($L1Vie__proceso["proceso"])?></td>
-                    <td><?php print_r ($L2Vie__proceso["proceso"])?></td>
-                    <td><?php print_r ($L3Vie__proceso["proceso"])?></td>
-                    <td><?php print_r ($L4Vie__proceso["proceso"])?></td>
-                    <td><?php print_r ($OpVie__cocido["proceso"])?></td>
-                    <td><?php print_r ($OpVie__embarque["proceso"])?></td>               
+                    <td><?php echo $L1Vie__proceso?></td>
+                    <td><?php echo $L2Vie__proceso?></td>
+                    <td><?php echo $L3Vie__proceso?></td>
+                    <td><?php echo $L4Vie__proceso?></td>
+                    <td><?php echo $OpeVie__cocido?></td>
+                    <td><?php echo $OpeVie__embarque?></td>               
                 </tr>
                 <tr>
                     <th scope="row"></th>
-                    <td><?php print_r ($L1Vie__granja["granja"])?></td>
-                    <td><?php print_r ($L2Vie__granja["granja"])?></td>
-                    <td><?php print_r ($L3Vie__granja["granja"])?></td>
-                    <td><?php print_r ($L4Vie__granja["granja"])?></td>
-                    <td><?php print_r ($ExtVie__cocido["granja"])?></td>
-                    <td><?php print_r ($ExtVie__embarque["granja"])?></td> 
+                    <td><?php echo $L1Vie__granja?></td>
+                    <td><?php echo $L2Vie__granja?></td>
+                    <td><?php echo $L3Vie__granja?></td>
+                    <td><?php echo $L4Vie__granja?></td>
+                    <td><?php echo $ExtVie__cocido?></td>
+                    <td><?php echo $ExtVie__embarque?></td> 
                 </tr>
                 <tr>
                     <th scope="row">SAB</th>
-                    <td><?php print_r ($L1Sab__tipo["tipo"])?></td>
-                    <td><?php print_r ($L2Sab__tipo["tipo"])?></td>
-                    <td><?php print_r ($L3Sab__tipo["tipo"])?></td>
-                    <td><?php print_r ($L4Sab__tipo["tipo"])?></td>
-                    <td><?php print_r ($ProSab__cocido["tipo"])?></td>
-                    <td><?php print_r ($ProSab__embarque["tipo"])?></td>
+                    <td><?php echo $L1Sab__tipo?></td>
+                    <td><?php echo $L2Sab__tipo?></td>
+                    <td><?php echo $L3Sab__tipo?></td>
+                    <td><?php echo $L4Sab__tipo?></td>
+                    <td><?php echo $ProSab__cocido?></td>
+                    <td><?php echo $ProSab__embarque?></td>
                 </tr>
                 <tr>
                     <th scope="row"></th>
-                    <td><?php print_r ($L1Sab__proceso["proceso"])?></td>
-                    <td><?php print_r ($L2Sab__proceso["proceso"])?></td>
-                    <td><?php print_r ($L3Sab__proceso["proceso"])?></td>
-                    <td><?php print_r ($L4Sab__proceso["proceso"])?></td>
-                    <td><?php print_r ($OpSab__cocido["proceso"])?></td>
-                    <td><?php print_r ($OpSab__embarque["proceso"])?></td>               
+                    <td><?php echo $L1Sab__proceso?></td>
+                    <td><?php echo $L2Sab__proceso?></td>
+                    <td><?php echo $L3Sab__proceso?></td>
+                    <td><?php echo $L4Sab__proceso?></td>
+                    <td><?php echo $OpeSab__cocido?></td>
+                    <td><?php echo $OpeSab__embarque?></td>               
                 </tr>
                 <tr>
                     <th scope="row"></th>
-                    <td><?php print_r ($L1Sab__granja["granja"])?></td>
-                    <td><?php print_r ($L2Sab__granja["granja"])?></td>
-                    <td><?php print_r ($L3Sab__granja["granja"])?></td>
-                    <td><?php print_r ($L4Sab__granja["granja"])?></td>
-                    <td><?php print_r ($ExtSab__cocido["granja"])?></td>
-                    <td><?php print_r ($ExtSab__embarque["granja"])?></td> 
+                    <td><?php echo $L1Sab__granja?></td>
+                    <td><?php echo $L2Sab__granja?></td>
+                    <td><?php echo $L3Sab__granja?></td>
+                    <td><?php echo $L4Sab__granja?></td>
+                    <td><?php echo $ExtSab__cocido?></td>
+                    <td><?php echo $ExtSab__embarque?></td> 
                 </tr>
             </tbody>
         </table>
