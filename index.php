@@ -48,7 +48,7 @@
 
 /* ---------------------------lote 1----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
             where sem='$sem'
             and dia='lun' 
@@ -62,10 +62,12 @@ $resultado->closeCursor();
 $L1Lun__tipo=$L1Lun__faena["tipo"];
 $L1Lun__proceso=$L1Lun__faena["proceso"];
 $L1Lun__granja=$L1Lun__faena["granja"];
+$Lun__fecha=$L1Lun__faena["fecha"];
+
 
 /* ---------------------------lote 2----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
             where sem='$sem'
             and dia='lun' 
@@ -82,7 +84,7 @@ $L2Lun__granja=$L2Lun__faena["granja"];
 
 /* ---------------------------lote 3----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id 
+$query="SELECT tipo, proceso, granja, fecha, Id 
         FROM faena 
             where sem='$sem'
             and dia='lun' 
@@ -97,9 +99,10 @@ $L3Lun__tipo=$L3Lun__faena["tipo"];
 $L3Lun__proceso=$L3Lun__faena["proceso"];
 $L3Lun__granja=$L3Lun__faena["granja"];
 
+
 /* ---------------------------lote 4----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
             where sem='$sem'
             and dia='lun' 
@@ -114,10 +117,11 @@ $L4Lun__tipo=$L4Lun__faena["tipo"];
 $L4Lun__proceso=$L4Lun__faena["proceso"];
 $L4Lun__granja=$L4Lun__faena["granja"];
 
+
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
-$query="SELECT pro_cocido, op_cocido, ext_cocido, Id
+$query="SELECT pro_cocido, ope_cocido, ext_cocido, Id
         FROM cocido 
             where sem='$sem'
             and dia='lun' ORDER BY Id DESC";
@@ -128,14 +132,14 @@ $Lun__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
 $resultado->closeCursor();
 
 $ProLun__cocido=$Lun__cocido["pro_cocido"];
-$OpeLun__cocido=$Lun__cocido["op_cocido"];
+$OpeLun__cocido=$Lun__cocido["ope_cocido"];
 $ExtLun__cocido=$Lun__cocido["ext_cocido"];
 
 
 /* ---------------------------embarque--------------------------- */
 /* -------------------------------------------------------------- */ 
 
-$query="SELECT pro_embarque, op_embarque, ext_embarque, Id
+$query="SELECT pro_embarque, ope_embarque, ext_embarque, Id
         FROM embarque
             where sem='$sem'
             and dia='lun' ORDER BY Id DESC";
@@ -146,7 +150,7 @@ $Lun__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
 $resultado->closeCursor();
 
 $ProLun__embarque=$Lun__embarque["pro_embarque"];
-$OpeLun__embarque=$Lun__embarque["op_embarque"];
+$OpeLun__embarque=$Lun__embarque["ope_embarque"];
 $ExtLun__embarque=$Lun__embarque["pro_embarque"];
 
 
@@ -158,7 +162,7 @@ $ExtLun__embarque=$Lun__embarque["pro_embarque"];
 /* -------------------------------------------------------------- */
 /* ---------------------------lote 1----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
             where sem='$sem'
             and dia='Mar' 
@@ -172,10 +176,11 @@ $resultado->closeCursor();
 $L1Mar__tipo=$L1Mar__faena["tipo"];
 $L1Mar__proceso=$L1Mar__faena["proceso"];
 $L1Mar__granja=$L1Mar__faena["granja"];
+$Mar__fecha=$L1Mar__faena["fecha"];
 
 /* ---------------------------lote 2----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
             where sem='$sem'
             and dia='Mar' 
@@ -190,9 +195,10 @@ $L2Mar__tipo=$L2Mar__faena["tipo"];
 $L2Mar__proceso=$L2Mar__faena["proceso"];
 $L2Mar__granja=$L2Mar__faena["granja"];
 
+
 /* ---------------------------lote 3----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id 
+$query="SELECT tipo, proceso, granja, fecha, Id 
         FROM faena 
             where sem='$sem'
             and dia='mar' 
@@ -207,9 +213,10 @@ $L3Mar__tipo=$L3Mar__faena["tipo"];
 $L3Mar__proceso=$L3Mar__faena["proceso"];
 $L3Mar__granja=$L3Mar__faena["granja"];
 
+
 /* ---------------------------lote 4----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
             where sem='$sem'
             and dia='mar' 
@@ -224,10 +231,11 @@ $L4Mar__tipo=$L4Mar__faena["tipo"];
 $L4Mar__proceso=$L4Mar__faena["proceso"];
 $L4Mar__granja=$L4Mar__faena["granja"];
 
+
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
-$query="SELECT pro_cocido, op_cocido, ext_cocido, Id
+$query="SELECT pro_cocido, ope_cocido, ext_cocido, Id
         FROM cocido 
             where sem='$sem'
             and dia='mar' ORDER BY Id DESC";
@@ -238,14 +246,14 @@ $Mar__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
 $resultado->closeCursor();
 
 $ProMar__cocido=$Mar__cocido["pro_cocido"];
-$OpeMar__cocido=$Mar__cocido["op_cocido"];
+$OpeMar__cocido=$Mar__cocido["ope_cocido"];
 $ExtMar__cocido=$Mar__cocido["ext_cocido"];
 
 
 /* ---------------------------embarque--------------------------- */
 /* -------------------------------------------------------------- */ 
 
-$query="SELECT pro_embarque, op_embarque, ext_embarque, Id
+$query="SELECT pro_embarque, ope_embarque, ext_embarque, Id
         FROM embarque 
             where sem='$sem'
             and dia='mar' ORDER BY Id DESC";
@@ -256,7 +264,7 @@ $Mar__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
 $resultado->closeCursor();
 
 $ProMar__embarque=$Mar__embarque["pro_embarque"];
-$OpeMar__embarque=$Mar__embarque["op_embarque"];
+$OpeMar__embarque=$Mar__embarque["ope_embarque"];
 $ExtMar__embarque=$Mar__embarque["pro_embarque"];
 
 /* ############################################################## */
@@ -267,7 +275,7 @@ $ExtMar__embarque=$Mar__embarque["pro_embarque"];
 /* -------------------------------------------------------------- */       
 /* ---------------------------lote 1----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
             where sem='$sem'
             and dia='mie' 
@@ -281,10 +289,11 @@ $resultado->closeCursor();
 $L1Mie__tipo=$L1Mie__faena["tipo"];
 $L1Mie__proceso=$L1Mie__faena["proceso"];
 $L1Mie__granja=$L1Mie__faena["granja"];
+$Mie__fecha=$L1Mie__faena["fecha"];
 
 /* ---------------------------lote 2----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
             where sem='$sem'
             and dia='mie' 
@@ -299,9 +308,10 @@ $L2Mie__tipo=$L2Mie__faena["tipo"];
 $L2Mie__proceso=$L2Mie__faena["proceso"];
 $L2Mie__granja=$L2Mie__faena["granja"];
 
+
 /* ---------------------------lote 3----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id 
+$query="SELECT tipo, proceso, granja, fecha, Id 
         FROM faena 
             where sem='$sem'
             and dia='mie' 
@@ -316,9 +326,10 @@ $L3Mie__tipo=$L3Mie__faena["tipo"];
 $L3Mie__proceso=$L3Mie__faena["proceso"];
 $L3Mie__granja=$L3Mie__faena["granja"];
 
+
 /* ---------------------------lote 4----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
             where sem='$sem'
             and dia='mie' 
@@ -333,10 +344,11 @@ $L4Mie__tipo=$L4Mie__faena["tipo"];
 $L4Mie__proceso=$L4Mie__faena["proceso"];
 $L4Mie__granja=$L4Mie__faena["granja"];
 
+
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
-$query="SELECT pro_cocido, op_cocido, ext_cocido, Id
+$query="SELECT pro_cocido, ope_cocido, ext_cocido, Id
         FROM cocido 
             where sem='$sem'
             and dia='mie' ORDER BY Id DESC";
@@ -347,14 +359,14 @@ $Mie__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
 $resultado->closeCursor();
 
 $ProMie__cocido=$Mie__cocido["pro_cocido"];
-$OpeMie__cocido=$Mie__cocido["op_cocido"];
+$OpeMie__cocido=$Mie__cocido["ope_cocido"];
 $ExtMie__cocido=$Mie__cocido["ext_cocido"];
 
 
 /* ---------------------------embarque--------------------------- */
 /* -------------------------------------------------------------- */ 
 
-$query="SELECT pro_embarque, op_embarque, ext_embarque, Id
+$query="SELECT pro_embarque, ope_embarque, ext_embarque, Id
         FROM embarque 
             where sem='$sem'
             and dia='mie' ORDER BY Id DESC";
@@ -365,7 +377,7 @@ $Mie__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
 $resultado->closeCursor();
 
 $ProMie__embarque=$Mie__embarque["pro_embarque"];
-$OpeMie__embarque=$Mie__embarque["op_embarque"];
+$OpeMie__embarque=$Mie__embarque["ope_embarque"];
 $ExtMie__embarque=$Mie__embarque["pro_embarque"];
 
 /* ############################################################## */
@@ -376,7 +388,7 @@ $ExtMie__embarque=$Mie__embarque["pro_embarque"];
 /* -------------------------------------------------------------- */       
 /* ---------------------------lote 1----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
             where sem='$sem'
             and dia='jue' 
@@ -390,10 +402,11 @@ $resultado->closeCursor();
 $L1Jue__tipo=$L1Jue__faena["tipo"];
 $L1Jue__proceso=$L1Jue__faena["proceso"];
 $L1Jue__granja=$L1Jue__faena["granja"];
+$Jue__fecha=$L1Jue__faena["fecha"];
 
 /* ---------------------------lote 2----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
             where sem='$sem'
             and dia='jue' 
@@ -408,9 +421,10 @@ $L2Jue__tipo=$L2Jue__faena["tipo"];
 $L2Jue__proceso=$L2Jue__faena["proceso"];
 $L2Jue__granja=$L2Jue__faena["granja"];
 
+
 /* ---------------------------lote 3----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id 
+$query="SELECT tipo, proceso, granja, fecha, Id 
         FROM faena 
             where sem='$sem'
             and dia='jue' 
@@ -425,9 +439,10 @@ $L3Jue__tipo=$L3Jue__faena["tipo"];
 $L3Jue__proceso=$L3Jue__faena["proceso"];
 $L3Jue__granja=$L3Jue__faena["granja"];
 
+
 /* ---------------------------lote 4----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
             where sem='$sem'
             and dia='jue' 
@@ -442,10 +457,11 @@ $L4Jue__tipo=$L4Jue__faena["tipo"];
 $L4Jue__proceso=$L4Jue__faena["proceso"];
 $L4Jue__granja=$L4Jue__faena["granja"];
 
+
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
-$query="SELECT pro_cocido, op_cocido, ext_cocido, Id
+$query="SELECT pro_cocido, ope_cocido, ext_cocido, Id
         FROM cocido 
             where sem='$sem'
             and dia='jue' ORDER BY Id DESC";
@@ -456,14 +472,14 @@ $Jue__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
 $resultado->closeCursor();
 
 $ProJue__cocido=$Jue__cocido["pro_cocido"];
-$OpeJue__cocido=$Jue__cocido["op_cocido"];
+$OpeJue__cocido=$Jue__cocido["ope_cocido"];
 $ExtJue__cocido=$Jue__cocido["ext_cocido"];
 
 
 /* ---------------------------embarque--------------------------- */
 /* -------------------------------------------------------------- */ 
 
-$query="SELECT pro_embarque, op_embarque, ext_embarque, Id
+$query="SELECT pro_embarque, ope_embarque, ext_embarque, Id
         FROM embarque 
             where sem='$sem'
             and dia='jue' ORDER BY Id DESC";
@@ -474,7 +490,7 @@ $Jue__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
 $resultado->closeCursor();
 
 $ProJue__embarque=$Jue__embarque["pro_embarque"];
-$OpeJue__embarque=$Jue__embarque["op_embarque"];
+$OpeJue__embarque=$Jue__embarque["ope_embarque"];
 $ExtJue__embarque=$Jue__embarque["pro_embarque"];
 
 /* ############################################################## */
@@ -485,7 +501,7 @@ $ExtJue__embarque=$Jue__embarque["pro_embarque"];
 /* -------------------------------------------------------------- */       
 /* ---------------------------lote 1----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
             where sem='$sem'
             and dia='vie' 
@@ -499,10 +515,11 @@ $resultado->closeCursor();
 $L1Vie__tipo=$L1Vie__faena["tipo"];
 $L1Vie__proceso=$L1Vie__faena["proceso"];
 $L1Vie__granja=$L1Vie__faena["granja"];
+$Vie__fecha=$L1Vie__faena["fecha"];
 
 /* ---------------------------lote 2----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
             where sem='$sem'
             and dia='vie' 
@@ -517,9 +534,10 @@ $L2Vie__tipo=$L2Vie__faena["tipo"];
 $L2Vie__proceso=$L2Vie__faena["proceso"];
 $L2Vie__granja=$L2Vie__faena["granja"];
 
+
 /* ---------------------------lote 3----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id 
+$query="SELECT tipo, proceso, granja, fecha, Id 
         FROM faena 
             where sem='$sem'
             and dia='vie' 
@@ -534,9 +552,10 @@ $L3Vie__tipo=$L3Vie__faena["tipo"];
 $L3Vie__proceso=$L3Vie__faena["proceso"];
 $L3Vie__granja=$L3Vie__faena["granja"];
 
+
 /* ---------------------------lote 4----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
             where sem='$sem'
             and dia='vie' 
@@ -551,10 +570,11 @@ $L4Vie__tipo=$L4Vie__faena["tipo"];
 $L4Vie__proceso=$L4Vie__faena["proceso"];
 $L4Vie__granja=$L4Vie__faena["granja"];
 
+
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
-$query="SELECT pro_cocido, op_cocido, ext_cocido, Id
+$query="SELECT pro_cocido, ope_cocido, ext_cocido, Id
         FROM cocido 
             where sem='$sem'
             and dia='vie' ORDER BY Id DESC";
@@ -565,14 +585,14 @@ $Vie__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
 $resultado->closeCursor();
 
 $ProVie__cocido=$Vie__cocido["pro_cocido"];
-$OpeVie__cocido=$Vie__cocido["op_cocido"];
+$OpeVie__cocido=$Vie__cocido["ope_cocido"];
 $ExtVie__cocido=$Vie__cocido["ext_cocido"];
 
 
 /* ---------------------------embarque--------------------------- */
 /* -------------------------------------------------------------- */ 
 
-$query="SELECT pro_embarque, op_embarque, ext_embarque, Id
+$query="SELECT pro_embarque, ope_embarque, ext_embarque, Id
         FROM embarque 
             where sem='$sem'
             and dia='vie' ORDER BY Id DESC";
@@ -583,7 +603,7 @@ $Vie__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
 $resultado->closeCursor();
 
 $ProVie__embarque=$Vie__embarque["pro_embarque"];
-$OpeVie__embarque=$Vie__embarque["op_embarque"];
+$OpeVie__embarque=$Vie__embarque["ope_embarque"];
 $ExtVie__embarque=$Vie__embarque["pro_embarque"];
 
 /* ############################################################## */
@@ -594,7 +614,7 @@ $ExtVie__embarque=$Vie__embarque["pro_embarque"];
 /* -------------------------------------------------------------- */       
 /* ---------------------------lote 1----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
             where sem='$sem'
             and dia='sab' 
@@ -608,10 +628,11 @@ $resultado->closeCursor();
 $L1Sab__tipo=$L1Sab__faena["tipo"];
 $L1Sab__proceso=$L1Sab__faena["proceso"];
 $L1Sab__granja=$L1Sab__faena["granja"];
+$Sab__fecha=$L1Sab__faena["fecha"];
 
 /* ---------------------------lote 2----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
             where sem='$sem'
             and dia='sab' 
@@ -626,9 +647,10 @@ $L2Sab__tipo=$L2Sab__faena["tipo"];
 $L2Sab__proceso=$L2Sab__faena["proceso"];
 $L2Sab__granja=$L2Sab__faena["granja"];
 
+
 /* ---------------------------lote 3----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id 
+$query="SELECT tipo, proceso, granja, fecha, Id 
         FROM faena 
             where sem='$sem'
             and dia='sab' 
@@ -643,9 +665,10 @@ $L3Sab__tipo=$L3Sab__faena["tipo"];
 $L3Sab__proceso=$L3Sab__faena["proceso"];
 $L3Sab__granja=$L3Sab__faena["granja"];
 
+
 /* ---------------------------lote 4----------------------------- */ 
 
-$query="SELECT tipo, proceso, granja, Id
+$query="SELECT tipo, proceso, granja, fecha, Id
         FROM faena 
         where sem='$sem'
             and dia='sab' 
@@ -660,10 +683,11 @@ $L4Sab__tipo=$L4Sab__faena["tipo"];
 $L4Sab__proceso=$L4Sab__faena["proceso"];
 $L4Sab__granja=$L4Sab__faena["granja"];
 
+
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
-$query="SELECT pro_cocido, op_cocido, ext_cocido, Id
+$query="SELECT pro_cocido, ope_cocido, ext_cocido, Id
         FROM cocido 
             where sem='$sem'
             and dia='sab' ORDER BY Id DESC";
@@ -674,14 +698,14 @@ $Sab__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
 $resultado->closeCursor();
 
 $ProSab__cocido=$Sab__cocido["pro_cocido"];
-$OpeSab__cocido=$Sab__cocido["op_cocido"];
+$OpeSab__cocido=$Sab__cocido["ope_cocido"];
 $ExtSab__cocido=$Sab__cocido["ext_cocido"];
 
 
 /* ---------------------------embarque--------------------------- */
 /* -------------------------------------------------------------- */ 
 
-$query="SELECT pro_embarque, op_embarque, ext_embarque, Id
+$query="SELECT pro_embarque, ope_embarque, ext_embarque, Id
         FROM embarque 
             where sem='$sem'
             and dia='sab' ORDER BY Id DESC";
@@ -692,7 +716,7 @@ $Sab__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
 $resultado->closeCursor();
 
 $ProSab__embarque=$Sab__embarque["pro_embarque"];
-$OpeSab__embarque=$Sab__embarque["op_embarque"];
+$OpeSab__embarque=$Sab__embarque["ope_embarque"];
 $ExtSab__embarque=$Sab__embarque["ext_embarque"];
 
 /* ############################################################## */
@@ -724,7 +748,7 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                     <td><?php echo $ProLun__embarque?></td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row"><?php echo $Lun__fecha?></th>
                     <td><?php echo $L1Lun__proceso?></td>
                     <td><?php echo $L2Lun__proceso?></td>
                     <td><?php echo $L3Lun__proceso?></td>
@@ -751,7 +775,7 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                     <td><?php echo $ProMar__embarque?></td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row"><?php echo $Mar__fecha?></th>
                     <td><?php echo $L1Mar__proceso?></td>
                     <td><?php echo $L2Mar__proceso?></td>
                     <td><?php echo $L3Mar__proceso?></td>
@@ -778,7 +802,7 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                     <td><?php echo $ProMie__embarque?></td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row"><?php echo $Mie__fecha?></th>
                     <td><?php echo $L1Mie__proceso?></td>
                     <td><?php echo $L2Mie__proceso?></td>
                     <td><?php echo $L3Mie__proceso?></td>
@@ -805,7 +829,7 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                     <td><?php echo $ProJue__embarque?></td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row"><?php echo $Jue__fecha?></th>
                     <td><?php echo $L1Jue__proceso?></td>
                     <td><?php echo $L2Jue__proceso?></td>
                     <td><?php echo $L3Jue__proceso?></td>
@@ -832,7 +856,7 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                     <td><?php echo $ProVie__embarque?></td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row"><?php echo $Vie__fecha?></th>
                     <td><?php echo $L1Vie__proceso?></td>
                     <td><?php echo $L2Vie__proceso?></td>
                     <td><?php echo $L3Vie__proceso?></td>
@@ -859,7 +883,7 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                     <td><?php echo $ProSab__embarque?></td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row"><?php echo $Sab__fecha?></th>
                     <td><?php echo $L1Sab__proceso?></td>
                     <td><?php echo $L2Sab__proceso?></td>
                     <td><?php echo $L3Sab__proceso?></td>

@@ -81,27 +81,31 @@
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Lun__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Lun__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Lun__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="ProLun__cocido" value="">
-                    <input type="text" class="col-md-1 form-control" name="ProLun__embarque" value="">
+                    <input type="text" class="col-md-1 form-control" name="ProLun__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ProLun__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
@@ -140,20 +144,20 @@
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="OpLun__cocido" value="">
-                    <input type="text" class="col-md-1 form-control" name="OpLun__embarque" value="">
+                    <input type="text" class="col-md-1 form-control" name="OpeLun__cocido">
+                    <input type="text" class="col-md-1 form-control" name="OpeLun__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control" value="">
-                    <input type="text" class="col-md-1 form-control" name="L1Lun__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L2Lun__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L3Lun__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L4Lun__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="ExtraLun__cocido" value="">
-                    <input type="text" class="col-md-1 form-control" name="ExtraLun__embarque" value="">
+                    <input type="text" class="col-md-1 form-control">
+                    <input type="text" class="col-md-1 form-control" name="L1Lun__granja">
+                    <input type="text" class="col-md-1 form-control" name="L2Lun__granja">
+                    <input type="text" class="col-md-1 form-control" name="L3Lun__granja">
+                    <input type="text" class="col-md-1 form-control" name="L4Lun__granja">
+                    <input type="text" class="col-md-1 form-control" name="ExtLun__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ExtLun__embarque">
                 </div>
             </div>
             <br>
@@ -171,27 +175,31 @@
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Mar__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Mar__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Mar__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="ProMar__cocido" value="">
-                    <input type="text" class="col-md-1 form-control" name="ProMar__embarque" value="">
+                    <input type="text" class="col-md-1 form-control" name="ProMar__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ProMar__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
@@ -231,22 +239,20 @@
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
                     </select>
-                    </select>
-                    </select>
-                    <input type="text" class="col-md-1 form-control" name="OpMar__cocido" value="">
-                    <input type="text" class="col-md-1 form-control" name="OpMar__embarque" value="">
+                    <input type="text" class="col-md-1 form-control" name="OpeMar__cocido">
+                    <input type="text" class="col-md-1 form-control" name="OpeMar__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control" value="">
-                    <input type="text" class="col-md-1 form-control" name="L1Mar__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L2Mar__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L3Mar__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L4Mar__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="ExtraMar__cocido" value="">
-                    <input type="text" class="col-md-1 form-control" name="ExtraMar__embarque" value="">
+                    <input type="text" class="col-md-1 form-control">
+                    <input type="text" class="col-md-1 form-control" name="L1Mar__granja">
+                    <input type="text" class="col-md-1 form-control" name="L2Mar__granja">
+                    <input type="text" class="col-md-1 form-control" name="L3Mar__granja">
+                    <input type="text" class="col-md-1 form-control" name="L4Mar__granja">
+                    <input type="text" class="col-md-1 form-control" name="ExtMar__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ExtMar__embarque">
                 </div>
             </div>
             <br>
@@ -264,27 +270,31 @@
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Mie__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Mie__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Mie__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="ProMie__cocido" value="">
-                    <input type="text" class="col-md-1 form-control" name="ProMie__embarque" value="">
+                    <input type="text" class="col-md-1 form-control" name="ProMie__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ProMie__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
@@ -323,20 +333,20 @@
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="OpMie__cocido" value="">
-                    <input type="text" class="col-md-1 form-control" name="OpMie__embarque" value="">
+                    <input type="text" class="col-md-1 form-control" name="OpeMie__cocido">
+                    <input type="text" class="col-md-1 form-control" name="OpeMie__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control" value="">
-                    <input type="text" class="col-md-1 form-control" name="L1Mie__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L2Mie__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L3Mie__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L4Mie__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="ExtraMie__cocido" value="">
-                    <input type="text" class="col-md-1 form-control" name="ExtraMie__embarque" value="">
+                    <input type="text" class="col-md-1 form-control">
+                    <input type="text" class="col-md-1 form-control" name="L1Mie__granja">
+                    <input type="text" class="col-md-1 form-control" name="L2Mie__granja">
+                    <input type="text" class="col-md-1 form-control" name="L3Mie__granja">
+                    <input type="text" class="col-md-1 form-control" name="L4Mie__granja">
+                    <input type="text" class="col-md-1 form-control" name="ExtMie__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ExtMie__embarque">
                 </div>
             </div>
             <br>
@@ -354,27 +364,31 @@
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Jue__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Jue__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Jue__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="ProJue__cocido" value="">
-                    <input type="text" class="col-md-1 form-control" name="ProJue__embarque" value="">
+                    <input type="text" class="col-md-1 form-control" name="ProJue__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ProJue__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
@@ -413,20 +427,20 @@
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="OpJue__cocido" value="">                  
-                    <input type="text" class="col-md-1 form-control" name="OpJue__embarque" value="">
+                    <input type="text" class="col-md-1 form-control" name="OpeJue__cocido">                  
+                    <input type="text" class="col-md-1 form-control" name="OpeJue__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control" value="">
-                    <input type="text" class="col-md-1 form-control" name="L1Jue__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L2Jue__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L3Jue__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L4Jue__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="ExtraJue__cocido" value="">
-                    <input type="text" class="col-md-1 form-control" name="ExtraJue__embarque" value="">
+                    <input type="text" class="col-md-1 form-control">
+                    <input type="text" class="col-md-1 form-control" name="L1Jue__granja">
+                    <input type="text" class="col-md-1 form-control" name="L2Jue__granja">
+                    <input type="text" class="col-md-1 form-control" name="L3Jue__granja">
+                    <input type="text" class="col-md-1 form-control" name="L4Jue__granja">
+                    <input type="text" class="col-md-1 form-control" name="ExtJue__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ExtJue__embarque">
                 </div>
             </div>
             <br>
@@ -444,27 +458,31 @@
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Vie__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Vie__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Vie__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="ProVie__cocido" value="">
-                    <input type="text" class="col-md-1 form-control" name="ProVie__embarque" value="">
+                    <input type="text" class="col-md-1 form-control" name="ProVie__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ProVie__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
@@ -503,20 +521,20 @@
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="OpVie__cocido" value="">                    
-                    <input type="text" class="col-md-1 form-control" name="OpVie__embarque" value="">
+                    <input type="text" class="col-md-1 form-control" name="OpeVie__cocido">                    
+                    <input type="text" class="col-md-1 form-control" name="OpeVie__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control" value="">
-                    <input type="text" class="col-md-1 form-control" name="L1Vie__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L2Vie__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L3Vie__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L4Vie__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="ExtraVie__cocido" value="">
-                    <input type="text" class="col-md-1 form-control" name="ExtraVie__embarque" value="">
+                    <input type="text" class="col-md-1 form-control">
+                    <input type="text" class="col-md-1 form-control" name="L1Vie__granja">
+                    <input type="text" class="col-md-1 form-control" name="L2Vie__granja">
+                    <input type="text" class="col-md-1 form-control" name="L3Vie__granja">
+                    <input type="text" class="col-md-1 form-control" name="L4Vie__granja">
+                    <input type="text" class="col-md-1 form-control" name="ExtVie__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ExtVie__embarque">
                 </div>
             </div>
             <br>
@@ -534,27 +552,31 @@
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Sab__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Sab__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Sab__tipo" aria-label="Default select example">
                         <option selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
+                        <option value="POLLO">POLLO</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="ProSab__cocido" value="">
-                    <input type="text" class="col-md-1 form-control" name="ProSab__embarque" value="">
+                    <input type="text" class="col-md-1 form-control" name="ProSab__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ProSab__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
@@ -593,20 +615,20 @@
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="OpSab__cocido" value="">                
-                    <input type="text" class="col-md-1 form-control" name="OpSab__embarque" value="">
+                    <input type="text" class="col-md-1 form-control" name="OpeSab__cocido">                
+                    <input type="text" class="col-md-1 form-control" name="OpeSab__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control" value="">
-                    <input type="text" class="col-md-1 form-control" name="L1Sab__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L2Sab__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L3Sab__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="L4Sab__granja" value="">
-                    <input type="text" class="col-md-1 form-control" name="ExtraSab__cocido" value="">
-                    <input type="text" class="col-md-1 form-control" name="ExtraSab__embarque" value="">
+                    <input type="text" class="col-md-1 form-control">
+                    <input type="text" class="col-md-1 form-control" name="L1Sab__granja">
+                    <input type="text" class="col-md-1 form-control" name="L2Sab__granja">
+                    <input type="text" class="col-md-1 form-control" name="L3Sab__granja">
+                    <input type="text" class="col-md-1 form-control" name="L4Sab__granja">
+                    <input type="text" class="col-md-1 form-control" name="ExtSab__cocido">
+                    <input type="text" class="col-md-1 form-control" name="ExtSab__embarque">
                 </div>
             </div>
 

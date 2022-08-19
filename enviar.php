@@ -12,6 +12,8 @@
     $vie=($_POST['vie']);
     $sab=($_POST['sab']);
 
+   /*  echo $lun; */
+
     $L1Lun__tipo=strtoupper($_POST['L1Lun__tipo']);
     $L2Lun__tipo=strtoupper($_POST['L2Lun__tipo']);
     $L3Lun__tipo=strtoupper($_POST['L3Lun__tipo']);
@@ -25,16 +27,16 @@
     $L3Lun__proceso=strtoupper($_POST['L3Lun__proceso']);
     $L4Lun__proceso=strtoupper($_POST['L4Lun__proceso']);
 
-    $OpLun__cocido=strtoupper($_POST['OpLun__cocido']);
-    $OpLun__embarque=strtoupper($_POST['OpLun__embarque']);
+    $OpeLun__cocido=strtoupper($_POST['OpeLun__cocido']);
+    $OpeLun__embarque=strtoupper($_POST['OpeLun__embarque']);
 
     $L1Lun__granja=strtoupper($_POST['L1Lun__granja']);
     $L2Lun__granja=strtoupper($_POST['L2Lun__granja']);
     $L3Lun__granja=strtoupper($_POST['L3Lun__granja']);
     $L4Lun__granja=strtoupper($_POST['L4Lun__granja']);
 
-    $ExtraLun__cocido=strtoupper($_POST['ExtraLun__cocido']);
-    $ExtraLun__embarque=strtoupper($_POST['ExtraLun__embarque']);
+    $ExtLun__cocido=strtoupper($_POST['ExtLun__cocido']);
+    $ExtLun__embarque=strtoupper($_POST['ExtLun__embarque']);
 
     $L1Mar__tipo=strtoupper($_POST['L1Mar__tipo']);
     $L2Mar__tipo=strtoupper($_POST['L2Mar__tipo']);
@@ -49,16 +51,16 @@
     $L3Mar__proceso=strtoupper($_POST['L3Mar__proceso']);
     $L4Mar__proceso=strtoupper($_POST['L4Mar__proceso']);
 
-    $OpMar__cocido=strtoupper($_POST['OpMar__cocido']);
-    $OpMar__embarque=strtoupper($_POST['OpMar__embarque']);
+    $OpeMar__cocido=strtoupper($_POST['OpeMar__cocido']);
+    $OpeMar__embarque=strtoupper($_POST['OpeMar__embarque']);
 
     $L1Mar__granja=strtoupper($_POST['L1Mar__granja']);
     $L2Mar__granja=strtoupper($_POST['L2Mar__granja']);
     $L3Mar__granja=strtoupper($_POST['L3Mar__granja']);
     $L4Mar__granja=strtoupper($_POST['L4Mar__granja']);
 
-    $ExtraMar__cocido=strtoupper($_POST['ExtraMar__cocido']);
-    $ExtraMar__embarque=strtoupper($_POST['ExtraMar__embarque']);
+    $ExtMar__cocido=strtoupper($_POST['ExtMar__cocido']);
+    $ExtMar__embarque=strtoupper($_POST['ExtMar__embarque']);
 
     $L1Mie__tipo=strtoupper($_POST['L1Mie__tipo']);
     $L2Mie__tipo=strtoupper($_POST['L2Mie__tipo']);
@@ -73,16 +75,16 @@
     $L3Mie__proceso=strtoupper($_POST['L3Mie__proceso']);
     $L4Mie__proceso=strtoupper($_POST['L4Mie__proceso']);
 
-    $OpMie__cocido=strtoupper($_POST['OpMie__cocido']);
-    $OpMie__embarque=strtoupper($_POST['OpMie__embarque']);
+    $OpeMie__cocido=strtoupper($_POST['OpMie__cocido']);
+    $OpeMie__embarque=strtoupper($_POST['OpMie__embarque']);
 
     $L1Mie__granja=strtoupper($_POST['L1Mie__granja']);
     $L2Mie__granja=strtoupper($_POST['L2Mie__granja']);
     $L3Mie__granja=strtoupper($_POST['L3Mie__granja']);
     $L4Mie__granja=strtoupper($_POST['L4Mie__granja']);
 
-    $ExtraMie__cocido=strtoupper($_POST['ExtraMie__cocido']);
-    $ExtraMie__embarque=strtoupper($_POST['ExtraMie__embarque']);
+    $ExtMie__cocido=strtoupper($_POST['ExtMie__cocido']);
+    $ExtMie__embarque=strtoupper($_POST['ExtMie__embarque']);
 
     $L1Jue__tipo=strtoupper($_POST['L1Jue__tipo']);
     $L2Jue__tipo=strtoupper($_POST['L2Jue__tipo']);
@@ -97,16 +99,16 @@
     $L3Jue__proceso=strtoupper($_POST['L3Jue__proceso']);
     $L4Jue__proceso=strtoupper($_POST['L4Jue__proceso']);
 
-    $OpJue__cocido=strtoupper($_POST['OpJue__cocido']);
-    $OpJue__embarque=strtoupper($_POST['OpJue__embarque']);
+    $OpeJue__cocido=strtoupper($_POST['OpeJue__cocido']);
+    $OpeJue__embarque=strtoupper($_POST['OpeJue__embarque']);
 
     $L1Jue__granja=strtoupper($_POST['L1Jue__granja']);
     $L2Jue__granja=strtoupper($_POST['L2Jue__granja']);
     $L3Jue__granja=strtoupper($_POST['L3Jue__granja']);
     $L4Jue__granja=strtoupper($_POST['L4Jue__granja']);
 
-    $ExtraJue__cocido=strtoupper($_POST['ExtraJue__cocido']);
-    $ExtraJue__embarque=strtoupper($_POST['ExtraJue__embarque']);
+    $ExtJue__cocido=strtoupper($_POST['ExtJue__cocido']);
+    $ExtJue__embarque=strtoupper($_POST['ExtJue__embarque']);
 
     $L1Vie__tipo=strtoupper($_POST['L1Vie__tipo']);
     $L2Vie__tipo=strtoupper($_POST['L2Vie__tipo']);
@@ -121,16 +123,16 @@
     $L3Vie__proceso=strtoupper($_POST['L3Vie__proceso']);
     $L4Vie__proceso=strtoupper($_POST['L4Vie__proceso']);
 
-    $OpVie__cocido=strtoupper($_POST['OpVie__cocido']);
-    $OpVie__embarque=strtoupper($_POST['OpVie__embarque']);
+    $OpeVie__cocido=strtoupper($_POST['OpeVie__cocido']);
+    $OpeVie__embarque=strtoupper($_POST['OpeVie__embarque']);
 
     $L1Vie__granja=strtoupper($_POST['L1Vie__granja']);
     $L2Vie__granja=strtoupper($_POST['L2Vie__granja']);
     $L3Vie__granja=strtoupper($_POST['L3Vie__granja']);
     $L4Vie__granja=strtoupper($_POST['L4Vie__granja']);
 
-    $ExtraVie__cocido=strtoupper($_POST['ExtraVie__cocido']);
-    $ExtraVie__embarque=strtoupper($_POST['ExtraVie__embarque']);
+    $ExtVie__cocido=strtoupper($_POST['ExtVie__cocido']);
+    $ExtVie__embarque=strtoupper($_POST['ExtVie__embarque']);
 
     $L1Sab__tipo=strtoupper($_POST['L1Sab__tipo']);
     $L2Sab__tipo=strtoupper($_POST['L2Sab__tipo']);
@@ -145,16 +147,16 @@
     $L3Sab__proceso=strtoupper($_POST['L3Sab__proceso']);
     $L4Sab__proceso=strtoupper($_POST['L4Sab__proceso']);
 
-    $OpSab__cocido=strtoupper($_POST['OpSab__cocido']);
-    $OpSab__embarque=strtoupper($_POST['OpSab__embarque']);
+    $OpeSab__cocido=strtoupper($_POST['OpeSab__cocido']);
+    $OpeSab__embarque=strtoupper($_POST['OpeSab__embarque']);
 
     $L1Sab__granja=strtoupper($_POST['L1Sab__granja']);
     $L2Sab__granja=strtoupper($_POST['L2Sab__granja']);
     $L3Sab__granja=strtoupper($_POST['L3Sab__granja']);
     $L4Sab__granja=strtoupper($_POST['L4Sab__granja']);
 
-    $ExtraSab__cocido=strtoupper($_POST['ExtraSab__cocido']);
-    $ExtraSab__embarque=strtoupper($_POST['ExtraSab__embarque']);
+    $ExtSab__cocido=strtoupper($_POST['ExtSab__cocido']);
+    $ExtSab__embarque=strtoupper($_POST['ExtSab__embarque']);
 
 
     $queryF="INSERT INTO faena
@@ -188,8 +190,7 @@
                 ('$sem','sab','$sab','1','$L1Sab__tipo','$L1Sab__proceso','$L1Sab__granja'),
                 ('$sem','sab','$sab','2','$L2Sab__tipo','$L2Sab__proceso','$L2Sab__granja'),
                 ('$sem','sab','$sab','3','$L3Sab__tipo','$L3Sab__proceso','$L3Sab__granja'),
-                ('$sem','sab','$sab','4','$L4Sab__tipo','$L4Sab__proceso','$L4Sab__granja')
-            ";
+                ('$sem','sab','$sab','4','$L4Sab__tipo','$L4Sab__proceso','$L4Sab__granja')";
 
     $resultadoF=$base->prepare($queryF);     
     $resultadoF->execute(array());
@@ -197,30 +198,28 @@
 
 
     $queryC="INSERT INTO cocido
-                (sem, dia, fecha, pro_cocido, op_cocido, ext_cocido)
+                (sem, dia, fecha, pro_cocido, ope_cocido, ext_cocido)
             VALUES
-                ('$sem','lun','$lun','$ProLun__cocido','$OpLun__cocido','$ExtraLun__cocido'),
-                ('$sem','mar','$mar','$ProMar__cocido','$OpMar__cocido','$ExtraMar__cocido'),
-                ('$sem','mie','$mie','$ProMie__cocido','$OpMie__cocido','$ExtraMie__cocido'),
-                ('$sem','jue','$jue','$ProJue__cocido','$OpJue__cocido','$ExtraJue__cocido'),
-                ('$sem','vie','$vie','$ProVie__cocido','$OpVie__cocido','$ExtraVie__cocido'),
-                ('$sem','sab','$sab','$ProSab__cocido','$OpSab__cocido','$ExtraSab__cocido')
-            ";
+                ('$sem','lun','$lun','$ProLun__cocido','$OpeLun__cocido','$ExtLun__cocido'),
+                ('$sem','mar','$mar','$ProMar__cocido','$OpeMar__cocido','$ExtMar__cocido'),
+                ('$sem','mie','$mie','$ProMie__cocido','$OpeMie__cocido','$ExtMie__cocido'),
+                ('$sem','jue','$jue','$ProJue__cocido','$OpeJue__cocido','$ExtJue__cocido'),
+                ('$sem','vie','$vie','$ProVie__cocido','$OpeVie__cocido','$ExtVie__cocido'),
+                ('$sem','sab','$sab','$ProSab__cocido','$OpeSab__cocido','$ExtSab__cocido')";
 
     $resultadoC=$base->prepare($queryC);     
     $resultadoC->execute(array());
     $resultadoC->closeCursor();
 
     $queryE="INSERT INTO embarque
-                (sem, dia, fecha, pro_embarque, op_embarque, ext_embarque) 
+                (sem, dia, fecha, pro_embarque, ope_embarque, ext_embarque) 
             VALUES
-                ('30','jueves','2022-07-28','$ProLun__embarque','$OpLun__embarque','$ExtraLun__embarque'),
-                ('30','jueves','2022-07-28','$ProMar__embarque','$OpMar__embarque','$ExtraMar__embarque'),
-                ('30','jueves','2022-07-28','$ProMie__embarque','$OpMie__embarque','$ExtraMie__embarque'),
-                ('30','jueves','2022-07-28','$ProJue__embarque','$OpJue__embarque','$ExtraJue__embarque'),
-                ('30','jueves','2022-07-28','$ProVie__embarque','$OpVie__embarque','$ExtraVie__embarque'),
-                ('30','jueves','2022-07-28','$ProSab__embarque','$OpSab__embarque','$ExtraSab__embarque')
-                ";
+                ('$sem','lun','$lun','$ProLun__embarque','$OpeLun__embarque','$ExtLun__embarque'),
+                ('$sem','mar','$mar','$ProMar__embarque','$OpeMar__embarque','$ExtMar__embarque'),
+                ('$sem','mie','$mie','$ProMie__embarque','$OpeMie__embarque','$ExtMie__embarque'),
+                ('$sem','jue','$jue','$ProJue__embarque','$OpeJue__embarque','$ExtJue__embarque'),
+                ('$sem','vie','$vie','$ProVie__embarque','$OpeVie__embarque','$ExtVie__embarque'),
+                ('$sem','sab','$sab','$ProSab__embarque','$OpeSab__embarque','$ExtSab__embarque')";
 
     $resultadoE=$base->prepare($queryE);     
     $resultadoE->execute(array());
