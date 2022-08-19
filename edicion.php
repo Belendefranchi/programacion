@@ -51,6 +51,8 @@
             $jue = date('d/m/Y',$semana[4]);
             $vie = date('d/m/Y',$semana[5]);
             $sab = date('d/m/Y',$semana[6]);
+
+
             ?>
 
 <!-- ###########################################   ENCABEZADO   ############################################### -->
@@ -77,28 +79,28 @@
                 <div class="row seven-cols align-items-center">
                     <input type="text" class="col-md-1 fw-bold form-control" value="LUN" readonly>
                     <select class="col-md-1 form-select" name="L1Lun__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                        <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Lun__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Lun__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Lun__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
@@ -113,7 +115,7 @@
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center " name="lun" value="<?php echo (substr($lun,0,5));?>">
                     <select class="col-md-1 form-select" name="L1Lun__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -121,7 +123,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Lun__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -129,7 +131,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Lun__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -137,7 +139,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Lun__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -171,28 +173,28 @@
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 fw-bold form-control" value="MAR" readonly>
                     <select class="col-md-1 form-select" name="L1Mar__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Mar__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Mar__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Mar__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
@@ -208,7 +210,7 @@
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center" name="mar" value="<?php echo (substr($mar,0,5))?>">
                     <select class="col-md-1 form-select" name="L1Mar__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -216,7 +218,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Mar__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -224,7 +226,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Mar__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -232,7 +234,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Mar__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -266,28 +268,28 @@
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 fw-bold form-control" value="MIE" readonly>
                     <select class="col-md-1 form-select" name="L1Mie__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Mie__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Mie__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Mie__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
@@ -302,7 +304,7 @@
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center" name="mie" value="<?php echo (substr($mie,0,5))?>">
                     <select class="col-md-1 form-select" name="L1Mie__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -310,7 +312,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Mie__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -318,7 +320,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Mie__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -326,7 +328,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Mie__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -360,28 +362,28 @@
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 fw-bold form-control" value="JUE" readonly>
                     <select class="col-md-1 form-select" name="L1Jue__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Jue__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Jue__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Jue__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
@@ -396,7 +398,7 @@
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center" name="jue" value="<?php echo (substr($jue,0,5))?>">
                     <select class="col-md-1 form-select" name="L1Jue__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -404,7 +406,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Jue__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -412,7 +414,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Jue__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -420,7 +422,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Jue__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -454,28 +456,28 @@
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 fw-bold form-control" value="VIE" readonly>
                     <select class="col-md-1 form-select" name="L1Vie__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Vie__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Vie__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Vie__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
@@ -490,7 +492,7 @@
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center" name="vie" value="<?php echo (substr($vie,0,5))?>">
                     <select class="col-md-1 form-select" name="L1Vie__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -498,7 +500,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Vie__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -506,7 +508,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Vie__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -514,7 +516,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Vie__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -548,28 +550,28 @@
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 fw-bold form-control" value="SAB" readonly>
                     <select class="col-md-1 form-select" name="L1Sab__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Sab__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Sab__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Sab__tipo" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
@@ -584,7 +586,7 @@
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center" name="sab" value="<?php echo (substr($sab,0,5))?>">
                     <select class="col-md-1 form-select" name="L1Sab__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -592,7 +594,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Sab__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -600,7 +602,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Sab__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -608,7 +610,7 @@
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Sab__proceso" aria-label="Default select example">
-                        <option selected>Elegir</option>
+                    <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>

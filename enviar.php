@@ -12,7 +12,6 @@
     $vie=($_POST['vie']);
     $sab=($_POST['sab']);
 
-   /*  echo $lun; */
 
     $L1Lun__tipo=strtoupper($_POST['L1Lun__tipo']);
     $L2Lun__tipo=strtoupper($_POST['L2Lun__tipo']);
