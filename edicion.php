@@ -39,7 +39,6 @@
             <?php
 
             $sem = date('W', time());
-/*             echo "Semana: $sem" . "<br>"; */
 
             $semana = array();
             for($d=0; $d<7 ; $d++)
@@ -51,7 +50,6 @@
             $jue = date('d/m/Y',$semana[4]);
             $vie = date('d/m/Y',$semana[5]);
             $sab = date('d/m/Y',$semana[6]);
-
 
             ?>
 
