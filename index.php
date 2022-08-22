@@ -28,12 +28,20 @@
                     </ul>
                 </div>
                 <div class="d-flex justify-content-end">
+                    <a class="" href="edicion.php">
+                        <input type="button" value=" Editar ">
+                    </a>
                     <input type="button" value=" Volver " onClick="history.go(-1);">
                 </div>
             </div>
         </nav>
     </header>
     <main>
+
+        <script type="text/javascript">
+            function actualizar(){location.reload(true);}
+            setInterval("actualizar()",10000);
+        </script>
 
         <?php
 
