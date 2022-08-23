@@ -38,9 +38,9 @@
     </header>
     <main>
 
-        <script type="text/javascript">
-            function actualizar(){location.reload(true);}
-            setInterval("actualizar()",10000);
+        <script src="script.js">
+
+
         </script>
 
         <?php
