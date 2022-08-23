@@ -7,12 +7,14 @@ main{
 
 td{
     padding: 0px 10px 0px 10px !important;
+    font-weight: bolder;
 }
 
 th{
     padding: 0px 10px 0px 10px !important;
     font-style: italic;
     text-shadow: 4px 4px black;
+    font-weight: bold;
 }
 
 .vacia{
@@ -42,9 +44,25 @@ th{
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1280px) {
     .table__font{
-        font-size: 100px;
+        font-size: 1.5rem;
     }
 }
+
+
+/* switch ("tipo"){
+    case "PESADA":
+        document.getElementById("tipo").style.color = "#FF0000";
+        break;
+    case "LIVIANA":
+        document.getElementById("tipo").style.color = "#0000FF";
+        break;
+    case "GALLO":
+        document.getElementById("tipo").style.color = "#F00";
+        break;
+    case "POLLO":
+        document.getElementById("tipo").style.color = "#F00";
+        break;
+} */
 

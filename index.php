@@ -37,16 +37,9 @@
         </nav>
     </header>
     <main>
-
-        <script src="script.js">
-
-
-        </script>
-
+        <script src="script.js"></script>
         <?php
-
         include("conexion.php");
-        
         $sem = date('W', time());
 
 /* ############################################################## */
@@ -734,8 +727,8 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
 /* ############################################################## */
 
         ?>
-        <div class="container-fluid">
-            <table class="table-responsive table__font">
+        <div class="container">
+            <table class="table-responsive table__font" id="target">
                 <thead>
                     <tr class="table__font h-50">
                         <th class="col-2 table__font" scope="col">Sem: <?php echo $sem?></th>
@@ -750,7 +743,7 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                 <tbody class="table-group-divider">
                     <tr>
                         <th scope="row">LUN</th>
-                        <td><?php echo $L1Lun__tipo?></td>
+                        <td id="tipo"><?php echo $L1Lun__tipo?></td>
                         <td><?php echo $L2Lun__tipo?></td>
                         <td><?php echo $L3Lun__tipo?></td>
                         <td><?php echo $L4Lun__tipo?></td>
@@ -759,7 +752,7 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                     </tr>
                     <tr>
                         <th scope="row"><?php echo $Lun__fecha?></th>
-                        <td><?php echo $L1Lun__proceso?></td>
+                        <td id="proceso"><?php echo $L1Lun__proceso?></td>
                         <td><?php echo $L2Lun__proceso?></td>
                         <td><?php echo $L3Lun__proceso?></td>
                         <td><?php echo $L4Lun__proceso?></td>
