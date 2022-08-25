@@ -732,30 +732,30 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                 <thead>
                     <tr class="table__font h-50">
                         <th class="col-2 table__font" scope="col">Sem: <?php echo $sem?></th>
-                        <th class="col-2" scope="col">LOTE 1</th>
-                        <th class="col-2" scope="col">LOTE 2</th>
-                        <th class="col-2" scope="col">LOTE 3</th>
-                        <th class="col-2" scope="col">LOTE 4</th>
-                        <th class="col-2" scope="col">COCIDO</th>
-                        <th class="col-2" scope="col">EMBARQUES</th>
+                        <th class="col-2 table__font" scope="col">LOTE 1</th>
+                        <th class="col-2 table__font" scope="col">LOTE 2</th>
+                        <th class="col-2 table__font" scope="col">LOTE 3</th>
+                        <th class="col-2 table__font" scope="col">LOTE 4</th>
+                        <th class="col-2 table__font" scope="col">COCIDO</th>
+                        <th class="col-2 table__font" scope="col">EMBARQUES</th>
                     </tr>
                 </thead>
                 <tbody class="table-group-divider">
                     <tr>
                         <th scope="row">LUN</th>
-                        <td id="tipo"><?php echo $L1Lun__tipo?></td>
-                        <td><?php echo $L2Lun__tipo?></td>
-                        <td><?php echo $L3Lun__tipo?></td>
-                        <td><?php echo $L4Lun__tipo?></td>
+                        <td id="L1Lun__tipo"><?php echo $L1Lun__tipo?></td>
+                        <td id="L2Lun__tipo"><?php echo $L2Lun__tipo?></td>
+                        <td id="L3Lun__tipo"><?php echo $L3Lun__tipo?></td>
+                        <td id="L4Lun__tipo"><?php echo $L4Lun__tipo?></td>
                         <td><?php echo $ProLun__cocido?></td>
                         <td><?php echo $ProLun__embarque?></td>
                     </tr>
                     <tr>
                         <th scope="row"><?php echo $Lun__fecha?></th>
-                        <td id="proceso"><?php echo $L1Lun__proceso?></td>
-                        <td><?php echo $L2Lun__proceso?></td>
-                        <td><?php echo $L3Lun__proceso?></td>
-                        <td><?php echo $L4Lun__proceso?></td>
+                        <td id="L1Lun__proceso"><?php echo $L1Lun__proceso?></td>
+                        <td id="L2Lun__proceso"><?php echo $L2Lun__proceso?></td>
+                        <td id="L3Lun__proceso"><?php echo $L3Lun__proceso?></td>
+                        <td id="L4Lun__proceso"><?php echo $L4Lun__proceso?></td>
                         <td><?php echo $OpeLun__cocido?></td>
                         <td><?php echo $OpeLun__embarque?></td>               
                     </tr>
@@ -770,19 +770,19 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                     </tr>
                     <tr class="table-group-divider">
                         <th scope="row">MAR</th>
-                        <td><?php echo $L1Mar__tipo?></td>
-                        <td><?php echo $L2Mar__tipo?></td>
-                        <td><?php echo $L3Mar__tipo?></td>
-                        <td><?php echo $L4Mar__tipo?></td>
+                        <td id="L1Mar__tipo"><?php echo $L1Mar__tipo?></td>
+                        <td id="L2Mar__tipo"><?php echo $L2Mar__tipo?></td>
+                        <td id="L3Mar__tipo"><?php echo $L3Mar__tipo?></td>
+                        <td id="L4Mar__tipo"><?php echo $L4Mar__tipo?></td>
                         <td><?php echo $ProMar__cocido?></td>
                         <td><?php echo $ProMar__embarque?></td>
                     </tr>
                     <tr>
                         <th scope="row"><?php echo $Mar__fecha?></th>
-                        <td><?php echo $L1Mar__proceso?></td>
-                        <td><?php echo $L2Mar__proceso?></td>
-                        <td><?php echo $L3Mar__proceso?></td>
-                        <td><?php echo $L4Mar__proceso?></td>
+                        <td id="L1Mar__proceso"><?php echo $L1Mar__proceso?></td>
+                        <td id="L2Mar__proceso"><?php echo $L2Mar__proceso?></td>
+                        <td id="L3Mar__proceso"><?php echo $L3Mar__proceso?></td>
+                        <td id="L4Mar__proceso"><?php echo $L4Mar__proceso?></td>
                         <td><?php echo $OpeMar__cocido?></td>
                         <td><?php echo $OpeMar__embarque?></td>               
                     </tr>
@@ -797,19 +797,19 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                     </tr>
                     <tr class="table-group-divider">
                         <th scope="row">MIE</th>
-                        <td><?php echo $L1Mie__tipo?></td>
-                        <td><?php echo $L2Mie__tipo?></td>
-                        <td><?php echo $L3Mie__tipo?></td>
-                        <td><?php echo $L4Mie__tipo?></td>
+                        <td id="L1Mie__tipo"><?php echo $L1Mie__tipo?></td>
+                        <td id="L2Mie__tipo"><?php echo $L2Mie__tipo?></td>
+                        <td id="L3Mie__tipo"><?php echo $L3Mie__tipo?></td>
+                        <td id="L4Mie__tipo"><?php echo $L4Mie__tipo?></td>
                         <td><?php echo $ProMie__cocido?></td>
                         <td><?php echo $ProMie__embarque?></td>
                     </tr>
                     <tr>
                         <th scope="row"><?php echo $Mie__fecha?></th>
-                        <td><?php echo $L1Mie__proceso?></td>
-                        <td><?php echo $L2Mie__proceso?></td>
-                        <td><?php echo $L3Mie__proceso?></td>
-                        <td><?php echo $L4Mie__proceso?></td>
+                        <td id="L1Mie__proceso"><?php echo $L1Mie__proceso?></td>
+                        <td id="L2Mie__proceso"><?php echo $L2Mie__proceso?></td>
+                        <td id="L3Mie__proceso"><?php echo $L3Mie__proceso?></td>
+                        <td id="L4Mie__proceso"><?php echo $L4Mie__proceso?></td>
                         <td><?php echo $OpeMie__cocido?></td>
                         <td><?php echo $OpeMie__embarque?></td>               
                     </tr>
@@ -824,19 +824,19 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                     </tr>
                     <tr class="table-group-divider">
                         <th scope="row">JUE</th>
-                        <td><?php echo $L1Jue__tipo?></td>
-                        <td><?php echo $L2Jue__tipo?></td>
-                        <td><?php echo $L3Jue__tipo?></td>
-                        <td><?php echo $L4Jue__tipo?></td>
+                        <td id="L1Jue__tipo"><?php echo $L1Jue__tipo?></td>
+                        <td id="L2Jue__tipo"><?php echo $L2Jue__tipo?></td>
+                        <td id="L3Jue__tipo"><?php echo $L3Jue__tipo?></td>
+                        <td id="L4Jue__tipo"><?php echo $L4Jue__tipo?></td>
                         <td><?php echo $ProJue__cocido?></td>
                         <td><?php echo $ProJue__embarque?></td>
                     </tr>
                     <tr>
                         <th scope="row"><?php echo $Jue__fecha?></th>
-                        <td><?php echo $L1Jue__proceso?></td>
-                        <td><?php echo $L2Jue__proceso?></td>
-                        <td><?php echo $L3Jue__proceso?></td>
-                        <td><?php echo $L4Jue__proceso?></td>
+                        <td id="L1Jue__proceso"><?php echo $L1Jue__proceso?></td>
+                        <td id="L2Jue__proceso"><?php echo $L2Jue__proceso?></td>
+                        <td id="L3Jue__proceso"><?php echo $L3Jue__proceso?></td>
+                        <td id="L4Jue__proceso"><?php echo $L4Jue__proceso?></td>
                         <td><?php echo $OpeJue__cocido?></td>
                         <td><?php echo $OpeJue__embarque?></td>               
                     </tr>
@@ -851,19 +851,19 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                     </tr>
                     <tr class="table-group-divider">
                         <th scope="row">VIE</th>
-                        <td><?php echo $L1Vie__tipo?></td>
-                        <td><?php echo $L2Vie__tipo?></td>
-                        <td><?php echo $L3Vie__tipo?></td>
-                        <td><?php echo $L4Vie__tipo?></td>
+                        <td id="L1Vie__tipo"><?php echo $L1Vie__tipo?></td>
+                        <td id="L2Vie__tipo"><?php echo $L2Vie__tipo?></td>
+                        <td id="L3Vie__tipo"><?php echo $L3Vie__tipo?></td>
+                        <td id="L4Vie__tipo"><?php echo $L4Vie__tipo?></td>
                         <td><?php echo $ProVie__cocido?></td>
                         <td><?php echo $ProVie__embarque?></td>
                     </tr>
                     <tr>
                         <th scope="row"><?php echo $Vie__fecha?></th>
-                        <td><?php echo $L1Vie__proceso?></td>
-                        <td><?php echo $L2Vie__proceso?></td>
-                        <td><?php echo $L3Vie__proceso?></td>
-                        <td><?php echo $L4Vie__proceso?></td>
+                        <td id="L1Vie__proceso"><?php echo $L1Vie__proceso?></td>
+                        <td id="L2Vie__proceso"><?php echo $L2Vie__proceso?></td>
+                        <td id="L3Vie__proceso"><?php echo $L3Vie__proceso?></td>
+                        <td id="L4Vie__proceso"><?php echo $L4Vie__proceso?></td>
                         <td><?php echo $OpeVie__cocido?></td>
                         <td><?php echo $OpeVie__embarque?></td>               
                     </tr>
@@ -878,19 +878,19 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                     </tr>
                     <tr class="table-group-divider">
                         <th scope="row">SAB</th>
-                        <td><?php echo $L1Sab__tipo?></td>
-                        <td><?php echo $L2Sab__tipo?></td>
-                        <td><?php echo $L3Sab__tipo?></td>
-                        <td><?php echo $L4Sab__tipo?></td>
+                        <td id="L1Sab__tipo"><?php echo $L1Sab__tipo?></td>
+                        <td id="L2Sab__tipo"><?php echo $L2Sab__tipo?></td>
+                        <td id="L3Sab__tipo"><?php echo $L3Sab__tipo?></td>
+                        <td id="L4Sab__tipo"><?php echo $L4Sab__tipo?></td>
                         <td><?php echo $ProSab__cocido?></td>
                         <td><?php echo $ProSab__embarque?></td>
                     </tr>
                     <tr>
                         <th scope="row"><?php echo $Sab__fecha?></th>
-                        <td><?php echo $L1Sab__proceso?></td>
-                        <td><?php echo $L2Sab__proceso?></td>
-                        <td><?php echo $L3Sab__proceso?></td>
-                        <td><?php echo $L4Sab__proceso?></td>
+                        <td id="L1Sab__proceso"><?php echo $L1Sab__proceso?></td>
+                        <td id="L2Sab__proceso"><?php echo $L2Sab__proceso?></td>
+                        <td id="L3Sab__proceso"><?php echo $L3Sab__proceso?></td>
+                        <td id="L4Sab__proceso"><?php echo $L4Sab__proceso?></td>
                         <td><?php echo $OpeSab__cocido?></td>
                         <td><?php echo $OpeSab__embarque?></td>               
                     </tr>

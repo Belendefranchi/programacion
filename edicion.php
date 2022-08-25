@@ -58,12 +58,12 @@
             <div class="container text-center">
                 <div class="row seven-cols align-items-center">
                 <input type="text" class="col-md-1 fs-4 form-control fw-bold text-center" name="sem" value="<?php echo "Sem:    " . $sem?>">
-                    <div class="col-md-1 fs-4 fw-bold">LOTE 1</div>
-                    <div class="col-md-1 fs-4 fw-bold">LOTE 2</div>
-                    <div class="col-md-1 fs-4 fw-bold">LOTE 3</div>
-                    <div class="col-md-1 fs-4 fw-bold">LOTE 4</div>
-                    <div class="col-md-1 fs-4 fw-bold">COCIDO</div>
-                    <div class="col-md-1 fs-4 fw-bold">EMBARQUES</div>
+                    <div class="col-md-1 fs-4 fw-bold table__font">LOTE 1</div>
+                    <div class="col-md-1 fs-4 fw-bold table__font">LOTE 2</div>
+                    <div class="col-md-1 fs-4 fw-bold table__font">LOTE 3</div>
+                    <div class="col-md-1 fs-4 fw-bold table__font">LOTE 4</div>
+                    <div class="col-md-1 fs-4 fw-bold table__font">COCIDO</div>
+                    <div class="col-md-1 fs-4 fw-bold table__font">EMBARQUES</div>
                 </div>
             </div>
             <br>
