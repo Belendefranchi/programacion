@@ -1,15 +1,23 @@
-main{
-    height: 100%;
+body{
     width: 100%;
     background-color: #1A1F73;
-/*     color: black !important; */
+/*     width: 100vw; */
+/*     background-color: #1A1F73; */
+}
+
+.navbar{
+    width: 100%;
+    background-color: white;
+}
+
+main{
+    background-color: #1A1F73;
 }
 
 td{
     padding: 0px 10px 0px 10px !important;
     font-weight: bolder;
-    color: black;
-/*     text-shadow: 2px 2px 2PX grey; */
+/*     color: black; */
 }
 
 th{
@@ -26,9 +34,10 @@ th{
 
 .table__font{
     color: white;
+    text-shadow: 2px 2px black;
 }
 
-@media (min-width: 768px){
+@media (min-width: 320px){
     .seven-cols .col-md-1,
     .seven-cols .col-sm-1,
     .seven-cols .col-lg-1  {
@@ -46,9 +55,9 @@ th{
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1080px) {
     .table__font{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 }
 
