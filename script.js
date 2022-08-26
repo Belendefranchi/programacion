@@ -15,7 +15,7 @@ function color() {
 
     switch (L1Lun__tipo){
         case "PESADA":
-            document.getElementById("L1Lun__tipo").style.color = "white";
+            document.getElementById("L1Lun__tipo").style.color = "darkblue";
             break;
         case "LIVIANA":
             document.getElementById("L1Lun__tipo").style.color = "green";
@@ -30,7 +30,7 @@ function color() {
 
     switch (L2Lun__tipo){
         case "PESADA":
-            document.getElementById("L2Lun__tipo").style.color = "white";
+            document.getElementById("L2Lun__tipo").style.color = "darkblue";
             break;
         case "LIVIANA":
             document.getElementById("L2Lun__tipo").style.color = "green";
@@ -45,7 +45,7 @@ function color() {
 
     switch (L3Lun__tipo){
         case "PESADA":
-            document.getElementById("L3Lun__tipo").style.color = "white";
+            document.getElementById("L3Lun__tipo").style.color = "darkblue";
             break;
         case "LIVIANA":
             document.getElementById("L3Lun__tipo").style.color = "green";
@@ -60,7 +60,7 @@ function color() {
 
     switch (L4Lun__tipo){
         case "PESADA":
-            document.getElementById("L4Lun__tipo").style.color = "white";
+            document.getElementById("L4Lun__tipo").style.color = "darkblue";
             break;
         case "LIVIANA":
             document.getElementById("L4Lun__tipo").style.color = "green";
@@ -161,7 +161,7 @@ let L4Mar__tipo = document.getElementById("L4Mar__tipo").textContent;
 
 switch (L1Mar__tipo){
     case "PESADA":
-        document.getElementById("L1Mar__tipo").style.color = "white";
+        document.getElementById("L1Mar__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L1Mar__tipo").style.color = "green";
@@ -176,7 +176,7 @@ switch (L1Mar__tipo){
 
 switch (L2Mar__tipo){
     case "PESADA":
-        document.getElementById("L2Mar__tipo").style.color = "white";
+        document.getElementById("L2Mar__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L2Mar__tipo").style.color = "green";
@@ -191,7 +191,7 @@ switch (L2Mar__tipo){
 
 switch (L3Mar__tipo){
     case "PESADA":
-        document.getElementById("L3Mar__tipo").style.color = "white";
+        document.getElementById("L3Mar__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L3Mar__tipo").style.color = "green";
@@ -206,7 +206,7 @@ switch (L3Mar__tipo){
 
 switch (L4Mar__tipo){
     case "PESADA":
-        document.getElementById("L4Mar__tipo").style.color = "white";
+        document.getElementById("L4Mar__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L4Mar__tipo").style.color = "green";
@@ -307,7 +307,7 @@ let L4Mie__tipo = document.getElementById("L4Mie__tipo").textContent;
 
 switch (L1Mie__tipo){
     case "PESADA":
-        document.getElementById("L1Mie__tipo").style.color = "white";
+        document.getElementById("L1Mie__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L1Mie__tipo").style.color = "green";
@@ -322,7 +322,7 @@ switch (L1Mie__tipo){
 
 switch (L2Mie__tipo){
     case "PESADA":
-        document.getElementById("L2Mie__tipo").style.color = "white";
+        document.getElementById("L2Mie__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L2Mie__tipo").style.color = "green";
@@ -337,7 +337,7 @@ switch (L2Mie__tipo){
 
 switch (L3Mie__tipo){
     case "PESADA":
-        document.getElementById("L3Mie__tipo").style.color = "white";
+        document.getElementById("L3Mie__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L3Mie__tipo").style.color = "green";
@@ -352,7 +352,7 @@ switch (L3Mie__tipo){
 
 switch (L4Mie__tipo){
     case "PESADA":
-        document.getElementById("L4Mie__tipo").style.color = "white";
+        document.getElementById("L4Mie__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L4Mie__tipo").style.color = "green";
@@ -454,7 +454,7 @@ let L4Jue__tipo = document.getElementById("L4Jue__tipo").textContent;
 
 switch (L1Jue__tipo){
     case "PESADA":
-        document.getElementById("L1Jue__tipo").style.color = "white";
+        document.getElementById("L1Jue__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L1Jue__tipo").style.color = "green";
@@ -469,7 +469,7 @@ switch (L1Jue__tipo){
 
 switch (L2Jue__tipo){
     case "PESADA":
-        document.getElementById("L2Jue__tipo").style.color = "white";
+        document.getElementById("L2Jue__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L2Jue__tipo").style.color = "green";
@@ -484,7 +484,7 @@ switch (L2Jue__tipo){
 
 switch (L3Jue__tipo){
     case "PESADA":
-        document.getElementById("L3Jue__tipo").style.color = "white";
+        document.getElementById("L3Jue__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L3Jue__tipo").style.color = "green";
@@ -499,7 +499,7 @@ switch (L3Jue__tipo){
 
 switch (L4Jue__tipo){
     case "PESADA":
-        document.getElementById("L4Jue__tipo").style.color = "white";
+        document.getElementById("L4Jue__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L4Jue__tipo").style.color = "green";
@@ -602,7 +602,7 @@ let L4Vie__tipo = document.getElementById("L4Vie__tipo").textContent;
 
 switch (L1Vie__tipo){
     case "PESADA":
-        document.getElementById("L1Vie__tipo").style.color = "white";
+        document.getElementById("L1Vie__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L1Vie__tipo").style.color = "green";
@@ -617,7 +617,7 @@ switch (L1Vie__tipo){
 
 switch (L2Vie__tipo){
     case "PESADA":
-        document.getElementById("L2Vie__tipo").style.color = "white";
+        document.getElementById("L2Vie__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L2Vie__tipo").style.color = "green";
@@ -632,7 +632,7 @@ switch (L2Vie__tipo){
 
 switch (L3Vie__tipo){
     case "PESADA":
-        document.getElementById("L3Vie__tipo").style.color = "white";
+        document.getElementById("L3Vie__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L3Vie__tipo").style.color = "green";
@@ -647,7 +647,7 @@ switch (L3Vie__tipo){
 
 switch (L4Vie__tipo){
     case "PESADA":
-        document.getElementById("L4Vie__tipo").style.color = "white";
+        document.getElementById("L4Vie__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L4Vie__tipo").style.color = "green";
@@ -749,7 +749,7 @@ let L4Sab__tipo = document.getElementById("L4Sab__tipo").textContent;
 
 switch (L1Sab__tipo){
     case "PESADA":
-        document.getElementById("L1Sab__tipo").style.color = "white";
+        document.getElementById("L1Sab__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L1Sab__tipo").style.color = "green";
@@ -764,7 +764,7 @@ switch (L1Sab__tipo){
 
 switch (L2Sab__tipo){
     case "PESADA":
-        document.getElementById("L2Sab__tipo").style.color = "white";
+        document.getElementById("L2Sab__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L2Sab__tipo").style.color = "green";
@@ -779,7 +779,7 @@ switch (L2Sab__tipo){
 
 switch (L3Sab__tipo){
     case "PESADA":
-        document.getElementById("L3Sab__tipo").style.color = "white";
+        document.getElementById("L3Sab__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L3Sab__tipo").style.color = "green";
@@ -794,7 +794,7 @@ switch (L3Sab__tipo){
 
 switch (L4Sab__tipo){
     case "PESADA":
-        document.getElementById("L4Sab__tipo").style.color = "white";
+        document.getElementById("L4Sab__tipo").style.color = "darkblue";
         break;
     case "LIVIANA":
         document.getElementById("L4Sab__tipo").style.color = "green";

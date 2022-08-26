@@ -38,6 +38,8 @@
 
             <?php
 
+            include("conexion.php");
+
             $sem = date('W', time());
 
             $semana = array();
@@ -50,6 +52,23 @@
             $jue = date('d/m/Y',$semana[4]);
             $vie = date('d/m/Y',$semana[5]);
             $sab = date('d/m/Y',$semana[6]);
+
+            $query="SELECT tipo, proceso, granja, Id
+                    FROM faena 
+                        where sem='$sem'";
+            
+            $resultado=$base->prepare($query);
+            $resultado->execute();     
+            $faena=$resultado->fetchAll(PDO::FETCH_ASSOC);
+            $resultado->closeCursor();
+
+            $L1Lun__tipo=$faena["tipo"];
+            $L1Lun__proceso=$faena["proceso"];
+            $L1Lun__granja=$faena["granja"];
+            
+            echo $L1Lun__tipo;
+            echo $L1Lun__proceso;
+            echo $L1Lun__granja;
 
             ?>
 

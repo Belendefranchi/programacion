@@ -1,17 +1,11 @@
-body{
-    width: 100%;
-    background-color: #1A1F73;
-/*     width: 100vw; */
-/*     background-color: #1A1F73; */
-}
-
 .navbar{
     width: 100%;
     background-color: white;
 }
 
 main{
-    background-color: #1A1F73;
+    background-color: rgb(95, 88, 88);
+/*     background-color: #1A1F73; */
 }
 
 td{
@@ -28,7 +22,8 @@ th{
 }
 
 .vacia{
-    color: #1A1F73;
+    color: rgb(95, 88, 88);
+/*     color: #1A1F73; */
     text-shadow: none;
 }
 

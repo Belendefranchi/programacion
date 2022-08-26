@@ -74,8 +74,8 @@
     $L3Mie__proceso=strtoupper($_POST['L3Mie__proceso']);
     $L4Mie__proceso=strtoupper($_POST['L4Mie__proceso']);
 
-    $OpeMie__cocido=strtoupper($_POST['OpMie__cocido']);
-    $OpeMie__embarque=strtoupper($_POST['OpMie__embarque']);
+    $OpeMie__cocido=strtoupper($_POST['OpeMie__cocido']);
+    $OpeMie__embarque=strtoupper($_POST['OpeMie__embarque']);
 
     $L1Mie__granja=strtoupper($_POST['L1Mie__granja']);
     $L2Mie__granja=strtoupper($_POST['L2Mie__granja']);

@@ -381,7 +381,7 @@ $resultado->closeCursor();
 
 $ProMie__embarque=$Mie__embarque["pro_embarque"];
 $OpeMie__embarque=$Mie__embarque["ope_embarque"];
-$ExtMie__embarque=$Mie__embarque["pro_embarque"];
+$ExtMie__embarque=$Mie__embarque["ext_embarque"];
 
 /* ############################################################## */
 /* --------------------------JUEVES------------------------------ */
