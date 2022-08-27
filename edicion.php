@@ -30,7 +30,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main">
         <form action="enviar.php" method="post">
             <div>
                 <input type="submit" value="Enviar">
@@ -53,7 +53,7 @@
             $vie = date('d/m/Y',$semana[5]);
             $sab = date('d/m/Y',$semana[6]);
 
-            $query="SELECT tipo, proceso, granja, Id
+/*             $query="SELECT tipo, proceso, granja, Id
                     FROM faena 
                         where sem='$sem'";
             
@@ -68,7 +68,7 @@
             
             echo $L1Lun__tipo;
             echo $L1Lun__proceso;
-            echo $L1Lun__granja;
+            echo $L1Lun__granja; */
 
             ?>
 
