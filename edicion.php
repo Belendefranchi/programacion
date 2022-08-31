@@ -41,17 +41,16 @@
             include("conexion.php");
 
             $sem = date('W', time());
+            $diaSem = date('w', time());
 
-            $semana = array();
-            for($d=0; $d<7 ; $d++)
-                $semana[] = mktime(0, 0, 0, date('n'), date('d')-date('w')+$d, date('Y'));
+            for ($i=1; $i<=$sem; $i++){
+                $week[]=$i;
+            }
 
-            $lun = date('d/m/Y',$semana[1]);
-            $mar = date('d/m/Y',$semana[2]);
-            $mie = date('d/m/Y',$semana[3]);
-            $jue = date('d/m/Y',$semana[4]);
-            $vie = date('d/m/Y',$semana[5]);
-            $sab = date('d/m/Y',$semana[6]);
+
+            
+
+
 
 /*             $query="SELECT tipo, proceso, granja, Id
                     FROM faena 
@@ -76,7 +75,30 @@
 
             <div class="container text-center">
                 <div class="row seven-cols align-items-center">
-                <input type="text" class="col-md-1 fs-4 form-control fw-bold text-center" name="sem" value="<?php echo "Sem:    " . $sem?>">
+                <select class="col-md-1 fs-4 form-select form-control fw-bold text-center" name="sem" aria-label="Default select example">
+                <?php
+                    for ($i=-1; $i<$sem; $i++){
+                        $week[]=$sem - $i;
+                ?>
+                <option value="<?php echo $week[$sem-$i-1]?>"><?php echo "Sem: " . $sem-$i?></option>
+                <?php
+                    }
+                    
+                    $semana = array();
+
+                    for($d=0; $d<7 ; $d++){
+                        $semana[] = mktime(0, 0, 0, date('n'), date('d')-date('w')+$d+7, date('Y'));
+                    }
+
+                    $lun = date('d/m/Y',$semana[1]);
+                    $mar = date('d/m/Y',$semana[2]);
+                    $mie = date('d/m/Y',$semana[3]);
+                    $jue = date('d/m/Y',$semana[4]);
+                    $vie = date('d/m/Y',$semana[5]);
+                    $sab = date('d/m/Y',$semana[6]);
+
+                ?>
+                </select>
                     <div class="col-md-1 fs-4 fw-bold table__font">LOTE 1</div>
                     <div class="col-md-1 fs-4 fw-bold table__font">LOTE 2</div>
                     <div class="col-md-1 fs-4 fw-bold table__font">LOTE 3</div>
@@ -166,6 +188,7 @@
                     <input type="text" class="col-md-1 form-control" name="OpeLun__cocido">
                     <input type="text" class="col-md-1 form-control" name="OpeLun__embarque">
                 </div>
+
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->

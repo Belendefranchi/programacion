@@ -1,16 +1,12 @@
 .main{
     background-color: #1A1F73;
+    color: white !important;
 }
 
 .navbar{
     width: 100%;
     background-color: white;
 }
-
-/* main{
-    background-color: rgb(95, 88, 88);
-    background-color: #1A1F73;
-} */
 
 th{
     padding: 0px 10px 0px 10px !important;
@@ -23,7 +19,6 @@ td{
     padding: 0px 10px 0px 10px !important;
     font-weight: bold;
     border-color: black;
-/*     border-radius: 10px; */
 }
 
 tr{
@@ -38,7 +33,6 @@ tr{
 
 .table__font{
     color: white;
-/*     text-shadow: 2px 2px black; */
 }
 
 .table__row--dark{
@@ -51,16 +45,16 @@ tr{
 @media (min-width: 320px){
     .seven-cols .col-md-1,
     .seven-cols .col-sm-1,
-    .seven-cols .col-lg-1  {
+    .seven-cols .col-lg-1{
         width: 100%;
         *width: 100%;
         }
     }
     
-@media (min-width: 992px) {
+@media (min-width: 992px){
     .seven-cols .col-md-1,
     .seven-cols .col-sm-1,
-    .seven-cols .col-lg-1 {
+    .seven-cols .col-lg-1{
         width: 14.285714285714285714285714285714%;
         *width: 14.285714285714285714285714285714%;
     }
@@ -71,4 +65,3 @@ tr{
         font-size: 1.6rem;
     }
 }
-
