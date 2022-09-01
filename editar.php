@@ -47,11 +47,6 @@
                 $week[]=$i;
             }
 
-
-            
-
-
-
 /*             $query="SELECT tipo, proceso, granja, Id
                     FROM faena 
                         where sem='$sem'";
@@ -83,19 +78,6 @@
                 <option value="<?php echo $week[$sem-$i-1]?>"><?php echo "Sem: " . $sem-$i?></option>
                 <?php
                     }
-
-                    $semana = array();
-
-                    for($d=0; $d<7 ; $d++){
-                        $semana[] = mktime(0, 0, 0, date('n'), date('d')-date('w')+$d+7, date('Y'));
-                    }
-
-                    $lun = date('d/m/Y',$semana[1]);
-                    $mar = date('d/m/Y',$semana[2]);
-                    $mie = date('d/m/Y',$semana[3]);
-                    $jue = date('d/m/Y',$semana[4]);
-                    $vie = date('d/m/Y',$semana[5]);
-                    $sab = date('d/m/Y',$semana[6]);
 
                 ?>
                 </select>
