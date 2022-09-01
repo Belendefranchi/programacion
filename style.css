@@ -8,6 +8,10 @@
     background-color: white;
 }
 
+.a:link{
+    text-decoration: none;
+}
+
 th{
     padding: 0px 10px 0px 10px !important;
     font-weight: bold;
@@ -65,3 +69,8 @@ tr{
         font-size: 1.6rem;
     }
 }
+
+
+/* select semana en navbar, una funcion por semana 
+partiendo de la semana actual para hacer los calculos
+con boton editar que modifique cada funcion, dependiendo del valor seleccionado de semana */

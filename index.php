@@ -28,10 +28,22 @@
                     </ul>
                 </div>
                 <div class="d-flex justify-content-end">
-                    <a class="" href="edicion.php">
-                        <input type="button" value=" Editar ">
+                    <input class="fs-4 form-control fw-bold text-center" type="text" value="Semana:" disabled>
+                    <select class="fs-4 form-select form-control fw-bold text-center" name="sem" aria-label="Default select example">
+                        <?php
+                            $sem = date('W', time());
+                            for ($i=-1; $i<$sem; $i++){
+                                $week[]=$sem - $i;
+                        ?>
+                        <option value="<?php echo $week[$sem-$i-1]?>"><?php echo $sem-$i?></option>
+                        <?php
+                            }
+                        ?>
+                    </select>
+                    <a class="a" href="edicion.php">
+                        <input class="fs-4 form-control fw-bold text-center" type="button" value=" Editar ">
                     </a>
-                    <input type="button" value=" Volver " onClick="history.go(-1);">
+                    <input class="fs-4 form-control fw-bold text-center" type="button" value=" Volver " onClick="history.go(-1);">
                 </div>
             </div>
         </nav>

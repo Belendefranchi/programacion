@@ -83,7 +83,7 @@
                 <option value="<?php echo $week[$sem-$i-1]?>"><?php echo "Sem: " . $sem-$i?></option>
                 <?php
                     }
-                    
+
                     $semana = array();
 
                     for($d=0; $d<7 ; $d++){
