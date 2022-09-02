@@ -27,27 +27,33 @@
                         </li>
                     </ul>
                 </div>
-                <div class="d-flex justify-content-end">
-                    <form action="mostrar.php" method="post">
-                        <input class="fs-4 form-control fw-bold text-center" type="text" value="Semana:" disabled>
-                        <select class="fs-4 form-select form-control fw-bold text-center" name="sem" aria-label="Default select example">
-                            <?php
-                                $sem = 52;
-                                for ($i=0; $i<$sem; $i++){
-                                    $week[]=$sem - $i;
-                            ?>
-                            <option value="<?php echo $week[$sem-$i-1]?>"><?php echo $sem-$i?></option>
-                            <?php
-                            }
-                            ?>
-                        </select>
-                        <a class="a" href="mostrar.php">
-                            <input class="fs-4 form-control fw-bold text-center" type="button" value="Ver">
+                <div class="d-flex">
+                    <form class="d-flex justify-content-end" action="mostrar.php" method="post">
+                        <section>
+                            <input class="fs-4 form-control fw-bold text-center" type="text" value="Semana:" disabled>
+                        </section>
+                        <section>
+                            <select class="fs-4 form-select form-control fw-bold text-center" name="sem" aria-label="Default select example">
+                                <?php
+                                    $sem = 52;
+                                    for ($i=0; $i<$sem; $i++){
+                                        $week[]=$sem - $i;
+                                ?>
+                                <option value="<?php echo $week[$i]?>"><?php echo $sem-$i?></option>
+                                <?php
+                                }
+                                ?>
+                            </select>
+                        </section>
+                        <section>
+                            <input class="fs-4 form-control fw-bold text-center" type="submit" value="Ver">
+                        </section>
+                    </form>
+                    <form action="editar.php" method="get">
+                        <a class="a" href="editar.php?semana=52">
+                            <input class="fs-4 form-control fw-bold text-center" type="submit" value="Editar">
+                            <?php echo $sem?>
                         </a>
-                        <a class="a" href="editar.php">
-                            <input class="fs-4 form-control fw-bold text-center" type="button" value="Editar">
-                        </a>
-                        <input class="fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
                     </form>
                 </div>
             </div>

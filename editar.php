@@ -12,75 +12,41 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fs-4 fw-bold">
+    <nav class="navbar navbar-expand-lg fs-4 fw-bold">
             <div class="container-fluid">
-                <a class="" href="#">
-                    <img src="logo.png" alt="" width="70vw">
+                <a class="" href="index.php">
+                    <img src="logo.png" alt="" width="60vw">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2">
                         <li class="nav-item">
                             <a class="nav-link disabled">Programación Semanal</a>
                         </li>
                     </ul>
                 </div>
+                <div class="d-flex flex-row justify-content-end">
+                    <form class="d-flex justify-content-end" action="enviar.php" method="post">
+                        <input class="fs-4 form-control fw-bold text-center" type="submit" value="Enviar">
+                </div>
             </div>
         </nav>
     </header>
     <main class="main">
-        <form action="enviar.php" method="post">
-            <div>
-                <input type="submit" value="Enviar">
-            </div>
+    <br>
 
             <?php
-
-            include("conexion.php");
-
-            $sem = date('W', time());
-            $diaSem = date('w', time());
-
-            for ($i=1; $i<=$sem; $i++){
-                $week[]=$i;
-            }
-
-/*             $query="SELECT tipo, proceso, granja, Id
-                    FROM faena 
-                        where sem='$sem'";
-            
-            $resultado=$base->prepare($query);
-            $resultado->execute();     
-            $faena=$resultado->fetchAll(PDO::FETCH_ASSOC);
-            $resultado->closeCursor();
-
-            $L1Lun__tipo=$faena["tipo"];
-            $L1Lun__proceso=$faena["proceso"];
-            $L1Lun__granja=$faena["granja"];
-            
-            echo $L1Lun__tipo;
-            echo $L1Lun__proceso;
-            echo $L1Lun__granja; */
-
+                include("conexion.php");
+                $semana=$_GET["semana"];
             ?>
 
 <!-- ###########################################   ENCABEZADO   ############################################### -->
 
             <div class="container text-center">
                 <div class="row seven-cols align-items-center">
-                <select class="col-md-1 fs-4 form-select form-control fw-bold text-center" name="sem" aria-label="Default select example">
-                <?php
-                    for ($i=-1; $i<$sem; $i++){
-                        $week[]=$sem - $i;
-                ?>
-                <option value="<?php echo $week[$sem-$i-1]?>"><?php echo "Sem: " . $sem-$i?></option>
-                <?php
-                    }
-
-                ?>
-                </select>
+                    <div class="col-md-1 fs-4 form-control fw-bold text-center">Sem: <?php echo $semana?></div>
                     <div class="col-md-1 fs-4 fw-bold table__font">LOTE 1</div>
                     <div class="col-md-1 fs-4 fw-bold table__font">LOTE 2</div>
                     <div class="col-md-1 fs-4 fw-bold table__font">LOTE 3</div>
@@ -92,7 +58,25 @@
             <br>
 
 <!-- ################################################   LUNES   ############################################### -->
+<?php
+$query="SELECT fecha
+        FROM faena 
+            where sem='$semana'
+            and lote='1'";
 
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$sem__fecha=$resultado->fetchAll(PDO::FETCH_COLUMN);
+$resultado->closeCursor();
+
+$Lun__fecha=$sem__fecha[0];
+$Mar__fecha=$sem__fecha[1];
+$Mie__fecha=$sem__fecha[2];
+$Jue__fecha=$sem__fecha[3];
+$Vie__fecha=$sem__fecha[4];
+$Sab__fecha=$sem__fecha[5];
+
+?>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- ---------------------------------------------------TIPO--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
@@ -134,7 +118,7 @@
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control fw-bold text-center " name="lun" value="<?php echo (substr($lun,0,5));?>">
+                    <input type="text" class="col-md-1 form-control fw-bold text-center " name="lun" value="<?php echo $Lun__fecha?>">
                     <select class="col-md-1 form-select" name="L1Lun__proceso" aria-label="Default select example">
                     <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
@@ -230,7 +214,7 @@
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="mar" value="<?php echo (substr($mar,0,5))?>">
+                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="mar" value="<?php print_r ($Mar__fecha)?>">
                     <select class="col-md-1 form-select" name="L1Mar__proceso" aria-label="Default select example">
                     <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
@@ -324,7 +308,7 @@
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="mie" value="<?php echo (substr($mie,0,5))?>">
+                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="mie" value="<?php echo $Mie__fecha?>">
                     <select class="col-md-1 form-select" name="L1Mie__proceso" aria-label="Default select example">
                     <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
@@ -418,7 +402,7 @@
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="jue" value="<?php echo (substr($jue,0,5))?>">
+                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="jue" value="<?php echo $Jue__fecha?>">
                     <select class="col-md-1 form-select" name="L1Jue__proceso" aria-label="Default select example">
                     <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
@@ -512,7 +496,7 @@
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="vie" value="<?php echo (substr($vie,0,5))?>">
+                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="vie" value="<?php echo $Vie__fecha?>">
                     <select class="col-md-1 form-select" name="L1Vie__proceso" aria-label="Default select example">
                     <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
@@ -606,7 +590,7 @@
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="sab" value="<?php echo (substr($sab,0,5))?>">
+                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="sab" value="<?php echo $Sab__fecha?>">
                     <select class="col-md-1 form-select" name="L1Sab__proceso" aria-label="Default select example">
                     <option value="" selected>Elegir</option>
                         <option value="ENTERA">ENTERA</option>
