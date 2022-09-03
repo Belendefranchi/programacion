@@ -39,7 +39,7 @@
 
             <?php
                 include("conexion.php");
-                $semana=$_GET["semana"];
+                $semana=($_GET['semana']);
             ?>
 
 <!-- ###########################################   ENCABEZADO   ############################################### -->
@@ -647,6 +647,7 @@ $Sab__fecha=$sem__fecha[5];
             </div>
         </form>
     </main>
+    <script src="script.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

@@ -28,38 +28,43 @@
                     </ul>
                 </div>
                 <div class="d-flex">
-                    <form class="d-flex justify-content-end" action="mostrar.php" method="post">
+                    <section>
+                        <input class="fs-4 form-control fw-bold text-center" type="text" value="Semana:" disabled>
+                    </section>
                         <section>
-                            <input class="fs-4 form-control fw-bold text-center" type="text" value="Semana:" disabled>
-                        </section>
-                        <section>
-                            <select class="fs-4 form-select form-control fw-bold text-center" name="sem" aria-label="Default select example">
-                                <?php
-                                    $sem = 52;
-                                    for ($i=0; $i<$sem; $i++){
-                                        $week[]=$sem - $i;
-                                ?>
-                                <option value="<?php echo $week[$i]?>"><?php echo $sem-$i?></option>
-                                <?php
-                                }
-                                ?>
-                            </select>
-                        </section>
-                        <section>
-                            <input class="fs-4 form-control fw-bold text-center" type="submit" value="Ver">
-                        </section>
+                        <select class="fs-4 form-select form-control fw-bold text-center" id="sem" name="sem" onchange="ShowSelected();" aria-label="Default select example">
+                            <?php
+                                $sem = 52;
+                                for ($i=0; $i<$sem; $i++){
+                                    $week[]=$sem - $i;
+                            ?>
+                            <option value="<?php echo $week[$i]?>"><?php echo $week[$i]?></option>
+                            <?php
+                            $semana=$week[$i];
+                            }
+                            ?>
+                        </select>
+                    </section>
+<!--                     <form class="d-flex justify-content-end" action="mostrar.php" method="post">
+                        <input class="fs-4 form-control fw-bold text-center" name="sem" type="text" value="<?php echo $semana?>">
+                        <input class="fs-4 form-control fw-bold text-center" type="submit" value="Ver">
                     </form>
-                    <form action="editar.php" method="get">
-                        <a class="a" href="editar.php?semana=52">
-                            <input class="fs-4 form-control fw-bold text-center" type="submit" value="Editar">
-                            <?php echo $sem?>
-                        </a>
-                    </form>
+                    <form class="d-flex justify-content-end" action="editar.php" method="post">
+                        <input class="fs-4 form-control fw-bold text-center" name="sem" type="text" value="<?php echo $i?>">
+                        <input class="fs-4 form-control fw-bold text-center" type="submit" value="Editar">
+                    </form> -->
+                    <a class="a" href="mostrar.php?semana=<?php echo $i?>"><input class="fs-4 form-control fw-bold text-center" type='button' value='Ver'></a>
+                    <a class="a" href="editar.php?semana=<?php echo $semana?>"><input class="fs-4 form-control fw-bold text-center" type='button' value='Editar'></a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <script src="script.js"></script>
-        <?php
-        include("conexion.php");
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
+
