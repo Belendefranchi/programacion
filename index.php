@@ -60,6 +60,11 @@
         </nav>
     </header>
     <main>
+        <div class="d-flex">
+            <a class="a" href="semAnterior.php"><input class="fs-4 form-control fw-bold text-center" type='button' value='Semana Anterior'></a>
+            <a class="a" href="semActual.php"><input class="fs-4 form-control fw-bold text-center" type='button' value='Semana Actual'></a>
+            <a class="a" href="semProxima.php"><input class="fs-4 form-control fw-bold text-center" type='button' value='Semana Proxima'></a>
+        </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="script.js"></script>

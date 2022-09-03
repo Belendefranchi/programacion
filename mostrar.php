@@ -54,7 +54,7 @@
                             <input class="fs-4 form-control fw-bold text-center" type="submit" value="Ver">
                         </section>
                         <a class="a" href="editar.php">
-                            <input class="fs-4 form-control fw-bold text-center" type="button" value=" Editar ">
+                            <input class="fs-4 form-control fw-bold text-center" type="button" value="Editar">
                         </a>
                     </form>
                 </div>

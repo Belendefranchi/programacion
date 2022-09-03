@@ -30,32 +30,8 @@
                 <div class="d-flex flex-row justify-content-end">
                     <?php
                         include("conexion.php");
-                        $semana = (date(W), time()); 
+                        $semana = date('W', time());
                     ?>
-                    <form class="d-flex justify-content-end" action="mostrar.php" method="post">
-                        <section>
-                            <input class="fs-4 form-control fw-bold text-center" type="text" value="Semana:" disabled>
-                        </section>
-                        <section>
-                            <select class="fs-4 form-select form-control fw-bold text-center" name="sem" aria-label="Default select example">
-                                <?php
-                                    $sem = 52;
-                                    for ($i=0; $i<$sem; $i++){
-                                        $week[]=$sem - $i;
-                                ?>
-                                <option value="<?php echo $week[$i]?>"><?php echo $sem-$i?></option>
-                                <?php
-                                }
-                                ?>
-                            </select>
-                        </section>
-                        <section>
-                            <input class="fs-4 form-control fw-bold text-center" type="submit" value="Ver">
-                        </section>
-                        <a class="a" href="editar.php">
-                            <input class="fs-4 form-control fw-bold text-center" type="button" value=" Editar ">
-                        </a>
-                    </form>
                 </div>
             </div>
         </nav>

@@ -30,8 +30,7 @@
                 <div class="d-flex flex-row justify-content-end">
                     <?php
                         include("conexion.php");
-                        echo 'Recibi '.$_GET['var'];
-                        $semana=($_GET['semana']);
+                        $semana = date('W', time())-1;
                     ?>
                     <form class="d-flex justify-content-end" action="mostrar.php" method="post">
                         <section>
