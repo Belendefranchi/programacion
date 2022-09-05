@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-lg fs-4 fw-bold">
             <div class="container-fluid">
                 <a class="" href="index.php">
-                    <img src="logo.png" alt="" width="60vw">
+                    <img src="logo.png" alt="" width="70vw">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -32,15 +32,27 @@
                         <input class="fs-4 form-control fw-bold text-center" type="submit" value="Enviar">
                 </div>
             </div>
+            <div class="d-flex flex-row justify-content-end">
+                <?php
+                    include("conexion.php");
+                    $semana=($_POST['semana']);
+                ?>
+                <form class="d-flex justify-content-end" action="mostrar.php" method="post">
+                    <section>
+                        <input class="fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" disabled>
+                    </section>
+                    <a class="a" href="editar.php">
+                        <input class="fs-4 form-control fw-bold text-center" type="button" value="Editar">
+                    </a>
+                    <a class="a" href="index.php">
+                        <input class="fs-4 form-control fw-bold text-center" type="button" value="Volver">
+                    </a>
+                </form>
+            </div>
         </nav>
     </header>
     <main class="main">
     <br>
-
-            <?php
-                include("conexion.php");
-                $semana=($_GET['semana']);
-            ?>
 
 <!-- ###########################################   ENCABEZADO   ############################################### -->
 

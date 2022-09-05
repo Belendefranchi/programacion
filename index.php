@@ -15,7 +15,7 @@
         <nav class="navbar navbar-expand-lg fs-4 fw-bold">
             <div class="container-fluid">
                 <a class="" href="#">
-                    <img src="logo.png" alt="" width="60vw">
+                    <img src="logo.png" alt="" width="70vw">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,44 +27,72 @@
                         </li>
                     </ul>
                 </div>
-                <div class="d-flex">
-                    <section>
-                        <input class="fs-4 form-control fw-bold text-center" type="text" value="Semana:" disabled>
-                    </section>
-                        <section>
-                        <select class="fs-4 form-select form-control fw-bold text-center" id="sem" name="sem" onchange="ShowSelected();" aria-label="Default select example">
-                            <?php
-                                $sem = 52;
-                                for ($i=0; $i<$sem; $i++){
-                                    $week[]=$sem - $i;
-                            ?>
-                            <option value="<?php echo $week[$i]?>"><?php echo $week[$i]?></option>
-                            <?php
-                            $semana=$week[$i];
-                            }
-                            ?>
-                        </select>
-                    </section>
-<!--                     <form class="d-flex justify-content-end" action="mostrar.php" method="post">
-                        <input class="fs-4 form-control fw-bold text-center" name="sem" type="text" value="<?php echo $semana?>">
-                        <input class="fs-4 form-control fw-bold text-center" type="submit" value="Ver">
-                    </form>
-                    <form class="d-flex justify-content-end" action="editar.php" method="post">
-                        <input class="fs-4 form-control fw-bold text-center" name="sem" type="text" value="<?php echo $i?>">
-                        <input class="fs-4 form-control fw-bold text-center" type="submit" value="Editar">
-                    </form> -->
-                    <a class="a" href="mostrar.php?semana=<?php echo $i?>"><input class="fs-4 form-control fw-bold text-center" type='button' value='Ver'></a>
-                    <a class="a" href="editar.php?semana=<?php echo $semana?>"><input class="fs-4 form-control fw-bold text-center" type='button' value='Editar'></a>
-                </div>
-            </div>
         </nav>
     </header>
     <main>
-        <div class="d-flex">
-            <a class="a" href="semAnterior.php"><input class="fs-4 form-control fw-bold text-center" type='button' value='Semana Anterior'></a>
-            <a class="a" href="semActual.php"><input class="fs-4 form-control fw-bold text-center" type='button' value='Semana Actual'></a>
-            <a class="a" href="semProxima.php"><input class="fs-4 form-control fw-bold text-center" type='button' value='Semana Proxima'></a>
+        <div class="d-flex justify-content-center">
+            <a class="a flex-fill" href="semAnterior.php"><input class="fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Anterior'></a>
+            <a class="a flex-fill" href="semActual.php"><input class="fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Actual'></a>
+            <a class="a flex-fill" href="semProxima.php"><input class="fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Proxima'></a>
         </div>
+        <form class="d-flex justify-content-center" action="mostrar.php" method="POST">
+            <input class="flex-fill fs-4 form-control fw-bold text-center" type="text" value="Otras semanas" disabled>
+            <select class="flex-fill fs-4 form-select form-control fw-bold text-center" id="semana" name="semana">
+                <option value="52">52</option>
+                <option value="51">51</option>
+                <option value="50">50</option>
+                <option value="49">49</option>
+                <option value="48">48</option>
+                <option value="47">47</option>
+                <option value="46">46</option>
+                <option value="45">45</option>
+                <option value="44">44</option>
+                <option value="43">43</option>
+                <option value="42">42</option>
+                <option value="41">41</option>
+                <option value="40">40</option>
+                <option value="39">39</option>
+                <option value="38">38</option>
+                <option value="37">37</option>
+                <option value="36">36</option>
+                <option value="35">35</option>
+                <option value="34">34</option>
+                <option value="33">33</option>
+                <option value="32">32</option>
+                <option value="31">31</option>
+                <option value="30">30</option>
+                <option value="29">29</option>
+                <option value="28">28</option>
+                <option value="27">27</option>
+                <option value="26">26</option>
+                <option value="25">25</option>
+                <option value="24">24</option>
+                <option value="23">23</option>
+                <option value="22">22</option>
+                <option value="21">21</option>
+                <option value="20">20</option>
+                <option value="19">19</option>
+                <option value="18">18</option>
+                <option value="17">17</option>
+                <option value="16">16</option>
+                <option value="15">15</option>
+                <option value="14">14</option>
+                <option value="13">13</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+            </select>
+            <input class="flex-fill fs-4 form-control fw-bold text-center" type="submit" value="Ver">
+        </form>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
