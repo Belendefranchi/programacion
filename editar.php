@@ -28,25 +28,14 @@
                     </ul>
                 </div>
                 <div class="d-flex flex-row justify-content-end">
-                    <form class="d-flex justify-content-end" action="enviar.php" method="post">
-                        <input class="fs-4 form-control fw-bold text-center" type="submit" value="Enviar">
-                </div>
-            </div>
-            <div class="d-flex flex-row justify-content-end">
-                <?php
-                    include("conexion.php");
-                    $semana=($_POST['semana']);
-                ?>
-                <form class="d-flex justify-content-end" action="mostrar.php" method="post">
-                    <section>
-                        <input class="fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" disabled>
-                    </section>
-                    <a class="a" href="editar.php">
-                        <input class="fs-4 form-control fw-bold text-center" type="button" value="Editar">
-                    </a>
-                    <a class="a" href="index.php">
-                        <input class="fs-4 form-control fw-bold text-center" type="button" value="Volver">
-                    </a>
+                    <?php
+                        include("conexion.php");
+                        $semana=($_POST['semana']);
+                    ?>
+                <form class="d-flex justify-content-end" action="enviar.php" method="post">
+                    <input class="fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" disabled>
+                    <input class="fs-4 form-control fw-bold text-center" type="submit" value="Enviar">
+                    <input class="fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
                 </form>
             </div>
         </nav>

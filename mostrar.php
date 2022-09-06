@@ -32,16 +32,10 @@
                         include("conexion.php");
                         $semana=($_POST['semana']);
                     ?>
-                    <form class="d-flex justify-content-end" action="mostrar.php" method="post">
-                        <section>
-                            <input class="fs-4 form-control fw-bold text-center" type="text" value="<?php echo $semana?>" name="semana">
-                        </section>
-                        <a class="a" href="editar.php">
-                            <input class="fs-4 form-control fw-bold text-center" type="button" value="Editar">
-                        </a>
-                        <a class="a" href="index.php">
-                            <input class="fs-4 form-control fw-bold text-center" type="button" value="Volver">
-                        </a>
+                    <form class="d-flex justify-content-end" action="editar.php" method="post">
+                        <input class="fs-4 form-control fw-bold text-center" type="text" value="<?php echo $semana?>" name="semana">
+                        <input class="fs-4 form-control fw-bold text-center" type="submit" value="Editar">
+                        <input class="fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
                     </form>
                 </div>
             </div>
