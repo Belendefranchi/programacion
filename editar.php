@@ -30,13 +30,12 @@
                 <div class="d-flex flex-row justify-content-end">
                     <?php
                         include("conexion.php");
-                        $semana=($_POST['semana']);
+                        $semana=substr(($_POST['semana']),-2);
                     ?>
                 <form class="d-flex justify-content-end" action="enviar.php" method="post">
-                    <input class="fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" disabled>
+                    <input class="fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" name="semana" readonly>
                     <input class="fs-4 form-control fw-bold text-center" type="submit" value="Enviar">
                     <input class="fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
-                </form>
             </div>
         </nav>
     </header>
@@ -47,7 +46,7 @@
 
             <div class="container text-center">
                 <div class="row seven-cols align-items-center">
-                    <div class="col-md-1 fs-4 form-control fw-bold text-center">Sem: <?php echo $semana?></div>
+                    <div class="col-md-1 fs-4 fw-bold table__font">DIA</div>
                     <div class="col-md-1 fs-4 fw-bold table__font">LOTE 1</div>
                     <div class="col-md-1 fs-4 fw-bold table__font">LOTE 2</div>
                     <div class="col-md-1 fs-4 fw-bold table__font">LOTE 3</div>
@@ -83,7 +82,7 @@ $Sab__fecha=$sem__fecha[5];
 <!-- ---------------------------------------------------------------------------------------------------------- -->
             <div class="container text-center">
                 <div class="row seven-cols align-items-center">
-                    <input type="text" class="col-md-1 fw-bold form-control" value="LUN" readonly>
+                    <input type="text" class="col-md-1 fw-bold form-control" value="LUNES" readonly>
                     <select class="col-md-1 form-select" name="L1Lun__tipo" aria-label="Default select example">
                         <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
@@ -178,7 +177,7 @@ $Sab__fecha=$sem__fecha[5];
 <!-- ---------------------------------------------------------------------------------------------------------- -->
             <div class="container text-center">
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 fw-bold form-control" value="MAR" readonly>
+                    <input type="text" class="col-md-1 fw-bold form-control" value="MARTES" readonly>
                     <select class="col-md-1 form-select" name="L1Mar__tipo" aria-label="Default select example">
                     <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
@@ -273,7 +272,7 @@ $Sab__fecha=$sem__fecha[5];
 <!-- ---------------------------------------------------------------------------------------------------------- -->
             <div class="container text-center">
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 fw-bold form-control" value="MIE" readonly>
+                    <input type="text" class="col-md-1 fw-bold form-control" value="MIERCOLES" readonly>
                     <select class="col-md-1 form-select" name="L1Mie__tipo" aria-label="Default select example">
                     <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
@@ -367,7 +366,7 @@ $Sab__fecha=$sem__fecha[5];
 <!-- ---------------------------------------------------------------------------------------------------------- -->
             <div class="container text-center">
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 fw-bold form-control" value="JUE" readonly>
+                    <input type="text" class="col-md-1 fw-bold form-control" value="JUEVES" readonly>
                     <select class="col-md-1 form-select" name="L1Jue__tipo" aria-label="Default select example">
                     <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
@@ -461,7 +460,7 @@ $Sab__fecha=$sem__fecha[5];
 <!-- ---------------------------------------------------------------------------------------------------------- -->
             <div class="container text-center">
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 fw-bold form-control" value="VIE" readonly>
+                    <input type="text" class="col-md-1 fw-bold form-control" value="VIERNES" readonly>
                     <select class="col-md-1 form-select" name="L1Vie__tipo" aria-label="Default select example">
                     <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>
@@ -555,7 +554,7 @@ $Sab__fecha=$sem__fecha[5];
 <!-- ---------------------------------------------------------------------------------------------------------- -->
             <div class="container text-center">
                 <div class="row seven-cols">
-                    <input type="text" class="col-md-1 fw-bold form-control" value="SAB" readonly>
+                    <input type="text" class="col-md-1 fw-bold form-control" value="SABADO" readonly>
                     <select class="col-md-1 form-select" name="L1Sab__tipo" aria-label="Default select example">
                     <option value="" selected>Elegir</option>
                         <option value="PESADA">PESADA</option>

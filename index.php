@@ -35,7 +35,7 @@
             <a class="a flex-fill" href="semActual.php"><input class="fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Actual'></a>
             <a class="a flex-fill" href="semProxima.php"><input class="fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Proxima'></a>
         </div>
-        <form class="d-flex justify-content-center" action="mostrar.php" method="POST">
+        <form class="d-flex justify-content-center" action="mostrar.php" method="GET">
             <input class="flex-fill fs-4 form-control fw-bold text-center" type="text" value="Otras semanas" disabled>
             <select class="flex-fill fs-4 form-select form-control fw-bold text-center" id="semana" name="semana">
                 <option value="52">52</option>

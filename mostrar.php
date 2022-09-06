@@ -30,10 +30,10 @@
                 <div class="d-flex flex-row justify-content-end">
                     <?php
                         include("conexion.php");
-                        $semana=($_POST['semana']);
+                        $semana=($_GET['semana']);
                     ?>
                     <form class="d-flex justify-content-end" action="editar.php" method="post">
-                        <input class="fs-4 form-control fw-bold text-center" type="text" value="<?php echo $semana?>" name="semana">
+                        <input class="fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" name="semana" readonly>
                         <input class="fs-4 form-control fw-bold text-center" type="submit" value="Editar">
                         <input class="fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
                     </form>
