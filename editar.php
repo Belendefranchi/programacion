@@ -76,6 +76,725 @@ $Jue__fecha=$sem__fecha[3];
 $Vie__fecha=$sem__fecha[4];
 $Sab__fecha=$sem__fecha[5];
 
+
+/* ############################################################## */
+/* ---------------------------LUNES------------------------------ */
+/* ############################################################## */
+        
+/* ---------------------------faena------------------------------ */ 
+/* -------------------------------------------------------------- */
+
+/* ---------------------------lote 1----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='lun'
+            and lote='1'
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L1Lun__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L1Lun__tipo=$L1Lun__faena["tipo"];
+$L1Lun__proceso=$L1Lun__faena["proceso"];
+$L1Lun__granja=$L1Lun__faena["granja"];
+$Lun__fecha=$L1Lun__faena["fecha"];
+$Lun__sem=$L1Lun__faena["sem"];
+
+
+/* ---------------------------lote 2----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='lun' 
+            and lote='2' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L2Lun__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L2Lun__tipo=$L2Lun__faena["tipo"];
+$L2Lun__proceso=$L2Lun__faena["proceso"];
+$L2Lun__granja=$L2Lun__faena["granja"];
+
+/* ---------------------------lote 3----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id 
+        FROM faena 
+            where sem='$semana'
+            and dia='lun' 
+            and lote='3' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L3Lun__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L3Lun__tipo=$L3Lun__faena["tipo"];
+$L3Lun__proceso=$L3Lun__faena["proceso"];
+$L3Lun__granja=$L3Lun__faena["granja"];
+
+
+/* ---------------------------lote 4----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='lun' 
+            and lote='4' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L4Lun__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L4Lun__tipo=$L4Lun__faena["tipo"];
+$L4Lun__proceso=$L4Lun__faena["proceso"];
+$L4Lun__granja=$L4Lun__faena["granja"];
+
+
+/* ---------------------------cocido----------------------------- */
+/* -------------------------------------------------------------- */ 
+
+$query="SELECT pro_cocido, ope_cocido, ext_cocido, sem, Id
+        FROM cocido 
+            where sem='$semana'
+            and dia='lun' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Lun__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$ProLun__cocido=$Lun__cocido["pro_cocido"];
+$OpeLun__cocido=$Lun__cocido["ope_cocido"];
+$ExtLun__cocido=$Lun__cocido["ext_cocido"];
+
+
+/* ---------------------------embarque--------------------------- */
+/* -------------------------------------------------------------- */ 
+
+$query="SELECT pro_embarque, ope_embarque, ext_embarque, sem, Id
+        FROM embarque
+            where sem='$semana'
+            and dia='lun'
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Lun__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$ProLun__embarque=$Lun__embarque["pro_embarque"];
+$OpeLun__embarque=$Lun__embarque["ope_embarque"];
+$ExtLun__embarque=$Lun__embarque["ext_embarque"];
+
+
+/* ############################################################## */
+/* ---------------------------MARTES----------------------------- */
+/* ############################################################## */
+
+/* ---------------------------faena------------------------------ */ 
+/* -------------------------------------------------------------- */
+/* ---------------------------lote 1----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='Mar' 
+            and lote='1' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L1Mar__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L1Mar__tipo=$L1Mar__faena["tipo"];
+$L1Mar__proceso=$L1Mar__faena["proceso"];
+$L1Mar__granja=$L1Mar__faena["granja"];
+$Mar__fecha=$L1Mar__faena["fecha"];
+
+/* ---------------------------lote 2----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='Mar' 
+            and lote='2' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L2Mar__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L2Mar__tipo=$L2Mar__faena["tipo"];
+$L2Mar__proceso=$L2Mar__faena["proceso"];
+$L2Mar__granja=$L2Mar__faena["granja"];
+
+
+/* ---------------------------lote 3----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id 
+        FROM faena 
+            where sem='$semana'
+            and dia='mar' 
+            and lote='3' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L3Mar__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L3Mar__tipo=$L3Mar__faena["tipo"];
+$L3Mar__proceso=$L3Mar__faena["proceso"];
+$L3Mar__granja=$L3Mar__faena["granja"];
+
+
+/* ---------------------------lote 4----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='mar' 
+            and lote='4' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L4Mar__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L4Mar__tipo=$L4Mar__faena["tipo"];
+$L4Mar__proceso=$L4Mar__faena["proceso"];
+$L4Mar__granja=$L4Mar__faena["granja"];
+
+
+/* ---------------------------cocido----------------------------- */
+/* -------------------------------------------------------------- */ 
+
+$query="SELECT pro_cocido, ope_cocido, ext_cocido, sem, Id
+        FROM cocido 
+            where sem='$semana'
+            and dia='mar' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Mar__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$ProMar__cocido=$Mar__cocido["pro_cocido"];
+$OpeMar__cocido=$Mar__cocido["ope_cocido"];
+$ExtMar__cocido=$Mar__cocido["ext_cocido"];
+
+
+/* ---------------------------embarque--------------------------- */
+/* -------------------------------------------------------------- */ 
+
+$query="SELECT pro_embarque, ope_embarque, ext_embarque, sem, Id
+        FROM embarque 
+            where sem='$semana'
+            and dia='mar' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Mar__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$ProMar__embarque=$Mar__embarque["pro_embarque"];
+$OpeMar__embarque=$Mar__embarque["ope_embarque"];
+$ExtMar__embarque=$Mar__embarque["ext_embarque"];
+
+/* ############################################################## */
+/* -------------------------MIERCOLES---------------------------- */
+/* ############################################################## */
+        
+/* ---------------------------faena------------------------------ */ 
+/* -------------------------------------------------------------- */       
+/* ---------------------------lote 1----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='mie' 
+            and lote='1' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L1Mie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L1Mie__tipo=$L1Mie__faena["tipo"];
+$L1Mie__proceso=$L1Mie__faena["proceso"];
+$L1Mie__granja=$L1Mie__faena["granja"];
+$Mie__fecha=$L1Mie__faena["fecha"];
+
+/* ---------------------------lote 2----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='mie' 
+            and lote='2' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L2Mie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L2Mie__tipo=$L2Mie__faena["tipo"];
+$L2Mie__proceso=$L2Mie__faena["proceso"];
+$L2Mie__granja=$L2Mie__faena["granja"];
+
+
+/* ---------------------------lote 3----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id 
+        FROM faena 
+            where sem='$semana'
+            and dia='mie' 
+            and lote='3' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L3Mie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L3Mie__tipo=$L3Mie__faena["tipo"];
+$L3Mie__proceso=$L3Mie__faena["proceso"];
+$L3Mie__granja=$L3Mie__faena["granja"];
+
+
+/* ---------------------------lote 4----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='mie' 
+            and lote='4' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L4Mie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L4Mie__tipo=$L4Mie__faena["tipo"];
+$L4Mie__proceso=$L4Mie__faena["proceso"];
+$L4Mie__granja=$L4Mie__faena["granja"];
+
+
+/* ---------------------------cocido----------------------------- */
+/* -------------------------------------------------------------- */ 
+
+$query="SELECT pro_cocido, ope_cocido, ext_cocido, sem, Id
+        FROM cocido 
+            where sem='$semana'
+            and dia='mie' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Mie__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$ProMie__cocido=$Mie__cocido["pro_cocido"];
+$OpeMie__cocido=$Mie__cocido["ope_cocido"];
+$ExtMie__cocido=$Mie__cocido["ext_cocido"];
+
+
+/* ---------------------------embarque--------------------------- */
+/* -------------------------------------------------------------- */ 
+
+$query="SELECT pro_embarque, ope_embarque, ext_embarque, sem, Id
+        FROM embarque 
+            where sem='$semana'
+            and dia='mie' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Mie__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$ProMie__embarque=$Mie__embarque["pro_embarque"];
+$OpeMie__embarque=$Mie__embarque["ope_embarque"];
+$ExtMie__embarque=$Mie__embarque["ext_embarque"];
+
+/* ############################################################## */
+/* --------------------------JUEVES------------------------------ */
+/* ############################################################## */
+        
+/* ---------------------------faena------------------------------ */ 
+/* -------------------------------------------------------------- */       
+/* ---------------------------lote 1----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='jue' 
+            and lote='1' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L1Jue__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L1Jue__tipo=$L1Jue__faena["tipo"];
+$L1Jue__proceso=$L1Jue__faena["proceso"];
+$L1Jue__granja=$L1Jue__faena["granja"];
+$Jue__fecha=$L1Jue__faena["fecha"];
+
+/* ---------------------------lote 2----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='jue' 
+            and lote='2' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L2Jue__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L2Jue__tipo=$L2Jue__faena["tipo"];
+$L2Jue__proceso=$L2Jue__faena["proceso"];
+$L2Jue__granja=$L2Jue__faena["granja"];
+
+
+/* ---------------------------lote 3----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id 
+        FROM faena 
+            where sem='$semana'
+            and dia='jue' 
+            and lote='3' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L3Jue__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L3Jue__tipo=$L3Jue__faena["tipo"];
+$L3Jue__proceso=$L3Jue__faena["proceso"];
+$L3Jue__granja=$L3Jue__faena["granja"];
+
+
+/* ---------------------------lote 4----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='jue' 
+            and lote='4' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L4Jue__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L4Jue__tipo=$L4Jue__faena["tipo"];
+$L4Jue__proceso=$L4Jue__faena["proceso"];
+$L4Jue__granja=$L4Jue__faena["granja"];
+
+
+/* ---------------------------cocido----------------------------- */
+/* -------------------------------------------------------------- */ 
+
+$query="SELECT pro_cocido, ope_cocido, ext_cocido, sem, Id
+        FROM cocido 
+            where sem='$semana'
+            and dia='jue' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Jue__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$ProJue__cocido=$Jue__cocido["pro_cocido"];
+$OpeJue__cocido=$Jue__cocido["ope_cocido"];
+$ExtJue__cocido=$Jue__cocido["ext_cocido"];
+
+
+/* ---------------------------embarque--------------------------- */
+/* -------------------------------------------------------------- */ 
+
+$query="SELECT pro_embarque, ope_embarque, ext_embarque, sem, Id
+        FROM embarque 
+            where sem='$semana'
+            and dia='jue' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Jue__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$ProJue__embarque=$Jue__embarque["pro_embarque"];
+$OpeJue__embarque=$Jue__embarque["ope_embarque"];
+$ExtJue__embarque=$Jue__embarque["ext_embarque"];
+
+/* ############################################################## */
+/* --------------------------VIERNES----------------------------- */
+/* ############################################################## */
+        
+/* ---------------------------faena------------------------------ */ 
+/* -------------------------------------------------------------- */       
+/* ---------------------------lote 1----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='vie' 
+            and lote='1' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L1Vie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L1Vie__tipo=$L1Vie__faena["tipo"];
+$L1Vie__proceso=$L1Vie__faena["proceso"];
+$L1Vie__granja=$L1Vie__faena["granja"];
+$Vie__fecha=$L1Vie__faena["fecha"];
+
+/* ---------------------------lote 2----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='vie' 
+            and lote='2' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L2Vie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L2Vie__tipo=$L2Vie__faena["tipo"];
+$L2Vie__proceso=$L2Vie__faena["proceso"];
+$L2Vie__granja=$L2Vie__faena["granja"];
+
+
+/* ---------------------------lote 3----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id 
+        FROM faena 
+            where sem='$semana'
+            and dia='vie' 
+            and lote='3' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L3Vie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L3Vie__tipo=$L3Vie__faena["tipo"];
+$L3Vie__proceso=$L3Vie__faena["proceso"];
+$L3Vie__granja=$L3Vie__faena["granja"];
+
+
+/* ---------------------------lote 4----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='vie' 
+            and lote='4' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L4Vie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L4Vie__tipo=$L4Vie__faena["tipo"];
+$L4Vie__proceso=$L4Vie__faena["proceso"];
+$L4Vie__granja=$L4Vie__faena["granja"];
+
+
+/* ---------------------------cocido----------------------------- */
+/* -------------------------------------------------------------- */ 
+
+$query="SELECT pro_cocido, ope_cocido, ext_cocido, sem, Id
+        FROM cocido 
+            where sem='$semana'
+            and dia='vie' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Vie__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$ProVie__cocido=$Vie__cocido["pro_cocido"];
+$OpeVie__cocido=$Vie__cocido["ope_cocido"];
+$ExtVie__cocido=$Vie__cocido["ext_cocido"];
+
+
+/* ---------------------------embarque--------------------------- */
+/* -------------------------------------------------------------- */ 
+
+$query="SELECT pro_embarque, ope_embarque, ext_embarque, sem, Id
+        FROM embarque 
+            where sem='$semana'
+            and dia='vie' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Vie__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$ProVie__embarque=$Vie__embarque["pro_embarque"];
+$OpeVie__embarque=$Vie__embarque["ope_embarque"];
+$ExtVie__embarque=$Vie__embarque["ext_embarque"];
+
+/* ############################################################## */
+/* --------------------------SABADO------------------------------ */
+/* ############################################################## */
+        
+/* ---------------------------faena------------------------------ */ 
+/* -------------------------------------------------------------- */       
+/* ---------------------------lote 1----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='sab' 
+            and lote='1' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L1Sab__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L1Sab__tipo=$L1Sab__faena["tipo"];
+$L1Sab__proceso=$L1Sab__faena["proceso"];
+$L1Sab__granja=$L1Sab__faena["granja"];
+$Sab__fecha=$L1Sab__faena["fecha"];
+
+/* ---------------------------lote 2----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='sab' 
+            and lote='2' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L2Sab__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L2Sab__tipo=$L2Sab__faena["tipo"];
+$L2Sab__proceso=$L2Sab__faena["proceso"];
+$L2Sab__granja=$L2Sab__faena["granja"];
+
+
+/* ---------------------------lote 3----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id 
+        FROM faena 
+            where sem='$semana'
+            and dia='sab' 
+            and lote='3' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L3Sab__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L3Sab__tipo=$L3Sab__faena["tipo"];
+$L3Sab__proceso=$L3Sab__faena["proceso"];
+$L3Sab__granja=$L3Sab__faena["granja"];
+
+
+/* ---------------------------lote 4----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, sem, Id
+        FROM faena 
+        where sem='$semana'
+        and dia='sab' 
+            and lote='4' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L4Sab__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L4Sab__tipo=$L4Sab__faena["tipo"];
+$L4Sab__proceso=$L4Sab__faena["proceso"];
+$L4Sab__granja=$L4Sab__faena["granja"];
+
+
+/* ---------------------------cocido----------------------------- */
+/* -------------------------------------------------------------- */ 
+
+$query="SELECT pro_cocido, ope_cocido, ext_cocido, sem, Id
+        FROM cocido 
+            where sem='$semana'
+            and dia='sab' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Sab__cocido=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$ProSab__cocido=$Sab__cocido["pro_cocido"];
+$OpeSab__cocido=$Sab__cocido["ope_cocido"];
+$ExtSab__cocido=$Sab__cocido["ext_cocido"];
+
+
+/* ---------------------------embarque--------------------------- */
+/* -------------------------------------------------------------- */ 
+
+$query="SELECT pro_embarque, ope_embarque, ext_embarque, sem, Id
+        FROM embarque 
+            where sem='$semana'
+            and dia='sab' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();
+$Sab__embarque=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$ProSab__embarque=$Sab__embarque["pro_embarque"];
+$OpeSab__embarque=$Sab__embarque["ope_embarque"];
+$ExtSab__embarque=$Sab__embarque["ext_embarque"];
+
+
 ?>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- ---------------------------------------------------TIPO--------------------------------------------------- -->
@@ -84,35 +803,35 @@ $Sab__fecha=$sem__fecha[5];
                 <div class="row seven-cols align-items-center">
                     <input type="text" class="col-md-1 fw-bold form-control" value="LUNES" readonly>
                     <select class="col-md-1 form-select" name="L1Lun__tipo" aria-label="Default select example">
-                        <option value="" selected>Elegir</option>
+                        <option value="" selected><?php echo $L1Lun__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Lun__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L2Lun__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Lun__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L3Lun__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Lun__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L4Lun__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="ProLun__cocido">
-                    <input type="text" class="col-md-1 form-control" name="ProLun__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProLun__cocido?>"   name="ProLun__cocido">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProLun__embarque?>" name="ProLun__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
@@ -120,7 +839,7 @@ $Sab__fecha=$sem__fecha[5];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center " name="lun" value="<?php echo $Lun__fecha?>">
                     <select class="col-md-1 form-select" name="L1Lun__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L1Lun__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -128,7 +847,7 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Lun__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L2Lun__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -136,7 +855,7 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Lun__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L3Lun__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -144,15 +863,15 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Lun__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L4Lun__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="OpeLun__cocido">
-                    <input type="text" class="col-md-1 form-control" name="OpeLun__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeLun__cocido?>"   name="OpeLun__cocido">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeLun__embarque?>" name="OpeLun__embarque">
                 </div>
 
 <!-- ---------------------------------------------------------------------------------------------------------- -->
@@ -160,12 +879,12 @@ $Sab__fecha=$sem__fecha[5];
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control">
-                    <input type="text" class="col-md-1 form-control" name="L1Lun__granja">
-                    <input type="text" class="col-md-1 form-control" name="L2Lun__granja">
-                    <input type="text" class="col-md-1 form-control" name="L3Lun__granja">
-                    <input type="text" class="col-md-1 form-control" name="L4Lun__granja">
-                    <input type="text" class="col-md-1 form-control" name="ExtLun__cocido">
-                    <input type="text" class="col-md-1 form-control" name="ExtLun__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L1Lun__granja?>"    name="L1Lun__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L2Lun__granja?>"    name="L2Lun__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L3Lun__granja?>"    name="L3Lun__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L4Lun__granja?>"    name="L4Lun__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtLun__cocido?>"   name="ExtLun__cocido">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtLun__embarque?>" name="ExtLun__embarque">
                 </div>
             </div>
             <br>
@@ -179,35 +898,35 @@ $Sab__fecha=$sem__fecha[5];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 fw-bold form-control" value="MARTES" readonly>
                     <select class="col-md-1 form-select" name="L1Mar__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L1Mar__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Mar__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L2Mar__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Mar__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L3Mar__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Mar__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L4Mar__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="ProMar__cocido">
-                    <input type="text" class="col-md-1 form-control" name="ProMar__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProMar__cocido?>"   name="ProMar__cocido">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProMar__embarque?>" name="ProMar__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
@@ -216,7 +935,7 @@ $Sab__fecha=$sem__fecha[5];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center" name="mar" value="<?php print_r ($Mar__fecha)?>">
                     <select class="col-md-1 form-select" name="L1Mar__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L1Mar__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -224,7 +943,7 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Mar__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L2Mar__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -232,7 +951,7 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Mar__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L3Mar__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -240,27 +959,27 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Mar__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L4Mar__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="OpeMar__cocido">
-                    <input type="text" class="col-md-1 form-control" name="OpeMar__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeMar__cocido?>"   name="OpeMar__cocido">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeMar__embarque?>" name="OpeMar__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control">
-                    <input type="text" class="col-md-1 form-control" name="L1Mar__granja">
-                    <input type="text" class="col-md-1 form-control" name="L2Mar__granja">
-                    <input type="text" class="col-md-1 form-control" name="L3Mar__granja">
-                    <input type="text" class="col-md-1 form-control" name="L4Mar__granja">
-                    <input type="text" class="col-md-1 form-control" name="ExtMar__cocido">
-                    <input type="text" class="col-md-1 form-control" name="ExtMar__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L1Mar__granja?>"    name="L1Mar__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L2Mar__granja?>"    name="L2Mar__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L3Mar__granja?>"    name="L3Mar__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L4Mar__granja?>"    name="L4Mar__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMar__cocido?>"   name="ExtMar__cocido">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMar__embarque?>" name="ExtMar__embarque">
                 </div>
             </div>
             <br>
@@ -274,35 +993,35 @@ $Sab__fecha=$sem__fecha[5];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 fw-bold form-control" value="MIERCOLES" readonly>
                     <select class="col-md-1 form-select" name="L1Mie__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L1Mie__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Mie__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L2Mie__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Mie__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L3Mie__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Mie__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L4Mie__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="ProMie__cocido">
-                    <input type="text" class="col-md-1 form-control" name="ProMie__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProMie__cocido?>"   name="ProMie__cocido">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProMie__embarque?>" name="ProMie__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
@@ -310,7 +1029,7 @@ $Sab__fecha=$sem__fecha[5];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center" name="mie" value="<?php echo $Mie__fecha?>">
                     <select class="col-md-1 form-select" name="L1Mie__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L1Mie__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -318,7 +1037,7 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Mie__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L2Mie__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -326,7 +1045,7 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Mie__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L3Mie__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -334,27 +1053,27 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Mie__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L4Mie__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="OpeMie__cocido">
-                    <input type="text" class="col-md-1 form-control" name="OpeMie__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeMie__cocido?>"   name="OpeMie__cocido">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeMie__embarque?>" name="OpeMie__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control">
-                    <input type="text" class="col-md-1 form-control" name="L1Mie__granja">
-                    <input type="text" class="col-md-1 form-control" name="L2Mie__granja">
-                    <input type="text" class="col-md-1 form-control" name="L3Mie__granja">
-                    <input type="text" class="col-md-1 form-control" name="L4Mie__granja">
-                    <input type="text" class="col-md-1 form-control" name="ExtMie__cocido">
-                    <input type="text" class="col-md-1 form-control" name="ExtMie__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L1Mie__granja?>" name="L1Mie__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L2Mie__granja?>" name="L2Mie__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L3Mie__granja?>" name="L3Mie__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L4Mie__granja?>" name="L4Mie__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMie__cocido?>" name="ExtMie__cocido">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMie__embarque?>" name="ExtMie__embarque">
                 </div>
             </div>
             <br>
@@ -368,35 +1087,35 @@ $Sab__fecha=$sem__fecha[5];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 fw-bold form-control" value="JUEVES" readonly>
                     <select class="col-md-1 form-select" name="L1Jue__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L1Jue__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Jue__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L2Jue__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Jue__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L3Jue__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Jue__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L4Jue__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="ProJue__cocido">
-                    <input type="text" class="col-md-1 form-control" name="ProJue__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProJue__cocido?>"   name="ProJue__cocido">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProJue__embarque?>" name="ProJue__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
@@ -404,7 +1123,7 @@ $Sab__fecha=$sem__fecha[5];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center" name="jue" value="<?php echo $Jue__fecha?>">
                     <select class="col-md-1 form-select" name="L1Jue__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L1Jue__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -412,7 +1131,7 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Jue__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L2Jue__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -420,7 +1139,7 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Jue__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L3Jue__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -428,27 +1147,27 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Jue__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L4Jue__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="OpeJue__cocido">                  
-                    <input type="text" class="col-md-1 form-control" name="OpeJue__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeJue__cocido?>"   name="OpeJue__cocido">                  
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeJue__embarque?>" name="OpeJue__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control">
-                    <input type="text" class="col-md-1 form-control" name="L1Jue__granja">
-                    <input type="text" class="col-md-1 form-control" name="L2Jue__granja">
-                    <input type="text" class="col-md-1 form-control" name="L3Jue__granja">
-                    <input type="text" class="col-md-1 form-control" name="L4Jue__granja">
-                    <input type="text" class="col-md-1 form-control" name="ExtJue__cocido">
-                    <input type="text" class="col-md-1 form-control" name="ExtJue__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L1Jue__granja?>" name="L1Jue__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L2Jue__granja?>" name="L2Jue__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L3Jue__granja?>" name="L3Jue__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L4Jue__granja?>" name="L4Jue__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtJue__cocido?>" name="ExtJue__cocido">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtJue__embarque?>" name="ExtJue__embarque">
                 </div>
             </div>
             <br>
@@ -462,35 +1181,35 @@ $Sab__fecha=$sem__fecha[5];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 fw-bold form-control" value="VIERNES" readonly>
                     <select class="col-md-1 form-select" name="L1Vie__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L1Vie__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Vie__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L2Vie__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Vie__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L3Vie__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Vie__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L4Vie__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="ProVie__cocido">
-                    <input type="text" class="col-md-1 form-control" name="ProVie__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProVie__cocido?>"   name="ProVie__cocido">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProVie__embarque?>" name="ProVie__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
@@ -498,7 +1217,7 @@ $Sab__fecha=$sem__fecha[5];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center" name="vie" value="<?php echo $Vie__fecha?>">
                     <select class="col-md-1 form-select" name="L1Vie__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L1Vie__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -506,7 +1225,7 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Vie__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L2Vie__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -514,7 +1233,7 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Vie__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L3Vie__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -522,27 +1241,27 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Vie__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L4Vie__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="OpeVie__cocido">                    
-                    <input type="text" class="col-md-1 form-control" name="OpeVie__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeVie__cocido?>"   name="OpeVie__cocido">                    
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeVie__embarque?>" name="OpeVie__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control">
-                    <input type="text" class="col-md-1 form-control" name="L1Vie__granja">
-                    <input type="text" class="col-md-1 form-control" name="L2Vie__granja">
-                    <input type="text" class="col-md-1 form-control" name="L3Vie__granja">
-                    <input type="text" class="col-md-1 form-control" name="L4Vie__granja">
-                    <input type="text" class="col-md-1 form-control" name="ExtVie__cocido">
-                    <input type="text" class="col-md-1 form-control" name="ExtVie__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L1Jue__granja?>" name="L1Jue__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L2Jue__granja?>" name="L2Jue__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L3Jue__granja?>" name="L3Jue__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L4Jue__granja?>" name="L4Jue__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtJue__cocido?>" name="ExtJue__cocido">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtJue__embarque?>" name="ExtJue__embarque">
                 </div>
             </div>
             <br>
@@ -556,35 +1275,35 @@ $Sab__fecha=$sem__fecha[5];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 fw-bold form-control" value="SABADO" readonly>
                     <select class="col-md-1 form-select" name="L1Sab__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L1Sab__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Sab__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L2Sab__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Sab__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L3Sab__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Sab__tipo" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L4Sab__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="ProSab__cocido">
-                    <input type="text" class="col-md-1 form-control" name="ProSab__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProSab__cocido?>"   name="ProSab__cocido">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProSab__embarque?>" name="ProSab__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
@@ -592,7 +1311,7 @@ $Sab__fecha=$sem__fecha[5];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center" name="sab" value="<?php echo $Sab__fecha?>">
                     <select class="col-md-1 form-select" name="L1Sab__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L1Sab__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -600,7 +1319,7 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Sab__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L2Sab__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -608,7 +1327,7 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Sab__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L3Sab__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
@@ -616,27 +1335,27 @@ $Sab__fecha=$sem__fecha[5];
                         <option value="FASON">FASON</option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Sab__proceso" aria-label="Default select example">
-                    <option value="" selected>Elegir</option>
+                    <option value="" selected><?php echo $L4Sab__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
                     </select>
-                    <input type="text" class="col-md-1 form-control" name="OpeSab__cocido">                
-                    <input type="text" class="col-md-1 form-control" name="OpeSab__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeSab__cocido?>"   name="OpeSab__cocido">                
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeSab__embarque?>" name="OpeSab__embarque">
                 </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control">
-                    <input type="text" class="col-md-1 form-control" name="L1Sab__granja">
-                    <input type="text" class="col-md-1 form-control" name="L2Sab__granja">
-                    <input type="text" class="col-md-1 form-control" name="L3Sab__granja">
-                    <input type="text" class="col-md-1 form-control" name="L4Sab__granja">
-                    <input type="text" class="col-md-1 form-control" name="ExtSab__cocido">
-                    <input type="text" class="col-md-1 form-control" name="ExtSab__embarque">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L1Sab__granja?>" name="L1Sab__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L2Sab__granja?>" name="L2Sab__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L3Sab__granja?>" name="L3Sab__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $L4Sab__granja?>" name="L4Sab__granja">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtSab__cocido?>" name="ExtSab__cocido">
+                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtSab__embarque?>" name="ExtSab__embarque">
                 </div>
             </div>
 

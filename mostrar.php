@@ -167,7 +167,7 @@ $resultado->closeCursor();
 
 $ProLun__embarque=$Lun__embarque["pro_embarque"];
 $OpeLun__embarque=$Lun__embarque["ope_embarque"];
-$ExtLun__embarque=$Lun__embarque["pro_embarque"];
+$ExtLun__embarque=$Lun__embarque["ext_embarque"];
 
 
 /* ############################################################## */
@@ -287,7 +287,7 @@ $resultado->closeCursor();
 
 $ProMar__embarque=$Mar__embarque["pro_embarque"];
 $OpeMar__embarque=$Mar__embarque["ope_embarque"];
-$ExtMar__embarque=$Mar__embarque["pro_embarque"];
+$ExtMar__embarque=$Mar__embarque["ext_embarque"];
 
 /* ############################################################## */
 /* -------------------------MIERCOLES---------------------------- */
@@ -525,7 +525,7 @@ $resultado->closeCursor();
 
 $ProJue__embarque=$Jue__embarque["pro_embarque"];
 $OpeJue__embarque=$Jue__embarque["ope_embarque"];
-$ExtJue__embarque=$Jue__embarque["pro_embarque"];
+$ExtJue__embarque=$Jue__embarque["ext_embarque"];
 
 /* ############################################################## */
 /* --------------------------VIERNES----------------------------- */
@@ -644,7 +644,7 @@ $resultado->closeCursor();
 
 $ProVie__embarque=$Vie__embarque["pro_embarque"];
 $OpeVie__embarque=$Vie__embarque["ope_embarque"];
-$ExtVie__embarque=$Vie__embarque["pro_embarque"];
+$ExtVie__embarque=$Vie__embarque["ext_embarque"];
 
 /* ############################################################## */
 /* --------------------------SABADO------------------------------ */
