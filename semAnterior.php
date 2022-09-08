@@ -771,7 +771,7 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
 /* ############################################################## */
 
         ?>
-        <div class="container-fluid">
+        <div class="container">
             <table class="table-responsive table__font" id="target">
                 <thead>
                     <tr class="table__row--dark table__font">
