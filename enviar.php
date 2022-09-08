@@ -208,13 +208,13 @@
     $resultadoCocidoLun->closeCursor();
 
     $queryEmbarqueLun="UPDATE embarque set pro_embarque='$ProLun__embarque', ope_embarque='$OpeLun__embarque', ext_embarque='$ExtLun__embarque'
-    WHERE sem='$semana'
-        and dia='lun'
-        and fecha='$lun'";
+                        WHERE sem='$semana'
+                            and dia='lun'
+                            and fecha='$lun'";
 
-$resultadoEmbarqueLun=$base->prepare($queryEmbarqueLun);     
-$resultadoEmbarqueLun->execute(array());
-$resultadoEmbarqueLun->closeCursor();
+    $resultadoEmbarqueLun=$base->prepare($queryEmbarqueLun);
+    $resultadoEmbarqueLun->execute(array());
+    $resultadoEmbarqueLun->closeCursor();
 
 /* ################################################## MARTES ################################################### */
 
@@ -273,9 +273,9 @@ $resultadoEmbarqueLun->closeCursor();
                             and dia='mar'
                             and fecha='$mar'";
 
-$resultadoEmbarqueMar=$base->prepare($queryEmbarqueMar);     
-$resultadoEmbarqueMar->execute(array());
-$resultadoEmbarqueMar->closeCursor();
+    $resultadoEmbarqueMar=$base->prepare($queryEmbarqueMar);     
+    $resultadoEmbarqueMar->execute(array());
+    $resultadoEmbarqueMar->closeCursor();
 
 
 /* ################################################## MIERCOLES ################################################### */
@@ -287,7 +287,7 @@ $resultadoEmbarqueMar->closeCursor();
                             and fecha='$mie'
                             and lote='1'";
 
-    $resultadoFaenaL1Mie=$base->prepare($queryFaenaL1Lun);     
+    $resultadoFaenaL1Mie=$base->prepare($queryFaenaL1Mie);     
     $resultadoFaenaL1Mie->execute(array());
     $resultadoFaenaL1Mie->closeCursor();
 
@@ -322,23 +322,23 @@ $resultadoEmbarqueMar->closeCursor();
     $resultadoFaenaL4Mie->closeCursor();
 
 
-    $queryCocidoMar="UPDATE cocido set pro_cocido='$ProMar__cocido', ope_cocido='$OpeMar__cocido', ext_cocido='$ExtMar__cocido'
+    $queryCocidoMie="UPDATE cocido set pro_cocido='$ProMie__cocido', ope_cocido='$OpeMie__cocido', ext_cocido='$ExtMie__cocido'
                         WHERE sem='$semana'
-                            and dia='mar'
-                            and fecha='$mar'";
+                            and dia='mie'
+                            and fecha='$mie'";
 
-    $resultadoCocidoMar=$base->prepare($queryCocidoMar);     
-    $resultadoCocidoMar->execute(array());
-    $resultadoCocidoLun->closeCursor();
+    $resultadoCocidoMie=$base->prepare($queryCocidoMie);     
+    $resultadoCocidoMie->execute(array());
+    $resultadoCocidoMie->closeCursor();
 
-    $queryEmbarqueMar="UPDATE embarque set pro_embarque='$ProMar__embarque', ope_embarque='$OpeMar__embarque', ext_embarque='$ExtMar__embarque'
+    $queryEmbarqueMie="UPDATE embarque set pro_embarque='$ProMie__embarque', ope_embarque='$OpeMie__embarque', ext_embarque='$ExtMie__embarque'
                         WHERE sem='$semana'
-                            and dia='mar'
-                            and fecha='$mar'";
+                            and dia='mie'
+                            and fecha='$mie'";
 
-$resultadoEmbarqueMar=$base->prepare($queryEmbarqueMar);     
-$resultadoEmbarqueMar->execute(array());
-$resultadoEmbarqueMar->closeCursor();
+    $resultadoEmbarqueMie=$base->prepare($queryEmbarqueMie);     
+    $resultadoEmbarqueMie->execute(array());
+    $resultadoEmbarqueMie->closeCursor();
 
 
 /* ################################################## JUEVES ################################################### */
@@ -448,10 +448,10 @@ $resultadoEmbarqueMar->closeCursor();
     $resultadoFaenaL4Vie->closeCursor();
 
 
-        $queryCocidoVie="UPDATE cocido set pro_cocido='$ProVie__cocido', ope_cocido='$OpeVie__cocido', ext_cocido='$ExtVie__cocido'
-                            WHERE sem='$semana'
-                                and dia='vie'
-                                and fecha='$vie'";
+    $queryCocidoVie="UPDATE cocido set pro_cocido='$ProVie__cocido', ope_cocido='$OpeVie__cocido', ext_cocido='$ExtVie__cocido'
+                        WHERE sem='$semana'
+                            and dia='vie'
+                            and fecha='$vie'";
 
     $resultadoCocidoVie=$base->prepare($queryCocidoVie);     
     $resultadoCocidoVie->execute(array());
@@ -471,40 +471,40 @@ $resultadoEmbarqueMar->closeCursor();
 
 
     $queryFaenaL1Sab="UPDATE faena set tipo='$L1Sab__tipo', proceso='$L1Sab__proceso', granja='$L1Sab__granja'
-                    WHERE sem='$semana'
-                        and dia='sab'
-                        and fecha='$sab'
-                        and lote='1'";
+                        WHERE sem='$semana'
+                            and dia='sab'
+                            and fecha='$sab'
+                            and lote='1'";
 
     $resultadoFaenaL1Sab=$base->prepare($queryFaenaL1Sab);     
     $resultadoFaenaL1Sab->execute(array());
     $resultadoFaenaL1Sab->closeCursor();
 
     $queryFaenaL2Sab="UPDATE faena set tipo='$L2Sab__tipo', proceso='$L2Sab__proceso', granja='$L2Sab__granja'
-                    WHERE sem='$semana'
-                        and dia='sab'
-                        and fecha='$sab'
-                        and lote='2'";
+                        WHERE sem='$semana'
+                            and dia='sab'
+                            and fecha='$sab'
+                            and lote='2'";
 
     $resultadoFaenaL2Sab=$base->prepare($queryFaenaL2Sab);     
     $resultadoFaenaL2Sab->execute(array());
     $resultadoFaenaL2Sab->closeCursor();
 
     $queryFaenaL3Sab="UPDATE faena set tipo='$L3Sab__tipo', proceso='$L3Sab__proceso', granja='$L3Sab__granja'
-                    WHERE sem='$semana'
-                        and dia='sab'
-                        and fecha='$sab'
-                        and lote='3'";
+                        WHERE sem='$semana'
+                            and dia='sab'
+                            and fecha='$sab'
+                            and lote='3'";
 
     $resultadoFaenaL3Sab=$base->prepare($queryFaenaL3Sab);     
     $resultadoFaenaL3Sab->execute(array());
     $resultadoFaenaL3Sab->closeCursor();
 
     $queryFaenaL4Sab="UPDATE faena set tipo='$L4Sab__tipo', proceso='$L4Sab__proceso', granja='$L4Sab__granja'
-                    WHERE sem='$semana'
-                        and dia='sab'
-                        and fecha='$sab'
-                        and lote='4'";
+                        WHERE sem='$semana'
+                            and dia='sab'
+                            and fecha='$sab'
+                            and lote='4'";
 
     $resultadoFaenaL4Sab=$base->prepare($queryFaenaL4Sab);     
     $resultadoFaenaL4Sab->execute(array());

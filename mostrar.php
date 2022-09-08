@@ -181,7 +181,7 @@ $ExtLun__embarque=$Lun__embarque["ext_embarque"];
 $query="SELECT tipo, proceso, granja, fecha, sem, Id
         FROM faena 
             where sem='$semana'
-            and dia='Mar' 
+            and dia='mar' 
             and lote='1' 
                 ORDER BY Id DESC";
 
@@ -200,7 +200,7 @@ $Mar__fecha=$L1Mar__faena["fecha"];
 $query="SELECT tipo, proceso, granja, fecha, sem, Id
         FROM faena 
             where sem='$semana'
-            and dia='Mar' 
+            and dia='mar' 
             and lote='2' 
                 ORDER BY Id DESC";
 
