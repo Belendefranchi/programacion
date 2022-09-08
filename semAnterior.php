@@ -14,8 +14,8 @@
     <header>
         <nav class="navbar navbar-expand-lg fs-4 fw-bold">
             <div class="container-fluid">
-                <a class="" href="index.php">
-                    <img src="logo.png" alt="" width="60vw">
+                <a href="index.php">
+                    <img src="logo.png" alt="" width="70vw">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,37 +30,19 @@
                 <div class="d-flex flex-row justify-content-end">
                     <?php
                         include("conexion.php");
+                        /* $semana=($_GET['semana']); */
                         $semana = date('W', time())-1;
                     ?>
-                    <form class="d-flex justify-content-end" action="mostrar.php" method="post">
-                        <section>
-                            <input class="fs-4 form-control fw-bold text-center" type="text" value="Semana:" disabled>
-                        </section>
-                        <section>
-                            <select class="fs-4 form-select form-control fw-bold text-center" name="sem" aria-label="Default select example">
-                                <?php
-                                    $sem = 52;
-                                    for ($i=0; $i<$sem; $i++){
-                                        $week[]=$sem - $i;
-                                ?>
-                                <option value="<?php echo $week[$i]?>"><?php echo $sem-$i?></option>
-                                <?php
-                                }
-                                ?>
-                            </select>
-                        </section>
-                        <section>
-                            <input class="fs-4 form-control fw-bold text-center" type="submit" value="Ver">
-                        </section>
-                        <a class="a" href="editar.php">
-                            <input class="fs-4 form-control fw-bold text-center" type="button" value=" Editar ">
-                        </a>
+                    <form class="d-flex justify-content-end" action="editar.php" method="post">
+                        <input class="fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" name="semana" readonly>
+                        <input class="fs-4 form-control fw-bold text-center" type="submit" value="Editar">
+                        <input class="fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
                     </form>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main">
         <script src="script.js"></script>
         <?php
         include("conexion.php");
@@ -186,7 +168,7 @@ $resultado->closeCursor();
 
 $ProLun__embarque=$Lun__embarque["pro_embarque"];
 $OpeLun__embarque=$Lun__embarque["ope_embarque"];
-$ExtLun__embarque=$Lun__embarque["pro_embarque"];
+$ExtLun__embarque=$Lun__embarque["ext_embarque"];
 
 
 /* ############################################################## */
@@ -200,7 +182,7 @@ $ExtLun__embarque=$Lun__embarque["pro_embarque"];
 $query="SELECT tipo, proceso, granja, fecha, sem, Id
         FROM faena 
             where sem='$semana'
-            and dia='Mar' 
+            and dia='mar' 
             and lote='1' 
                 ORDER BY Id DESC";
 
@@ -219,7 +201,7 @@ $Mar__fecha=$L1Mar__faena["fecha"];
 $query="SELECT tipo, proceso, granja, fecha, sem, Id
         FROM faena 
             where sem='$semana'
-            and dia='Mar' 
+            and dia='mar' 
             and lote='2' 
                 ORDER BY Id DESC";
 
@@ -306,7 +288,7 @@ $resultado->closeCursor();
 
 $ProMar__embarque=$Mar__embarque["pro_embarque"];
 $OpeMar__embarque=$Mar__embarque["ope_embarque"];
-$ExtMar__embarque=$Mar__embarque["pro_embarque"];
+$ExtMar__embarque=$Mar__embarque["ext_embarque"];
 
 /* ############################################################## */
 /* -------------------------MIERCOLES---------------------------- */
@@ -544,7 +526,7 @@ $resultado->closeCursor();
 
 $ProJue__embarque=$Jue__embarque["pro_embarque"];
 $OpeJue__embarque=$Jue__embarque["ope_embarque"];
-$ExtJue__embarque=$Jue__embarque["pro_embarque"];
+$ExtJue__embarque=$Jue__embarque["ext_embarque"];
 
 /* ############################################################## */
 /* --------------------------VIERNES----------------------------- */
@@ -663,7 +645,7 @@ $resultado->closeCursor();
 
 $ProVie__embarque=$Vie__embarque["pro_embarque"];
 $OpeVie__embarque=$Vie__embarque["ope_embarque"];
-$ExtVie__embarque=$Vie__embarque["pro_embarque"];
+$ExtVie__embarque=$Vie__embarque["ext_embarque"];
 
 /* ############################################################## */
 /* --------------------------SABADO------------------------------ */
@@ -971,5 +953,9 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
     </main>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script>
+        function actualizar(){location.reload(true);}
+        setInterval("actualizar()",10000);
+    </script>
 </body>
 </html>
