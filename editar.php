@@ -33,9 +33,9 @@
                         $semana=substr(($_POST['semana']),-2);
                     ?>
                 <form class="d-flex justify-content-end" action="enviar.php" method="post">
-                    <input class="fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" name="semana" readonly>
-                    <input class="fs-4 form-control fw-bold text-center" type="submit" value="Enviar">
-                    <input class="fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
+                    <input class="button fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" name="semana" readonly>
+                    <input class="button fs-4 form-control fw-bold text-center" type="submit" value="Enviar">
+                    <input class="button fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
             </div>
         </nav>
     </header>
@@ -803,32 +803,36 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                 <div class="row seven-cols align-items-center">
                     <input type="text" class="col-md-1 fw-bold form-control" value="LUNES" readonly>
                     <select class="col-md-1 form-select" name="L1Lun__tipo" aria-label="Default select example">
-                            <option selected><?php echo $L1Lun__tipo?></option>
+                        <option selected><?php echo $L1Lun__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Lun__tipo" aria-label="Default select example">
-                            <option selected><?php echo $L2Lun__tipo?></option>
+                        <option selected><?php echo $L2Lun__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Lun__tipo" aria-label="Default select example">
-                            <option selected><?php echo $L3Lun__tipo?></option>
+                        <option selected><?php echo $L3Lun__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Lun__tipo" aria-label="Default select example">
-                            <option selected><?php echo $L4Lun__tipo?></option>
+                        <option selected><?php echo $L4Lun__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ProLun__cocido?>"   name="ProLun__cocido">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ProLun__embarque?>" name="ProLun__embarque">
@@ -839,36 +843,40 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center " name="lun" value="<?php echo $Lun__fecha?>">
                     <select class="col-md-1 form-select" name="L1Lun__proceso" aria-label="Default select example">
-                            <option selected><?php echo $L1Lun__proceso?></option>
+                        <option selected><?php echo $L1Lun__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Lun__proceso" aria-label="Default select example">
-                            <option selected><?php echo $L2Lun__proceso?></option>
+                        <option selected><?php echo $L2Lun__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Lun__proceso" aria-label="Default select example">
-                            <option selected><?php echo $L3Lun__proceso?></option>
+                        <option selected><?php echo $L3Lun__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Lun__proceso" aria-label="Default select example">
-                            <option selected><?php echo $L4Lun__proceso?></option>
+                        <option selected><?php echo $L4Lun__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <input type="text" class="col-md-1 form-control" value="<?php echo $OpeLun__cocido?>"   name="OpeLun__cocido">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $OpeLun__embarque?>" name="OpeLun__embarque">
@@ -898,32 +906,36 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 fw-bold form-control" value="MARTES" readonly>
                     <select class="col-md-1 form-select" name="L1Mar__tipo" aria-label="Default select example">
-                            <option selected><?php echo $L1Mar__tipo?></option>
+                        <option selected><?php echo $L1Mar__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Mar__tipo" aria-label="Default select example">
-                            <option selected><?php echo $L2Mar__tipo?></option>
+                        <option selected><?php echo $L2Mar__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Mar__tipo" aria-label="Default select example">
-                            <option selected><?php echo $L3Mar__tipo?></option>
+                        <option selected><?php echo $L3Mar__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Mar__tipo" aria-label="Default select example">
-                            <option selected><?php echo $L4Mar__tipo?></option>
+                        <option selected><?php echo $L4Mar__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ProMar__cocido?>"   name="ProMar__cocido">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ProMar__embarque?>" name="ProMar__embarque">
@@ -935,36 +947,40 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center" name="mar" value="<?php print_r ($Mar__fecha)?>">
                     <select class="col-md-1 form-select" name="L1Mar__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L1Mar__proceso?></option>
+                    <option selected><?php echo $L1Mar__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Mar__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L2Mar__proceso?></option>
+                    <option selected><?php echo $L2Mar__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Mar__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L3Mar__proceso?></option>
+                    <option selected><?php echo $L3Mar__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Mar__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L4Mar__proceso?></option>
+                    <option selected><?php echo $L4Mar__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <input type="text" class="col-md-1 form-control" value="<?php echo $OpeMar__cocido?>"   name="OpeMar__cocido">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $OpeMar__embarque?>" name="OpeMar__embarque">
@@ -993,32 +1009,36 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 fw-bold form-control" value="MIERCOLES" readonly>
                     <select class="col-md-1 form-select" name="L1Mie__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L1Mie__tipo?></option>
+                    <option selected><?php echo $L1Mie__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Mie__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L2Mie__tipo?></option>
+                    <option selected><?php echo $L2Mie__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Mie__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L3Mie__tipo?></option>
+                    <option selected><?php echo $L3Mie__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Mie__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L4Mie__tipo?></option>
+                    <option selected><?php echo $L4Mie__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ProMie__cocido?>"   name="ProMie__cocido">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ProMie__embarque?>" name="ProMie__embarque">
@@ -1029,36 +1049,40 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center" name="mie" value="<?php echo $Mie__fecha?>">
                     <select class="col-md-1 form-select" name="L1Mie__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L1Mie__proceso?></option>
+                    <option selected><?php echo $L1Mie__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Mie__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L2Mie__proceso?></option>
+                    <option selected><?php echo $L2Mie__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Mie__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L3Mie__proceso?></option>
+                    <option selected><?php echo $L3Mie__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Mie__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L4Mie__proceso?></option>
+                    <option selected><?php echo $L4Mie__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <input type="text" class="col-md-1 form-control" value="<?php echo $OpeMie__cocido?>"   name="OpeMie__cocido">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $OpeMie__embarque?>" name="OpeMie__embarque">
@@ -1087,32 +1111,36 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 fw-bold form-control" value="JUEVES" readonly>
                     <select class="col-md-1 form-select" name="L1Jue__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L1Jue__tipo?></option>
+                    <option selected><?php echo $L1Jue__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Jue__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L2Jue__tipo?></option>
+                    <option selected><?php echo $L2Jue__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Jue__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L3Jue__tipo?></option>
+                    <option selected><?php echo $L3Jue__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Jue__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L4Jue__tipo?></option>
+                    <option selected><?php echo $L4Jue__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ProJue__cocido?>"   name="ProJue__cocido">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ProJue__embarque?>" name="ProJue__embarque">
@@ -1123,36 +1151,40 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center" name="jue" value="<?php echo $Jue__fecha?>">
                     <select class="col-md-1 form-select" name="L1Jue__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L1Jue__proceso?></option>
+                    <option selected><?php echo $L1Jue__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Jue__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L2Jue__proceso?></option>
+                    <option selected><?php echo $L2Jue__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Jue__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L3Jue__proceso?></option>
+                    <option selected><?php echo $L3Jue__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Jue__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L4Jue__proceso?></option>
+                    <option selected><?php echo $L4Jue__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <input type="text" class="col-md-1 form-control" value="<?php echo $OpeJue__cocido?>"   name="OpeJue__cocido">                  
                     <input type="text" class="col-md-1 form-control" value="<?php echo $OpeJue__embarque?>" name="OpeJue__embarque">
@@ -1181,32 +1213,36 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 fw-bold form-control" value="VIERNES" readonly>
                     <select class="col-md-1 form-select" name="L1Vie__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L1Vie__tipo?></option>
+                    <option selected><?php echo $L1Vie__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Vie__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L2Vie__tipo?></option>
+                    <option selected><?php echo $L2Vie__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Vie__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L3Vie__tipo?></option>
+                    <option selected><?php echo $L3Vie__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Vie__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L4Vie__tipo?></option>
+                    <option selected><?php echo $L4Vie__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ProVie__cocido?>"   name="ProVie__cocido">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ProVie__embarque?>" name="ProVie__embarque">
@@ -1217,36 +1253,40 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center" name="vie" value="<?php echo $Vie__fecha?>">
                     <select class="col-md-1 form-select" name="L1Vie__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L1Vie__proceso?></option>
+                    <option selected><?php echo $L1Vie__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Vie__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L2Vie__proceso?></option>
+                    <option selected><?php echo $L2Vie__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Vie__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L3Vie__proceso?></option>
+                    <option selected><?php echo $L3Vie__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Vie__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L4Vie__proceso?></option>
+                    <option selected><?php echo $L4Vie__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <input type="text" class="col-md-1 form-control" value="<?php echo $OpeVie__cocido?>"   name="OpeVie__cocido">                    
                     <input type="text" class="col-md-1 form-control" value="<?php echo $OpeVie__embarque?>" name="OpeVie__embarque">
@@ -1275,32 +1315,36 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 fw-bold form-control" value="SABADO" readonly>
                     <select class="col-md-1 form-select" name="L1Sab__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L1Sab__tipo?></option>
+                    <option selected><?php echo $L1Sab__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Sab__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L2Sab__tipo?></option>
+                    <option selected><?php echo $L2Sab__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Sab__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L3Sab__tipo?></option>
+                    <option selected><?php echo $L3Sab__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Sab__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L4Sab__tipo?></option>
+                    <option selected><?php echo $L4Sab__tipo?></option>
                         <option value="PESADA">PESADA</option>
                         <option value="LIVIANA">LIVIANA</option>
                         <option value="GALLO">GALLO</option>
                         <option value="POLLO">POLLO</option>
+                        <option value=""></option>
                     </select>
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ProSab__cocido?>"   name="ProSab__cocido">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ProSab__embarque?>" name="ProSab__embarque">
@@ -1311,36 +1355,40 @@ $ExtSab__embarque=$Sab__embarque["ext_embarque"];
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control fw-bold text-center" name="sab" value="<?php echo $Sab__fecha?>">
                     <select class="col-md-1 form-select" name="L1Sab__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L1Sab__proceso?></option>
+                    <option selected><?php echo $L1Sab__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L2Sab__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L2Sab__proceso?></option>
+                    <option selected><?php echo $L2Sab__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L3Sab__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L3Sab__proceso?></option>
+                    <option selected><?php echo $L3Sab__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <select class="col-md-1 form-select" name="L4Sab__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L4Sab__proceso?></option>
+                    <option selected><?php echo $L4Sab__proceso?></option>
                         <option value="ENTERA">ENTERA</option>
                         <option value="TROZADA">TROZADA</option>
                         <option value="ENTERO">ENTERO</option>
                         <option value="TROZADO">TROZADO</option>
                         <option value="FASON">FASON</option>
+                        <option value=""></option>
                     </select>
                     <input type="text" class="col-md-1 form-control" value="<?php echo $OpeSab__cocido?>"   name="OpeSab__cocido">                
                     <input type="text" class="col-md-1 form-control" value="<?php echo $OpeSab__embarque?>" name="OpeSab__embarque">

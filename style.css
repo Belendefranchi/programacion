@@ -1,7 +1,11 @@
-.main{
-    background-color: #1A1F73 !important;
+body{
+    background-color: #1B1464 !important;
     color: white !important;
 }
+
+.main2{
+    margin-left: 35vw;
+/*     margin-right: auto; */}
 
 .navbar{
     width: 100%;
@@ -10,6 +14,20 @@
 
 .a:link{
     text-decoration: none;
+}
+
+.img{
+    width: 20vw;
+    margin-left: 75vw;
+}
+
+.button{
+    background-color: white !important;
+    /* margin: 2px; */
+}
+
+.button:hover{
+    background-color: whitesmoke !important;
 }
 
 th{
@@ -31,7 +49,7 @@ tr{
 }
 
 .vacia{
-    color: #1A1F73;
+    color: #1B1464;
     text-shadow: none;
 }
 
@@ -40,10 +58,10 @@ tr{
 }
 
 .table__row--dark{
-    background-color: #1A1F73 !important;
+    background-color: #1B1464 !important;
 }
 .table__row--ligth{
-    background-color: #323799 !important;
+    background-color: #322a85 !important;
 }
 
 @media (min-width: 320px){

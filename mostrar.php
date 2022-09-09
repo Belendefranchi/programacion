@@ -33,9 +33,9 @@
                         $semana=($_GET['semana']);
                     ?>
                     <form class="d-flex justify-content-end" action="editar.php" method="post">
-                        <input class="fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" name="semana" readonly>
-                        <input class="fs-4 form-control fw-bold text-center" type="submit" value="Editar">
-                        <input class="fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
+                        <input class="button fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" name="semana" readonly>
+                        <input class="button fs-4 form-control fw-bold text-center" type="submit" value="Editar">
+                        <input class="button fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
                     </form>
                 </div>
             </div>
@@ -46,8 +46,6 @@
         <?php
         include("conexion.php");
         
-
-
 /* ############################################################## */
 /* ---------------------------LUNES------------------------------ */
 /* ############################################################## */

@@ -10,7 +10,7 @@
     <link rel="icon" href="favicon.ico">
     <title>Programación Semanal</title>
 </head>
-<body>
+<body class="d-flex flex-column justify-content-center">
     <header>
         <nav class="navbar navbar-expand-lg fs-4 fw-bold">
             <div class="container-fluid">
@@ -28,16 +28,16 @@
                     </ul>
                 </div>
         </nav>
-    </header>
-    <main>
-        <div class="d-flex justify-content-center">
-            <a class="a flex-fill" href="semAnterior.php"><input class="fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Anterior'></a>
-            <a class="a flex-fill" href="semActual.php"><input class="fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Actual'></a>
-            <a class="a flex-fill" href="semProxima.php"><input class="fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Proxima'></a>
-        </div>
-        <form class="d-flex justify-content-center" action="mostrar.php" method="GET">
-            <input class="flex-fill fs-4 form-control fw-bold text-center" type="text" value="Otras semanas" disabled>
-            <select class="flex-fill fs-4 form-select form-control fw-bold text-center" id="semana" name="semana">
+    </header><br>
+    <main class="main2 d-inline-flex flex-column justify-content-center w-25">
+        <div class="d-inline-flex flex-column justify-content-center"><!-- d-flex justify-content-center -->
+            <a class="a" href="semAnterior.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Anterior'></a>
+            <a class="a" href="semActual.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Actual'></a>
+            <a class="a" href="semProxima.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Próxima'></a>
+        </div><br>
+        <form class="d-inline-flex flex-column justify-content-center" action="mostrar.php" method="GET">
+            <input class="button flex-fill fs-4 form-control fw-bold text-center" type="text" value="Otras semanas" readonly>
+            <select class="button flex-fill fs-4 form-select form-control fw-bold text-center" id="semana" name="semana">
                 <option value="52">52</option>
                 <option value="51">51</option>
                 <option value="50">50</option>
@@ -91,9 +91,12 @@
                 <option value="2">2</option>
                 <option value="1">1</option>
             </select>
-            <input class="flex-fill fs-4 form-control fw-bold text-center" type="submit" value="Ver">
-        </form>
+            <input class="button flex-fill fs-4 form-control fw-bold text-center" type="submit" value="Ver">
+        </form><br><br><br><br>
     </main>
+    <footer>
+        <img class="img" src="logo (2).png" alt="logo">
+    </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <!-- JavaScript Bundle with Popper -->
