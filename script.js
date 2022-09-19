@@ -1025,24 +1025,3 @@ switch (L4Sab__proceso){
 }
 }
 window.onload = color;
-
-
-function ShowSelected(){
-    /* Para obtener el valor */
-    var cod = document.getElementById("sem").value;
-    alert(cod);
-}
-
-
-$('#sem').click( function() {
-    console.log('Enviando!');
-        $.ajax(
-                {
-                    url: 'mostrar.php?semana=<?php echo $semana?>',
-                    success: function(data) {
-                        console.log( 'El servidor devolvio "' + data + '"' );
-                    }
-                }
-            )
-        }
-    );

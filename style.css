@@ -48,11 +48,6 @@ tr{
     padding: 0px 10px 0px 10px !important;
 }
 
-.vacia{
-    color: #1B1464;
-    text-shadow: none;
-}
-
 .table__font{
     color: white;
 }
@@ -63,6 +58,15 @@ tr{
 .table__row--light{
     background-color: #322a85 !important;
 }
+
+.total{
+    color: red;
+/*     font-size: xx-large; */
+}
+
+/* .cero{
+    color: #322a85;
+} */
 
 @media (min-width: 320px){
     .seven-cols .col-md-1,

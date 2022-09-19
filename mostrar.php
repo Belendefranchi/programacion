@@ -849,13 +849,13 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
                         <td><?php echo $ExtLun__embarque?></td>
                     </tr>
                     <tr class="table__row--light">
-                        <th class="vacia" scope="row"></th>
-                        <td><?php echo $L1Lun__cantidad?></td>
-                        <td><?php echo $L2Lun__cantidad?></td>
-                        <td><?php echo $L3Lun__cantidad?></td>
-                        <td><?php echo $L4Lun__cantidad?></td>
-                        <td><?php echo $ExtLun__cocido2?></td>
-                        <td><?php echo $ExtLun__embarque2?></td>
+                        <th class="total cero" scope="row"><?php echo $L1Lun__cantidad+$L2Lun__cantidad+$L3Lun__cantidad+$L4Lun__cantidad?></th>
+                        <td class="cero" ><?php echo $L1Lun__cantidad?></td>
+                        <td class="cero"><?php echo $L2Lun__cantidad?></td>
+                        <td class="cero"><?php echo $L3Lun__cantidad?></td>
+                        <td class="cero"><?php echo $L4Lun__cantidad?></td>
+                        <td class="cero"><?php echo $ExtLun__cocido2?></td>
+                        <td class="cero"><?php echo $ExtLun__embarque2?></td>
                     </tr>
                     
 <!-- ########################################### MARTES ################################################### -->
@@ -888,13 +888,13 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
                         <td><?php echo $ExtMar__embarque?></td> 
                     </tr>
                     <tr class="table__row--light">
-                        <th class="vacia" scope="row"></th>
-                        <td><?php echo $L1Mar__cantidad?></td>
-                        <td><?php echo $L2Mar__cantidad?></td>
-                        <td><?php echo $L3Mar__cantidad?></td>
-                        <td><?php echo $L4Mar__cantidad?></td>
-                        <td><?php echo $ExtMar__cocido2?></td>
-                        <td><?php echo $ExtMar__embarque2?></td>
+                        <th class="total cero" scope="row"><?php echo $L1Mar__cantidad+$L2Mar__cantidad+$L3Mar__cantidad+$L4Mar__cantidad?></th>
+                        <td class="cero" ><?php echo $L1Mar__cantidad?></td>
+                        <td class="cero"><?php echo $L2Mar__cantidad?></td>
+                        <td class="cero"><?php echo $L3Mar__cantidad?></td>
+                        <td class="cero"><?php echo $L4Mar__cantidad?></td>
+                        <td class="cero"><?php echo $ExtMar__cocido2?></td>
+                        <td class="cero"><?php echo $ExtMar__embarque2?></td>
                     </tr>
 
 <!-- ########################################### MIERCOLES ################################################### -->
@@ -927,13 +927,13 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
                         <td><?php echo $ExtMie__embarque?></td> 
                     </tr>
                     <tr class="table__row--light">
-                        <th class="vacia" scope="row"></th>
-                        <td><?php echo $L1Mie__cantidad?></td>
-                        <td><?php echo $L2Mie__cantidad?></td>
-                        <td><?php echo $L3Mie__cantidad?></td>
-                        <td><?php echo $L4Mie__cantidad?></td>
-                        <td><?php echo $ExtMie__cocido2?></td>
-                        <td><?php echo $ExtMie__embarque2?></td>
+                        <th class="total cero" scope="row"><?php echo $L1Mie__cantidad+$L2Mie__cantidad+$L3Mie__cantidad+$L4Mie__cantidad?></th>
+                        <td class="cero" ><?php echo $L1Mie__cantidad?></td>
+                        <td class="cero"><?php echo $L2Mie__cantidad?></td>
+                        <td class="cero"><?php echo $L3Mie__cantidad?></td>
+                        <td class="cero"><?php echo $L4Mie__cantidad?></td>
+                        <td class="cero"><?php echo $ExtMie__cocido2?></td>
+                        <td class="cero"><?php echo $ExtMie__embarque2?></td>
                     </tr>
 
 <!-- ########################################### JUEVES ################################################### -->
@@ -966,13 +966,13 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
                         <td><?php echo $ExtJue__embarque?></td> 
                     </tr>
                     <tr class="table__row--light">
-                        <th class="vacia" scope="row"></th>
-                        <td><?php echo $L1Jue__cantidad?></td>
-                        <td><?php echo $L2Jue__cantidad?></td>
-                        <td><?php echo $L3Jue__cantidad?></td>
-                        <td><?php echo $L4Jue__cantidad?></td>
-                        <td><?php echo $ExtJue__cocido2?></td>
-                        <td><?php echo $ExtJue__embarque2?></td>
+                        <th class="total cero" scope="row"><?php echo $L1Jue__cantidad+$L2Jue__cantidad+$L3Jue__cantidad+$L4Jue__cantidad?></th>
+                        <td class="cero" ><?php echo $L1Jue__cantidad?></td>
+                        <td class="cero"><?php echo $L2Jue__cantidad?></td>
+                        <td class="cero"><?php echo $L3Jue__cantidad?></td>
+                        <td class="cero"><?php echo $L4Jue__cantidad?></td>
+                        <td class="cero"><?php echo $ExtJue__cocido2?></td>
+                        <td class="cero"><?php echo $ExtJue__embarque2?></td>
                     </tr>
 
 <!-- ########################################### VIERNES ################################################### -->
@@ -1005,13 +1005,13 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
                         <td><?php echo $ExtVie__embarque?></td> 
                     </tr>
                     <tr class="table__row--light">
-                        <th class="vacia" scope="row"></th>
-                        <td><?php echo $L1Vie__cantidad?></td>
-                        <td><?php echo $L2Vie__cantidad?></td>
-                        <td><?php echo $L3Vie__cantidad?></td>
-                        <td><?php echo $L4Vie__cantidad?></td>
-                        <td><?php echo $ExtVie__cocido2?></td>
-                        <td><?php echo $ExtVie__embarque2?></td>
+                        <th class="total cero" scope="row"><?php echo $L1Vie__cantidad+$L2Vie__cantidad+$L3Vie__cantidad+$L4Vie__cantidad?></th>
+                        <td class="cero" ><?php echo $L1Vie__cantidad?></td>
+                        <td class="cero"><?php echo $L2Vie__cantidad?></td>
+                        <td class="cero"><?php echo $L3Vie__cantidad?></td>
+                        <td class="cero"><?php echo $L4Vie__cantidad?></td>
+                        <td class="cero"><?php echo $ExtVie__cocido2?></td>
+                        <td class="cero"><?php echo $ExtVie__embarque2?></td>
                     </tr>
 
 <!-- ########################################### SABADO ################################################### -->
@@ -1044,13 +1044,13 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
                         <td><?php echo $ExtSab__embarque?></td> 
                     </tr>
                     <tr class="table__row--light">
-                        <th class="vacia" scope="row"></th>
-                        <td><?php echo $L1Sab__cantidad?></td>
-                        <td><?php echo $L2Sab__cantidad?></td>
-                        <td><?php echo $L3Sab__cantidad?></td>
-                        <td><?php echo $L4Sab__cantidad?></td>
-                        <td><?php echo $ExtSab__cocido2?></td>
-                        <td><?php echo $ExtSab__embarque2?></td>
+                        <th class="total cero" scope="row"><?php echo $L1Sab__cantidad+$L2Sab__cantidad+$L3Sab__cantidad+$L4Sab__cantidad?></th>
+                        <td id="cero"><?php echo $L1Sab__cantidad?></td>
+                        <td class="cero"><?php echo $L2Sab__cantidad?></td>
+                        <td class="cero"><?php echo $L3Sab__cantidad?></td>
+                        <td class="cero"><?php echo $L4Sab__cantidad?></td>
+                        <td class="cero"><?php echo $ExtSab__cocido2?></td>
+                        <td class="cero"><?php echo $ExtSab__embarque2?></td>
                     </tr>
                 </tbody>
             </table>
