@@ -938,10 +938,10 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control">
-                    <input type="nunumber" class="col-md-1 form-control" value="<?php echo $L1Lun__cantidad?>"   name="L1Lun__cantidad">
-                    <input type="nunumber" class="col-md-1 form-control" value="<?php echo $L2Lun__cantidad?>"   name="L2Lun__cantidad">
-                    <input type="nunumber" class="col-md-1 form-control" value="<?php echo $L3Lun__cantidad?>"   name="L3Lun__cantidad">
-                    <input type="nunumber" class="col-md-1 form-control" value="<?php echo $L4Lun__cantidad?>"   name="L4Lun__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Lun__cantidad?>"   name="L1Lun__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Lun__cantidad?>"   name="L2Lun__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Lun__cantidad?>"   name="L3Lun__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Lun__cantidad?>"   name="L4Lun__cantidad">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ExtLun__cocido2?>"   name="ExtLun__cocido2">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ExtLun__embarque2?>" name="ExtLun__embarque2">
                 </div>
@@ -1054,10 +1054,10 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L1Mar__cantidad?>"   name="L1Mar__cantidad">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L2Mar__cantidad?>"   name="L2Mar__cantidad">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L3Mar__cantidad?>"   name="L3Mar__cantidad">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L4Mar__cantidad?>"   name="L4Mar__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Mar__cantidad?>"   name="L1Mar__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Mar__cantidad?>"   name="L2Mar__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Mar__cantidad?>"   name="L3Mar__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Mar__cantidad?>"   name="L4Mar__cantidad">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMar__cocido2?>"   name="ExtMar__cocido2">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMar__embarque2?>" name="ExtMar__embarque2">
                 </div>
@@ -1169,10 +1169,10 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L1Mie__cantidad?>"   name="L1Mie__cantidad">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L2Mie__cantidad?>"   name="L2Mie__cantidad">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L3Mie__cantidad?>"   name="L3Mie__cantidad">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L4Mie__cantidad?>"   name="L4Mie__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Mie__cantidad?>"   name="L1Mie__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Mie__cantidad?>"   name="L2Mie__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Mie__cantidad?>"   name="L3Mie__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Mie__cantidad?>"   name="L4Mie__cantidad">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMie__cocido2?>"   name="ExtMie__cocido2">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMie__embarque2?>" name="ExtMie__embarque2">
                 </div>
@@ -1284,10 +1284,10 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L1Jue__cantidad?>"   name="L1Jue__cantidad">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L2Jue__cantidad?>"   name="L2Jue__cantidad">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L3Jue__cantidad?>"   name="L3Jue__cantidad">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L4Jue__cantidad?>"   name="L4Jue__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Jue__cantidad?>"   name="L1Jue__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Jue__cantidad?>"   name="L2Jue__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Jue__cantidad?>"   name="L3Jue__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Jue__cantidad?>"   name="L4Jue__cantidad">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ExtJue__cocido2?>"   name="ExtJue__cocido2">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ExtJue__embarque2?>" name="ExtJue__embarque2">
                 </div>
@@ -1399,10 +1399,10 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L1Vie__cantidad?>"   name="L1Vie__cantidad">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L2Vie__cantidad?>"   name="L2Vie__cantidad">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L3Vie__cantidad?>"   name="L3Vie__cantidad">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L4Vie__cantidad?>"   name="L4Vie__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Vie__cantidad?>"   name="L1Vie__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Vie__cantidad?>"   name="L2Vie__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Vie__cantidad?>"   name="L3Vie__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Vie__cantidad?>"   name="L4Vie__cantidad">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ExtVie__cocido2?>"   name="Extvie__cocido2">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ExtVie__embarque2?>" name="Extvie__embarque2">
                 </div>
@@ -1514,10 +1514,10 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
 <!-- ---------------------------------------------------------------------------------------------------------- -->
                 <div class="row seven-cols">
                     <input type="text" class="col-md-1 form-control">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L1Sab__cantidad?>"   name="L1Sab__cantidad">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L2Sab__cantidad?>"   name="L2Sab__cantidad">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L3Sab__cantidad?>"   name="L3Sab__cantidad">
-                    <input type="number" class="col-md-1 form-control" value="<?php echo $L4Sab__cantidad?>"   name="L4Sab__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Sab__cantidad?>"   name="L1Sab__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Sab__cantidad?>"   name="L2Sab__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Sab__cantidad?>"   name="L3Sab__cantidad">
+                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Sab__cantidad?>"   name="L4Sab__cantidad">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ExtSab__cocido2?>"   name="ExtSab__cocido2">
                     <input type="text" class="col-md-1 form-control" value="<?php echo $ExtSab__embarque2?>" name="ExtSab__embarque2">
                 </div>
