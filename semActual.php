@@ -819,10 +819,10 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
                     </tr>
                 </thead>
                 <tbody>
-
+<!--  -->
 <!-- ########################################### LUNES ################################################### -->
 
-<tr class="table__row--dark table-group-divider">
+                    <tr class="table__row--dark table-group-divider">
                         <th scope="row">LUN</th>
                         <td id="L1Lun__tipo"><?php echo $L1Lun__tipo?></td>
                         <td id="L2Lun__tipo"><?php echo $L2Lun__tipo?></td>
@@ -850,11 +850,11 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
                         <td><?php echo $ExtLun__embarque?></td>
                     </tr>
                     <tr class="table__row--light">
-                        <th class="total cero" scope="row"><?php echo $L1Lun__cantidad+$L2Lun__cantidad+$L3Lun__cantidad+$L4Lun__cantidad?></th>
-                        <td class="cero" ><?php echo $L1Lun__cantidad?></td>
-                        <td class="cero"><?php echo $L2Lun__cantidad?></td>
-                        <td class="cero"><?php echo $L3Lun__cantidad?></td>
-                        <td class="cero"><?php echo $L4Lun__cantidad?></td>
+                        <th class="total cero" scope="row"><?php if($L1Lun__cantidad+$L2Lun__cantidad+$L3Lun__cantidad+$L4Lun__cantidad!=0){echo $L1Lun__cantidad+$L2Lun__cantidad+$L3Lun__cantidad+$L4Lun__cantidad;}?></th>
+                        <td class="cero"><?php if($L1Lun__cantidad!=0){echo $L1Lun__cantidad;}?></td>
+                        <td class="cero"><?php if($L2Lun__cantidad!=0){echo $L2Lun__cantidad;}?></td>
+                        <td class="cero"><?php if($L3Lun__cantidad!=0){echo $L3Lun__cantidad;}?></td>
+                        <td class="cero"><?php if($L4Lun__cantidad!=0){echo $L4Lun__cantidad;}?></td>
                         <td class="cero"><?php echo $ExtLun__cocido2?></td>
                         <td class="cero"><?php echo $ExtLun__embarque2?></td>
                     </tr>
@@ -889,11 +889,11 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
                         <td><?php echo $ExtMar__embarque?></td> 
                     </tr>
                     <tr class="table__row--light">
-                        <th class="total cero" scope="row"><?php echo $L1Mar__cantidad+$L2Mar__cantidad+$L3Mar__cantidad+$L4Mar__cantidad?></th>
-                        <td class="cero" ><?php echo $L1Mar__cantidad?></td>
-                        <td class="cero"><?php echo $L2Mar__cantidad?></td>
-                        <td class="cero"><?php echo $L3Mar__cantidad?></td>
-                        <td class="cero"><?php echo $L4Mar__cantidad?></td>
+                        <th class="total cero" scope="row"><?php if($L1Mar__cantidad+$L2Mar__cantidad+$L3Mar__cantidad+$L4Mar__cantidad!=0){echo $L1Mar__cantidad+$L2Mar__cantidad+$L3Mar__cantidad+$L4Mar__cantidad;}?></th>
+                        <td class="cero"><?php if($L1Mar__cantidad!=0){echo $L1Mar__cantidad;}?></td>
+                        <td class="cero"><?php if($L2Mar__cantidad!=0){echo $L2Mar__cantidad;}?></td>
+                        <td class="cero"><?php if($L3Mar__cantidad!=0){echo $L3Mar__cantidad;}?></td>
+                        <td class="cero"><?php if($L4Mar__cantidad!=0){echo $L4Mar__cantidad;}?></td>
                         <td class="cero"><?php echo $ExtMar__cocido2?></td>
                         <td class="cero"><?php echo $ExtMar__embarque2?></td>
                     </tr>
@@ -928,11 +928,11 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
                         <td><?php echo $ExtMie__embarque?></td> 
                     </tr>
                     <tr class="table__row--light">
-                        <th class="total cero" scope="row"><?php echo $L1Mie__cantidad+$L2Mie__cantidad+$L3Mie__cantidad+$L4Mie__cantidad?></th>
-                        <td class="cero" ><?php echo $L1Mie__cantidad?></td>
-                        <td class="cero"><?php echo $L2Mie__cantidad?></td>
-                        <td class="cero"><?php echo $L3Mie__cantidad?></td>
-                        <td class="cero"><?php echo $L4Mie__cantidad?></td>
+                        <th class="total cero" scope="row"><?php if($L1Mie__cantidad+$L2Mie__cantidad+$L3Mie__cantidad+$L4Mie__cantidad!=0){echo $L1Mie__cantidad+$L2Mie__cantidad+$L3Mie__cantidad+$L4Mie__cantidad;}?></th>
+                        <td class="cero"><?php if($L1Mie__cantidad!=0){echo $L1Mie__cantidad;}?></td>
+                        <td class="cero"><?php if($L2Mie__cantidad!=0){echo $L2Mie__cantidad;}?></td>
+                        <td class="cero"><?php if($L3Mie__cantidad!=0){echo $L3Mie__cantidad;}?></td>
+                        <td class="cero"><?php if($L4Mie__cantidad!=0){echo $L4Mie__cantidad;}?></td>
                         <td class="cero"><?php echo $ExtMie__cocido2?></td>
                         <td class="cero"><?php echo $ExtMie__embarque2?></td>
                     </tr>
@@ -967,11 +967,11 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
                         <td><?php echo $ExtJue__embarque?></td> 
                     </tr>
                     <tr class="table__row--light">
-                        <th class="total cero" scope="row"><?php echo $L1Jue__cantidad+$L2Jue__cantidad+$L3Jue__cantidad+$L4Jue__cantidad?></th>
-                        <td class="cero" ><?php echo $L1Jue__cantidad?></td>
-                        <td class="cero"><?php echo $L2Jue__cantidad?></td>
-                        <td class="cero"><?php echo $L3Jue__cantidad?></td>
-                        <td class="cero"><?php echo $L4Jue__cantidad?></td>
+                        <th class="total cero" scope="row"><?php if($L1Jue__cantidad+$L2Jue__cantidad+$L3Jue__cantidad+$L4Jue__cantidad!=0){echo $L1Jue__cantidad+$L2Jue__cantidad+$L3Jue__cantidad+$L4Jue__cantidad;}?></th>
+                        <td class="cero"><?php if($L1Jue__cantidad!=0){echo $L1Jue__cantidad;}?></td>
+                        <td class="cero"><?php if($L2Jue__cantidad!=0){echo $L2Jue__cantidad;}?></td>
+                        <td class="cero"><?php if($L3Jue__cantidad!=0){echo $L3Jue__cantidad;}?></td>
+                        <td class="cero"><?php if($L4Jue__cantidad!=0){echo $L4Jue__cantidad;}?></td>
                         <td class="cero"><?php echo $ExtJue__cocido2?></td>
                         <td class="cero"><?php echo $ExtJue__embarque2?></td>
                     </tr>
@@ -1006,11 +1006,11 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
                         <td><?php echo $ExtVie__embarque?></td> 
                     </tr>
                     <tr class="table__row--light">
-                        <th class="total cero" scope="row"><?php echo $L1Vie__cantidad+$L2Vie__cantidad+$L3Vie__cantidad+$L4Vie__cantidad?></th>
-                        <td class="cero" ><?php echo $L1Vie__cantidad?></td>
-                        <td class="cero"><?php echo $L2Vie__cantidad?></td>
-                        <td class="cero"><?php echo $L3Vie__cantidad?></td>
-                        <td class="cero"><?php echo $L4Vie__cantidad?></td>
+                        <th class="total cero" scope="row"><?php if($L1Vie__cantidad+$L2Vie__cantidad+$L3Vie__cantidad+$L4Vie__cantidad!=0){echo $L1Vie__cantidad+$L2Vie__cantidad+$L3Vie__cantidad+$L4Vie__cantidad;}?></th>
+                        <td class="cero"><?php if($L1Vie__cantidad!=0){echo $L1Vie__cantidad;}?></td>
+                        <td class="cero"><?php if($L2Vie__cantidad!=0){echo $L2Vie__cantidad;}?></td>
+                        <td class="cero"><?php if($L3Vie__cantidad!=0){echo $L3Vie__cantidad;}?></td>
+                        <td class="cero"><?php if($L4Vie__cantidad!=0){echo $L4Vie__cantidad;}?></td>
                         <td class="cero"><?php echo $ExtVie__cocido2?></td>
                         <td class="cero"><?php echo $ExtVie__embarque2?></td>
                     </tr>
@@ -1045,11 +1045,11 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
                         <td><?php echo $ExtSab__embarque?></td> 
                     </tr>
                     <tr class="table__row--light">
-                        <th class="total cero" scope="row"><?php echo $L1Sab__cantidad+$L2Sab__cantidad+$L3Sab__cantidad+$L4Sab__cantidad?></th>
-                        <td id="cero"><?php echo $L1Sab__cantidad?></td>
-                        <td class="cero"><?php echo $L2Sab__cantidad?></td>
-                        <td class="cero"><?php echo $L3Sab__cantidad?></td>
-                        <td class="cero"><?php echo $L4Sab__cantidad?></td>
+                        <th class="total cero" scope="row"><?php if($L1Sab__cantidad+$L2Sab__cantidad+$L3Sab__cantidad+$L4Sab__cantidad!=0){echo $L1Sab__cantidad+$L2Sab__cantidad+$L3Sab__cantidad+$L4Sab__cantidad;}?></th>
+                        <td class="cero"><?php if($L1Sab__cantidad!=0){echo $L1Sab__cantidad;}?></td>
+                        <td class="cero"><?php if($L2Sab__cantidad!=0){echo $L2Sab__cantidad;}?></td>
+                        <td class="cero"><?php if($L3Sab__cantidad!=0){echo $L3Sab__cantidad;}?></td>
+                        <td class="cero"><?php if($L4Sab__cantidad!=0){echo $L4Sab__cantidad;}?></td>
                         <td class="cero"><?php echo $ExtSab__cocido2?></td>
                         <td class="cero"><?php echo $ExtSab__embarque2?></td>
                     </tr>
