@@ -60,13 +60,8 @@ tr{
 }
 
 .total{
-    color: red;
-/*     font-size: xx-large; */
+    color: yellow;
 }
-
-/* .cero{
-    color: #322a85;
-} */
 
 @media (min-width: 320px){
     .seven-cols .col-md-1,
