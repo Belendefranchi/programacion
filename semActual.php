@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico">
     <title>Programación Semanal</title>
@@ -42,7 +42,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="">
         <script src="script.js"></script>
         <?php
         include("conexion.php");
@@ -50,7 +50,7 @@
 /* ############################################################## */
 /* ---------------------------LUNES------------------------------ */
 /* ############################################################## */
-        
+
 /* ---------------------------faena------------------------------ */ 
 /* -------------------------------------------------------------- */
 
@@ -805,17 +805,17 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
 /* ############################################################## */
 
         ?>
-        <div class="container">
+        <div class="container-fluid d-flex justify-content-center">
             <table class="table-responsive table__font" id="target">
                 <thead>
                     <tr class="table__row--dark table__font">
-                        <th class="col-2 table__font" scope="col">Sem: <?php echo $Lun__sem?></th>
-                        <th class="col-2 table__font" scope="col">LOTE 1</th>
-                        <th class="col-2 table__font" scope="col">LOTE 2</th>
-                        <th class="col-2 table__font" scope="col">LOTE 3</th>
-                        <th class="col-2 table__font" scope="col">LOTE 4</th>
-                        <th class="col-2 table__font" scope="col">COCIDO</th>
-                        <th class="col-2 table__font" scope="col">EMBARQUES</th>
+                        <th class="table__font" scope="col">Sem: <?php echo $Lun__sem?></th>
+                        <th class="table__font" scope="col">LOTE 1</th>
+                        <th class="table__font" scope="col">LOTE 2</th>
+                        <th class="table__font" scope="col">LOTE 3</th>
+                        <th class="table__font" scope="col">LOTE 4</th>
+                        <th class="table__font" scope="col">COCIDO</th>
+                        <th class="table__font" scope="col">EMBARQUES</th>
                     </tr>
                 </thead>
                 <tbody>

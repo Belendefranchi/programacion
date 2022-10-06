@@ -5,10 +5,10 @@ body{
 
 .main2{
     margin-left: 35vw;
-/*     margin-right: auto; */}
+    margin-right: auto;
+}
 
 .navbar{
-    width: 100%;
     background-color: white;
 }
 
@@ -23,7 +23,6 @@ body{
 
 .button{
     background-color: white !important;
-    /* margin: 2px; */
 }
 
 .button:hover{
@@ -49,6 +48,7 @@ tr{
 }
 
 .table__font{
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -61,6 +61,10 @@ tr{
 
 .total{
     color: yellow;
+}
+
+.b{
+    background-color: white !important;
 }
 
 @media (min-width: 320px){
@@ -81,15 +85,8 @@ tr{
     }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1367px){
     .table__font{
-        font-size: 1.6rem;
+        font-size: 2.2rem;
     }
 }
-
-.b{
-    background-color: white !important;
-}
-/* select semana en navbar, una funcion por semana 
-partiendo de la semana actual para hacer los calculos
-con boton editar que modifique cada funcion, dependiendo del valor seleccionado de semana */

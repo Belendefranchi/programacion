@@ -30,7 +30,7 @@
         </nav>
     </header><br>
     <main class="main2 d-inline-flex flex-column justify-content-center w-25">
-        <div class="d-inline-flex flex-column justify-content-center"><!-- d-flex justify-content-center -->
+        <div class="d-inline-flex flex-column justify-content-center">
             <a class="a" href="semAnterior.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Anterior'></a>
             <a class="a" href="semActual.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Actual'></a>
             <a class="a" href="semProxima.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Próxima'></a>
