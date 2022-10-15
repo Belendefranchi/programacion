@@ -42,21 +42,6 @@
     <main class="">
     <br>
 
-<!-- ###########################################   ENCABEZADO   ############################################### -->
-
-            <div class="container text-center">
-                <div class="row seven-cols align-items-center">
-                    <div class="col-md-1 fs-4 fw-bold table__font">DIA</div>
-                    <div class="col-md-1 fs-4 fw-bold table__font">LOTE 1</div>
-                    <div class="col-md-1 fs-4 fw-bold table__font">LOTE 2</div>
-                    <div class="col-md-1 fs-4 fw-bold table__font">LOTE 3</div>
-                    <div class="col-md-1 fs-4 fw-bold table__font">LOTE 4</div>
-                    <div class="col-md-1 fs-4 fw-bold table__font">COCIDO</div>
-                    <div class="col-md-1 fs-4 fw-bold table__font">EMBARQUES</div>
-                </div>
-            </div>
-            <br>
-
 <!-- ################################################      ############################################### -->
 <?php
 $query="SELECT fecha
@@ -708,7 +693,7 @@ $ExtVie__embarque2=$Vie__embarque["ext_embarque2"];
 /* ############################################################## */
 /* --------------------------SABADO------------------------------ */
 /* ############################################################## */
-        
+
 /* ---------------------------faena------------------------------ */ 
 /* -------------------------------------------------------------- */       
 /* ---------------------------lote 1----------------------------- */ 
@@ -832,697 +817,732 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
 
 
 ?>
-<!-- ###############################################   LUNES   ############################################### -->
 
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------TIPO--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-            <div class="container text-center">
+<!-- ###########################################   ENCABEZADO   ############################################### -->
+            <div class="container d-flex flex-column">
                 <div class="row seven-cols align-items-center">
-                    <input type="text" class="col-md-1 fw-bold form-control" value="LUNES" readonly>
-                    <select class="col-md-1 form-select" name="L1Lun__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L1Lun__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L2Lun__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L2Lun__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L3Lun__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L3Lun__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L4Lun__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L4Lun__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProLun__cocido?>"   name="ProLun__cocido">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProLun__embarque?>" name="ProLun__embarque">
+                    <div class="col-md-1 fs-4 fw-bold table__font">DIA</div>
+                    <div class="col-md-1 fs-4 fw-bold table__font">LOTE 1</div>
+                    <div class="col-md-1 fs-4 fw-bold table__font">LOTE 2</div>
+                    <div class="col-md-1 fs-4 fw-bold table__font">LOTE 3</div>
+                    <div class="col-md-1 fs-4 fw-bold table__font">LOTE 4</div>
+                    <div class="col-md-1 fs-4 fw-bold table__font">COCIDO</div>
+                    <div class="col-md-1 fs-4 fw-bold table__font">EMBARQUES</div>
                 </div>
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control fw-bold text-center " name="lun" value="<?php echo $Lun__fecha?>">
-                    <select class="col-md-1 form-select" name="L1Lun__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L1Lun__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L2Lun__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L2Lun__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L3Lun__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L3Lun__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L4Lun__proceso" aria-label="Default select example">
-                        <option selected><?php echo $L4Lun__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeLun__cocido?>"   name="OpeLun__cocido">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeLun__embarque?>" name="OpeLun__embarque">
+                <br>
+
+    <!-- ###############################################   LUNES   ############################################### -->
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------TIPO--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                <div class="container text-center">
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 fw-bold form-control" value="LUNES" readonly>
+                        <select class="col-md-1 form-select" name="L1Lun__tipo" aria-label="Default select example">
+                            <option selected><?php echo $L1Lun__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L2Lun__tipo" aria-label="Default select example">
+                            <option selected><?php echo $L2Lun__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L3Lun__tipo" aria-label="Default select example">
+                            <option selected><?php echo $L3Lun__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L4Lun__tipo" aria-label="Default select example">
+                            <option selected><?php echo $L4Lun__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ProLun__cocido?>"   name="ProLun__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ProLun__embarque?>" name="ProLun__embarque">
+                    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control fw-bold text-center " name="lun" value="<?php echo $Lun__fecha?>">
+                        <select class="col-md-1 form-select" name="L1Lun__proceso" aria-label="Default select example">
+                            <option selected><?php echo $L1Lun__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L2Lun__proceso" aria-label="Default select example">
+                            <option selected><?php echo $L2Lun__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L3Lun__proceso" aria-label="Default select example">
+                            <option selected><?php echo $L3Lun__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L4Lun__proceso" aria-label="Default select example">
+                            <option selected><?php echo $L4Lun__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $OpeLun__cocido?>"   name="OpeLun__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $OpeLun__embarque?>" name="OpeLun__embarque">
+                    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L1Lun__granja?>"    name="L1Lun__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L2Lun__granja?>"    name="L2Lun__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L3Lun__granja?>"    name="L3Lun__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L4Lun__granja?>"    name="L4Lun__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtLun__cocido?>"   name="ExtLun__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtLun__embarque?>" name="ExtLun__embarque">
+                    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------CANTIDAD-------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Lun__cantidad?>"   name="L1Lun__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Lun__cantidad?>"   name="L2Lun__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Lun__cantidad?>"   name="L3Lun__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Lun__cantidad?>"   name="L4Lun__cantidad">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtLun__cocido2?>"   name="ExtLun__cocido2">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtLun__embarque2?>" name="ExtLun__embarque2">
+                    </div>
+                </div>
+                <br>
+
+    <!-- ###############################################   MARTES   ############################################### -->
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------TIPO--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                <div class="container text-center">
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 fw-bold form-control" value="MARTES" readonly>
+                        <select class="col-md-1 form-select" name="L1Mar__tipo" aria-label="Default select example">
+                            <option selected><?php echo $L1Mar__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L2Mar__tipo" aria-label="Default select example">
+                            <option selected><?php echo $L2Mar__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L3Mar__tipo" aria-label="Default select example">
+                            <option selected><?php echo $L3Mar__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L4Mar__tipo" aria-label="Default select example">
+                            <option selected><?php echo $L4Mar__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ProMar__cocido?>"   name="ProMar__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ProMar__embarque?>" name="ProMar__embarque">
+                    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control fw-bold text-center" name="mar" value="<?php print_r ($Mar__fecha)?>">
+                        <select class="col-md-1 form-select" name="L1Mar__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L1Mar__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L2Mar__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L2Mar__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L3Mar__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L3Mar__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L4Mar__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L4Mar__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $OpeMar__cocido?>"   name="OpeMar__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $OpeMar__embarque?>" name="OpeMar__embarque">
+                    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L1Mar__granja?>"    name="L1Mar__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L2Mar__granja?>"    name="L2Mar__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L3Mar__granja?>"    name="L3Mar__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L4Mar__granja?>"    name="L4Mar__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMar__cocido?>"   name="ExtMar__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMar__embarque?>" name="ExtMar__embarque">
+                    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------CANTIDAD-------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Mar__cantidad?>"   name="L1Mar__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Mar__cantidad?>"   name="L2Mar__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Mar__cantidad?>"   name="L3Mar__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Mar__cantidad?>"   name="L4Mar__cantidad">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMar__cocido2?>"   name="ExtMar__cocido2">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMar__embarque2?>" name="ExtMar__embarque2">
+                    </div>
+                </div>
+                <br>
+
+    <!-- ##############################################   MIERCOLES   ############################################# -->
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------TIPO--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                <div class="container text-center">
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 fw-bold form-control" value="MIERCOLES" readonly>
+                        <select class="col-md-1 form-select" name="L1Mie__tipo" aria-label="Default select example">
+                        <option selected><?php echo $L1Mie__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L2Mie__tipo" aria-label="Default select example">
+                        <option selected><?php echo $L2Mie__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L3Mie__tipo" aria-label="Default select example">
+                        <option selected><?php echo $L3Mie__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L4Mie__tipo" aria-label="Default select example">
+                        <option selected><?php echo $L4Mie__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ProMie__cocido?>"   name="ProMie__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ProMie__embarque?>" name="ProMie__embarque">
+                    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control fw-bold text-center" name="mie" value="<?php echo $Mie__fecha?>">
+                        <select class="col-md-1 form-select" name="L1Mie__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L1Mie__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L2Mie__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L2Mie__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L3Mie__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L3Mie__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L4Mie__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L4Mie__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $OpeMie__cocido?>"   name="OpeMie__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $OpeMie__embarque?>" name="OpeMie__embarque">
+                    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L1Mie__granja?>" name="L1Mie__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L2Mie__granja?>" name="L2Mie__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L3Mie__granja?>" name="L3Mie__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L4Mie__granja?>" name="L4Mie__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMie__cocido?>" name="ExtMie__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMie__embarque?>" name="ExtMie__embarque">
+                    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------CANTIDAD-------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Mie__cantidad?>"   name="L1Mie__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Mie__cantidad?>"   name="L2Mie__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Mie__cantidad?>"   name="L3Mie__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Mie__cantidad?>"   name="L4Mie__cantidad">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMie__cocido2?>"   name="ExtMie__cocido2">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMie__embarque2?>" name="ExtMie__embarque2">
+                    </div>
+                </div>
+                <br>
+
+    <!-- ###############################################   JUEVES   ############################################### -->
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------TIPO--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                <div class="container text-center">
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 fw-bold form-control" value="JUEVES" readonly>
+                        <select class="col-md-1 form-select" name="L1Jue__tipo" aria-label="Default select example">
+                        <option selected><?php echo $L1Jue__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L2Jue__tipo" aria-label="Default select example">
+                        <option selected><?php echo $L2Jue__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L3Jue__tipo" aria-label="Default select example">
+                        <option selected><?php echo $L3Jue__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L4Jue__tipo" aria-label="Default select example">
+                        <option selected><?php echo $L4Jue__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ProJue__cocido?>"   name="ProJue__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ProJue__embarque?>" name="ProJue__embarque">
+                    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control fw-bold text-center" name="jue" value="<?php echo $Jue__fecha?>">
+                        <select class="col-md-1 form-select" name="L1Jue__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L1Jue__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L2Jue__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L2Jue__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L3Jue__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L3Jue__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L4Jue__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L4Jue__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $OpeJue__cocido?>"   name="OpeJue__cocido">                  
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $OpeJue__embarque?>" name="OpeJue__embarque">
+                    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L1Jue__granja?>" name="L1Jue__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L2Jue__granja?>" name="L2Jue__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L3Jue__granja?>" name="L3Jue__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L4Jue__granja?>" name="L4Jue__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtJue__cocido?>" name="ExtJue__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtJue__embarque?>" name="ExtJue__embarque">
+                    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------CANTIDAD-------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Jue__cantidad?>"   name="L1Jue__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Jue__cantidad?>"   name="L2Jue__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Jue__cantidad?>"   name="L3Jue__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Jue__cantidad?>"   name="L4Jue__cantidad">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtJue__cocido2?>"   name="ExtJue__cocido2">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtJue__embarque2?>" name="ExtJue__embarque2">
+                    </div>
+                </div>
+                <br>
+
+    <!-- ###############################################   VIERNES   ############################################## -->
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------TIPO--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                <div class="container text-center">
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 fw-bold form-control" value="VIERNES" readonly>
+                        <select class="col-md-1 form-select" name="L1Vie__tipo" aria-label="Default select example">
+                        <option selected><?php echo $L1Vie__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L2Vie__tipo" aria-label="Default select example">
+                        <option selected><?php echo $L2Vie__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L3Vie__tipo" aria-label="Default select example">
+                        <option selected><?php echo $L3Vie__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L4Vie__tipo" aria-label="Default select example">
+                        <option selected><?php echo $L4Vie__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ProVie__cocido?>"   name="ProVie__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ProVie__embarque?>" name="ProVie__embarque">
+                    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control fw-bold text-center" name="vie" value="<?php echo $Vie__fecha?>">
+                        <select class="col-md-1 form-select" name="L1Vie__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L1Vie__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L2Vie__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L2Vie__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L3Vie__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L3Vie__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L4Vie__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L4Vie__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $OpeVie__cocido?>"   name="OpeVie__cocido">                    
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $OpeVie__embarque?>" name="OpeVie__embarque">
+                    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L1Vie__granja?>" name="L1Vie__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L2Vie__granja?>" name="L2Vie__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L3Vie__granja?>" name="L3Vie__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L4Vie__granja?>" name="L4Vie__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtVie__cocido?>" name="ExtVie__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtVie__embarque?>" name="ExtVie__embarque">
+                    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------CANTIDAD-------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Vie__cantidad?>"   name="L1Vie__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Vie__cantidad?>"   name="L2Vie__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Vie__cantidad?>"   name="L3Vie__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Vie__cantidad?>"   name="L4Vie__cantidad">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtVie__cocido2?>"   name="ExtVie__cocido2">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtVie__embarque2?>" name="ExtVie__embarque2">
+                    </div>
+                </div>
+                <br>
+
+    <!-- ###############################################   SABADO   ############################################### -->
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------TIPO--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                <div class="container text-center">
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 fw-bold form-control" value="SABADO" readonly>
+                        <select class="col-md-1 form-select" name="L1Sab__tipo" aria-label="Default select example">
+                        <option selected><?php echo $L1Sab__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L2Sab__tipo" aria-label="Default select example">
+                        <option selected><?php echo $L2Sab__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L3Sab__tipo" aria-label="Default select example">
+                        <option selected><?php echo $L3Sab__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L4Sab__tipo" aria-label="Default select example">
+                        <option selected><?php echo $L4Sab__tipo?></option>
+                            <option value="PESADA">PESADA</option>
+                            <option value="LIVIANA">LIVIANA</option>
+                            <option value="GALLO">GALLO</option>
+                            <option value="POLLO">POLLO</option>
+                            <option value=""></option>
+                        </select>
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ProSab__cocido?>"   name="ProSab__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ProSab__embarque?>" name="ProSab__embarque">
+                    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control fw-bold text-center" name="sab" value="<?php echo $Sab__fecha?>">
+                        <select class="col-md-1 form-select" name="L1Sab__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L1Sab__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L2Sab__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L2Sab__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L3Sab__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L3Sab__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <select class="col-md-1 form-select" name="L4Sab__proceso" aria-label="Default select example">
+                        <option selected><?php echo $L4Sab__proceso?></option>
+                            <option value="ENTERA">ENTERA</option>
+                            <option value="TROZADA">TROZADA</option>
+                            <option value="ENTERO">ENTERO</option>
+                            <option value="TROZADO">TROZADO</option>
+                            <option value="FASON">FASON</option>
+                            <option value=""></option>
+                        </select>
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $OpeSab__cocido?>"   name="OpeSab__cocido">                
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $OpeSab__embarque?>" name="OpeSab__embarque">
+                    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L1Sab__granja?>" name="L1Sab__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L2Sab__granja?>" name="L2Sab__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L3Sab__granja?>" name="L3Sab__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $L4Sab__granja?>" name="L4Sab__granja">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtSab__cocido?>" name="ExtSab__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtSab__embarque?>" name="ExtSab__embarque">
+                    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------CANTIDAD-------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Sab__cantidad?>"   name="L1Sab__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Sab__cantidad?>"   name="L2Sab__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Sab__cantidad?>"   name="L3Sab__cantidad">
+                        <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Sab__cantidad?>"   name="L4Sab__cantidad">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtSab__cocido2?>"   name="ExtSab__cocido2">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ExtSab__embarque2?>" name="ExtSab__embarque2">
+                    </div>
                 </div>
 
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L1Lun__granja?>"    name="L1Lun__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L2Lun__granja?>"    name="L2Lun__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L3Lun__granja?>"    name="L3Lun__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L4Lun__granja?>"    name="L4Lun__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtLun__cocido?>"   name="ExtLun__cocido">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtLun__embarque?>" name="ExtLun__embarque">
-                </div>
-
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ------------------------------------------------CANTIDAD-------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Lun__cantidad?>"   name="L1Lun__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Lun__cantidad?>"   name="L2Lun__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Lun__cantidad?>"   name="L3Lun__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Lun__cantidad?>"   name="L4Lun__cantidad">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtLun__cocido2?>"   name="ExtLun__cocido2">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtLun__embarque2?>" name="ExtLun__embarque2">
+                <div class="container text-center">
+                    <div class="row seven-cols">
+                        <div class="col-md-1 fs-4 fw-bold table__font">OPERACION</div>
+                        <div class="col-md-1 fs-4 fw-bold table__font">PRODUCTO</div>
+                        <div class="col-md-1 fs-4 fw-bold table__font">ESTADO</div>
+                        <div class="col-md-1 fs-4 fw-bold table__font">DESPACHO</div>
+                    </div>
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ProLun__cocido?>"   name="ProLun__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ProLun__embarque?>" name="ProLun__embarque">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ProLun__cocido?>"   name="ProLun__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $ProLun__embarque?>" name="ProLun__embarque">
+                    </div>
+                    <div class="row seven-cols">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $OpeLun__cocido?>"   name="OpeLun__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $OpeLun__embarque?>" name="OpeLun__embarque">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $OpeLun__cocido?>"   name="OpeLun__cocido">
+                        <input type="text" class="col-md-1 form-control" value="<?php echo $OpeLun__embarque?>" name="OpeLun__embarque">
+                    </div>
                 </div>
             </div>
-            <br>
-
-<!-- ###############################################   MARTES   ############################################### -->
-
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------TIPO--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-            <div class="container text-center">
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 fw-bold form-control" value="MARTES" readonly>
-                    <select class="col-md-1 form-select" name="L1Mar__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L1Mar__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L2Mar__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L2Mar__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L3Mar__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L3Mar__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L4Mar__tipo" aria-label="Default select example">
-                        <option selected><?php echo $L4Mar__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProMar__cocido?>"   name="ProMar__cocido">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProMar__embarque?>" name="ProMar__embarque">
-                </div>
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="mar" value="<?php print_r ($Mar__fecha)?>">
-                    <select class="col-md-1 form-select" name="L1Mar__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L1Mar__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L2Mar__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L2Mar__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L3Mar__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L3Mar__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L4Mar__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L4Mar__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeMar__cocido?>"   name="OpeMar__cocido">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeMar__embarque?>" name="OpeMar__embarque">
-                </div>
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L1Mar__granja?>"    name="L1Mar__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L2Mar__granja?>"    name="L2Mar__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L3Mar__granja?>"    name="L3Mar__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L4Mar__granja?>"    name="L4Mar__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMar__cocido?>"   name="ExtMar__cocido">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMar__embarque?>" name="ExtMar__embarque">
-                </div>
-
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ------------------------------------------------CANTIDAD-------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Mar__cantidad?>"   name="L1Mar__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Mar__cantidad?>"   name="L2Mar__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Mar__cantidad?>"   name="L3Mar__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Mar__cantidad?>"   name="L4Mar__cantidad">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMar__cocido2?>"   name="ExtMar__cocido2">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMar__embarque2?>" name="ExtMar__embarque2">
-                </div>
-            </div>
-            <br>
-
-<!-- ##############################################   MIERCOLES   ############################################# -->
-
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------TIPO--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-            <div class="container text-center">
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 fw-bold form-control" value="MIERCOLES" readonly>
-                    <select class="col-md-1 form-select" name="L1Mie__tipo" aria-label="Default select example">
-                    <option selected><?php echo $L1Mie__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L2Mie__tipo" aria-label="Default select example">
-                    <option selected><?php echo $L2Mie__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L3Mie__tipo" aria-label="Default select example">
-                    <option selected><?php echo $L3Mie__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L4Mie__tipo" aria-label="Default select example">
-                    <option selected><?php echo $L4Mie__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProMie__cocido?>"   name="ProMie__cocido">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProMie__embarque?>" name="ProMie__embarque">
-                </div>
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="mie" value="<?php echo $Mie__fecha?>">
-                    <select class="col-md-1 form-select" name="L1Mie__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L1Mie__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L2Mie__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L2Mie__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L3Mie__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L3Mie__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L4Mie__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L4Mie__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeMie__cocido?>"   name="OpeMie__cocido">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeMie__embarque?>" name="OpeMie__embarque">
-                </div>
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L1Mie__granja?>" name="L1Mie__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L2Mie__granja?>" name="L2Mie__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L3Mie__granja?>" name="L3Mie__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L4Mie__granja?>" name="L4Mie__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMie__cocido?>" name="ExtMie__cocido">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMie__embarque?>" name="ExtMie__embarque">
-                </div>
-
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ------------------------------------------------CANTIDAD-------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Mie__cantidad?>"   name="L1Mie__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Mie__cantidad?>"   name="L2Mie__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Mie__cantidad?>"   name="L3Mie__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Mie__cantidad?>"   name="L4Mie__cantidad">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMie__cocido2?>"   name="ExtMie__cocido2">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtMie__embarque2?>" name="ExtMie__embarque2">
-                </div>
-            </div>
-            <br>
-
-<!-- ###############################################   JUEVES   ############################################### -->
-
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------TIPO--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-            <div class="container text-center">
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 fw-bold form-control" value="JUEVES" readonly>
-                    <select class="col-md-1 form-select" name="L1Jue__tipo" aria-label="Default select example">
-                    <option selected><?php echo $L1Jue__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L2Jue__tipo" aria-label="Default select example">
-                    <option selected><?php echo $L2Jue__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L3Jue__tipo" aria-label="Default select example">
-                    <option selected><?php echo $L3Jue__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L4Jue__tipo" aria-label="Default select example">
-                    <option selected><?php echo $L4Jue__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProJue__cocido?>"   name="ProJue__cocido">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProJue__embarque?>" name="ProJue__embarque">
-                </div>
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="jue" value="<?php echo $Jue__fecha?>">
-                    <select class="col-md-1 form-select" name="L1Jue__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L1Jue__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L2Jue__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L2Jue__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L3Jue__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L3Jue__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L4Jue__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L4Jue__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeJue__cocido?>"   name="OpeJue__cocido">                  
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeJue__embarque?>" name="OpeJue__embarque">
-                </div>
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L1Jue__granja?>" name="L1Jue__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L2Jue__granja?>" name="L2Jue__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L3Jue__granja?>" name="L3Jue__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L4Jue__granja?>" name="L4Jue__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtJue__cocido?>" name="ExtJue__cocido">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtJue__embarque?>" name="ExtJue__embarque">
-                </div>
-
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ------------------------------------------------CANTIDAD-------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Jue__cantidad?>"   name="L1Jue__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Jue__cantidad?>"   name="L2Jue__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Jue__cantidad?>"   name="L3Jue__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Jue__cantidad?>"   name="L4Jue__cantidad">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtJue__cocido2?>"   name="ExtJue__cocido2">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtJue__embarque2?>" name="ExtJue__embarque2">
-                </div>
-            </div>
-            <br>
-
-<!-- ###############################################   VIERNES   ############################################## -->
-
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------TIPO--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-            <div class="container text-center">
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 fw-bold form-control" value="VIERNES" readonly>
-                    <select class="col-md-1 form-select" name="L1Vie__tipo" aria-label="Default select example">
-                    <option selected><?php echo $L1Vie__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L2Vie__tipo" aria-label="Default select example">
-                    <option selected><?php echo $L2Vie__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L3Vie__tipo" aria-label="Default select example">
-                    <option selected><?php echo $L3Vie__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L4Vie__tipo" aria-label="Default select example">
-                    <option selected><?php echo $L4Vie__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProVie__cocido?>"   name="ProVie__cocido">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProVie__embarque?>" name="ProVie__embarque">
-                </div>
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="vie" value="<?php echo $Vie__fecha?>">
-                    <select class="col-md-1 form-select" name="L1Vie__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L1Vie__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L2Vie__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L2Vie__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L3Vie__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L3Vie__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L4Vie__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L4Vie__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeVie__cocido?>"   name="OpeVie__cocido">                    
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeVie__embarque?>" name="OpeVie__embarque">
-                </div>
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L1Vie__granja?>" name="L1Vie__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L2Vie__granja?>" name="L2Vie__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L3Vie__granja?>" name="L3Vie__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L4Vie__granja?>" name="L4Vie__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtVie__cocido?>" name="ExtVie__cocido">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtVie__embarque?>" name="ExtVie__embarque">
-                </div>
-
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ------------------------------------------------CANTIDAD-------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Vie__cantidad?>"   name="L1Vie__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Vie__cantidad?>"   name="L2Vie__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Vie__cantidad?>"   name="L3Vie__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Vie__cantidad?>"   name="L4Vie__cantidad">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtVie__cocido2?>"   name="Extvie__cocido2">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtVie__embarque2?>" name="Extvie__embarque2">
-                </div>
-            </div>
-            <br>
-
-<!-- ###############################################   SABADO   ############################################### -->
-
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------TIPO--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-            <div class="container text-center">
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 fw-bold form-control" value="SABADO" readonly>
-                    <select class="col-md-1 form-select" name="L1Sab__tipo" aria-label="Default select example">
-                    <option selected><?php echo $L1Sab__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L2Sab__tipo" aria-label="Default select example">
-                    <option selected><?php echo $L2Sab__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L3Sab__tipo" aria-label="Default select example">
-                    <option selected><?php echo $L3Sab__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L4Sab__tipo" aria-label="Default select example">
-                    <option selected><?php echo $L4Sab__tipo?></option>
-                        <option value="PESADA">PESADA</option>
-                        <option value="LIVIANA">LIVIANA</option>
-                        <option value="GALLO">GALLO</option>
-                        <option value="POLLO">POLLO</option>
-                        <option value=""></option>
-                    </select>
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProSab__cocido?>"   name="ProSab__cocido">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ProSab__embarque?>" name="ProSab__embarque">
-                </div>
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ------------------------------------------------PROCESO--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control fw-bold text-center" name="sab" value="<?php echo $Sab__fecha?>">
-                    <select class="col-md-1 form-select" name="L1Sab__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L1Sab__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L2Sab__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L2Sab__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L3Sab__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L3Sab__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <select class="col-md-1 form-select" name="L4Sab__proceso" aria-label="Default select example">
-                    <option selected><?php echo $L4Sab__proceso?></option>
-                        <option value="ENTERA">ENTERA</option>
-                        <option value="TROZADA">TROZADA</option>
-                        <option value="ENTERO">ENTERO</option>
-                        <option value="TROZADO">TROZADO</option>
-                        <option value="FASON">FASON</option>
-                        <option value=""></option>
-                    </select>
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeSab__cocido?>"   name="OpeSab__cocido">                
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $OpeSab__embarque?>" name="OpeSab__embarque">
-                </div>
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- -------------------------------------------------GRANJA--------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L1Sab__granja?>" name="L1Sab__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L2Sab__granja?>" name="L2Sab__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L3Sab__granja?>" name="L3Sab__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $L4Sab__granja?>" name="L4Sab__granja">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtSab__cocido?>" name="ExtSab__cocido">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtSab__embarque?>" name="ExtSab__embarque">
-                </div>
-
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-<!-- ------------------------------------------------CANTIDAD-------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------- -->
-                <div class="row seven-cols">
-                    <input type="text" class="col-md-1 form-control">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L1Sab__cantidad?>"   name="L1Sab__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L2Sab__cantidad?>"   name="L2Sab__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L3Sab__cantidad?>"   name="L3Sab__cantidad">
-                    <input type="text" pattern="[0-9]{1,4}" class="col-md-1 form-control" value="<?php echo $L4Sab__cantidad?>"   name="L4Sab__cantidad">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtSab__cocido2?>"   name="ExtSab__cocido2">
-                    <input type="text" class="col-md-1 form-control" value="<?php echo $ExtSab__embarque2?>" name="ExtSab__embarque2">
-                </div>
-            </div>
-
 <!-- ########################################################################################################## -->
 
         </form>
