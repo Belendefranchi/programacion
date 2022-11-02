@@ -7,7 +7,7 @@
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="resources/favicon.ico">
     <title>Programación Semanal</title>
 </head>
 <body class="d-flex flex-column justify-content-center">
@@ -15,7 +15,7 @@
         <nav class="navbar navbar-expand-lg fs-4 fw-bold">
             <div class="container-fluid">
                 <a class="" href="#">
-                    <img src="logo.png" alt="" width="70vw">
+                    <img src="resources/logo.png" alt="" width="70vw">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,11 +31,11 @@
     </header><br>
     <main class="main2 d-inline-flex flex-column justify-content-center w-25">
         <div class="d-inline-flex flex-column justify-content-center">
-            <a class="a" href="semAnterior.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Anterior'></a>
-            <a class="a" href="semActual.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Actual'></a>
-            <a class="a" href="semProxima.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Próxima'></a>
+            <a class="a" href="pages/semAnterior.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Anterior'></a>
+            <a class="a" href="pages/semActual.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Actual'></a>
+            <a class="a" href="pages/semProxima.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Próxima'></a>
         </div><br>
-        <form class="d-inline-flex flex-column justify-content-center" action="mostrar.php" method="GET">
+        <form class="d-inline-flex flex-column justify-content-center" action="pages/mostrar.php" method="GET">
             <input class="button flex-fill fs-4 form-control fw-bold text-center" type="text" value="Otras semanas" readonly>
             <select class="button flex-fill fs-4 form-select form-control fw-bold text-center" id="semana" name="semana">
                 <option value="52">52</option>
@@ -95,10 +95,10 @@
         </form><br><br><br><br>
     </main>
     <footer>
-        <img class="img" src="logo (2).png" alt="logo">
+        <img class="img" src="resources/logo (2).png" alt="logo">
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

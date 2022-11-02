@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../resources/favicon.ico">
     <title>Programación Semanal</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg fs-4 fw-bold">
             <div class="container-fluid">
-                <a href="index.php">
-                    <img src="logo.png" alt="" width="70vw">
+                <a href="../index.php">
+                    <img src="../resources/logo.png" alt="" width="70vw">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,8 +29,6 @@
                 </div>
                 <div class="d-flex flex-row justify-content-end">
                     <?php
-                        include("conexion.php");
-                        /* $semana=($_GET['semana']); */
                         $semana = date('W', time())+1;
                     ?>
                     <form class="d-flex justify-content-end" action="editar.php" method="post">
@@ -43,7 +41,7 @@
         </nav>
     </header>
     <main>
-        <script src="script.js"></script>
+        <script src="../js/script.js"></script>
         <?php
         include("conexion.php");
         
@@ -1055,6 +1053,9 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
                     </tr>
                 </tbody>
             </table>
+        </div>
+        <div class="text-center">
+            <video width="100" height="100" src="../resources/loop.mp4" loop autoplay hidden></video>
         </div>
     </main>
     <script>
