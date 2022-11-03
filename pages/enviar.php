@@ -36,9 +36,21 @@
     $ExtLun__embarque=strtoupper($_POST['ExtLun__embarque']);
 
     $L1Lun__cantidad=strtoupper($_POST['L1Lun__cantidad']);
+    if ($L1Lun__cantidad == null){
+        $L1Lun__cantidad = 0;
+    }
     $L2Lun__cantidad=strtoupper($_POST['L2Lun__cantidad']);
+    if ($L2Lun__cantidad == null){
+        $L2Lun__cantidad = 0;
+    }
     $L3Lun__cantidad=strtoupper($_POST['L3Lun__cantidad']);
+    if ($L3Lun__cantidad == null){
+        $L3Lun__cantidad = 0;
+    }
     $L4Lun__cantidad=strtoupper($_POST['L4Lun__cantidad']);
+    if ($L4Lun__cantidad == null){
+        $L4Lun__cantidad = 0;
+    }
 
     $ExtLun__cocido2=strtoupper($_POST['ExtLun__cocido2']);
     $ExtLun__embarque2=strtoupper($_POST['ExtLun__embarque2']);
@@ -68,9 +80,21 @@
     $ExtMar__embarque=strtoupper($_POST['ExtMar__embarque']);
 
     $L1Mar__cantidad=strtoupper($_POST['L1Mar__cantidad']);
+    if ($L1Mar__cantidad == null){
+        $L1Mar__cantidad = 0;
+    }
     $L2Mar__cantidad=strtoupper($_POST['L2Mar__cantidad']);
+    if ($L2Mar__cantidad == null){
+        $L2Mar__cantidad = 0;
+    }
     $L3Mar__cantidad=strtoupper($_POST['L3Mar__cantidad']);
+    if ($L3Mar__cantidad == null){
+        $L3Mar__cantidad = 0;
+    }
     $L4Mar__cantidad=strtoupper($_POST['L4Mar__cantidad']);
+    if ($L4Mar__cantidad == null){
+        $L4Mar__cantidad = 0;
+    }
 
     $ExtMar__cocido2=strtoupper($_POST['ExtMar__cocido2']);
     $ExtMar__embarque2=strtoupper($_POST['ExtMar__embarque2']);
@@ -100,9 +124,21 @@
     $ExtMie__embarque=strtoupper($_POST['ExtMie__embarque']);
 
     $L1Mie__cantidad=strtoupper($_POST['L1Mie__cantidad']);
+    if ($L1Mie__cantidad == null){
+        $L1Mie__cantidad = 0;
+    }
     $L2Mie__cantidad=strtoupper($_POST['L2Mie__cantidad']);
+    if ($L2Mie__cantidad == null){
+        $L2Mie__cantidad = 0;
+    }
     $L3Mie__cantidad=strtoupper($_POST['L3Mie__cantidad']);
+    if ($L3Mie__cantidad == null){
+        $L3Mie__cantidad = 0;
+    }
     $L4Mie__cantidad=strtoupper($_POST['L4Mie__cantidad']);
+    if ($L4Mie__cantidad == null){
+        $L4Mie__cantidad = 0;
+    }
 
     $ExtMie__cocido2=strtoupper($_POST['ExtMie__cocido2']);
     $ExtMie__embarque2=strtoupper($_POST['ExtMie__embarque2']);
@@ -132,9 +168,21 @@
     $ExtJue__embarque=strtoupper($_POST['ExtJue__embarque']);
 
     $L1Jue__cantidad=strtoupper($_POST['L1Jue__cantidad']);
+    if ($L1Jue__cantidad == null){
+        $L1Jue__cantidad = 0;
+    }
     $L2Jue__cantidad=strtoupper($_POST['L2Jue__cantidad']);
+    if ($L2Jue__cantidad == null){
+        $L2Jue__cantidad = 0;
+    }
     $L3Jue__cantidad=strtoupper($_POST['L3Jue__cantidad']);
+    if ($L3Jue__cantidad == null){
+        $L3Jue__cantidad = 0;
+    }
     $L4Jue__cantidad=strtoupper($_POST['L4Jue__cantidad']);
+    if ($L4Jue__cantidad == null){
+        $L4Jue__cantidad = 0;
+    }
 
     $ExtJue__cocido2=strtoupper($_POST['ExtJue__cocido2']);
     $ExtJue__embarque2=strtoupper($_POST['ExtJue__embarque2']);
@@ -164,9 +212,21 @@
     $ExtVie__embarque=strtoupper($_POST['ExtVie__embarque']);
 
     $L1Vie__cantidad=strtoupper($_POST['L1Vie__cantidad']);
+    if ($L1Vie__cantidad == null){
+        $L1Vie__cantidad = 0;
+    }
     $L2Vie__cantidad=strtoupper($_POST['L2Vie__cantidad']);
+    if ($L2Vie__cantidad == null){
+        $L2Vie__cantidad = 0;
+    }
     $L3Vie__cantidad=strtoupper($_POST['L3Vie__cantidad']);
+    if ($L3Vie__cantidad == null){
+        $L3Vie__cantidad = 0;
+    }
     $L4Vie__cantidad=strtoupper($_POST['L4Vie__cantidad']);
+    if ($L4Vie__cantidad == null){
+        $L4Vie__cantidad = 0;
+    }
 
     $ExtVie__cocido2=strtoupper($_POST['ExtVie__cocido2']);
     $ExtVie__embarque2=strtoupper($_POST['ExtVie__embarque2']);
@@ -196,9 +256,21 @@
     $ExtSab__embarque=strtoupper($_POST['ExtSab__embarque']);
 
     $L1Sab__cantidad=strtoupper($_POST['L1Sab__cantidad']);
+    if ($L1Sab__cantidad == null){
+        $L1Sab__cantidad = 0;
+    }
     $L2Sab__cantidad=strtoupper($_POST['L2Sab__cantidad']);
+    if ($L2Sab__cantidad == null){
+        $L2Sab__cantidad = 0;
+    }
     $L3Sab__cantidad=strtoupper($_POST['L3Sab__cantidad']);
+    if ($L3Sab__cantidad == null){
+        $L3Sab__cantidad = 0;
+    }
     $L4Sab__cantidad=strtoupper($_POST['L4Sab__cantidad']);
+    if ($L4Sab__cantidad == null){
+        $L4Sab__cantidad = 0;
+    }
 
     $ExtSab__cocido2=strtoupper($_POST['ExtSab__cocido2']);
     $ExtSab__embarque2=strtoupper($_POST['ExtSab__embarque2']);
