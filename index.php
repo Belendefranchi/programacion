@@ -106,6 +106,7 @@
             </select>
             <input class="button flex-fill fs-4 form-control fw-bold text-center" type="submit" value="Ver">
         </form><br><br><br><br>
+        lskfjñj odskfyhñ
     </main>
     <footer>
         <img class="img" src="resources/logo (2).png" alt="logo">
