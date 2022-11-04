@@ -35,19 +35,27 @@
                             <a class="nav-link active" aria-current="page" href="http://192.168.1.113/programacion">Programación</a>
                         </li>
                     </ul>
-                    <span class="navbar-text">
-                        Intranet
-                    </span>
+                    <span class="navbar-text">Intranet</span>
                 </div>
             </div>
         </nav>
     </header><br>
     <main class="main2 d-inline-flex flex-column justify-content-center w-25">
-        <div class="d-inline-flex flex-column justify-content-center">
-            <a class="a" href="pages/semAnterior.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Anterior'></a>
-            <a class="a" href="pages/semActual.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Actual'></a>
-            <a class="a" href="pages/semProxima.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Próxima'></a>
-        </div><br>
+    <?php
+            $semana = date('W', time());
+        ?>
+        <form class="d-inline-flex flex-column justify-content-center" action="pages/mostrar.php" method="GET">
+            <input type="text" value="<?php echo $semana1 = $semana -1;?>" name="semana" hidden>
+            <input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='submit' value='Semana Anterior'>
+        </form>
+        <form class="d-inline-flex flex-column justify-content-center" action="pages/mostrar.php" method="GET">
+            <input type="text" value="<?php echo $semana?>" name="semana" hidden>
+            <input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='submit' value='Semana Actual'>
+        </form>
+        <form class="d-inline-flex flex-column justify-content-center" action="pages/mostrar.php" method="GET">
+            <input type="text" value="<?php echo $semana3 = $semana + 1;?>" name="semana" hidden>
+            <input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='submit' value='Semana Próxima'>
+        </form><br>
         <form class="d-inline-flex flex-column justify-content-center" action="pages/mostrar.php" method="GET">
             <input class="button flex-fill fs-4 form-control fw-bold text-center" type="text" value="Otras semanas" readonly>
             <select class="button flex-fill fs-4 form-select form-control fw-bold text-center" id="semana" name="semana">
@@ -106,7 +114,6 @@
             </select>
             <input class="button flex-fill fs-4 form-control fw-bold text-center" type="submit" value="Ver">
         </form><br><br><br><br>
-        lskfjñj odskfyhñ
     </main>
     <footer>
         <img class="img" src="resources/logo (2).png" alt="logo">
