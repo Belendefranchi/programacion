@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="../css/style2.css">
     <link rel="icon" href="../resources/favicon.ico">
     <title>Programación Semanal</title>
 </head>
@@ -41,7 +41,7 @@
         </nav>
     </header>
     <main class="">
-        <script src="script.js"></script>
+        <script src="../js/script.js"></script>
         <?php
         include("conexion.php");
         
@@ -811,12 +811,14 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
                         <th class="table__font text-center" colspan="6">PRODUCCION</th>
                     </tr>
                     <tr class="table__row--dark table__font">
-                        <th class="table__font table-group-divider" scope="col"><?php echo $Lun__sem?></th>
-                        <th class="table__font table-group-divider" scope="col">LOTE 1</th>
-                        <th class="table__font table-group-divider" scope="col">LOTE 2</th>
-                        <th class="table__font table-group-divider" scope="col">LOTE 3</th>
-                        <th class="table__font table-group-divider" scope="col">LOTE 4</th>
-                        <th class="table__font table-group-divider" scope="col">COCIDO</th>
+                        <th class="table__font table-group-divider" colspan="2">FECHA</th>
+                        <th class="table__font table-group-divider" colspan="2">LOTE 1</th>
+                        <th class="table__font table-group-divider" colspan="2">LOTE 2</th>
+                        <th class="table__font table-group-divider" colspan="2">LOTE 3</th>
+                        <th class="table__font table-group-divider" colspan="2">LOTE 4</th>
+                        <th class="table__font table-group-divider" colspan="2">LOTE 5</th>
+                        <th class="table__font table-group-divider" colspan="2">LOTE 6</th>
+                        <th class="table__font table-group-divider" colspan="2">COCIDO</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -824,212 +826,184 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
 <!-- ########################################### LUNES ################################################### -->
 
                     <tr class="table__row--dark table-group-divider">
-                        <th scope="row">LUN</th>
-                        <td class='table_font' id="L1Lun__tipo"><?php echo $L1Lun__tipo, $L1Lun__proceso?></td>
-                        <td class='table_font' id="L2Lun__tipo"><?php echo $L2Lun__tipo?></td>
-                        <td class='table_font' id="L3Lun__tipo"><?php echo $L3Lun__tipo?></td>
-                        <td class='table_font' id="L4Lun__tipo"><?php echo $L4Lun__tipo?></td>
-                        <td class='table_font'><?php echo $ProLun__cocido?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <th scope="row"><?php echo $Lun__fecha?></th>
+                        <th><?php echo $Lun__fecha?></th>
+                        <td class='table_font' id="L1Lun__tipo"><?php echo $L1Lun__tipo?></td>
                         <td class='table_font' id="L1Lun__proceso"><?php echo $L1Lun__proceso?></td>
+                        <td class='table_font' id="L2Lun__tipo"><?php echo $L2Lun__tipo?></td>
                         <td class='table_font' id="L2Lun__proceso"><?php echo $L2Lun__proceso?></td>
+                        <td class='table_font' id="L3Lun__tipo"><?php echo $L3Lun__tipo?></td>
                         <td class='table_font' id="L3Lun__proceso"><?php echo $L3Lun__proceso?></td>
+                        <td class='table_font' id="L4Lun__tipo"><?php echo $L4Lun__tipo?></td>
                         <td class='table_font' id="L4Lun__proceso"><?php echo $L4Lun__proceso?></td>
+                        <td class='table_font'><?php echo $ProLun__cocido?></td>
                         <td class='table_font'><?php echo $OpeLun__cocido?></td>
                     </tr>
+
                     <tr class="table__row--dark">
-                        <th class="total table_font" scope="row"><?php if($L1Lun__cantidad+$L2Lun__cantidad+$L3Lun__cantidad+$L4Lun__cantidad!=0){echo "TOTAL";}?></th>
-                        <td class='table_font'><?php echo $L1Lun__granja?></td>
-                        <td class='table_font'><?php echo $L2Lun__granja?></td>
-                        <td class='table_font'><?php echo $L3Lun__granja?></td>
-                        <td class='table_font'><?php echo $L4Lun__granja?></td>
-                        <td class='table_font'><?php echo $ExtLun__cocido?></td>
-                    </tr>
-                    <tr class="table__row--light">
                         <th class="total table_font" scope="row"><?php if($L1Lun__cantidad+$L2Lun__cantidad+$L3Lun__cantidad+$L4Lun__cantidad!=0){echo $L1Lun__cantidad+$L2Lun__cantidad+$L3Lun__cantidad+$L4Lun__cantidad;}?></th>
+                        <td class='table_font'><?php echo $L1Lun__granja?></td>
                         <td class='table_font'><?php if($L1Lun__cantidad!=0){echo $L1Lun__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L2Lun__granja?></td>
                         <td class='table_font'><?php if($L2Lun__cantidad!=0){echo $L2Lun__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L3Lun__granja?></td>
                         <td class='table_font'><?php if($L3Lun__cantidad!=0){echo $L3Lun__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L4Lun__granja?></td>
                         <td class='table_font'><?php if($L4Lun__cantidad!=0){echo $L4Lun__cantidad;}?></td>
+                        <td class='table_font'><?php echo $ExtLun__cocido?></td>
                         <td class='table_font'><?php echo $ExtLun__cocido2?></td>
                     </tr>
+
                     
 <!-- ########################################### MARTES ################################################### -->
 
                     <tr class="table__row--dark table-group-divider">
-                        <th scope="row">MAR</th>
+                        <th scope="row">MAR <?php echo $Mar__fecha?></th>
                         <td class='table_font' id="L1Mar__tipo"><?php echo $L1Mar__tipo?></td>
-                        <td class='table_font' id="L2Mar__tipo"><?php echo $L2Mar__tipo?></td>
-                        <td class='table_font' id="L3Mar__tipo"><?php echo $L3Mar__tipo?></td>
-                        <td class='table_font' id="L4Mar__tipo"><?php echo $L4Mar__tipo?></td>
-                        <td class='table_font'><?php echo $ProMar__cocido?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <th scope="row"><?php echo $Mar__fecha?></th>
                         <td class='table_font' id="L1Mar__proceso"><?php echo $L1Mar__proceso?></td>
+                        <td class='table_font' id="L2Mar__tipo"><?php echo $L2Mar__tipo?></td>
                         <td class='table_font' id="L2Mar__proceso"><?php echo $L2Mar__proceso?></td>
+                        <td class='table_font' id="L3Mar__tipo"><?php echo $L3Mar__tipo?></td>
                         <td class='table_font' id="L3Mar__proceso"><?php echo $L3Mar__proceso?></td>
+                        <td class='table_font' id="L4Mar__tipo"><?php echo $L4Mar__tipo?></td>
                         <td class='table_font' id="L4Mar__proceso"><?php echo $L4Mar__proceso?></td>
                         <td class='table_font'><?php echo $OpeMar__cocido?></td>
+                        <td class='table_font'><?php echo $ProMar__cocido?></td>
                     </tr>
+
                     <tr class="table__row--dark">
-                        <th class="total table_font" scope="row"><?php if($L1Mar__cantidad+$L2Mar__cantidad+$L3Mar__cantidad+$L4Mar__cantidad!=0){echo "TOTAL";}?></th>
+                    <th class="total table_font" scope="row"><?php if($L1Mar__cantidad+$L2Mar__cantidad+$L3Mar__cantidad+$L4Mar__cantidad!=0){echo $L1Mar__cantidad+$L2Mar__cantidad+$L3Mar__cantidad+$L4Mar__cantidad;}?></th>
                         <td class='table_font'><?php echo $L1Mar__granja?></td>
-                        <td class='table_font'><?php echo $L2Mar__granja?></td>
-                        <td class='table_font'><?php echo $L3Mar__granja?></td>
-                        <td class='table_font'><?php echo $L4Mar__granja?></td>
-                        <td class='table_font'><?php echo $ExtMar__cocido?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <th class="total table_font" scope="row"><?php if($L1Mar__cantidad+$L2Mar__cantidad+$L3Mar__cantidad+$L4Mar__cantidad!=0){echo $L1Mar__cantidad+$L2Mar__cantidad+$L3Mar__cantidad+$L4Mar__cantidad;}?></th>
                         <td class='table_font'><?php if($L1Mar__cantidad!=0){echo $L1Mar__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L2Mar__granja?></td>
                         <td class='table_font'><?php if($L2Mar__cantidad!=0){echo $L2Mar__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L3Mar__granja?></td>
                         <td class='table_font'><?php if($L3Mar__cantidad!=0){echo $L3Mar__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L4Mar__granja?></td>
                         <td class='table_font'><?php if($L4Mar__cantidad!=0){echo $L4Mar__cantidad;}?></td>
+                        <td class='table_font'><?php echo $ExtMar__cocido?></td>
                         <td class='table_font'><?php echo $ExtMar__cocido2?></td>
                     </tr>
 
 <!-- ########################################### MIERCOLES ################################################### -->
 
                     <tr class="table__row--dark table-group-divider">
-                        <th scope="row">MIE</th>
+                        <th scope="row">MIE <?php echo $Mie__fecha?></th>
                         <td class='table_font' id="L1Mie__tipo"><?php echo $L1Mie__tipo?></td>
-                        <td class='table_font' id="L2Mie__tipo"><?php echo $L2Mie__tipo?></td>
-                        <td class='table_font' id="L3Mie__tipo"><?php echo $L3Mie__tipo?></td>
-                        <td class='table_font' id="L4Mie__tipo"><?php echo $L4Mie__tipo?></td>
-                        <td class='table_font'><?php echo $ProMie__cocido?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <th scope="row"><?php echo $Mie__fecha?></th>
                         <td class='table_font' id="L1Mie__proceso"><?php echo $L1Mie__proceso?></td>
+                        <td class='table_font' id="L2Mie__tipo"><?php echo $L2Mie__tipo?></td>
                         <td class='table_font' id="L2Mie__proceso"><?php echo $L2Mie__proceso?></td>
+                        <td class='table_font' id="L3Mie__tipo"><?php echo $L3Mie__tipo?></td>
                         <td class='table_font' id="L3Mie__proceso"><?php echo $L3Mie__proceso?></td>
+                        <td class='table_font' id="L4Mie__tipo"><?php echo $L4Mie__tipo?></td>
                         <td class='table_font' id="L4Mie__proceso"><?php echo $L4Mie__proceso?></td>
+                        <td class='table_font'><?php echo $ProMie__cocido?></td>
                         <td class='table_font'><?php echo $OpeMie__cocido?></td>
                     </tr>
+
                     <tr class="table__row--dark">
-                        <th class="total table_font" scope="row"><?php if($L1Mie__cantidad+$L2Mie__cantidad+$L3Mie__cantidad+$L4Mie__cantidad!=0){echo "TOTAL";}?></th>
+                    <th class="total table_font" scope="row"><?php if($L1Mie__cantidad+$L2Mie__cantidad+$L3Mie__cantidad+$L4Mie__cantidad!=0){echo $L1Mie__cantidad+$L2Mie__cantidad+$L3Mie__cantidad+$L4Mie__cantidad;}?></th>
                         <td class='table_font'><?php echo $L1Mie__granja?></td>
-                        <td class='table_font'><?php echo $L2Mie__granja?></td>
-                        <td class='table_font'><?php echo $L3Mie__granja?></td>
-                        <td class='table_font'><?php echo $L4Mie__granja?></td>
-                        <td class='table_font'><?php echo $ExtMie__cocido?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <th class="total table_font" scope="row"><?php if($L1Mie__cantidad+$L2Mie__cantidad+$L3Mie__cantidad+$L4Mie__cantidad!=0){echo $L1Mie__cantidad+$L2Mie__cantidad+$L3Mie__cantidad+$L4Mie__cantidad;}?></th>
                         <td class='table_font'><?php if($L1Mie__cantidad!=0){echo $L1Mie__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L2Mie__granja?></td>
                         <td class='table_font'><?php if($L2Mie__cantidad!=0){echo $L2Mie__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L3Mie__granja?></td>
                         <td class='table_font'><?php if($L3Mie__cantidad!=0){echo $L3Mie__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L4Mie__granja?></td>
                         <td class='table_font'><?php if($L4Mie__cantidad!=0){echo $L4Mie__cantidad;}?></td>
+                        <td class='table_font'><?php echo $ExtMie__cocido?></td>
                         <td class='table_font'><?php echo $ExtMie__cocido2?></td>
                     </tr>
 
 <!-- ########################################### JUEVES ################################################### -->
 
                     <tr class="table__row--dark table-group-divider">
-                        <th scope="row">JUE</th>
+                        <th scope="row">JUE <?php echo $Jue__fecha?></th>
                         <td class='table_font' id="L1Jue__tipo"><?php echo $L1Jue__tipo?></td>
-                        <td class='table_font' id="L2Jue__tipo"><?php echo $L2Jue__tipo?></td>
-                        <td class='table_font' id="L3Jue__tipo"><?php echo $L3Jue__tipo?></td>
-                        <td class='table_font' id="L4Jue__tipo"><?php echo $L4Jue__tipo?></td>
-                        <td class='table_font'><?php echo $ProJue__cocido?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <th scope="row"><?php echo $Jue__fecha?></th>
                         <td class='table_font' id="L1Jue__proceso"><?php echo $L1Jue__proceso?></td>
+                        <td class='table_font' id="L2Jue__tipo"><?php echo $L2Jue__tipo?></td>
                         <td class='table_font' id="L2Jue__proceso"><?php echo $L2Jue__proceso?></td>
+                        <td class='table_font' id="L3Jue__tipo"><?php echo $L3Jue__tipo?></td>
                         <td class='table_font' id="L3Jue__proceso"><?php echo $L3Jue__proceso?></td>
+                        <td class='table_font' id="L4Jue__tipo"><?php echo $L4Jue__tipo?></td>
                         <td class='table_font' id="L4Jue__proceso"><?php echo $L4Jue__proceso?></td>
+                        <td class='table_font'><?php echo $ProJue__cocido?></td>
                         <td class='table_font'><?php echo $OpeJue__cocido?></td>
                     </tr>
+
                     <tr class="table__row--dark">
-                        <th class="total table_font" scope="row"><?php if($L1Jue__cantidad+$L2Jue__cantidad+$L3Jue__cantidad+$L4Jue__cantidad!=0){echo "TOTAL";}?></th>
+                    <th class="total table_font" scope="row"><?php if($L1Jue__cantidad+$L2Jue__cantidad+$L3Jue__cantidad+$L4Jue__cantidad!=0){echo $L1Jue__cantidad+$L2Jue__cantidad+$L3Jue__cantidad+$L4Jue__cantidad;}?></th>
                         <td class='table_font'><?php echo $L1Jue__granja?></td>
-                        <td class='table_font'><?php echo $L2Jue__granja?></td>
-                        <td class='table_font'><?php echo $L3Jue__granja?></td>
-                        <td class='table_font'><?php echo $L4Jue__granja?></td>
-                        <td class='table_font'><?php echo $ExtJue__cocido?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <th class="total table_font" scope="row"><?php if($L1Jue__cantidad+$L2Jue__cantidad+$L3Jue__cantidad+$L4Jue__cantidad!=0){echo $L1Jue__cantidad+$L2Jue__cantidad+$L3Jue__cantidad+$L4Jue__cantidad;}?></th>
                         <td class='table_font'><?php if($L1Jue__cantidad!=0){echo $L1Jue__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L2Jue__granja?></td>
                         <td class='table_font'><?php if($L2Jue__cantidad!=0){echo $L2Jue__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L3Jue__granja?></td>
                         <td class='table_font'><?php if($L3Jue__cantidad!=0){echo $L3Jue__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L4Jue__granja?></td>
                         <td class='table_font'><?php if($L4Jue__cantidad!=0){echo $L4Jue__cantidad;}?></td>
+                        <td class='table_font'><?php echo $ExtJue__cocido?></td>
                         <td class='table_font'><?php echo $ExtJue__cocido2?></td>
                     </tr>
 
 <!-- ########################################### VIERNES ################################################### -->
 
                     <tr class="table__row--dark table-group-divider">
-                        <th scope="row">VIE</th>
+                        <th scope="row">VIE <?php echo $Vie__fecha?></th>
                         <td class='table_font' id="L1Vie__tipo"><?php echo $L1Vie__tipo?></td>
-                        <td class='table_font' id="L2Vie__tipo"><?php echo $L2Vie__tipo?></td>
-                        <td class='table_font' id="L3Vie__tipo"><?php echo $L3Vie__tipo?></td>
-                        <td class='table_font' id="L4Vie__tipo"><?php echo $L4Vie__tipo?></td>
-                        <td class='table_font'><?php echo $ProVie__cocido?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <th scope="row"><?php echo $Vie__fecha?></th>
                         <td class='table_font' id="L1Vie__proceso"><?php echo $L1Vie__proceso?></td>
+                        <td class='table_font' id="L2Vie__tipo"><?php echo $L2Vie__tipo?></td>
                         <td class='table_font' id="L2Vie__proceso"><?php echo $L2Vie__proceso?></td>
+                        <td class='table_font' id="L3Vie__tipo"><?php echo $L3Vie__tipo?></td>
                         <td class='table_font' id="L3Vie__proceso"><?php echo $L3Vie__proceso?></td>
+                        <td class='table_font' id="L4Vie__tipo"><?php echo $L4Vie__tipo?></td>
                         <td class='table_font' id="L4Vie__proceso"><?php echo $L4Vie__proceso?></td>
+                        <td class='table_font'><?php echo $ProVie__cocido?></td>
                         <td class='table_font'><?php echo $OpeVie__cocido?></td>
                     </tr>
+
                     <tr class="table__row--dark">
-                        <th class="total table_font" scope="row"><?php if($L1Vie__cantidad+$L2Vie__cantidad+$L3Vie__cantidad+$L4Vie__cantidad!=0){echo "TOTAL";}?></th>
+                    <th class="total table_font" scope="row"><?php if($L1Vie__cantidad+$L2Vie__cantidad+$L3Vie__cantidad+$L4Vie__cantidad!=0){echo $L1Vie__cantidad+$L2Vie__cantidad+$L3Vie__cantidad+$L4Vie__cantidad;}?></th>
                         <td class='table_font'><?php echo $L1Vie__granja?></td>
-                        <td class='table_font'><?php echo $L2Vie__granja?></td>
-                        <td class='table_font'><?php echo $L3Vie__granja?></td>
-                        <td class='table_font'><?php echo $L4Vie__granja?></td>
-                        <td class='table_font'><?php echo $ExtVie__cocido?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <th class="total table_font" scope="row"><?php if($L1Vie__cantidad+$L2Vie__cantidad+$L3Vie__cantidad+$L4Vie__cantidad!=0){echo $L1Vie__cantidad+$L2Vie__cantidad+$L3Vie__cantidad+$L4Vie__cantidad;}?></th>
                         <td class='table_font'><?php if($L1Vie__cantidad!=0){echo $L1Vie__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L2Vie__granja?></td>
                         <td class='table_font'><?php if($L2Vie__cantidad!=0){echo $L2Vie__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L3Vie__granja?></td>
                         <td class='table_font'><?php if($L3Vie__cantidad!=0){echo $L3Vie__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L4Vie__granja?></td>
                         <td class='table_font'><?php if($L4Vie__cantidad!=0){echo $L4Vie__cantidad;}?></td>
+                        <td class='table_font'><?php echo $ExtVie__cocido?></td>
                         <td class='table_font'><?php echo $ExtVie__cocido2?></td>
                     </tr>
 
 <!-- ########################################### SABADO ################################################### -->
 
                     <tr class="table__row--dark table-group-divider">
-                        <th scope="row">SAB</th>
+                        <th scope="row">SAB <?php echo $Sab__fecha;?></th>
                         <td class='table_font' id="L1Sab__tipo"><?php echo $L1Sab__tipo?></td>
-                        <td class='table_font' id="L2Sab__tipo"><?php echo $L2Sab__tipo?></td>
-                        <td class='table_font' id="L3Sab__tipo"><?php echo $L3Sab__tipo?></td>
-                        <td class='table_font' id="L4Sab__tipo"><?php echo $L4Sab__tipo?></td>
-                        <td class='table_font'><?php echo $ProSab__cocido?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <th scope="row"><?php echo $Sab__fecha?></th>
                         <td class='table_font' id="L1Sab__proceso"><?php echo $L1Sab__proceso?></td>
+                        <td class='table_font' id="L2Sab__tipo"><?php echo $L2Sab__tipo?></td>
                         <td class='table_font' id="L2Sab__proceso"><?php echo $L2Sab__proceso?></td>
+                        <td class='table_font' id="L3Sab__tipo"><?php echo $L3Sab__tipo?></td>
                         <td class='table_font' id="L3Sab__proceso"><?php echo $L3Sab__proceso?></td>
+                        <td class='table_font' id="L4Sab__tipo"><?php echo $L4Sab__tipo?></td>
                         <td class='table_font' id="L4Sab__proceso"><?php echo $L4Sab__proceso?></td>
+                        <td class='table_font'><?php echo $ProSab__cocido?></td>
                         <td class='table_font'><?php echo $OpeSab__cocido?></td>              
                     </tr>
+
                     <tr class="table__row--dark">
-                        <th class="total table_font" scope="row"><?php if($L1Sab__cantidad+$L2Sab__cantidad+$L3Sab__cantidad+$L4Sab__cantidad!=0){echo "TOTAL";}?></th>
+                    <th class="total table_font" scope="row"><?php if($L1Sab__cantidad+$L2Sab__cantidad+$L3Sab__cantidad+$L4Sab__cantidad!=0){echo $L1Sab__cantidad+$L2Sab__cantidad+$L3Sab__cantidad+$L4Sab__cantidad;}?></th>
                         <td class='table_font'><?php echo $L1Sab__granja?></td>
-                        <td class='table_font'><?php echo $L2Sab__granja?></td>
-                        <td class='table_font'><?php echo $L3Sab__granja?></td>
-                        <td class='table_font'><?php echo $L4Sab__granja?></td>
-                        <td class='table_font'><?php echo $ExtSab__cocido?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <th class="total table_font" scope="row"><?php if($L1Sab__cantidad+$L2Sab__cantidad+$L3Sab__cantidad+$L4Sab__cantidad!=0){echo $L1Sab__cantidad+$L2Sab__cantidad+$L3Sab__cantidad+$L4Sab__cantidad;}?></th>
                         <td class='table_font'><?php if($L1Sab__cantidad!=0){echo $L1Sab__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L2Sab__granja?></td>
                         <td class='table_font'><?php if($L2Sab__cantidad!=0){echo $L2Sab__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L3Sab__granja?></td>
                         <td class='table_font'><?php if($L3Sab__cantidad!=0){echo $L3Sab__cantidad;}?></td>
+                        <td class='table_font'><?php echo $L4Sab__granja?></td>
                         <td class='table_font'><?php if($L4Sab__cantidad!=0){echo $L4Sab__cantidad;}?></td>
+                        <td class='table_font'><?php echo $ExtSab__cocido?></td>
                         <td class='table_font'><?php echo $ExtSab__cocido2?></td>
                     </tr>
+
                 </tbody>
             </table>
         </div>
@@ -1040,185 +1014,7 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
         <!-- ######################################################################################################################################################################### -->
         <!-- ######################################################################################################################################################################### -->
 
-        <div class="container-fluid d-flex justify-content-center">
-            <table class="table-responsive table__font" id="target">
-                <thead>
-                    <tr>
-                        <th class="table__font text-center" colspan="4">EMBARQUES</th>
-                    </tr>
-                    <tr class="table__row--dark table__font">
-                        <th class="table__font table-group-divider" scope="col">OPERACION</th>
-                        <th class="table__font table-group-divider" scope="col">PRODUCTO</th>
-                        <th class="table__font table-group-divider" scope="col">ESTADO</th>
-                        <th class="table__font table-group-divider" scope="col">DESPACHO</th>
-                    </tr>
-                </thead>
-                <tbody>
 
-<!-- ########################################### LUNES ################################################### -->
-
-                    <tr class="table__row--dark table-group-divider">
-                        <td class='table_font'><?php echo $ProLun__embarque?></td>
-                        <td class='table_font'><?php echo $OpeLun__embarque?></td>
-                        <td class='table_font'><?php echo $ExtLun__embarque?></td>
-                        <td class='table_font'><?php echo $ExtLun__embarque2?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                    </tr>
-                    <tr class="table__row--dark">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                    </tr>
-                    
-<!-- ########################################### MARTES ################################################### -->
-
-                    <tr class="table__row--dark table-group-divider">
-                        <td class='table_font'><?php echo $ProMar__embarque?></td>
-                        <td class='table_font'><?php echo $OpeMar__embarque?></td>
-                        <td class='table_font'><?php echo $ExtMar__embarque?></td>
-                        <td class='table_font'><?php echo $ExtMar__embarque2?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>               
-                    </tr>
-                    <tr class="table__row--dark">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td> 
-                    </tr>
-                    <tr class="table__row--light">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                    </tr>
-
-<!-- ########################################### MIERCOLES ################################################### -->
-
-                    <tr class="table__row--dark table-group-divider">
-                        <td class='table_font'><?php echo $ProMie__embarque?></td>
-                        <td class='table_font'><?php echo $OpeMie__embarque?></td>
-                        <td class='table_font'><?php echo $ExtMie__embarque?></td>
-                        <td class='table_font'><?php echo $ExtMie__embarque2?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>               
-                    </tr>
-                    <tr class="table__row--dark">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td> 
-                    </tr>
-                    <tr class="table__row--light">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                    </tr>
-
-<!-- ########################################### JUEVES ################################################### -->
-
-                    <tr class="table__row--dark table-group-divider">
-                        <td class='table_font'><?php echo $ProJue__embarque?></td>
-                        <td class='table_font'><?php echo $OpeJue__embarque?></td>
-                        <td class='table_font'><?php echo $ExtJue__embarque?></td>
-                        <td class='table_font'><?php echo $ExtJue__embarque2?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>               
-                    </tr>
-                    <tr class="table__row--dark">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td> 
-                    </tr>
-                    <tr class="table__row--light">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                    </tr>
-
-<!-- ########################################### VIERNES ################################################### -->
-
-                    <tr class="table__row--dark table-group-divider">
-                        <td class='table_font'><?php echo $ProVie__embarque?></td>
-                        <td class='table_font'><?php echo $OpeVie__embarque?></td>
-                        <td class='table_font'><?php echo $ExtVie__embarque?></td>
-                        <td class='table_font'><?php echo $ExtVie__embarque2?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>               
-                    </tr>
-                    <tr class="table__row--dark">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td> 
-                    </tr>
-                    <tr class="table__row--light">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                    </tr>
-
-<!-- ########################################### SABADO ################################################### -->
-
-                    <tr class="table__row--dark table-group-divider">
-                        <td class='table_font'><?php echo $ProSab__embarque?></td>
-                        <td class='table_font'><?php echo $OpeSab__embarque?></td>
-                        <td class='table_font'><?php echo $ExtSab__embarque?></td>
-                        <td class='table_font'><?php echo $ExtSab__embarque2?></td>
-                    </tr>
-                    <tr class="table__row--light">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>               
-                    </tr>
-                    <tr class="table__row--dark">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td> 
-                    </tr>
-                    <tr class="table__row--light">
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                        <td class='table_font'><?php ?></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
         </div>
     </main>
     <script>
