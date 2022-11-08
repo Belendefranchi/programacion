@@ -31,7 +31,7 @@
                     <?php
                         $semana=substr(($_POST['semana']),-2);
                     ?>
-                <form class="d-flex justify-content-end" action="enviar.php" method="post">
+                <form class="d-flex justify-content-end" action="enviar2.php" method="post">
                     <input class="button fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" name="semana" readonly>
                     <input class="button fs-4 form-control fw-bold text-center" type="submit" value="Enviar">
                     <input class="button fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
@@ -43,7 +43,7 @@
 
 <!-- ################################################      ############################################### -->
 <?php
-include("conexion.php");
+include("conexion2.php");
 $query="SELECT fecha
             FROM faena 
                 where sem='$semana'
@@ -148,6 +148,44 @@ $L4Lun__tipo=$L4Lun__faena["tipo"];
 $L4Lun__proceso=$L4Lun__faena["proceso"];
 $L4Lun__granja=$L4Lun__faena["granja"];
 $L4Lun__cantidad=$L4Lun__faena["cantidad"];
+
+/* ---------------------------lote 5----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, cantidad, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='lun' 
+            and lote='5' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L5Lun__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L5Lun__tipo=$L5Lun__faena["tipo"];
+$L5Lun__proceso=$L5Lun__faena["proceso"];
+$L5Lun__granja=$L5Lun__faena["granja"];
+$L5Lun__cantidad=$L5Lun__faena["cantidad"];
+
+/* ---------------------------lote 6----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, cantidad, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='lun' 
+            and lote='6' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L6Lun__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L6Lun__tipo=$L6Lun__faena["tipo"];
+$L6Lun__proceso=$L6Lun__faena["proceso"];
+$L6Lun__granja=$L6Lun__faena["granja"];
+$L6Lun__cantidad=$L6Lun__faena["cantidad"];
 
 
 /* ---------------------------cocido----------------------------- */
@@ -275,6 +313,43 @@ $L4Mar__proceso=$L4Mar__faena["proceso"];
 $L4Mar__granja=$L4Mar__faena["granja"];
 $L4Mar__cantidad=$L4Mar__faena["cantidad"];
 
+/* ---------------------------lote 5----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, cantidad, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='mar' 
+            and lote='5' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L5Mar__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L5Mar__tipo=$L5Mar__faena["tipo"];
+$L5Mar__proceso=$L5Mar__faena["proceso"];
+$L5Mar__granja=$L5Mar__faena["granja"];
+$L5Mar__cantidad=$L5Mar__faena["cantidad"];
+
+/* ---------------------------lote 6----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, cantidad, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='mar' 
+            and lote='6' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L6Mar__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L6Mar__tipo=$L6Mar__faena["tipo"];
+$L6Mar__proceso=$L6Mar__faena["proceso"];
+$L6Mar__granja=$L6Mar__faena["granja"];
+$L6Mar__cantidad=$L6Mar__faena["cantidad"];
 
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
@@ -399,6 +474,44 @@ $L4Mie__tipo=$L4Mie__faena["tipo"];
 $L4Mie__proceso=$L4Mie__faena["proceso"];
 $L4Mie__granja=$L4Mie__faena["granja"];
 $L4Mie__cantidad=$L4Mie__faena["cantidad"];
+
+/* ---------------------------lote 5----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, cantidad, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='mie' 
+            and lote='5' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L5Mie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L5Mie__tipo=$L5Mie__faena["tipo"];
+$L5Mie__proceso=$L5Mie__faena["proceso"];
+$L5Mie__granja=$L5Mie__faena["granja"];
+$L5Mie__cantidad=$L5Mie__faena["cantidad"];
+
+/* ---------------------------lote 6----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, cantidad, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='mie' 
+            and lote='6' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L6Mie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L6Mie__tipo=$L6Mie__faena["tipo"];
+$L6Mie__proceso=$L6Mie__faena["proceso"];
+$L6Mie__granja=$L6Mie__faena["granja"];
+$L6Mie__cantidad=$L6Mie__faena["cantidad"];
 
 
 /* ---------------------------cocido----------------------------- */
@@ -525,6 +638,43 @@ $L4Jue__proceso=$L4Jue__faena["proceso"];
 $L4Jue__granja=$L4Jue__faena["granja"];
 $L4Jue__cantidad=$L4Jue__faena["cantidad"];
 
+/* ---------------------------lote 5----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, cantidad, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='jue' 
+            and lote='5' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L5Jue__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L5Jue__tipo=$L5Jue__faena["tipo"];
+$L5Jue__proceso=$L5Jue__faena["proceso"];
+$L5Jue__granja=$L5Jue__faena["granja"];
+$L5Jue__cantidad=$L5Jue__faena["cantidad"];
+
+/* ---------------------------lote 6----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, cantidad, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='jue' 
+            and lote='6' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L6Jue__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L6Jue__tipo=$L6Jue__faena["tipo"];
+$L6Jue__proceso=$L6Jue__faena["proceso"];
+$L6Jue__granja=$L6Jue__faena["granja"];
+$L6Jue__cantidad=$L6Jue__faena["cantidad"];
 
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
@@ -650,6 +800,43 @@ $L4Vie__proceso=$L4Vie__faena["proceso"];
 $L4Vie__granja=$L4Vie__faena["granja"];
 $L4Vie__cantidad=$L4Vie__faena["cantidad"];
 
+/* ---------------------------lote 5----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, cantidad, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='vie' 
+            and lote='5' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L5Vie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L5Vie__tipo=$L5Vie__faena["tipo"];
+$L5Vie__proceso=$L5Vie__faena["proceso"];
+$L5Vie__granja=$L5Vie__faena["granja"];
+$L5Vie__cantidad=$L5Vie__faena["cantidad"];
+
+/* ---------------------------lote 6----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, cantidad, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='vie' 
+            and lote='6' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L6Vie__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L6Vie__tipo=$L6Vie__faena["tipo"];
+$L6Vie__proceso=$L6Vie__faena["proceso"];
+$L6Vie__granja=$L6Vie__faena["granja"];
+$L6Vie__cantidad=$L6Vie__faena["cantidad"];
 
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
@@ -775,6 +962,43 @@ $L4Sab__proceso=$L4Sab__faena["proceso"];
 $L4Sab__granja=$L4Sab__faena["granja"];
 $L4Sab__cantidad=$L4Sab__faena["cantidad"];
 
+/* ---------------------------lote 5----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, cantidad, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='sab' 
+            and lote='5' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L5Sab__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L5Sab__tipo=$L5Sab__faena["tipo"];
+$L5Sab__proceso=$L5Sab__faena["proceso"];
+$L5Sab__granja=$L5Sab__faena["granja"];
+$L5Sab__cantidad=$L5Sab__faena["cantidad"];
+
+/* ---------------------------lote 6----------------------------- */ 
+
+$query="SELECT tipo, proceso, granja, fecha, cantidad, sem, Id
+        FROM faena 
+            where sem='$semana'
+            and dia='sab' 
+            and lote='6' 
+                ORDER BY Id DESC";
+
+$resultado=$base->prepare($query);
+$resultado->execute();     
+$L6Sab__faena=$resultado->fetch(PDO::FETCH_ASSOC);
+$resultado->closeCursor();
+
+$L6Sab__tipo=$L6Sab__faena["tipo"];
+$L6Sab__proceso=$L6Sab__faena["proceso"];
+$L6Sab__granja=$L6Sab__faena["granja"];
+$L6Sab__cantidad=$L6Sab__faena["cantidad"];
 
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 

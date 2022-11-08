@@ -31,7 +31,7 @@
                     <?php
                         $semana = date('W', time());
                     ?>
-                    <form class="d-flex justify-content-end" action="editar.php" method="post">
+                    <form class="d-flex justify-content-end" action="editar2.php" method="post">
                         <input class="button fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" name="semana" readonly>
                         <input class="button fs-4 form-control fw-bold text-center" type="submit" value="Editar">
                         <input class="button fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
@@ -43,7 +43,7 @@
     <main class="">
         <script src="../js/script.js"></script>
         <?php
-        include("conexion.php");
+        include("conexion2.php");
         
 /* ############################################################## */
 /* ---------------------------LUNES------------------------------ */
@@ -1072,7 +1072,7 @@ $ExtSab__embarque2=$Sab__embarque["ext_embarque2"];
 <!-- ########################################### LUNES ################################################### -->
 
                     <tr class="table__row--dark table-group-divider">
-                        <th class=""><?php echo "LUN:&nbsp&nbsp$Lun__fecha";?></th>
+                        <th class=""><?php echo "LUN:&nbsp&nbsp$Lun__fecha"?></th>
                         <td class='table_font' id="L1Lun__tipo"><?php  echo $L1Lun__tipo?></td>
                         <td class='table_font' id="L1Lun__proceso"><?php echo $L1Lun__proceso?></td>
                         <td class='table_font' id="L2Lun__tipo"><?php  echo $L2Lun__tipo?></td>
