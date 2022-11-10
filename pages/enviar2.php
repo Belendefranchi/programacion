@@ -15,7 +15,9 @@
     $L2Lun__tipo=strtoupper($_POST['L2Lun__tipo']);
     $L3Lun__tipo=strtoupper($_POST['L3Lun__tipo']);
     $L4Lun__tipo=strtoupper($_POST['L4Lun__tipo']);
-
+    $L5Lun__tipo=strtoupper($_POST['L5Lun__tipo']);
+    $L6Lun__tipo=strtoupper($_POST['L6Lun__tipo']);
+    
     $ProLun__cocido=strtoupper($_POST['ProLun__cocido']);
     $ProLun__embarque=strtoupper($_POST['ProLun__embarque']);
 
@@ -23,7 +25,9 @@
     $L2Lun__proceso=strtoupper($_POST['L2Lun__proceso']);
     $L3Lun__proceso=strtoupper($_POST['L3Lun__proceso']);
     $L4Lun__proceso=strtoupper($_POST['L4Lun__proceso']);
-
+    $L5Lun__proceso=strtoupper($_POST['L5Lun__proceso']);
+    $L6Lun__proceso=strtoupper($_POST['L6Lun__proceso']);
+    
     $OpeLun__cocido=strtoupper($_POST['OpeLun__cocido']);
     $OpeLun__embarque=strtoupper($_POST['OpeLun__embarque']);
 
@@ -31,7 +35,9 @@
     $L2Lun__granja=strtoupper($_POST['L2Lun__granja']);
     $L3Lun__granja=strtoupper($_POST['L3Lun__granja']);
     $L4Lun__granja=strtoupper($_POST['L4Lun__granja']);
-
+    $L5Lun__granja=strtoupper($_POST['L5Lun__granja']);
+    $L6Lun__granja=strtoupper($_POST['L6Lun__granja']);
+    
     $ExtLun__cocido=strtoupper($_POST['ExtLun__cocido']);
     $ExtLun__embarque=strtoupper($_POST['ExtLun__embarque']);
 
@@ -39,17 +45,30 @@
     if ($L1Lun__cantidad == null){
         $L1Lun__cantidad = 0;
     }
+
     $L2Lun__cantidad=strtoupper($_POST['L2Lun__cantidad']);
     if ($L2Lun__cantidad == null){
         $L2Lun__cantidad = 0;
     }
+
     $L3Lun__cantidad=strtoupper($_POST['L3Lun__cantidad']);
     if ($L3Lun__cantidad == null){
         $L3Lun__cantidad = 0;
     }
+
     $L4Lun__cantidad=strtoupper($_POST['L4Lun__cantidad']);
     if ($L4Lun__cantidad == null){
         $L4Lun__cantidad = 0;
+    }
+
+    $L5Lun__cantidad=strtoupper($_POST['L4Lun__cantidad']);
+    if ($L5Lun__cantidad == null){
+        $L5Lun__cantidad = 0;
+    }
+    
+    $L6Lun__cantidad=strtoupper($_POST['L4Lun__cantidad']);
+    if ($L6Lun__cantidad == null){
+        $L6Lun__cantidad = 0;
     }
 
     $ExtLun__cocido2=strtoupper($_POST['ExtLun__cocido2']);
@@ -59,22 +78,28 @@
     $L2Mar__tipo=strtoupper($_POST['L2Mar__tipo']);
     $L3Mar__tipo=strtoupper($_POST['L3Mar__tipo']);
     $L4Mar__tipo=strtoupper($_POST['L4Mar__tipo']);
-
+    $L5Mar__tipo=strtoupper($_POST['L5Mar__tipo']);
+    $L6Mar__tipo=strtoupper($_POST['L6Mar__tipo']);
+    
     $ProMar__cocido=strtoupper($_POST['ProMar__cocido']);
     $ProMar__embarque=strtoupper($_POST['ProMar__embarque']);
-
+    
     $L1Mar__proceso=strtoupper($_POST['L1Mar__proceso']);
     $L2Mar__proceso=strtoupper($_POST['L2Mar__proceso']);
     $L3Mar__proceso=strtoupper($_POST['L3Mar__proceso']);
     $L4Mar__proceso=strtoupper($_POST['L4Mar__proceso']);
-
+    $L5Mar__proceso=strtoupper($_POST['L5Mar__proceso']);
+    $L6Mar__proceso=strtoupper($_POST['L6Mar__proceso']);
+    
     $OpeMar__cocido=strtoupper($_POST['OpeMar__cocido']);
     $OpeMar__embarque=strtoupper($_POST['OpeMar__embarque']);
-
+    
     $L1Mar__granja=strtoupper($_POST['L1Mar__granja']);
     $L2Mar__granja=strtoupper($_POST['L2Mar__granja']);
     $L3Mar__granja=strtoupper($_POST['L3Mar__granja']);
     $L4Mar__granja=strtoupper($_POST['L4Mar__granja']);
+    $L5Mar__granja=strtoupper($_POST['L5Mar__granja']);
+    $L6Mar__granja=strtoupper($_POST['L6Mar__granja']);
 
     $ExtMar__cocido=strtoupper($_POST['ExtMar__cocido']);
     $ExtMar__embarque=strtoupper($_POST['ExtMar__embarque']);
@@ -83,17 +108,30 @@
     if ($L1Mar__cantidad == null){
         $L1Mar__cantidad = 0;
     }
+
     $L2Mar__cantidad=strtoupper($_POST['L2Mar__cantidad']);
     if ($L2Mar__cantidad == null){
         $L2Mar__cantidad = 0;
     }
+
     $L3Mar__cantidad=strtoupper($_POST['L3Mar__cantidad']);
     if ($L3Mar__cantidad == null){
         $L3Mar__cantidad = 0;
     }
+
     $L4Mar__cantidad=strtoupper($_POST['L4Mar__cantidad']);
     if ($L4Mar__cantidad == null){
         $L4Mar__cantidad = 0;
+    }
+
+    $L5Mar__cantidad=strtoupper($_POST['L5Mar__cantidad']);
+    if ($L5Mar__cantidad == null){
+        $L5Mar__cantidad = 0;
+    }
+
+    $L6Mar__cantidad=strtoupper($_POST['L6Mar__cantidad']);
+    if ($L6Mar__cantidad == null){
+        $L6Mar__cantidad = 0;
     }
 
     $ExtMar__cocido2=strtoupper($_POST['ExtMar__cocido2']);
@@ -103,41 +141,60 @@
     $L2Mie__tipo=strtoupper($_POST['L2Mie__tipo']);
     $L3Mie__tipo=strtoupper($_POST['L3Mie__tipo']);
     $L4Mie__tipo=strtoupper($_POST['L4Mie__tipo']);
-
+    $L5Mie__tipo=strtoupper($_POST['L5Mie__tipo']);
+    $L6Mie__tipo=strtoupper($_POST['L6Mie__tipo']);
+    
     $ProMie__cocido=strtoupper($_POST['ProMie__cocido']);
     $ProMie__embarque=strtoupper($_POST['ProMie__embarque']);
-
+    
     $L1Mie__proceso=strtoupper($_POST['L1Mie__proceso']);
     $L2Mie__proceso=strtoupper($_POST['L2Mie__proceso']);
     $L3Mie__proceso=strtoupper($_POST['L3Mie__proceso']);
     $L4Mie__proceso=strtoupper($_POST['L4Mie__proceso']);
-
+    $L5Mie__proceso=strtoupper($_POST['L5Mie__proceso']);
+    $L6Mie__proceso=strtoupper($_POST['L6Mie__proceso']);
+    
     $OpeMie__cocido=strtoupper($_POST['OpeMie__cocido']);
     $OpeMie__embarque=strtoupper($_POST['OpeMie__embarque']);
-
+    
     $L1Mie__granja=strtoupper($_POST['L1Mie__granja']);
     $L2Mie__granja=strtoupper($_POST['L2Mie__granja']);
     $L3Mie__granja=strtoupper($_POST['L3Mie__granja']);
     $L4Mie__granja=strtoupper($_POST['L4Mie__granja']);
-
+    $L5Mie__granja=strtoupper($_POST['L5Mie__granja']);
+    $L6Mie__granja=strtoupper($_POST['L6Mie__granja']);
+    
     $ExtMie__cocido=strtoupper($_POST['ExtMie__cocido']);
     $ExtMie__embarque=strtoupper($_POST['ExtMie__embarque']);
-
+    
     $L1Mie__cantidad=strtoupper($_POST['L1Mie__cantidad']);
     if ($L1Mie__cantidad == null){
         $L1Mie__cantidad = 0;
     }
+
     $L2Mie__cantidad=strtoupper($_POST['L2Mie__cantidad']);
     if ($L2Mie__cantidad == null){
         $L2Mie__cantidad = 0;
     }
+
     $L3Mie__cantidad=strtoupper($_POST['L3Mie__cantidad']);
     if ($L3Mie__cantidad == null){
         $L3Mie__cantidad = 0;
     }
+
     $L4Mie__cantidad=strtoupper($_POST['L4Mie__cantidad']);
     if ($L4Mie__cantidad == null){
         $L4Mie__cantidad = 0;
+    }
+
+    $L5Mie__cantidad=strtoupper($_POST['L5Mie__cantidad']);
+    if ($L5Mie__cantidad == null){
+        $L5Mie__cantidad = 0;
+    }
+
+    $L6Mie__cantidad=strtoupper($_POST['L6Mie__cantidad']);
+    if ($L6Mie__cantidad == null){
+        $L6Mie__cantidad = 0;
     }
 
     $ExtMie__cocido2=strtoupper($_POST['ExtMie__cocido2']);
@@ -147,26 +204,32 @@
     $L2Jue__tipo=strtoupper($_POST['L2Jue__tipo']);
     $L3Jue__tipo=strtoupper($_POST['L3Jue__tipo']);
     $L4Jue__tipo=strtoupper($_POST['L4Jue__tipo']);
-
+    $L5Jue__tipo=strtoupper($_POST['L5Jue__tipo']);
+    $L6Jue__tipo=strtoupper($_POST['L6Jue__tipo']);
+    
     $ProJue__cocido=strtoupper($_POST['ProJue__cocido']);
     $ProJue__embarque=strtoupper($_POST['ProJue__embarque']);
-
+    
     $L1Jue__proceso=strtoupper($_POST['L1Jue__proceso']);
     $L2Jue__proceso=strtoupper($_POST['L2Jue__proceso']);
     $L3Jue__proceso=strtoupper($_POST['L3Jue__proceso']);
     $L4Jue__proceso=strtoupper($_POST['L4Jue__proceso']);
-
+    $L5Jue__proceso=strtoupper($_POST['L5Jue__proceso']);
+    $L6Jue__proceso=strtoupper($_POST['L6Jue__proceso']);
+    
     $OpeJue__cocido=strtoupper($_POST['OpeJue__cocido']);
     $OpeJue__embarque=strtoupper($_POST['OpeJue__embarque']);
-
+    
     $L1Jue__granja=strtoupper($_POST['L1Jue__granja']);
     $L2Jue__granja=strtoupper($_POST['L2Jue__granja']);
     $L3Jue__granja=strtoupper($_POST['L3Jue__granja']);
     $L4Jue__granja=strtoupper($_POST['L4Jue__granja']);
-
+    $L5Jue__granja=strtoupper($_POST['L5Jue__granja']);
+    $L6Jue__granja=strtoupper($_POST['L6Jue__granja']);
+    
     $ExtJue__cocido=strtoupper($_POST['ExtJue__cocido']);
     $ExtJue__embarque=strtoupper($_POST['ExtJue__embarque']);
-
+    
     $L1Jue__cantidad=strtoupper($_POST['L1Jue__cantidad']);
     if ($L1Jue__cantidad == null){
         $L1Jue__cantidad = 0;
@@ -183,7 +246,15 @@
     if ($L4Jue__cantidad == null){
         $L4Jue__cantidad = 0;
     }
-
+    $L5Jue__cantidad=strtoupper($_POST['L5Jue__cantidad']);
+    if ($L5Jue__cantidad == null){
+        $L5Jue__cantidad = 0;
+    }
+    $L6Jue__cantidad=strtoupper($_POST['L6Jue__cantidad']);
+    if ($L6Jue__cantidad == null){
+        $L6Jue__cantidad = 0;
+    }
+    
     $ExtJue__cocido2=strtoupper($_POST['ExtJue__cocido2']);
     $ExtJue__embarque2=strtoupper($_POST['ExtJue__embarque2']);
 
@@ -191,41 +262,60 @@
     $L2Vie__tipo=strtoupper($_POST['L2Vie__tipo']);
     $L3Vie__tipo=strtoupper($_POST['L3Vie__tipo']);
     $L4Vie__tipo=strtoupper($_POST['L4Vie__tipo']);
-
+    $L5Vie__tipo=strtoupper($_POST['L5Vie__tipo']);
+    $L6Vie__tipo=strtoupper($_POST['L6Vie__tipo']);
+    
     $ProVie__cocido=strtoupper($_POST['ProVie__cocido']);
     $ProVie__embarque=strtoupper($_POST['ProVie__embarque']);
-
+    
     $L1Vie__proceso=strtoupper($_POST['L1Vie__proceso']);
     $L2Vie__proceso=strtoupper($_POST['L2Vie__proceso']);
     $L3Vie__proceso=strtoupper($_POST['L3Vie__proceso']);
     $L4Vie__proceso=strtoupper($_POST['L4Vie__proceso']);
-
+    $L5Vie__proceso=strtoupper($_POST['L5Vie__proceso']);
+    $L6Vie__proceso=strtoupper($_POST['L6Vie__proceso']);
+    
     $OpeVie__cocido=strtoupper($_POST['OpeVie__cocido']);
     $OpeVie__embarque=strtoupper($_POST['OpeVie__embarque']);
-
+    
     $L1Vie__granja=strtoupper($_POST['L1Vie__granja']);
     $L2Vie__granja=strtoupper($_POST['L2Vie__granja']);
     $L3Vie__granja=strtoupper($_POST['L3Vie__granja']);
     $L4Vie__granja=strtoupper($_POST['L4Vie__granja']);
-
+    $L5Vie__granja=strtoupper($_POST['L5Vie__granja']);
+    $L6Vie__granja=strtoupper($_POST['L6Vie__granja']);
+    
     $ExtVie__cocido=strtoupper($_POST['ExtVie__cocido']);
     $ExtVie__embarque=strtoupper($_POST['ExtVie__embarque']);
-
+    
     $L1Vie__cantidad=strtoupper($_POST['L1Vie__cantidad']);
     if ($L1Vie__cantidad == null){
         $L1Vie__cantidad = 0;
     }
+
     $L2Vie__cantidad=strtoupper($_POST['L2Vie__cantidad']);
     if ($L2Vie__cantidad == null){
         $L2Vie__cantidad = 0;
     }
+
     $L3Vie__cantidad=strtoupper($_POST['L3Vie__cantidad']);
     if ($L3Vie__cantidad == null){
         $L3Vie__cantidad = 0;
     }
+
     $L4Vie__cantidad=strtoupper($_POST['L4Vie__cantidad']);
     if ($L4Vie__cantidad == null){
         $L4Vie__cantidad = 0;
+    }
+
+    $L5Vie__cantidad=strtoupper($_POST['L5Vie__cantidad']);
+    if ($L5Vie__cantidad == null){
+        $L5Vie__cantidad = 0;
+    }
+
+    $L6Vie__cantidad=strtoupper($_POST['L6Vie__cantidad']);
+    if ($L6Vie__cantidad == null){
+        $L6Vie__cantidad = 0;
     }
 
     $ExtVie__cocido2=strtoupper($_POST['ExtVie__cocido2']);
@@ -235,43 +325,62 @@
     $L2Sab__tipo=strtoupper($_POST['L2Sab__tipo']);
     $L3Sab__tipo=strtoupper($_POST['L3Sab__tipo']);
     $L4Sab__tipo=strtoupper($_POST['L4Sab__tipo']);
-
+    $L5Sab__tipo=strtoupper($_POST['L5Sab__tipo']);
+    $L6Sab__tipo=strtoupper($_POST['L6Sab__tipo']);
+    
     $ProSab__cocido=strtoupper($_POST['ProSab__cocido']);
     $ProSab__embarque=strtoupper($_POST['ProSab__embarque']);
-
+    
     $L1Sab__proceso=strtoupper($_POST['L1Sab__proceso']);
     $L2Sab__proceso=strtoupper($_POST['L2Sab__proceso']);
     $L3Sab__proceso=strtoupper($_POST['L3Sab__proceso']);
     $L4Sab__proceso=strtoupper($_POST['L4Sab__proceso']);
-
+    $L5Sab__proceso=strtoupper($_POST['L5Sab__proceso']);
+    $L6Sab__proceso=strtoupper($_POST['L6Sab__proceso']);
+    
     $OpeSab__cocido=strtoupper($_POST['OpeSab__cocido']);
     $OpeSab__embarque=strtoupper($_POST['OpeSab__embarque']);
-
+    
     $L1Sab__granja=strtoupper($_POST['L1Sab__granja']);
     $L2Sab__granja=strtoupper($_POST['L2Sab__granja']);
     $L3Sab__granja=strtoupper($_POST['L3Sab__granja']);
     $L4Sab__granja=strtoupper($_POST['L4Sab__granja']);
-
+    $L5Sab__granja=strtoupper($_POST['L5Sab__granja']);
+    $L6Sab__granja=strtoupper($_POST['L6Sab__granja']);
+    
     $ExtSab__cocido=strtoupper($_POST['ExtSab__cocido']);
     $ExtSab__embarque=strtoupper($_POST['ExtSab__embarque']);
-
+    
     $L1Sab__cantidad=strtoupper($_POST['L1Sab__cantidad']);
     if ($L1Sab__cantidad == null){
         $L1Sab__cantidad = 0;
     }
+
     $L2Sab__cantidad=strtoupper($_POST['L2Sab__cantidad']);
     if ($L2Sab__cantidad == null){
         $L2Sab__cantidad = 0;
     }
+
     $L3Sab__cantidad=strtoupper($_POST['L3Sab__cantidad']);
     if ($L3Sab__cantidad == null){
         $L3Sab__cantidad = 0;
     }
+
     $L4Sab__cantidad=strtoupper($_POST['L4Sab__cantidad']);
     if ($L4Sab__cantidad == null){
         $L4Sab__cantidad = 0;
     }
 
+    $L5Sab__cantidad=strtoupper($_POST['L5Sab__cantidad']);
+    if ($L5Sab__cantidad == null){
+        $L5Sab__cantidad = 0;
+    }
+
+    $L6Sab__cantidad=strtoupper($_POST['L6Sab__cantidad']);
+    if ($L6Sab__cantidad == null){
+        $L6Sab__cantidad = 0;
+    }
+    
     $ExtSab__cocido2=strtoupper($_POST['ExtSab__cocido2']);
     $ExtSab__embarque2=strtoupper($_POST['ExtSab__embarque2']);
 
@@ -317,6 +426,26 @@
     $resultadoFaenaL4Lun=$base->prepare($queryFaenaL4Lun);     
     $resultadoFaenaL4Lun->execute(array());
     $resultadoFaenaL4Lun->closeCursor();
+
+    $queryFaenaL5Lun="UPDATE faena set tipo='$L5Lun__tipo', proceso='$L5Lun__proceso', granja='$L5Lun__granja', cantidad='$L5Lun__cantidad'
+                        WHERE sem='$semana'
+                            and dia='lun'
+                            and fecha='$lun'
+                            and lote='5'";
+
+    $resultadoFaenaL5Lun=$base->prepare($queryFaenaL5Lun);     
+    $resultadoFaenaL5Lun->execute(array());
+    $resultadoFaenaL5Lun->closeCursor();
+
+    $queryFaenaL6Lun="UPDATE faena set tipo='$L6Lun__tipo', proceso='$L6Lun__proceso', granja='$L6Lun__granja', cantidad='$L6Lun__cantidad'
+                        WHERE sem='$semana'
+                            and dia='lun'
+                            and fecha='$lun'
+                            and lote='6'";
+
+    $resultadoFaenaL6Lun=$base->prepare($queryFaenaL6Lun);     
+    $resultadoFaenaL6Lun->execute(array());
+    $resultadoFaenaL6Lun->closeCursor();
 
     $queryCocidoLun="UPDATE cocido set pro_cocido='$ProLun__cocido', ope_cocido='$OpeLun__cocido', ext_cocido='$ExtLun__cocido', ext_cocido2='$ExtLun__cocido2'
                         WHERE sem='$semana'
@@ -378,6 +507,26 @@
     $resultadoFaenaL4Mar=$base->prepare($queryFaenaL4Mar);     
     $resultadoFaenaL4Mar->execute(array());
     $resultadoFaenaL4Mar->closeCursor();
+
+    $queryFaenaL5Mar="UPDATE faena set tipo='$L5Mar__tipo', proceso='$L5Mar__proceso', granja='$L5Mar__granja', cantidad='$L5Mar__cantidad'
+                        WHERE sem='$semana'
+                            and dia='mar'
+                            and fecha='$mar'
+                            and lote='5'";
+
+    $resultadoFaenaL5Mar=$base->prepare($queryFaenaL5Mar);     
+    $resultadoFaenaL5Mar->execute(array());
+    $resultadoFaenaL5Mar->closeCursor();
+
+    $queryFaenaL6Mar="UPDATE faena set tipo='$L6Mar__tipo', proceso='$L6Mar__proceso', granja='$L6Mar__granja', cantidad='$L6Mar__cantidad'
+                        WHERE sem='$semana'
+                            and dia='mar'
+                            and fecha='$mar'
+                            and lote='6'";
+
+    $resultadoFaenaL6Mar=$base->prepare($queryFaenaL6Mar);     
+    $resultadoFaenaL6Mar->execute(array());
+    $resultadoFaenaL6Mar->closeCursor();
 
     $queryCocidoMar="UPDATE cocido set pro_cocido='$ProMar__cocido', ope_cocido='$OpeMar__cocido', ext_cocido='$ExtMar__cocido', ext_cocido2='$ExtMar__cocido2'
                         WHERE sem='$semana'
@@ -441,6 +590,25 @@
     $resultadoFaenaL4Mie->execute(array());
     $resultadoFaenaL4Mie->closeCursor();
 
+    $queryFaenaL5Mie="UPDATE faena set tipo='$L5Mie__tipo', proceso='$L5Mie__proceso', granja='$L5Mie__granja', cantidad='$L5Mie__cantidad'
+                        WHERE sem='$semana'
+                            and dia='mie'
+                            and fecha='$mie'
+                            and lote='5'";
+
+    $resultadoFaenaL5Mie=$base->prepare($queryFaenaL5Mie);     
+    $resultadoFaenaL5Mie->execute(array());
+    $resultadoFaenaL5Mie->closeCursor();
+
+    $queryFaenaL6Mie="UPDATE faena set tipo='$L6Mie__tipo', proceso='$L6Mie__proceso', granja='$L6Mie__granja', cantidad='$L6Mie__cantidad'
+                        WHERE sem='$semana'
+                            and dia='mie'
+                            and fecha='$mie'
+                            and lote='6'";
+
+    $resultadoFaenaL6Mie=$base->prepare($queryFaenaL6Mie);     
+    $resultadoFaenaL6Mie->execute(array());
+    $resultadoFaenaL6Mie->closeCursor();
 
     $queryCocidoMie="UPDATE cocido set pro_cocido='$ProMie__cocido', ope_cocido='$OpeMie__cocido', ext_cocido='$ExtMie__cocido', ext_cocido2='$ExtMie__cocido2'
                         WHERE sem='$semana'
@@ -504,6 +672,25 @@
     $resultadoFaenaL4Jue->execute(array());
     $resultadoFaenaL4Jue->closeCursor();
 
+    $queryFaenaL5Jue="UPDATE faena set tipo='$L5Jue__tipo', proceso='$L5Jue__proceso', granja='$L5Jue__granja', cantidad='$L5Jue__cantidad'
+                        WHERE sem='$semana'
+                            and dia='jue'
+                            and fecha='$jue'
+                            and lote='5'";
+
+    $resultadoFaenaL5Jue=$base->prepare($queryFaenaL5Jue);     
+    $resultadoFaenaL5Jue->execute(array());
+    $resultadoFaenaL5Jue->closeCursor();
+
+    $queryFaenaL6Jue="UPDATE faena set tipo='$L6Jue__tipo', proceso='$L6Jue__proceso', granja='$L6Jue__granja', cantidad='$L6Jue__cantidad'
+                        WHERE sem='$semana'
+                            and dia='jue'
+                            and fecha='$jue'
+                            and lote='6'";
+
+    $resultadoFaenaL6Jue=$base->prepare($queryFaenaL6Jue);     
+    $resultadoFaenaL6Jue->execute(array());
+    $resultadoFaenaL6Jue->closeCursor();
 
     $queryCocidoJue="UPDATE cocido set pro_cocido='$ProJue__cocido', ope_cocido='$OpeJue__cocido', ext_cocido='$ExtJue__cocido', ext_cocido2='$ExtJue__cocido2'
                         WHERE sem='$semana'
@@ -567,13 +754,32 @@
     $resultadoFaenaL4Vie->execute(array());
     $resultadoFaenaL4Vie->closeCursor();
 
+    $queryFaenaL5Vie="UPDATE faena set tipo='$L5Vie__tipo', proceso='$L5Vie__proceso', granja='$L5Vie__granja', cantidad='$L5Vie__cantidad'
+                        WHERE sem='$semana'
+                            and dia='vie'
+                            and fecha='$vie'
+                            and lote='5'";
+
+    $resultadoFaenaL5Vie=$base->prepare($queryFaenaL5Vie);     
+    $resultadoFaenaL5Vie->execute(array());
+    $resultadoFaenaL5Vie->closeCursor();
+
+    $queryFaenaL6Vie="UPDATE faena set tipo='$L6Vie__tipo', proceso='$L6Vie__proceso', granja='$L6Vie__granja', cantidad='$L6Vie__cantidad'
+                        WHERE sem='$semana'
+                            and dia='vie'
+                            and fecha='$vie'
+                            and lote='6'";
+
+    $resultadoFaenaL6Vie=$base->prepare($queryFaenaL6Vie);     
+    $resultadoFaenaL6Vie->execute(array());
+    $resultadoFaenaL6Vie->closeCursor();
 
     $queryCocidoVie="UPDATE cocido set pro_cocido='$ProVie__cocido', ope_cocido='$OpeVie__cocido', ext_cocido='$ExtVie__cocido', ext_cocido2='$ExtVie__cocido2'
                         WHERE sem='$semana'
                             and dia='vie'
                             and fecha='$vie'";
 
-    $resultadoCocidoVie=$base->prepare($queryCocidoVie);     
+    $resultadoCocidoVie=$base->prepare($queryCocidoVie);
     $resultadoCocidoVie->execute(array());
     $resultadoCocidoVie->closeCursor();
 
@@ -582,7 +788,7 @@
                             and dia='vie'
                             and fecha='$vie'";
 
-    $resultadoEmbarqueVie=$base->prepare($queryEmbarqueVie);     
+    $resultadoEmbarqueVie=$base->prepare($queryEmbarqueVie);
     $resultadoEmbarqueVie->execute(array());
     $resultadoEmbarqueVie->closeCursor();
 
@@ -596,7 +802,7 @@
                             and fecha='$sab'
                             and lote='1'";
 
-    $resultadoFaenaL1Sab=$base->prepare($queryFaenaL1Sab);     
+    $resultadoFaenaL1Sab=$base->prepare($queryFaenaL1Sab);
     $resultadoFaenaL1Sab->execute(array());
     $resultadoFaenaL1Sab->closeCursor();
 
@@ -606,7 +812,7 @@
                             and fecha='$sab'
                             and lote='2'";
 
-    $resultadoFaenaL2Sab=$base->prepare($queryFaenaL2Sab);     
+    $resultadoFaenaL2Sab=$base->prepare($queryFaenaL2Sab);
     $resultadoFaenaL2Sab->execute(array());
     $resultadoFaenaL2Sab->closeCursor();
 
@@ -616,7 +822,7 @@
                             and fecha='$sab'
                             and lote='3'";
 
-    $resultadoFaenaL3Sab=$base->prepare($queryFaenaL3Sab);     
+    $resultadoFaenaL3Sab=$base->prepare($queryFaenaL3Sab);
     $resultadoFaenaL3Sab->execute(array());
     $resultadoFaenaL3Sab->closeCursor();
 
@@ -626,17 +832,36 @@
                             and fecha='$sab'
                             and lote='4'";
 
-    $resultadoFaenaL4Sab=$base->prepare($queryFaenaL4Sab);     
+    $resultadoFaenaL4Sab=$base->prepare($queryFaenaL4Sab);
     $resultadoFaenaL4Sab->execute(array());
     $resultadoFaenaL4Sab->closeCursor();
 
+    $queryFaenaL5Sab="UPDATE faena set tipo='$L5Sab__tipo', proceso='$L5Sab__proceso', granja='$L5Sab__granja', cantidad='$L5Sab__cantidad'
+                        WHERE sem='$semana'
+                            and dia='sab'
+                            and fecha='$sab'
+                            and lote='5'";
+
+    $resultadoFaenaL5Sab=$base->prepare($queryFaenaL5Sab);
+    $resultadoFaenaL5Sab->execute(array());
+    $resultadoFaenaL5Sab->closeCursor();
+
+    $queryFaenaL6Sab="UPDATE faena set tipo='$L6Sab__tipo', proceso='$L6Sab__proceso', granja='$L6Sab__granja', cantidad='$L6Sab__cantidad'
+                        WHERE sem='$semana'
+                            and dia='sab'
+                            and fecha='$sab'
+                            and lote='6'";
+
+    $resultadoFaenaL6Sab=$base->prepare($queryFaenaL6Sab);
+    $resultadoFaenaL6Sab->execute(array());
+    $resultadoFaenaL6Sab->closeCursor();
 
     $queryCocidoSab="UPDATE cocido set pro_cocido='$ProSab__cocido', ope_cocido='$OpeSab__cocido', ext_cocido='$ExtSab__cocido', ext_cocido2='$ExtSab__cocido2'
                         WHERE sem='$semana'
                             and dia='sab'
                             and fecha='$sab'";
 
-    $resultadoCocidoSab=$base->prepare($queryCocidoSab);     
+    $resultadoCocidoSab=$base->prepare($queryCocidoSab);
     $resultadoCocidoSab->execute(array());
     $resultadoCocidoSab->closeCursor();
 
@@ -657,8 +882,10 @@
                 ('$sem','lun','$lun','2','$L2Lun__tipo','$L2Lun__proceso','$L2Lun__granja'),
                 ('$sem','lun','$lun','3','$L3Lun__tipo','$L3Lun__proceso','$L3Lun__granja'),
                 ('$sem','lun','$lun','4','$L4Lun__tipo','$L4Lun__proceso','$L4Lun__granja'),
-
-                ('$sem','mar','$mar','1','$L1Mar__tipo','$L1Mar__proceso','$L1Mar__granja'),
+                ('$sem','lun',5$lun','4','$L4Lun__tipo','$L4Lun__proceso','$L4Lun__granja'),
+                            ('6sem','lun','$lun','4','$L4Lun__tipo','$L4Lun__proceso','$L4Lun__granja'),
+                ('$sem','mar
+                ','$mar','1','$L1Mar__tipo','$L1Mar__proceso','$L1Mar__granja'),
                 ('$sem','mar','$mar','2','$L2Mar__tipo','$L2Mar__proceso','$L2Mar__granja'),
                 ('$sem','mar','$mar','3','$L3Mar__tipo','$L3Mar__proceso','$L3Mar__granja'),
                 ('$sem','mar','$mar','4','$L4Mar__tipo','$L4Mar__proceso','$L4Mar__granja'),
@@ -716,6 +943,6 @@
     $resultadoE->execute(array());
     $resultadoE->closeCursor(); */
 
-    header("Location: mostrar.php?semana=$semana");
+    header("Location: mostrar2.php?semana=$semana");
 
     ?>
