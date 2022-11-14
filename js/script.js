@@ -8,11 +8,9 @@ function color () {
     let L2Lun__tipo = document.getElementById("L2Lun__tipo").textContent;
     let L3Lun__tipo = document.getElementById("L3Lun__tipo").textContent;
     let L4Lun__tipo = document.getElementById("L4Lun__tipo").textContent;
-    let L5Lun__tipo = document.getElementById("L5Lun__tipo").textContent;
-    let L6Lun__tipo = document.getElementById("L6Lun__tipo").textContent;
 
 
-    switch (L1Lun__tipo, L5Lun__tipo){
+    switch (L1Lun__tipo){
         case "PESADA":
             document.getElementById("L1Lun__tipo").style.color = "";
             break;
@@ -76,11 +74,9 @@ function color () {
     let L2Lun__proceso = document.getElementById("L2Lun__proceso").textContent;
     let L3Lun__proceso = document.getElementById("L3Lun__proceso").textContent;
     let L4Lun__proceso = document.getElementById("L4Lun__proceso").textContent;
-    let L5Lun__proceso = document.getElementById("L5Lun__proceso").textContent;
-    let L6Lun__proceso = document.getElementById("L6Lun__proceso").textContent;
 
 
-    switch (L1Lun__proceso, L5Lun__proceso){
+    switch (L1Lun__proceso){
         case "ENTERA":
             document.getElementById("L1Lun__proceso").style.color = "red";
             break;
