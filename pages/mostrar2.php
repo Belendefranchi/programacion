@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar navbar-expand-lg fs-4 fw-bold">
             <div class="container-fluid">
-                <a href="index.php">
+                <a href="../index.php">
                     <img src="../resources/logo.png" alt="" width="70vw">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,8 +48,7 @@
         include("querys.php");
         ?>
 
-        <div class="container d-flex justify-content-center">
-            <table class="table__font" id="target">
+            <table class="table-responsive table__font" id="target" style="margin: auto;">
                 <thead>
                     <tr class="table__font">
                         <th class="table__font" >FECHA</th>
@@ -351,7 +350,7 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+
 
         <!-- ######################################################################################################################################################################### -->
         <!-- ######################################################################################################################################################################### -->
