@@ -44,7 +44,7 @@
     <?php
             $semana = date('W', time());
         ?>
-        <form class="d-inline-flex flex-column justify-content-center" action="pages/mostrar.php" method="GET">
+<!--         <form class="d-inline-flex flex-column justify-content-center" action="pages/mostrar.php" method="GET">
             <input type="text" value="<?php echo $semana1 = $semana -1;?>" name="semana" hidden>
             <input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='submit' value='Semana Anterior'>
         </form>
@@ -55,7 +55,11 @@
         <form class="d-inline-flex flex-column justify-content-center" action="pages/mostrar.php" method="GET">
             <input type="text" value="<?php echo $semana3 = $semana + 1;?>" name="semana" hidden>
             <input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='submit' value='Semana Próxima'>
-        </form><br>
+        </form><br> -->
+        <a href="pages/semAnterior.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Anterior'></a>
+        <a href="pages/semActual.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Actual'></a>
+        <a href="pages/semProxima.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Próxima'></a>
+
         <form class="d-inline-flex flex-column justify-content-center" action="pages/mostrar.php" method="GET">
             <input class="button flex-fill fs-4 form-control fw-bold text-center" type="text" value="Otras semanas" readonly>
             <select class="button flex-fill fs-4 form-select form-control fw-bold text-center" id="semana" name="semana">
