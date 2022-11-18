@@ -8,8 +8,6 @@ function color () {
     let L2Lun__tipo = document.getElementById("L2Lun__tipo").textContent;
     let L3Lun__tipo = document.getElementById("L3Lun__tipo").textContent;
     let L4Lun__tipo = document.getElementById("L4Lun__tipo").textContent;
-    let L5Lun__tipo = document.getElementById("L5Lun__tipo").textContent;
-    let L6Lun__tipo = document.getElementById("L6Lun__tipo").textContent;
 
 
     switch (L1Lun__tipo){
@@ -106,8 +104,6 @@ function color () {
     let L2Lun__proceso = document.getElementById("L2Lun__proceso").textContent;
     let L3Lun__proceso = document.getElementById("L3Lun__proceso").textContent;
     let L4Lun__proceso = document.getElementById("L4Lun__proceso").textContent;
-    let L5Lun__proceso = document.getElementById("L5Lun__proceso").textContent;
-    let L6Lun__proceso = document.getElementById("L6Lun__proceso").textContent;
 
 
     switch (L1Lun__proceso){
