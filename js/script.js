@@ -12,7 +12,7 @@ function color () {
     let L6Lun__tipo = document.getElementById("L6Lun__tipo").textContent;
 
 
-    switch (L1Lun__tipo, L5Lun__tipo){
+    switch (L1Lun__tipo){
         case "PESADA":
             document.getElementById("L1Lun__tipo").style.color = "";
             break;
@@ -72,6 +72,36 @@ function color () {
             break;
     }
 
+    switch (L5Lun__tipo){
+        case "PESADA":
+            document.getElementById("L4Lun__tipo").style.color = "";
+            break;
+        case "LIVIANA":
+            document.getElementById("L4Lun__tipo").style.color = "green";
+            break;
+        case "GALLO":
+            document.getElementById("L4Lun__tipo").style.color = "red";
+            break;
+        case "POLLO":
+            document.getElementById("L4Lun__tipo").style.color = "yellow";
+            break;
+    }
+
+    switch (L6Lun__tipo){
+        case "PESADA":
+            document.getElementById("L4Lun__tipo").style.color = "";
+            break;
+        case "LIVIANA":
+            document.getElementById("L4Lun__tipo").style.color = "green";
+            break;
+        case "GALLO":
+            document.getElementById("L4Lun__tipo").style.color = "red";
+            break;
+        case "POLLO":
+            document.getElementById("L4Lun__tipo").style.color = "yellow";
+            break;
+    }
+
     let L1Lun__proceso = document.getElementById("L1Lun__proceso").textContent;
     let L2Lun__proceso = document.getElementById("L2Lun__proceso").textContent;
     let L3Lun__proceso = document.getElementById("L3Lun__proceso").textContent;
@@ -80,7 +110,7 @@ function color () {
     let L6Lun__proceso = document.getElementById("L6Lun__proceso").textContent;
 
 
-    switch (L1Lun__proceso, L5Lun__proceso){
+    switch (L1Lun__proceso){
         case "ENTERA":
             document.getElementById("L1Lun__proceso").style.color = "red";
             break;
