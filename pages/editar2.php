@@ -58,7 +58,7 @@
                         </a>
                         <input class="button fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" name="semana" hidden>
                         <input class="button fs-4 form-control fw-bold text-center" type="submit" value="Enviar">
-                        <input class="button fs-4 form-control fw-bold text-center" type="button" value="Borrar" id="reset">
+                        <!-- <input class="button fs-4 form-control fw-bold text-center" type="button" value="Borrar" id="reset"> -->
                         <input class="button fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
                 </div>
             </div>
