@@ -40,7 +40,7 @@
                         $semana=substr(($_POST['semana']),-2);
                     ?>
 
-                    <form class="d-flex justify-content-end" action="enviar.php" method="post">
+                    <form class="d-flex justify-content-end" action="enviar.php" method="POST">
                         <input class="button fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" name="semana" readonly>
                         <input class="button fs-4 form-control fw-bold text-center" type="submit" value="Enviar">
                         <input class="button fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">

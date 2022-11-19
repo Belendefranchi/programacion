@@ -3,12 +3,7 @@ body{
     color: white !important;
 }
 
-.main2{
-    margin-left: 35vw;
-    margin-right: auto;
-}
-
-.navbar{
+header{
     background-color: white;
 }
 
@@ -61,10 +56,6 @@ tr{
 
 .total{
     color: yellow;
-}
-
-.b{
-    background-color: white !important;
 }
 
 @media (min-width: 320px){

@@ -12,28 +12,54 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fs-4 fw-bold">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a href="../index.php">
-                    <img src="../resources/logo.png" alt="" width="70vw">
+                <a class="navbar-brand" href="http://192.168.1.113"> 
+                    <img src="/temperatura/3.png" alt="" width="31" height="30">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2">
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link disabled">Programación Semanal</a>
+                            <a class="nav-link active" aria-current="page" href="http://192.168.1.113/temperatura">Temperaturas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="http://192.168.1.113/">Contador de aves</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="http://192.168.1.113/calidad">Calidad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="http://192.168.1.113/programacion">Programación</a>
                         </li>
                     </ul>
                 </div>
                 <div class="d-flex flex-row justify-content-end">
                     <?php
+                        /* semana para paginas fijas */
                         $semana = date('W', time());
+                        
+                        /* semana para otras semanas */
+                        /* $semana=($_GET['semana']); */
+                        
+                        $prevSem=$semana-1;
+                        $nextSem=$semana+1;
                     ?>
-                    <form class="d-flex justify-content-end" action="editar2.php" method="post">
-                        <input class="button fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" name="semana" readonly>
+                    <form class="d-flex justify-content-end" action="editar2.php" method="GET">                
+                        <a class="a" href="mostrar2.php?semana=<?php echo $prevSem?>">
+                            <input class="button fs-4 form-control fw-bold text-center" type="button" value="<" readonly>
+                        </a>
+                        <a class="a" href="mostrar2.php?semana=<?php echo $semana?>">
+                            <input class="button fs-4 form-control fw-bold text-center" type="button" value="Semana: <?php echo $semana?>" name="semana" readonly>
+                        </a>
+                        <a class="a" href="mostrar2.php?semana=<?php echo $nextSem?>">
+                            <input class="button fs-4 form-control fw-bold text-center" type="button" value=">" readonly>
+                        </a>
+                        <input class="button fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" name="semana" hidden>
                         <input class="button fs-4 form-control fw-bold text-center" type="submit" value="Editar">
+                        <!-- <input class="button fs-4 form-control fw-bold text-center" type="reset" value="Borrar"> -->
                         <input class="button fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
                     </form>
                 </div>

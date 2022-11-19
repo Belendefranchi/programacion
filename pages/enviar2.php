@@ -1,388 +1,390 @@
 <?php
 
     include("conexion2.php");
-
-    $semana=substr(($_POST['semana']),-2);
-
-    $lun=($_POST['lun']);
-    $mar=($_POST['mar']);
-    $mie=($_POST['mie']);
-    $jue=($_POST['jue']);
-    $vie=($_POST['vie']);
-    $sab=($_POST['sab']);
-
-    $L1Lun__tipo=strtoupper($_POST['L1Lun__tipo']);
-    $L2Lun__tipo=strtoupper($_POST['L2Lun__tipo']);
-    $L3Lun__tipo=strtoupper($_POST['L3Lun__tipo']);
-    $L4Lun__tipo=strtoupper($_POST['L4Lun__tipo']);
-    $L5Lun__tipo=strtoupper($_POST['L5Lun__tipo']);
-    $L6Lun__tipo=strtoupper($_POST['L6Lun__tipo']);
     
-    $ProLun__cocido=strtoupper($_POST['ProLun__cocido']);
-    $ProLun__embarque=strtoupper($_POST['ProLun__embarque']);
+    $semana=substr(($_GET['semana']),-2);    
 
-    $L1Lun__proceso=strtoupper($_POST['L1Lun__proceso']);
-    $L2Lun__proceso=strtoupper($_POST['L2Lun__proceso']);
-    $L3Lun__proceso=strtoupper($_POST['L3Lun__proceso']);
-    $L4Lun__proceso=strtoupper($_POST['L4Lun__proceso']);
-    $L5Lun__proceso=strtoupper($_POST['L5Lun__proceso']);
-    $L6Lun__proceso=strtoupper($_POST['L6Lun__proceso']);
+    echo $semana;
+
+    $lun=($_GET['lun']);
+    $mar=($_GET['mar']);
+    $mie=($_GET['mie']);
+    $jue=($_GET['jue']);
+    $vie=($_GET['vie']);
+    $sab=($_GET['sab']);
+
+    $L1Lun__tipo=strtoupper($_GET['L1Lun__tipo']);
+    $L2Lun__tipo=strtoupper($_GET['L2Lun__tipo']);
+    $L3Lun__tipo=strtoupper($_GET['L3Lun__tipo']);
+    $L4Lun__tipo=strtoupper($_GET['L4Lun__tipo']);
+    $L5Lun__tipo=strtoupper($_GET['L5Lun__tipo']);
+    $L6Lun__tipo=strtoupper($_GET['L6Lun__tipo']);
     
-    $OpeLun__cocido=strtoupper($_POST['OpeLun__cocido']);
-    $OpeLun__embarque=strtoupper($_POST['OpeLun__embarque']);
+    $ProLun__cocido=strtoupper($_GET['ProLun__cocido']);
+    $ProLun__embarque=strtoupper($_GET['ProLun__embarque']);
 
-    $L1Lun__granja=strtoupper($_POST['L1Lun__granja']);
-    $L2Lun__granja=strtoupper($_POST['L2Lun__granja']);
-    $L3Lun__granja=strtoupper($_POST['L3Lun__granja']);
-    $L4Lun__granja=strtoupper($_POST['L4Lun__granja']);
-    $L5Lun__granja=strtoupper($_POST['L5Lun__granja']);
-    $L6Lun__granja=strtoupper($_POST['L6Lun__granja']);
+    $L1Lun__proceso=strtoupper($_GET['L1Lun__proceso']);
+    $L2Lun__proceso=strtoupper($_GET['L2Lun__proceso']);
+    $L3Lun__proceso=strtoupper($_GET['L3Lun__proceso']);
+    $L4Lun__proceso=strtoupper($_GET['L4Lun__proceso']);
+    $L5Lun__proceso=strtoupper($_GET['L5Lun__proceso']);
+    $L6Lun__proceso=strtoupper($_GET['L6Lun__proceso']);
     
-    $ExtLun__cocido=strtoupper($_POST['ExtLun__cocido']);
-    $ExtLun__embarque=strtoupper($_POST['ExtLun__embarque']);
+    $OpeLun__cocido=strtoupper($_GET['OpeLun__cocido']);
+    $OpeLun__embarque=strtoupper($_GET['OpeLun__embarque']);
 
-    $L1Lun__cantidad=strtoupper($_POST['L1Lun__cantidad']);
+    $L1Lun__granja=strtoupper($_GET['L1Lun__granja']);
+    $L2Lun__granja=strtoupper($_GET['L2Lun__granja']);
+    $L3Lun__granja=strtoupper($_GET['L3Lun__granja']);
+    $L4Lun__granja=strtoupper($_GET['L4Lun__granja']);
+    $L5Lun__granja=strtoupper($_GET['L5Lun__granja']);
+    $L6Lun__granja=strtoupper($_GET['L6Lun__granja']);
+    
+    $ExtLun__cocido=strtoupper($_GET['ExtLun__cocido']);
+    $ExtLun__embarque=strtoupper($_GET['ExtLun__embarque']);
+
+    $L1Lun__cantidad=strtoupper($_GET['L1Lun__cantidad']);
     if ($L1Lun__cantidad == null){
         $L1Lun__cantidad = 0;
     }
 
-    $L2Lun__cantidad=strtoupper($_POST['L2Lun__cantidad']);
+    $L2Lun__cantidad=strtoupper($_GET['L2Lun__cantidad']);
     if ($L2Lun__cantidad == null){
         $L2Lun__cantidad = 0;
     }
 
-    $L3Lun__cantidad=strtoupper($_POST['L3Lun__cantidad']);
+    $L3Lun__cantidad=strtoupper($_GET['L3Lun__cantidad']);
     if ($L3Lun__cantidad == null){
         $L3Lun__cantidad = 0;
     }
 
-    $L4Lun__cantidad=strtoupper($_POST['L4Lun__cantidad']);
+    $L4Lun__cantidad=strtoupper($_GET['L4Lun__cantidad']);
     if ($L4Lun__cantidad == null){
         $L4Lun__cantidad = 0;
     }
 
-    $L5Lun__cantidad=strtoupper($_POST['L4Lun__cantidad']);
+    $L5Lun__cantidad=strtoupper($_GET['L4Lun__cantidad']);
     if ($L5Lun__cantidad == null){
         $L5Lun__cantidad = 0;
     }
     
-    $L6Lun__cantidad=strtoupper($_POST['L4Lun__cantidad']);
+    $L6Lun__cantidad=strtoupper($_GET['L4Lun__cantidad']);
     if ($L6Lun__cantidad == null){
         $L6Lun__cantidad = 0;
     }
 
-    $ExtLun__cocido2=strtoupper($_POST['ExtLun__cocido2']);
-    $ExtLun__embarque2=strtoupper($_POST['ExtLun__embarque2']);
+    $ExtLun__cocido2=strtoupper($_GET['ExtLun__cocido2']);
+    $ExtLun__embarque2=strtoupper($_GET['ExtLun__embarque2']);
 
-    $L1Mar__tipo=strtoupper($_POST['L1Mar__tipo']);
-    $L2Mar__tipo=strtoupper($_POST['L2Mar__tipo']);
-    $L3Mar__tipo=strtoupper($_POST['L3Mar__tipo']);
-    $L4Mar__tipo=strtoupper($_POST['L4Mar__tipo']);
-    $L5Mar__tipo=strtoupper($_POST['L5Mar__tipo']);
-    $L6Mar__tipo=strtoupper($_POST['L6Mar__tipo']);
+    $L1Mar__tipo=strtoupper($_GET['L1Mar__tipo']);
+    $L2Mar__tipo=strtoupper($_GET['L2Mar__tipo']);
+    $L3Mar__tipo=strtoupper($_GET['L3Mar__tipo']);
+    $L4Mar__tipo=strtoupper($_GET['L4Mar__tipo']);
+    $L5Mar__tipo=strtoupper($_GET['L5Mar__tipo']);
+    $L6Mar__tipo=strtoupper($_GET['L6Mar__tipo']);
     
-    $ProMar__cocido=strtoupper($_POST['ProMar__cocido']);
-    $ProMar__embarque=strtoupper($_POST['ProMar__embarque']);
+    $ProMar__cocido=strtoupper($_GET['ProMar__cocido']);
+    $ProMar__embarque=strtoupper($_GET['ProMar__embarque']);
     
-    $L1Mar__proceso=strtoupper($_POST['L1Mar__proceso']);
-    $L2Mar__proceso=strtoupper($_POST['L2Mar__proceso']);
-    $L3Mar__proceso=strtoupper($_POST['L3Mar__proceso']);
-    $L4Mar__proceso=strtoupper($_POST['L4Mar__proceso']);
-    $L5Mar__proceso=strtoupper($_POST['L5Mar__proceso']);
-    $L6Mar__proceso=strtoupper($_POST['L6Mar__proceso']);
+    $L1Mar__proceso=strtoupper($_GET['L1Mar__proceso']);
+    $L2Mar__proceso=strtoupper($_GET['L2Mar__proceso']);
+    $L3Mar__proceso=strtoupper($_GET['L3Mar__proceso']);
+    $L4Mar__proceso=strtoupper($_GET['L4Mar__proceso']);
+    $L5Mar__proceso=strtoupper($_GET['L5Mar__proceso']);
+    $L6Mar__proceso=strtoupper($_GET['L6Mar__proceso']);
     
-    $OpeMar__cocido=strtoupper($_POST['OpeMar__cocido']);
-    $OpeMar__embarque=strtoupper($_POST['OpeMar__embarque']);
+    $OpeMar__cocido=strtoupper($_GET['OpeMar__cocido']);
+    $OpeMar__embarque=strtoupper($_GET['OpeMar__embarque']);
     
-    $L1Mar__granja=strtoupper($_POST['L1Mar__granja']);
-    $L2Mar__granja=strtoupper($_POST['L2Mar__granja']);
-    $L3Mar__granja=strtoupper($_POST['L3Mar__granja']);
-    $L4Mar__granja=strtoupper($_POST['L4Mar__granja']);
-    $L5Mar__granja=strtoupper($_POST['L5Mar__granja']);
-    $L6Mar__granja=strtoupper($_POST['L6Mar__granja']);
+    $L1Mar__granja=strtoupper($_GET['L1Mar__granja']);
+    $L2Mar__granja=strtoupper($_GET['L2Mar__granja']);
+    $L3Mar__granja=strtoupper($_GET['L3Mar__granja']);
+    $L4Mar__granja=strtoupper($_GET['L4Mar__granja']);
+    $L5Mar__granja=strtoupper($_GET['L5Mar__granja']);
+    $L6Mar__granja=strtoupper($_GET['L6Mar__granja']);
 
-    $ExtMar__cocido=strtoupper($_POST['ExtMar__cocido']);
-    $ExtMar__embarque=strtoupper($_POST['ExtMar__embarque']);
+    $ExtMar__cocido=strtoupper($_GET['ExtMar__cocido']);
+    $ExtMar__embarque=strtoupper($_GET['ExtMar__embarque']);
 
-    $L1Mar__cantidad=strtoupper($_POST['L1Mar__cantidad']);
+    $L1Mar__cantidad=strtoupper($_GET['L1Mar__cantidad']);
     if ($L1Mar__cantidad == null){
         $L1Mar__cantidad = 0;
     }
 
-    $L2Mar__cantidad=strtoupper($_POST['L2Mar__cantidad']);
+    $L2Mar__cantidad=strtoupper($_GET['L2Mar__cantidad']);
     if ($L2Mar__cantidad == null){
         $L2Mar__cantidad = 0;
     }
 
-    $L3Mar__cantidad=strtoupper($_POST['L3Mar__cantidad']);
+    $L3Mar__cantidad=strtoupper($_GET['L3Mar__cantidad']);
     if ($L3Mar__cantidad == null){
         $L3Mar__cantidad = 0;
     }
 
-    $L4Mar__cantidad=strtoupper($_POST['L4Mar__cantidad']);
+    $L4Mar__cantidad=strtoupper($_GET['L4Mar__cantidad']);
     if ($L4Mar__cantidad == null){
         $L4Mar__cantidad = 0;
     }
 
-    $L5Mar__cantidad=strtoupper($_POST['L5Mar__cantidad']);
+    $L5Mar__cantidad=strtoupper($_GET['L5Mar__cantidad']);
     if ($L5Mar__cantidad == null){
         $L5Mar__cantidad = 0;
     }
 
-    $L6Mar__cantidad=strtoupper($_POST['L6Mar__cantidad']);
+    $L6Mar__cantidad=strtoupper($_GET['L6Mar__cantidad']);
     if ($L6Mar__cantidad == null){
         $L6Mar__cantidad = 0;
     }
 
-    $ExtMar__cocido2=strtoupper($_POST['ExtMar__cocido2']);
-    $ExtMar__embarque2=strtoupper($_POST['ExtMar__embarque2']);
+    $ExtMar__cocido2=strtoupper($_GET['ExtMar__cocido2']);
+    $ExtMar__embarque2=strtoupper($_GET['ExtMar__embarque2']);
 
-    $L1Mie__tipo=strtoupper($_POST['L1Mie__tipo']);
-    $L2Mie__tipo=strtoupper($_POST['L2Mie__tipo']);
-    $L3Mie__tipo=strtoupper($_POST['L3Mie__tipo']);
-    $L4Mie__tipo=strtoupper($_POST['L4Mie__tipo']);
-    $L5Mie__tipo=strtoupper($_POST['L5Mie__tipo']);
-    $L6Mie__tipo=strtoupper($_POST['L6Mie__tipo']);
+    $L1Mie__tipo=strtoupper($_GET['L1Mie__tipo']);
+    $L2Mie__tipo=strtoupper($_GET['L2Mie__tipo']);
+    $L3Mie__tipo=strtoupper($_GET['L3Mie__tipo']);
+    $L4Mie__tipo=strtoupper($_GET['L4Mie__tipo']);
+    $L5Mie__tipo=strtoupper($_GET['L5Mie__tipo']);
+    $L6Mie__tipo=strtoupper($_GET['L6Mie__tipo']);
     
-    $ProMie__cocido=strtoupper($_POST['ProMie__cocido']);
-    $ProMie__embarque=strtoupper($_POST['ProMie__embarque']);
+    $ProMie__cocido=strtoupper($_GET['ProMie__cocido']);
+    $ProMie__embarque=strtoupper($_GET['ProMie__embarque']);
     
-    $L1Mie__proceso=strtoupper($_POST['L1Mie__proceso']);
-    $L2Mie__proceso=strtoupper($_POST['L2Mie__proceso']);
-    $L3Mie__proceso=strtoupper($_POST['L3Mie__proceso']);
-    $L4Mie__proceso=strtoupper($_POST['L4Mie__proceso']);
-    $L5Mie__proceso=strtoupper($_POST['L5Mie__proceso']);
-    $L6Mie__proceso=strtoupper($_POST['L6Mie__proceso']);
+    $L1Mie__proceso=strtoupper($_GET['L1Mie__proceso']);
+    $L2Mie__proceso=strtoupper($_GET['L2Mie__proceso']);
+    $L3Mie__proceso=strtoupper($_GET['L3Mie__proceso']);
+    $L4Mie__proceso=strtoupper($_GET['L4Mie__proceso']);
+    $L5Mie__proceso=strtoupper($_GET['L5Mie__proceso']);
+    $L6Mie__proceso=strtoupper($_GET['L6Mie__proceso']);
     
-    $OpeMie__cocido=strtoupper($_POST['OpeMie__cocido']);
-    $OpeMie__embarque=strtoupper($_POST['OpeMie__embarque']);
+    $OpeMie__cocido=strtoupper($_GET['OpeMie__cocido']);
+    $OpeMie__embarque=strtoupper($_GET['OpeMie__embarque']);
     
-    $L1Mie__granja=strtoupper($_POST['L1Mie__granja']);
-    $L2Mie__granja=strtoupper($_POST['L2Mie__granja']);
-    $L3Mie__granja=strtoupper($_POST['L3Mie__granja']);
-    $L4Mie__granja=strtoupper($_POST['L4Mie__granja']);
-    $L5Mie__granja=strtoupper($_POST['L5Mie__granja']);
-    $L6Mie__granja=strtoupper($_POST['L6Mie__granja']);
+    $L1Mie__granja=strtoupper($_GET['L1Mie__granja']);
+    $L2Mie__granja=strtoupper($_GET['L2Mie__granja']);
+    $L3Mie__granja=strtoupper($_GET['L3Mie__granja']);
+    $L4Mie__granja=strtoupper($_GET['L4Mie__granja']);
+    $L5Mie__granja=strtoupper($_GET['L5Mie__granja']);
+    $L6Mie__granja=strtoupper($_GET['L6Mie__granja']);
     
-    $ExtMie__cocido=strtoupper($_POST['ExtMie__cocido']);
-    $ExtMie__embarque=strtoupper($_POST['ExtMie__embarque']);
+    $ExtMie__cocido=strtoupper($_GET['ExtMie__cocido']);
+    $ExtMie__embarque=strtoupper($_GET['ExtMie__embarque']);
     
-    $L1Mie__cantidad=strtoupper($_POST['L1Mie__cantidad']);
+    $L1Mie__cantidad=strtoupper($_GET['L1Mie__cantidad']);
     if ($L1Mie__cantidad == null){
         $L1Mie__cantidad = 0;
     }
 
-    $L2Mie__cantidad=strtoupper($_POST['L2Mie__cantidad']);
+    $L2Mie__cantidad=strtoupper($_GET['L2Mie__cantidad']);
     if ($L2Mie__cantidad == null){
         $L2Mie__cantidad = 0;
     }
 
-    $L3Mie__cantidad=strtoupper($_POST['L3Mie__cantidad']);
+    $L3Mie__cantidad=strtoupper($_GET['L3Mie__cantidad']);
     if ($L3Mie__cantidad == null){
         $L3Mie__cantidad = 0;
     }
 
-    $L4Mie__cantidad=strtoupper($_POST['L4Mie__cantidad']);
+    $L4Mie__cantidad=strtoupper($_GET['L4Mie__cantidad']);
     if ($L4Mie__cantidad == null){
         $L4Mie__cantidad = 0;
     }
 
-    $L5Mie__cantidad=strtoupper($_POST['L5Mie__cantidad']);
+    $L5Mie__cantidad=strtoupper($_GET['L5Mie__cantidad']);
     if ($L5Mie__cantidad == null){
         $L5Mie__cantidad = 0;
     }
 
-    $L6Mie__cantidad=strtoupper($_POST['L6Mie__cantidad']);
+    $L6Mie__cantidad=strtoupper($_GET['L6Mie__cantidad']);
     if ($L6Mie__cantidad == null){
         $L6Mie__cantidad = 0;
     }
 
-    $ExtMie__cocido2=strtoupper($_POST['ExtMie__cocido2']);
-    $ExtMie__embarque2=strtoupper($_POST['ExtMie__embarque2']);
+    $ExtMie__cocido2=strtoupper($_GET['ExtMie__cocido2']);
+    $ExtMie__embarque2=strtoupper($_GET['ExtMie__embarque2']);
 
-    $L1Jue__tipo=strtoupper($_POST['L1Jue__tipo']);
-    $L2Jue__tipo=strtoupper($_POST['L2Jue__tipo']);
-    $L3Jue__tipo=strtoupper($_POST['L3Jue__tipo']);
-    $L4Jue__tipo=strtoupper($_POST['L4Jue__tipo']);
-    $L5Jue__tipo=strtoupper($_POST['L5Jue__tipo']);
-    $L6Jue__tipo=strtoupper($_POST['L6Jue__tipo']);
+    $L1Jue__tipo=strtoupper($_GET['L1Jue__tipo']);
+    $L2Jue__tipo=strtoupper($_GET['L2Jue__tipo']);
+    $L3Jue__tipo=strtoupper($_GET['L3Jue__tipo']);
+    $L4Jue__tipo=strtoupper($_GET['L4Jue__tipo']);
+    $L5Jue__tipo=strtoupper($_GET['L5Jue__tipo']);
+    $L6Jue__tipo=strtoupper($_GET['L6Jue__tipo']);
     
-    $ProJue__cocido=strtoupper($_POST['ProJue__cocido']);
-    $ProJue__embarque=strtoupper($_POST['ProJue__embarque']);
+    $ProJue__cocido=strtoupper($_GET['ProJue__cocido']);
+    $ProJue__embarque=strtoupper($_GET['ProJue__embarque']);
     
-    $L1Jue__proceso=strtoupper($_POST['L1Jue__proceso']);
-    $L2Jue__proceso=strtoupper($_POST['L2Jue__proceso']);
-    $L3Jue__proceso=strtoupper($_POST['L3Jue__proceso']);
-    $L4Jue__proceso=strtoupper($_POST['L4Jue__proceso']);
-    $L5Jue__proceso=strtoupper($_POST['L5Jue__proceso']);
-    $L6Jue__proceso=strtoupper($_POST['L6Jue__proceso']);
+    $L1Jue__proceso=strtoupper($_GET['L1Jue__proceso']);
+    $L2Jue__proceso=strtoupper($_GET['L2Jue__proceso']);
+    $L3Jue__proceso=strtoupper($_GET['L3Jue__proceso']);
+    $L4Jue__proceso=strtoupper($_GET['L4Jue__proceso']);
+    $L5Jue__proceso=strtoupper($_GET['L5Jue__proceso']);
+    $L6Jue__proceso=strtoupper($_GET['L6Jue__proceso']);
     
-    $OpeJue__cocido=strtoupper($_POST['OpeJue__cocido']);
-    $OpeJue__embarque=strtoupper($_POST['OpeJue__embarque']);
+    $OpeJue__cocido=strtoupper($_GET['OpeJue__cocido']);
+    $OpeJue__embarque=strtoupper($_GET['OpeJue__embarque']);
     
-    $L1Jue__granja=strtoupper($_POST['L1Jue__granja']);
-    $L2Jue__granja=strtoupper($_POST['L2Jue__granja']);
-    $L3Jue__granja=strtoupper($_POST['L3Jue__granja']);
-    $L4Jue__granja=strtoupper($_POST['L4Jue__granja']);
-    $L5Jue__granja=strtoupper($_POST['L5Jue__granja']);
-    $L6Jue__granja=strtoupper($_POST['L6Jue__granja']);
+    $L1Jue__granja=strtoupper($_GET['L1Jue__granja']);
+    $L2Jue__granja=strtoupper($_GET['L2Jue__granja']);
+    $L3Jue__granja=strtoupper($_GET['L3Jue__granja']);
+    $L4Jue__granja=strtoupper($_GET['L4Jue__granja']);
+    $L5Jue__granja=strtoupper($_GET['L5Jue__granja']);
+    $L6Jue__granja=strtoupper($_GET['L6Jue__granja']);
     
-    $ExtJue__cocido=strtoupper($_POST['ExtJue__cocido']);
-    $ExtJue__embarque=strtoupper($_POST['ExtJue__embarque']);
+    $ExtJue__cocido=strtoupper($_GET['ExtJue__cocido']);
+    $ExtJue__embarque=strtoupper($_GET['ExtJue__embarque']);
     
-    $L1Jue__cantidad=strtoupper($_POST['L1Jue__cantidad']);
+    $L1Jue__cantidad=strtoupper($_GET['L1Jue__cantidad']);
     if ($L1Jue__cantidad == null){
         $L1Jue__cantidad = 0;
     }
-    $L2Jue__cantidad=strtoupper($_POST['L2Jue__cantidad']);
+    $L2Jue__cantidad=strtoupper($_GET['L2Jue__cantidad']);
     if ($L2Jue__cantidad == null){
         $L2Jue__cantidad = 0;
     }
-    $L3Jue__cantidad=strtoupper($_POST['L3Jue__cantidad']);
+    $L3Jue__cantidad=strtoupper($_GET['L3Jue__cantidad']);
     if ($L3Jue__cantidad == null){
         $L3Jue__cantidad = 0;
     }
-    $L4Jue__cantidad=strtoupper($_POST['L4Jue__cantidad']);
+    $L4Jue__cantidad=strtoupper($_GET['L4Jue__cantidad']);
     if ($L4Jue__cantidad == null){
         $L4Jue__cantidad = 0;
     }
-    $L5Jue__cantidad=strtoupper($_POST['L5Jue__cantidad']);
+    $L5Jue__cantidad=strtoupper($_GET['L5Jue__cantidad']);
     if ($L5Jue__cantidad == null){
         $L5Jue__cantidad = 0;
     }
-    $L6Jue__cantidad=strtoupper($_POST['L6Jue__cantidad']);
+    $L6Jue__cantidad=strtoupper($_GET['L6Jue__cantidad']);
     if ($L6Jue__cantidad == null){
         $L6Jue__cantidad = 0;
     }
     
-    $ExtJue__cocido2=strtoupper($_POST['ExtJue__cocido2']);
-    $ExtJue__embarque2=strtoupper($_POST['ExtJue__embarque2']);
+    $ExtJue__cocido2=strtoupper($_GET['ExtJue__cocido2']);
+    $ExtJue__embarque2=strtoupper($_GET['ExtJue__embarque2']);
 
-    $L1Vie__tipo=strtoupper($_POST['L1Vie__tipo']);
-    $L2Vie__tipo=strtoupper($_POST['L2Vie__tipo']);
-    $L3Vie__tipo=strtoupper($_POST['L3Vie__tipo']);
-    $L4Vie__tipo=strtoupper($_POST['L4Vie__tipo']);
-    $L5Vie__tipo=strtoupper($_POST['L5Vie__tipo']);
-    $L6Vie__tipo=strtoupper($_POST['L6Vie__tipo']);
+    $L1Vie__tipo=strtoupper($_GET['L1Vie__tipo']);
+    $L2Vie__tipo=strtoupper($_GET['L2Vie__tipo']);
+    $L3Vie__tipo=strtoupper($_GET['L3Vie__tipo']);
+    $L4Vie__tipo=strtoupper($_GET['L4Vie__tipo']);
+    $L5Vie__tipo=strtoupper($_GET['L5Vie__tipo']);
+    $L6Vie__tipo=strtoupper($_GET['L6Vie__tipo']);
     
-    $ProVie__cocido=strtoupper($_POST['ProVie__cocido']);
-    $ProVie__embarque=strtoupper($_POST['ProVie__embarque']);
+    $ProVie__cocido=strtoupper($_GET['ProVie__cocido']);
+    $ProVie__embarque=strtoupper($_GET['ProVie__embarque']);
     
-    $L1Vie__proceso=strtoupper($_POST['L1Vie__proceso']);
-    $L2Vie__proceso=strtoupper($_POST['L2Vie__proceso']);
-    $L3Vie__proceso=strtoupper($_POST['L3Vie__proceso']);
-    $L4Vie__proceso=strtoupper($_POST['L4Vie__proceso']);
-    $L5Vie__proceso=strtoupper($_POST['L5Vie__proceso']);
-    $L6Vie__proceso=strtoupper($_POST['L6Vie__proceso']);
+    $L1Vie__proceso=strtoupper($_GET['L1Vie__proceso']);
+    $L2Vie__proceso=strtoupper($_GET['L2Vie__proceso']);
+    $L3Vie__proceso=strtoupper($_GET['L3Vie__proceso']);
+    $L4Vie__proceso=strtoupper($_GET['L4Vie__proceso']);
+    $L5Vie__proceso=strtoupper($_GET['L5Vie__proceso']);
+    $L6Vie__proceso=strtoupper($_GET['L6Vie__proceso']);
     
-    $OpeVie__cocido=strtoupper($_POST['OpeVie__cocido']);
-    $OpeVie__embarque=strtoupper($_POST['OpeVie__embarque']);
+    $OpeVie__cocido=strtoupper($_GET['OpeVie__cocido']);
+    $OpeVie__embarque=strtoupper($_GET['OpeVie__embarque']);
     
-    $L1Vie__granja=strtoupper($_POST['L1Vie__granja']);
-    $L2Vie__granja=strtoupper($_POST['L2Vie__granja']);
-    $L3Vie__granja=strtoupper($_POST['L3Vie__granja']);
-    $L4Vie__granja=strtoupper($_POST['L4Vie__granja']);
-    $L5Vie__granja=strtoupper($_POST['L5Vie__granja']);
-    $L6Vie__granja=strtoupper($_POST['L6Vie__granja']);
+    $L1Vie__granja=strtoupper($_GET['L1Vie__granja']);
+    $L2Vie__granja=strtoupper($_GET['L2Vie__granja']);
+    $L3Vie__granja=strtoupper($_GET['L3Vie__granja']);
+    $L4Vie__granja=strtoupper($_GET['L4Vie__granja']);
+    $L5Vie__granja=strtoupper($_GET['L5Vie__granja']);
+    $L6Vie__granja=strtoupper($_GET['L6Vie__granja']);
     
-    $ExtVie__cocido=strtoupper($_POST['ExtVie__cocido']);
-    $ExtVie__embarque=strtoupper($_POST['ExtVie__embarque']);
+    $ExtVie__cocido=strtoupper($_GET['ExtVie__cocido']);
+    $ExtVie__embarque=strtoupper($_GET['ExtVie__embarque']);
     
-    $L1Vie__cantidad=strtoupper($_POST['L1Vie__cantidad']);
+    $L1Vie__cantidad=strtoupper($_GET['L1Vie__cantidad']);
     if ($L1Vie__cantidad == null){
         $L1Vie__cantidad = 0;
     }
 
-    $L2Vie__cantidad=strtoupper($_POST['L2Vie__cantidad']);
+    $L2Vie__cantidad=strtoupper($_GET['L2Vie__cantidad']);
     if ($L2Vie__cantidad == null){
         $L2Vie__cantidad = 0;
     }
 
-    $L3Vie__cantidad=strtoupper($_POST['L3Vie__cantidad']);
+    $L3Vie__cantidad=strtoupper($_GET['L3Vie__cantidad']);
     if ($L3Vie__cantidad == null){
         $L3Vie__cantidad = 0;
     }
 
-    $L4Vie__cantidad=strtoupper($_POST['L4Vie__cantidad']);
+    $L4Vie__cantidad=strtoupper($_GET['L4Vie__cantidad']);
     if ($L4Vie__cantidad == null){
         $L4Vie__cantidad = 0;
     }
 
-    $L5Vie__cantidad=strtoupper($_POST['L5Vie__cantidad']);
+    $L5Vie__cantidad=strtoupper($_GET['L5Vie__cantidad']);
     if ($L5Vie__cantidad == null){
         $L5Vie__cantidad = 0;
     }
 
-    $L6Vie__cantidad=strtoupper($_POST['L6Vie__cantidad']);
+    $L6Vie__cantidad=strtoupper($_GET['L6Vie__cantidad']);
     if ($L6Vie__cantidad == null){
         $L6Vie__cantidad = 0;
     }
 
-    $ExtVie__cocido2=strtoupper($_POST['ExtVie__cocido2']);
-    $ExtVie__embarque2=strtoupper($_POST['ExtVie__embarque2']);
+    $ExtVie__cocido2=strtoupper($_GET['ExtVie__cocido2']);
+    $ExtVie__embarque2=strtoupper($_GET['ExtVie__embarque2']);
 
-    $L1Sab__tipo=strtoupper($_POST['L1Sab__tipo']);
-    $L2Sab__tipo=strtoupper($_POST['L2Sab__tipo']);
-    $L3Sab__tipo=strtoupper($_POST['L3Sab__tipo']);
-    $L4Sab__tipo=strtoupper($_POST['L4Sab__tipo']);
-    $L5Sab__tipo=strtoupper($_POST['L5Sab__tipo']);
-    $L6Sab__tipo=strtoupper($_POST['L6Sab__tipo']);
+    $L1Sab__tipo=strtoupper($_GET['L1Sab__tipo']);
+    $L2Sab__tipo=strtoupper($_GET['L2Sab__tipo']);
+    $L3Sab__tipo=strtoupper($_GET['L3Sab__tipo']);
+    $L4Sab__tipo=strtoupper($_GET['L4Sab__tipo']);
+    $L5Sab__tipo=strtoupper($_GET['L5Sab__tipo']);
+    $L6Sab__tipo=strtoupper($_GET['L6Sab__tipo']);
     
-    $ProSab__cocido=strtoupper($_POST['ProSab__cocido']);
-    $ProSab__embarque=strtoupper($_POST['ProSab__embarque']);
+    $ProSab__cocido=strtoupper($_GET['ProSab__cocido']);
+    $ProSab__embarque=strtoupper($_GET['ProSab__embarque']);
     
-    $L1Sab__proceso=strtoupper($_POST['L1Sab__proceso']);
-    $L2Sab__proceso=strtoupper($_POST['L2Sab__proceso']);
-    $L3Sab__proceso=strtoupper($_POST['L3Sab__proceso']);
-    $L4Sab__proceso=strtoupper($_POST['L4Sab__proceso']);
-    $L5Sab__proceso=strtoupper($_POST['L5Sab__proceso']);
-    $L6Sab__proceso=strtoupper($_POST['L6Sab__proceso']);
+    $L1Sab__proceso=strtoupper($_GET['L1Sab__proceso']);
+    $L2Sab__proceso=strtoupper($_GET['L2Sab__proceso']);
+    $L3Sab__proceso=strtoupper($_GET['L3Sab__proceso']);
+    $L4Sab__proceso=strtoupper($_GET['L4Sab__proceso']);
+    $L5Sab__proceso=strtoupper($_GET['L5Sab__proceso']);
+    $L6Sab__proceso=strtoupper($_GET['L6Sab__proceso']);
     
-    $OpeSab__cocido=strtoupper($_POST['OpeSab__cocido']);
-    $OpeSab__embarque=strtoupper($_POST['OpeSab__embarque']);
+    $OpeSab__cocido=strtoupper($_GET['OpeSab__cocido']);
+    $OpeSab__embarque=strtoupper($_GET['OpeSab__embarque']);
     
-    $L1Sab__granja=strtoupper($_POST['L1Sab__granja']);
-    $L2Sab__granja=strtoupper($_POST['L2Sab__granja']);
-    $L3Sab__granja=strtoupper($_POST['L3Sab__granja']);
-    $L4Sab__granja=strtoupper($_POST['L4Sab__granja']);
-    $L5Sab__granja=strtoupper($_POST['L5Sab__granja']);
-    $L6Sab__granja=strtoupper($_POST['L6Sab__granja']);
+    $L1Sab__granja=strtoupper($_GET['L1Sab__granja']);
+    $L2Sab__granja=strtoupper($_GET['L2Sab__granja']);
+    $L3Sab__granja=strtoupper($_GET['L3Sab__granja']);
+    $L4Sab__granja=strtoupper($_GET['L4Sab__granja']);
+    $L5Sab__granja=strtoupper($_GET['L5Sab__granja']);
+    $L6Sab__granja=strtoupper($_GET['L6Sab__granja']);
     
-    $ExtSab__cocido=strtoupper($_POST['ExtSab__cocido']);
-    $ExtSab__embarque=strtoupper($_POST['ExtSab__embarque']);
+    $ExtSab__cocido=strtoupper($_GET['ExtSab__cocido']);
+    $ExtSab__embarque=strtoupper($_GET['ExtSab__embarque']);
     
-    $L1Sab__cantidad=strtoupper($_POST['L1Sab__cantidad']);
+    $L1Sab__cantidad=strtoupper($_GET['L1Sab__cantidad']);
     if ($L1Sab__cantidad == null){
         $L1Sab__cantidad = 0;
     }
 
-    $L2Sab__cantidad=strtoupper($_POST['L2Sab__cantidad']);
+    $L2Sab__cantidad=strtoupper($_GET['L2Sab__cantidad']);
     if ($L2Sab__cantidad == null){
         $L2Sab__cantidad = 0;
     }
 
-    $L3Sab__cantidad=strtoupper($_POST['L3Sab__cantidad']);
+    $L3Sab__cantidad=strtoupper($_GET['L3Sab__cantidad']);
     if ($L3Sab__cantidad == null){
         $L3Sab__cantidad = 0;
     }
 
-    $L4Sab__cantidad=strtoupper($_POST['L4Sab__cantidad']);
+    $L4Sab__cantidad=strtoupper($_GET['L4Sab__cantidad']);
     if ($L4Sab__cantidad == null){
         $L4Sab__cantidad = 0;
     }
 
-    $L5Sab__cantidad=strtoupper($_POST['L5Sab__cantidad']);
+    $L5Sab__cantidad=strtoupper($_GET['L5Sab__cantidad']);
     if ($L5Sab__cantidad == null){
         $L5Sab__cantidad = 0;
     }
 
-    $L6Sab__cantidad=strtoupper($_POST['L6Sab__cantidad']);
+    $L6Sab__cantidad=strtoupper($_GET['L6Sab__cantidad']);
     if ($L6Sab__cantidad == null){
         $L6Sab__cantidad = 0;
     }
     
-    $ExtSab__cocido2=strtoupper($_POST['ExtSab__cocido2']);
-    $ExtSab__embarque2=strtoupper($_POST['ExtSab__embarque2']);
+    $ExtSab__cocido2=strtoupper($_GET['ExtSab__cocido2']);
+    $ExtSab__embarque2=strtoupper($_GET['ExtSab__embarque2']);
 
 
 /* ################################################## LUNES ################################################### */
