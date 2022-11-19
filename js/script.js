@@ -1,4 +1,4 @@
-function color () {
+const color = () => {
 
 /* ############################################################## */
 /* ---------------------------LUNES------------------------------ */
@@ -1531,5 +1531,13 @@ switch (L6Sab__proceso){
 }
 }
 
-
 window.onload = color;
+
+//funcion para borrar los campos en página editar:
+const reset = () => {
+    
+}
+
+const btnReset = document.getElementById("reset")
+btnReset.addEventListener("click", reset);
+

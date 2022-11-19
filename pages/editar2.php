@@ -50,7 +50,7 @@
                         <a class="a" href="editar2.php?semana=<?php echo $prevSem?>">
                             <input class="button fs-4 form-control fw-bold text-center" type="button" value="<" readonly>
                         </a>
-                        <a class="a" href="mostrar.php?semana=<?php echo $semana?>">
+                        <a class="a" href="mostrar2.php?semana=<?php echo $semana?>">
                             <input class="button fs-4 form-control fw-bold text-center" type="button" value="Semana: <?php echo $semana?>" name="semana" readonly>
                         </a>
                         <a class="a" href="editar2.php?semana=<?php echo $nextSem?>">
@@ -58,7 +58,7 @@
                         </a>
                         <input class="button fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" name="semana" hidden>
                         <input class="button fs-4 form-control fw-bold text-center" type="submit" value="Enviar">
-                        <!-- <input class="button fs-4 form-control fw-bold text-center" type="reset" value="Borrar"> -->
+                        <input class="button fs-4 form-control fw-bold text-center" type="button" value="Borrar" id="reset">
                         <input class="button fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
                 </div>
             </div>
