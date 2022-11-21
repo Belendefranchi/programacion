@@ -4,7 +4,12 @@
     
     $semana=substr(($_GET['semana']),-2);    
 
-    echo $semana;
+    $host=$_SERVER["REMOTE_ADDR"];
+    $query="UPDATE faena set host='$host'
+                    WHERE sem='$semana'";
+    $resultado=$base->prepare($query);     
+    $resultado->execute(array());
+    $resultado->closeCursor();
 
     $lun=($_GET['lun']);
     $mar=($_GET['mar']);
