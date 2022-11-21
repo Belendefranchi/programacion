@@ -45,6 +45,9 @@
                         $semana=($_GET['semana']);
 
                         $prevSem=$semana-1;
+                        if($prevSem<1){
+                            $prevSem=52;
+                        }
                         $nextSem=$semana+1;
                         if($nextSem>52){
                             $nextSem=1;
