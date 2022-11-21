@@ -46,7 +46,9 @@
 
                         $prevSem=$semana-1;
                         $nextSem=$semana+1;
-                        
+                        if($nextSem>52){
+                            $nextSem=1;
+                        }
                     ?>
                     <form class="d-flex justify-content-end" action="editar2.php" method="GET">                
                         <a class="a" href="mostrar2.php?semana=<?php echo $prevSem?>">
