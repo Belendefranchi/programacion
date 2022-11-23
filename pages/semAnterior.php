@@ -39,10 +39,10 @@
                 <div class="d-flex flex-row justify-content-end">
                     <?php
                         /* semana para paginas fijas */
-                        /* $semana = date('W', time()); */
+                        $semana = date('W', time())-1;
                         
                         /* semana para otras semanas */
-                        $semana=($_GET['semana']);
+                        /* $semana=($_GET['semana']); */
 
                         $prevSem=$semana-1;
                         if($prevSem<1){
