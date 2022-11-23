@@ -5,11 +5,19 @@
     $semana=substr(($_GET['semana']),-2);    
 
     $host=$_SERVER["REMOTE_ADDR"];
-    $query="UPDATE faena set host='$host'
-                    WHERE sem='$semana'";
+    $query="UPDATE faena
+            SET host='$host', date_time=CURRENT_TIMESTAMP
+            WHERE sem='$semana'";
     $resultado=$base->prepare($query);     
     $resultado->execute(array());
     $resultado->closeCursor();
+
+    $query="UPDATE cocido, embarque
+        SET host='$host', date_time=CURRENT_TIMESTAMP
+        WHERE sem='$semana'";
+$resultado=$base->prepare($query);     
+$resultado->execute(array());
+$resultado->closeCursor();
 
     $lun=($_GET['lun']);
     $mar=($_GET['mar']);
