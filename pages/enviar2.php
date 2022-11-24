@@ -17,6 +17,7 @@
             WHERE sem='$semana'";
     $resultado=$base->prepare($query);     
     $resultado->execute(array());
+    $resultado->closeCursor();
 
     $query="UPDATE embarque
             SET host='$host', date_time=CURRENT_TIMESTAMP
