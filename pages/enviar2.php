@@ -12,12 +12,18 @@
     $resultado->execute(array());
     $resultado->closeCursor();
 
-    $query="UPDATE cocido, embarque
-        SET host='$host', date_time=CURRENT_TIMESTAMP
-        WHERE sem='$semana'";
-$resultado=$base->prepare($query);     
-$resultado->execute(array());
-$resultado->closeCursor();
+    $query="UPDATE cocido
+            SET host='$host', date_time=CURRENT_TIMESTAMP
+            WHERE sem='$semana'";
+    $resultado=$base->prepare($query);     
+    $resultado->execute(array());
+
+    $query="UPDATE embarque
+            SET host='$host', date_time=CURRENT_TIMESTAMP
+            WHERE sem='$semana'";
+    $resultado=$base->prepare($query);     
+    $resultado->execute(array());
+    $resultado->closeCursor();
 
     $lun=($_GET['lun']);
     $mar=($_GET['mar']);

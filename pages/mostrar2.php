@@ -38,6 +38,8 @@
                 </div>
                 <div class="d-flex flex-row justify-content-end">
                     <?php
+                        $year = date('Y', time());
+                        
                         /* semana para paginas fijas */
                         /* $semana = date('W', time()); */
                         
@@ -78,6 +80,7 @@
         <?php
         include("conexion2.php");
         include("querys.php");
+        echo $year;
         ?>
 
             <table class="table-responsive table__font" id="target" style="margin: auto;">
