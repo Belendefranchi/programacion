@@ -42,6 +42,13 @@
                         $semana=($_GET['semana']);
                         $prevSem=$semana-1;
                         $nextSem=$semana+1;
+
+                        if($prevSem<1){
+                            $prevSem=52;
+                        }
+                        if($nextSem>52){
+                            $nextSem=1;
+                        }
                         ?>
                     <form class="d-flex justify-content-end" action="enviar2.php" method="GET">
                         <input class="button fs-4 form-control fw-bold text-center" type="button" value="<?php echo $year?>" name="year" readonly>
