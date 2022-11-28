@@ -55,17 +55,18 @@
                         }
                     ?>
                     <form class="d-flex justify-content-end" action="editar2.php" method="GET">                
+                        <input class="button fs-4 form-control fw-bold text-center" type="button" value="<?php echo $year?>" readonly>
                         <a class="a" href="mostrar2.php?year=<?php echo $year?>&semana=<?php echo $prevSem?>">
                             <input class="button fs-4 form-control fw-bold text-center" type="button" value="<" readonly>
                         </a>
                         <a class="a" href="mostrar2.php?year=<?php echo $year?>&semana=<?php echo $semana?>">
-                            <input class="button fs-4 form-control fw-bold text-center" type="button" value="Semana: <?php echo $semana?>" name="semana" readonly>
+                            <input class="button fs-4 form-control fw-bold text-center" type="button" value="Semana: <?php echo $semana?>" readonly>
                         </a>
                         <a class="a" href="mostrar2.php?year=<?php echo $year?>&semana=<?php echo $nextSem?>">
                             <input class="button fs-4 form-control fw-bold text-center" type="button" value=">" readonly>
                         </a>
-                        <input class="button fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" name="semana" hidden>
-                        <input class="button fs-4 form-control fw-bold text-center" type="submit" value="Editar">
+                        <input class="button fs-4 form-control fw-bold text-center" type="text" value="<?php echo $year?>" name="year" hidden>
+                        <input class="button fs-4 form-control fw-bold text-center" type="text" value="<?php echo $semana?>" name="semana" hidden>
                         <!-- <input class="button fs-4 form-control fw-bold text-center" type="reset" value="Borrar"> -->
                         <input class="button fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
                     </form>
