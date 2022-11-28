@@ -67,6 +67,7 @@
                         </a>
                         <input class="button fs-4 form-control fw-bold text-center" type="text" value="<?php echo $year?>" name="year" hidden>
                         <input class="button fs-4 form-control fw-bold text-center" type="text" value="<?php echo $semana?>" name="semana" hidden>
+                        <input class="button fs-4 form-control fw-bold text-center" type="submit" value="Editar">
                         <!-- <input class="button fs-4 form-control fw-bold text-center" type="reset" value="Borrar"> -->
                         <input class="button fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
                     </form>
