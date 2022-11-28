@@ -38,34 +38,47 @@
                 </div>
                 <div class="d-flex flex-row justify-content-end">
                     <?php
-                        $year = date('Y', time());
-                        
-                        /* semana para paginas fijas */
-                        /* $semana = date('W', time()); */
-                        
-                        /* semana para otras semanas */
-                        $semana=($_GET['semana']);
 
+                        /* datos para paginas fijas------------ */
+                        /* $year = date('Y', time()); */
+                        /* $semana = date('W', time()); */
+                        /* ------------------------------------ */
+                        
+                        /* datos para pagina de otras semanas----- */
+                        $year=($_GET['year']);
+                        $semana=($_GET['semana']);
+                        /* ------------------------------------ */
+                        
+                        $prevYear=$year-1;
+                        $nextYear=$year+1;
+                        
                         $prevSem=$semana-1;
+                        $nextSem=$semana+1;
+                        
                         if($prevSem<1){
                             $prevSem=52;
                         }
-                        $nextSem=$semana+1;
                         if($nextSem>52){
                             $nextSem=1;
                         }
                     ?>
-                    <form class="d-flex justify-content-end" action="editar2.php" method="GET">                
-                        <a class="a" href="mostrar2.php?semana=<?php echo $prevSem?>">
+                    <form class="d-flex justify-content-end" action="editar2.php" method="GET">
+<!--                         <select class="button fs-4 form-select fw-bold text-center" name="year">
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                        </select> -->
+                        <input class="button fs-4 form-control fw-bold text-center" type="button" value="<?php echo $year?>" readonly>
+                        <a class="a" href="mostrar2.php?year=<?php echo $year?>&semana=<?php echo $prevSem?>">
                             <input class="button fs-4 form-control fw-bold text-center" type="button" value="<" readonly>
                         </a>
-                        <a class="a" href="mostrar2.php?semana=<?php echo $semana?>">
-                            <input class="button fs-4 form-control fw-bold text-center" type="button" value="Semana: <?php echo $semana?>" name="semana" readonly>
+                        <a class="a" href="mostrar2.php?year=<?php echo $year?>&semana=<?php echo $semana?>">
+                            <input class="button fs-4 form-control fw-bold text-center" type="button" value="Semana: <?php echo $semana?>" readonly>
                         </a>
-                        <a class="a" href="mostrar2.php?semana=<?php echo $nextSem?>">
+                        <a class="a" href="mostrar2.php?year=<?php echo $year?>&semana=<?php echo $nextSem?>">
                             <input class="button fs-4 form-control fw-bold text-center" type="button" value=">" readonly>
                         </a>
-                        <input class="button fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" name="semana" hidden>
+                        <input class="button fs-4 form-control fw-bold text-center" type="text" value="<?php echo $year?>" name="year" hidden>
+                        <input class="button fs-4 form-control fw-bold text-center" type="text" value="<?php echo $semana?>" name="semana" hidden>
                         <input class="button fs-4 form-control fw-bold text-center" type="submit" value="Editar">
                         <!-- <input class="button fs-4 form-control fw-bold text-center" type="reset" value="Borrar"> -->
                         <input class="button fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
@@ -80,7 +93,6 @@
         <?php
         include("conexion2.php");
         include("querys.php");
-        echo $year;
         ?>
 
             <table class="table-responsive table__font" id="target" style="margin: auto;">

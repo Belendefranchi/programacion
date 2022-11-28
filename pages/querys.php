@@ -1,5 +1,5 @@
 <?php
-
+/* $year = date('Y', time()); */
 /* ############################################################## */
 /* ---------------------------LUNES------------------------------ */
 /* ############################################################## */
@@ -11,7 +11,8 @@
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='lun'
             and lote='1'
                 ORDER BY Id DESC";
@@ -33,7 +34,8 @@ $Lun__sem=$L1Lun__faena["sem"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='lun' 
             and lote='2' 
                 ORDER BY Id DESC";
@@ -52,7 +54,8 @@ $L2Lun__cantidad=$L2Lun__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id 
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='lun' 
             and lote='3' 
                 ORDER BY Id DESC";
@@ -72,7 +75,8 @@ $L3Lun__cantidad=$L3Lun__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='lun' 
             and lote='4' 
                 ORDER BY Id DESC";
@@ -91,7 +95,8 @@ $L4Lun__cantidad=$L4Lun__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='lun'
             and lote='5'
                 ORDER BY Id DESC";
@@ -106,13 +111,14 @@ $L5Lun__proceso=$L5Lun__faena["proceso"];
 $L5Lun__granja=$L5Lun__faena["granja"];
 $L5Lun__cantidad=$L5Lun__faena["cantidad"];
 $Lun__fecha=$L5Lun__faena["fecha"];
-$Lun__sem=$L5Lun__faena["sem"];
+
 
 /* ---------------------------lote 6----------------------------- */ 
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='lun'
             and lote='6'
                 ORDER BY Id DESC";
@@ -127,14 +133,15 @@ $L6Lun__proceso=$L6Lun__faena["proceso"];
 $L6Lun__granja=$L6Lun__faena["granja"];
 $L6Lun__cantidad=$L6Lun__faena["cantidad"];
 $Lun__fecha=$L6Lun__faena["fecha"];
-$Lun__sem=$L6Lun__faena["sem"];
+
 
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
 $query="SELECT pro_cocido, ope_cocido, ext_cocido, ext_cocido2, sem, Id
         FROM cocido 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='lun' 
                 ORDER BY Id DESC";
 
@@ -154,7 +161,8 @@ $ExtLun__cocido2=$Lun__cocido["ext_cocido2"];
 
 $query="SELECT pro_embarque, ope_embarque, ext_embarque, ext_embarque2, sem, Id
         FROM embarque
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='lun'
                 ORDER BY Id DESC";
 
@@ -179,7 +187,8 @@ $ExtLun__embarque2=$Lun__embarque["ext_embarque2"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='mar' 
             and lote='1' 
                 ORDER BY Id DESC";
@@ -199,7 +208,8 @@ $Mar__fecha=$L1Mar__faena["fecha"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='mar' 
             and lote='2' 
                 ORDER BY Id DESC";
@@ -219,7 +229,8 @@ $L2Mar__cantidad=$L2Mar__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id 
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='mar' 
             and lote='3' 
                 ORDER BY Id DESC";
@@ -239,7 +250,8 @@ $L3Mar__cantidad=$L3Mar__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='mar' 
             and lote='4' 
                 ORDER BY Id DESC";
@@ -258,7 +270,8 @@ $L4Mar__cantidad=$L4Mar__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='mar'
             and lote='5'
                 ORDER BY Id DESC";
@@ -273,13 +286,14 @@ $L5Mar__proceso=$L5Mar__faena["proceso"];
 $L5Mar__granja=$L5Mar__faena["granja"];
 $L5Mar__cantidad=$L5Mar__faena["cantidad"];
 $Mar__fecha=$L5Mar__faena["fecha"];
-$Mar__sem=$L5Mar__faena["sem"];
+
 
 /* ---------------------------lote 6----------------------------- */ 
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='mar'
             and lote='6'
                 ORDER BY Id DESC";
@@ -294,14 +308,15 @@ $L6Mar__proceso=$L6Mar__faena["proceso"];
 $L6Mar__granja=$L6Mar__faena["granja"];
 $L6Mar__cantidad=$L6Mar__faena["cantidad"];
 $Mar__fecha=$L6Mar__faena["fecha"];
-$Mar__sem=$L6Mar__faena["sem"];
+
 
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
 $query="SELECT pro_cocido, ope_cocido, ext_cocido, ext_cocido2, sem, Id
         FROM cocido 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='mar' 
                 ORDER BY Id DESC";
 
@@ -321,7 +336,8 @@ $ExtMar__cocido2=$Mar__cocido["ext_cocido2"];
 
 $query="SELECT pro_embarque, ope_embarque, ext_embarque, ext_embarque2, sem, Id
         FROM embarque 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='mar' 
                 ORDER BY Id DESC";
 
@@ -345,7 +361,8 @@ $ExtMar__embarque2=$Mar__embarque["ext_embarque2"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='mie' 
             and lote='1' 
                 ORDER BY Id DESC";
@@ -365,7 +382,8 @@ $Mie__fecha=$L1Mie__faena["fecha"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='mie' 
             and lote='2' 
                 ORDER BY Id DESC";
@@ -385,7 +403,8 @@ $L2Mie__cantidad=$L2Mie__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id 
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='mie' 
             and lote='3' 
                 ORDER BY Id DESC";
@@ -405,7 +424,8 @@ $L3Mie__cantidad=$L3Mie__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='mie' 
             and lote='4' 
                 ORDER BY Id DESC";
@@ -424,7 +444,8 @@ $L4Mie__cantidad=$L4Mie__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='mie'
             and lote='5'
                 ORDER BY Id DESC";
@@ -439,13 +460,14 @@ $L5Mie__proceso=$L5Mie__faena["proceso"];
 $L5Mie__granja=$L5Mie__faena["granja"];
 $L5Mie__cantidad=$L5Mie__faena["cantidad"];
 $Mie__fecha=$L5Mie__faena["fecha"];
-$Mie__sem=$L5Mie__faena["sem"];
+
 
 /* ---------------------------lote 6----------------------------- */ 
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='mie'
             and lote='6'
                 ORDER BY Id DESC";
@@ -460,14 +482,15 @@ $L6Mie__proceso=$L6Mie__faena["proceso"];
 $L6Mie__granja=$L6Mie__faena["granja"];
 $L6Mie__cantidad=$L6Mie__faena["cantidad"];
 $Mie__fecha=$L6Mie__faena["fecha"];
-$Mie__sem=$L6Mie__faena["sem"];
+
 
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
 $query="SELECT pro_cocido, ope_cocido, ext_cocido, ext_cocido2, sem, Id
         FROM cocido 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='mie' 
                 ORDER BY Id DESC";
 
@@ -487,7 +510,8 @@ $ExtMie__cocido2=$Mie__cocido["ext_cocido2"];
 
 $query="SELECT pro_embarque, ope_embarque, ext_embarque, ext_embarque2, sem, Id
         FROM embarque 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='mie' 
                 ORDER BY Id DESC";
 
@@ -511,7 +535,8 @@ $ExtMie__embarque2=$Mie__embarque["ext_embarque2"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='jue' 
             and lote='1' 
                 ORDER BY Id DESC";
@@ -531,7 +556,8 @@ $Jue__fecha=$L1Jue__faena["fecha"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='jue' 
             and lote='2' 
                 ORDER BY Id DESC";
@@ -551,7 +577,8 @@ $L2Jue__cantidad=$L2Jue__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id 
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='jue' 
             and lote='3' 
                 ORDER BY Id DESC";
@@ -571,7 +598,8 @@ $L3Jue__cantidad=$L3Jue__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='jue' 
             and lote='4' 
                 ORDER BY Id DESC";
@@ -590,7 +618,8 @@ $L4Jue__cantidad=$L4Jue__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='jue'
             and lote='5'
                 ORDER BY Id DESC";
@@ -605,13 +634,14 @@ $L5Jue__proceso=$L5Jue__faena["proceso"];
 $L5Jue__granja=$L5Jue__faena["granja"];
 $L5Jue__cantidad=$L5Jue__faena["cantidad"];
 $Jue__fecha=$L5Jue__faena["fecha"];
-$Jue__sem=$L5Jue__faena["sem"];
+
 
 /* ---------------------------lote 6----------------------------- */ 
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='jue'
             and lote='6'
                 ORDER BY Id DESC";
@@ -626,14 +656,15 @@ $L6Jue__proceso=$L6Jue__faena["proceso"];
 $L6Jue__granja=$L6Jue__faena["granja"];
 $L6Jue__cantidad=$L6Jue__faena["cantidad"];
 $Jue__fecha=$L6Jue__faena["fecha"];
-$Jue__sem=$L6Jue__faena["sem"];
+
 
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
 $query="SELECT pro_cocido, ope_cocido, ext_cocido, ext_cocido2, sem, Id
         FROM cocido 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='jue' 
                 ORDER BY Id DESC";
 
@@ -653,7 +684,8 @@ $ExtJue__cocido2=$Jue__cocido["ext_cocido2"];
 
 $query="SELECT pro_embarque, ope_embarque, ext_embarque, ext_embarque2, sem, Id
         FROM embarque 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='jue' 
                 ORDER BY Id DESC";
 
@@ -677,7 +709,8 @@ $ExtJue__embarque2=$Jue__embarque["ext_embarque2"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='vie' 
             and lote='1' 
                 ORDER BY Id DESC";
@@ -697,7 +730,8 @@ $Vie__fecha=$L1Vie__faena["fecha"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='vie' 
             and lote='2' 
                 ORDER BY Id DESC";
@@ -717,7 +751,8 @@ $L2Vie__cantidad=$L2Vie__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id 
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='vie' 
             and lote='3' 
                 ORDER BY Id DESC";
@@ -737,7 +772,8 @@ $L3Vie__cantidad=$L3Vie__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='vie' 
             and lote='4' 
                 ORDER BY Id DESC";
@@ -756,7 +792,8 @@ $L4Vie__cantidad=$L4Vie__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='vie'
             and lote='5'
                 ORDER BY Id DESC";
@@ -771,13 +808,14 @@ $L5Vie__proceso=$L5Vie__faena["proceso"];
 $L5Vie__granja=$L5Vie__faena["granja"];
 $L5Vie__cantidad=$L5Vie__faena["cantidad"];
 $Vie__fecha=$L5Vie__faena["fecha"];
-$Vie__sem=$L5Vie__faena["sem"];
+
 
 /* ---------------------------lote 6----------------------------- */ 
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='vie'
             and lote='6'
                 ORDER BY Id DESC";
@@ -792,14 +830,15 @@ $L6Vie__proceso=$L6Vie__faena["proceso"];
 $L6Vie__granja=$L6Vie__faena["granja"];
 $L6Vie__cantidad=$L6Vie__faena["cantidad"];
 $Vie__fecha=$L6Vie__faena["fecha"];
-$Vie__sem=$L6Vie__faena["sem"];
+
 
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
 $query="SELECT pro_cocido, ope_cocido, ext_cocido, ext_cocido2, sem, Id
         FROM cocido 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='vie' 
                 ORDER BY Id DESC";
 
@@ -819,7 +858,8 @@ $ExtVie__cocido2=$Vie__cocido["ext_cocido2"];
 
 $query="SELECT pro_embarque, ope_embarque, ext_embarque, ext_embarque2, sem, Id
         FROM embarque 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='vie' 
                 ORDER BY Id DESC";
 
@@ -843,7 +883,8 @@ $ExtVie__embarque2=$Vie__embarque["ext_embarque2"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='sab' 
             and lote='1' 
                 ORDER BY Id DESC";
@@ -863,7 +904,8 @@ $Sab__fecha=$L1Sab__faena["fecha"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='sab' 
             and lote='2' 
                 ORDER BY Id DESC";
@@ -883,7 +925,8 @@ $L2Sab__cantidad=$L2Sab__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id 
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='sab' 
             and lote='3' 
                 ORDER BY Id DESC";
@@ -903,7 +946,8 @@ $L3Sab__cantidad=$L3Sab__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-        where sem='$semana'
+        where year='$year'
+        and sem='$semana'
         and dia='sab' 
             and lote='4' 
                 ORDER BY Id DESC";
@@ -922,7 +966,8 @@ $L4Sab__cantidad=$L4Sab__faena["cantidad"];
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='sab'
             and lote='5'
                 ORDER BY Id DESC";
@@ -937,13 +982,14 @@ $L5Sab__proceso=$L5Sab__faena["proceso"];
 $L5Sab__granja=$L5Sab__faena["granja"];
 $L5Sab__cantidad=$L5Sab__faena["cantidad"];
 $Sab__fecha=$L5Sab__faena["fecha"];
-$Sab__sem=$L5Sab__faena["sem"];
+
 
 /* ---------------------------lote 6----------------------------- */ 
 
 $query="SELECT tipo, proceso, granja, cantidad, fecha, sem, Id
         FROM faena 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='sab'
             and lote='6'
                 ORDER BY Id DESC";
@@ -958,14 +1004,15 @@ $L6Sab__proceso=$L6Sab__faena["proceso"];
 $L6Sab__granja=$L6Sab__faena["granja"];
 $L6Sab__cantidad=$L6Sab__faena["cantidad"];
 $Sab__fecha=$L6Sab__faena["fecha"];
-$Sab__sem=$L6Sab__faena["sem"];
+
 
 /* ---------------------------cocido----------------------------- */
 /* -------------------------------------------------------------- */ 
 
 $query="SELECT pro_cocido, ope_cocido, ext_cocido, ext_cocido2, sem, Id
         FROM cocido 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='sab' 
                 ORDER BY Id DESC";
 
@@ -985,7 +1032,8 @@ $ExtSab__cocido2=$Sab__cocido["ext_cocido2"];
 
 $query="SELECT pro_embarque, ope_embarque, ext_embarque, ext_embarque2, sem, Id
         FROM embarque 
-            where sem='$semana'
+            where year='$year'
+            and sem='$semana'
             and dia='sab' 
                 ORDER BY Id DESC";
 

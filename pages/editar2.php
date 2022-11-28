@@ -38,22 +38,20 @@
                 </div>
                 <div class="d-flex flex-row justify-content-end">
                     <?php
-                        $semana=substr(($_GET['semana']),-2);
-                        echo $semana;
+                        $year=($_GET['year']);
+                        $semana=($_GET['semana']);
                         $prevSem=$semana-1;
                         $nextSem=$semana+1;
-                        echo $prevSem;
-                        echo $nextSem;
-                        
                         ?>
                     <form class="d-flex justify-content-end" action="enviar2.php" method="GET">
-                        <a class="a" href="editar2.php?semana=<?php echo $prevSem?>">
+                        <input class="button fs-4 form-control fw-bold text-center" type="button" value="<?php echo $year?>" name="year" readonly>
+                        <a class="a" href="editar2.php?year=<?php echo $year?>&semana=<?php echo $prevSem?>">
                             <input class="button fs-4 form-control fw-bold text-center" type="button" value="<" readonly>
                         </a>
-                        <a class="a" href="mostrar2.php?semana=<?php echo $semana?>">
+                        <a class="a" href="mostrar2.php?year=<?php echo $year?>&semana=<?php echo $semana?>">
                             <input class="button fs-4 form-control fw-bold text-center" type="button" value="Semana: <?php echo $semana?>" name="semana" readonly>
                         </a>
-                        <a class="a" href="editar2.php?semana=<?php echo $nextSem?>">
+                        <a class="a" href="editar2.php?year=<?php echo $year?>&semana=<?php echo $nextSem?>">
                             <input class="button fs-4 form-control fw-bold text-center" type="button" value=">" readonly>
                         </a>
                         <input class="button fs-4 form-control fw-bold text-center" type="text" value="Semana: <?php echo $semana?>" name="semana" hidden>
