@@ -49,25 +49,26 @@
                         $semana=($_GET['semana']);
                         /* ------------------------------------ */
                         
-                        $prevYear=$year-1;
-                        $nextYear=$year+1;
-                        
                         $prevSem=$semana-1;
                         $nextSem=$semana+1;
                         
-                        if($prevSem<1){
-                            $prevSem=52;
+                        if($prevSem<0){
+                            $semana=52;
                         }
-                        if($nextSem>52){
-                            $nextSem=1;
+                        
+                        if($nextSem>53){
+                            $semana=1;
                         }
-                    ?>
+
+                        ?>
                     <form class="d-flex justify-content-end" action="editar2.php" method="GET">
 <!--                         <select class="button fs-4 form-select fw-bold text-center" name="year">
                             <option value="2022">2022</option>
                             <option value="2023">2023</option>
                         </select> -->
-                        <input class="button fs-4 form-control fw-bold text-center" type="button" value="<?php echo $year?>" readonly>
+                        <a class="a" href="../index.php">
+                            <input class="button fs-4 form-control fw-bold text-center" type="button" value="<?php echo $year?>" readonly>
+                        </a>
                         <a class="a" href="mostrar2.php?year=<?php echo $year?>&semana=<?php echo $prevSem?>">
                             <input class="button fs-4 form-control fw-bold text-center" type="button" value="<" readonly>
                         </a>
