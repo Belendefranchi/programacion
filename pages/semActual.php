@@ -38,33 +38,48 @@
                 </div>
                 <div class="d-flex flex-row justify-content-end">
                     <?php
-                        /* semana para paginas fijas */
+
+                        /* datos para paginas fijas------------ */
                         $year = date('Y', time());
                         $semana = date('W', time());
-                        
-                        /* semana para otras semanas */
-                        /* $semana=($_GET['semana']); */
+                        /* ------------------------------------ */
 
+                        /* datos para pagina de otras semanas----- */
+                        /* $year=($_GET['year']);
+                        $semana=($_GET['semana']); */
+                        /* ------------------------------------ */
+                        
+                        include("conexion2.php");
+                        include("querys.php");
+                        include("variables.php");
+                        
                         $prevSem=$semana-1;
-                        if($prevSem<1){
-                            $prevSem=52;
-                        }
                         $nextSem=$semana+1;
+                        
+                        if($prevSem<1){
+                            $semana=52;
+                        }
+                        
                         if($nextSem>52){
-                            $nextSem=1;
+                            $semana=1;
                         }
                     ?>
-                    <form class="d-flex justify-content-end" action="editar2.php" method="GET">                
-                        <input class="button fs-4 form-control fw-bold text-center" type="button" value="<?php echo $year?>" readonly>
-                        <a class="a" href="mostrar2.php?year=<?php echo $year?>&semana=<?php echo $prevSem?>">
-                            <input class="button fs-4 form-control fw-bold text-center" type="button" value="<" readonly>
+                    <form class="d-flex justify-content-end" action="editar2.php" method="GET">
+                        <input class="btn btn-danger fs-4 fw-bold text-center" type="button" value="Total: <?php echo $total?>">&nspb&nspb
+                        <a class="a" href="../index.php">
+                            <input class="button fs-4 form-control fw-bold text-center" type="button" value="<?php echo $year?>">
                         </a>
-                        <a class="a" href="mostrar2.php?year=<?php echo $year?>&semana=<?php echo $semana?>">
-                            <input class="button fs-4 form-control fw-bold text-center" type="button" value="Semana: <?php echo $semana?>" readonly>
-                        </a>
-                        <a class="a" href="mostrar2.php?year=<?php echo $year?>&semana=<?php echo $nextSem?>">
-                            <input class="button fs-4 form-control fw-bold text-center" type="button" value=">" readonly>
-                        </a>
+                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                            <a class="a" href="mostrar2.php?year=<?php echo $year?>&semana=<?php echo $prevSem?>">
+                                <input class="button fs-4 form-control fw-bold text-center" type="button" value="<">
+                            </a>
+                            <a class="a" href="mostrar2.php?year=<?php echo $year?>&semana=<?php echo $semana?>">
+                                <input class="button fs-4 form-control fw-bold text-center" type="button" value="Semana: <?php echo $semana?>">
+                            </a>
+                            <a class="a" href="mostrar2.php?year=<?php echo $year?>&semana=<?php echo $nextSem?>">
+                                <input class="button fs-4 form-control fw-bold text-center" type="button" value=">">
+                            </a>
+                        </div>
                         <input class="button fs-4 form-control fw-bold text-center" type="text" value="<?php echo $year?>" name="year" hidden>
                         <input class="button fs-4 form-control fw-bold text-center" type="text" value="<?php echo $semana?>" name="semana" hidden>
                         <input class="button fs-4 form-control fw-bold text-center" type="submit" value="Editar">
@@ -77,12 +92,6 @@
     </header>
     <main>
         <script src="../js/script.js"></script>
-
-        <?php
-        include("conexion2.php");
-        include("querys.php");
-        ?>
-
             <table class="table-responsive table__font" id="target" style="margin: auto;">
                 <thead>
                     <tr class="table__font">
@@ -123,7 +132,7 @@
                         <td class='table_font'><?php echo $OpeLun__embarque?></td>
                     </tr>
                     <tr class="table__row--dark">
-                        <th class="total"><?php if($L1Lun__cantidad+$L2Lun__cantidad+$L3Lun__cantidad+$L4Lun__cantidad!=0){echo "TOTAL";}?></th>
+                        <th class="total"><?php if($totLun!=0){echo "TOTAL";}?></th>
                         <td class='table_font'><?php echo $L1Lun__granja?></td>
                         <td class='table_font'><?php echo $L2Lun__granja?></td>
                         <td class='table_font'><?php echo $L3Lun__granja?></td>
@@ -134,7 +143,7 @@
                         <td class='table_font'><?php echo $ExtLun__embarque?></td>
                     </tr>
                     <tr class="table__row--light">
-                        <th class="total table_font" scope="row"><?php if($L1Lun__cantidad+$L2Lun__cantidad+$L3Lun__cantidad+$L4Lun__cantidad+$L5Lun__cantidad+$L6Lun__cantidad!=0){echo $L1Lun__cantidad+$L2Lun__cantidad+$L3Lun__cantidad+$L4Lun__cantidad+$L5Lun__cantidad+$L6Lun__cantidad;}?></th>
+                        <th class="total table_font" scope="row"><?php if($totLun!=0){echo $totLun;}?></th>
                         <td class='table_font'><?php if($L1Lun__cantidad!=0){echo $L1Lun__cantidad;}?></td>
                         <td class='table_font'><?php if($L2Lun__cantidad!=0){echo $L2Lun__cantidad;}?></td>
                         <td class='table_font'><?php if($L3Lun__cantidad!=0){echo $L3Lun__cantidad;}?></td>
@@ -170,7 +179,7 @@
                         <td class='table_font'><?php echo $OpeMar__embarque?></td>
                     </tr>
                     <tr class="table__row--dark">
-                        <th class="total"><?php if($L1Mar__cantidad+$L2Mar__cantidad+$L3Mar__cantidad+$L4Mar__cantidad+$L5Mar__cantidad+$L6Mar__cantidad!=0){echo "TOTAL";}?></th>
+                        <th class="total"><?php if($totMar!=0){echo "TOTAL";}?></th>
                         <td class='table_font'><?php echo $L1Mar__granja?></td>
                         <td class='table_font'><?php echo $L2Mar__granja?></td>
                         <td class='table_font'><?php echo $L3Mar__granja?></td>
@@ -181,7 +190,7 @@
                         <td class='table_font'><?php echo $ExtMar__embarque?></td>
                     </tr>
                     <tr class="table__row--light">
-                        <th class="total table_font" scope="row"><?php if($L1Mar__cantidad+$L2Mar__cantidad+$L3Mar__cantidad+$L4Mar__cantidad+$L5Mar__cantidad+$L6Mar__cantidad!=0){echo $L1Mar__cantidad+$L2Mar__cantidad+$L3Mar__cantidad+$L4Mar__cantidad+$L5Mar__cantidad+$L6Mar__cantidad;}?></th>
+                        <th class="total table_font" scope="row"><?php if($totMar!=0){echo $totMar;}?></th>
                         <td class='table_font'><?php if($L1Mar__cantidad!=0){echo $L1Mar__cantidad;}?></td>
                         <td class='table_font'><?php if($L2Mar__cantidad!=0){echo $L2Mar__cantidad;}?></td>
                         <td class='table_font'><?php if($L3Mar__cantidad!=0){echo $L3Mar__cantidad;}?></td>
@@ -217,7 +226,7 @@
                         <td class='table_font'><?php echo $OpeMie__embarque?></td>
                     </tr>
                     <tr class="table__row--dark">
-                        <th class="total"><?php if($L1Mie__cantidad+$L2Mie__cantidad+$L3Mie__cantidad+$L4Mie__cantidad+$L5Mie__cantidad+$L6Mie__cantidad!=0){echo "TOTAL";}?></th>
+                        <th class="total"><?php if($totMie!=0){echo "TOTAL";}?></th>
                         <td class='table_font'><?php echo $L1Mie__granja?></td>
                         <td class='table_font'><?php echo $L2Mie__granja?></td>
                         <td class='table_font'><?php echo $L3Mie__granja?></td>
@@ -228,7 +237,7 @@
                         <td class='table_font'><?php echo $ExtMie__embarque?></td>
                     </tr>
                     <tr class="table__row--light">
-                        <th class="total table_font" scope="row"><?php if($L1Mie__cantidad+$L2Mie__cantidad+$L3Mie__cantidad+$L4Mie__cantidad!=0){echo $L1Mie__cantidad+$L2Mie__cantidad+$L3Mie__cantidad+$L4Mie__cantidad;}?></th>
+                        <th class="total table_font" scope="row"><?php if($totMie!=0){echo $totMie;}?></th>
                         <td class='table_font'><?php if($L1Mie__cantidad!=0){echo $L1Mie__cantidad;}?></td>
                         <td class='table_font'><?php if($L2Mie__cantidad!=0){echo $L2Mie__cantidad;}?></td>
                         <td class='table_font'><?php if($L3Mie__cantidad!=0){echo $L3Mie__cantidad;}?></td>
@@ -266,7 +275,7 @@
                     </tr>
 
                     <tr class="table__row--dark">
-                        <th class="total"><?php if($L1Jue__cantidad+$L2Jue__cantidad+$L3Jue__cantidad+$L4Jue__cantidad+$L5Jue__cantidad+$L6Jue__cantidad!=0){echo "TOTAL";}?></th>
+                        <th class="total"><?php if($totJue!=0){echo "TOTAL";}?></th>
                         <td class='table_font'><?php echo $L1Jue__granja?></td>
                         <td class='table_font'><?php echo $L2Jue__granja?></td>
                         <td class='table_font'><?php echo $L3Jue__granja?></td>
@@ -277,7 +286,7 @@
                         <td class='table_font'><?php echo $ExtJue__embarque?></td>
                     </tr>
                     <tr class="table__row--light">
-                        <th class="total table_font" scope="row"><?php if($L1Jue__cantidad+$L2Jue__cantidad+$L3Jue__cantidad+$L4Jue__cantidad+$L5Jue__cantidad+$L6Jue__cantidad!=0){echo $L1Jue__cantidad+$L2Jue__cantidad+$L3Jue__cantidad+$L4Jue__cantidad+$L5Jue__cantidad+$L6Jue__cantidad;}?></th>
+                        <th class="total table_font" scope="row"><?php if($totJue!=0){echo $totJue;}?></th>
                         <td class='table_font'><?php if($L1Jue__cantidad!=0){echo $L1Jue__cantidad;}?></td>
                         <td class='table_font'><?php if($L2Jue__cantidad!=0){echo $L2Jue__cantidad;}?></td>
                         <td class='table_font'><?php if($L3Jue__cantidad!=0){echo $L3Jue__cantidad;}?></td>
@@ -313,7 +322,7 @@
                         <td class='table_font'><?php echo $OpeVie__embarque?></td>
                     </tr>
                     <tr class="table__row--dark">
-                        <th class="total"><?php if($L1Vie__cantidad+$L2Vie__cantidad+$L3Vie__cantidad+$L4Vie__cantidad+$L5Vie__cantidad+$L6Vie__cantidad!=0){echo "TOTAL";}?></th>
+                        <th class="total"><?php if($totVie!=0){echo "TOTAL";}?></th>
                         <td class='table_font'><?php echo $L1Vie__granja?></td>
                         <td class='table_font'><?php echo $L2Vie__granja?></td>
                         <td class='table_font'><?php echo $L3Vie__granja?></td>
@@ -324,7 +333,7 @@
                         <td class='table_font'><?php echo $ExtVie__embarque?></td>
                     </tr>
                     <tr class="table__row--light">
-                        <th class="total table_font" scope="row"><?php if($L1Vie__cantidad+$L2Vie__cantidad+$L3Vie__cantidad+$L4Vie__cantidad+$L5Vie__cantidad+$L6Vie__cantidad!=0){echo $L1Vie__cantidad+$L2Vie__cantidad+$L3Vie__cantidad+$L4Vie__cantidad+$L5Vie__cantidad+$L6Vie__cantidad;}?></th>
+                        <th class="total table_font" scope="row"><?php if($totVie!=0){echo $totVie;}?></th>
                         <td class='table_font'><?php if($L1Vie__cantidad!=0){echo $L1Vie__cantidad;}?></td>
                         <td class='table_font'><?php if($L2Vie__cantidad!=0){echo $L2Vie__cantidad;}?></td>
                         <td class='table_font'><?php if($L3Vie__cantidad!=0){echo $L3Vie__cantidad;}?></td>
@@ -360,7 +369,7 @@
                         <td class='table_font'><?php echo $OpeSab__cocido?></td>       
                     </tr>
                     <tr class="table__row--dark">
-                        <th class="total"><?php if($L1Sab__cantidad+$L2Sab__cantidad+$L3Sab__cantidad+$L4Sab__cantidad+$L5Sab__cantidad+$L6Sab__cantidad!=0){echo "TOTAL";}?></th>
+                        <th class="total"><?php if($totSab!=0){echo "TOTAL";}?></th>
                         <td class='table_font'><?php echo $L1Sab__granja?></td>
                         <td class='table_font'><?php echo $L2Sab__granja?></td>
                         <td class='table_font'><?php echo $L3Sab__granja?></td>
@@ -371,7 +380,7 @@
                         <td class='table_font'><?php echo $ExtSab__embarque?></td>
                     </tr>
                     <tr class="table__row--light">
-                        <th class="total table_font" scope="row"><?php if($L1Sab__cantidad+$L2Sab__cantidad+$L3Sab__cantidad+$L4Sab__cantidad+$L5Sab__cantidad+$L6Sab__cantidad!=0){echo $L1Sab__cantidad+$L2Sab__cantidad+$L3Sab__cantidad+$L4Sab__cantidad+$L5Sab__cantidad+$L6Sab__cantidad;}?></th>
+                        <th class="total table_font" scope="row"><?php if($totSab!=0){echo $totSab;}?></th>
                         <td class='table_font'><?php if($L1Sab__cantidad!=0){echo $L1Sab__cantidad;}?></td>
                         <td class='table_font'><?php if($L2Sab__cantidad!=0){echo $L2Sab__cantidad;}?></td>
                         <td class='table_font'><?php if($L3Sab__cantidad!=0){echo $L3Sab__cantidad;}?></td>
