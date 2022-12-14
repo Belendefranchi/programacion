@@ -45,7 +45,7 @@
                         /* ------------------------------------ */
 
                         /* datos para pagina de otras semanas----- */
-                        /* $year=($_GET['year']);
+/*                         $year=($_GET['year']);
                         $semana=($_GET['semana']); */
                         /* ------------------------------------ */
                         
@@ -80,8 +80,8 @@
                                 <input class="button fs-4 form-control fw-bold text-center" type="button" value=">">
                             </a>
                         </div>
-                        <input class="button fs-4 form-control fw-bold text-center" type="text" value="<?php echo $year?>" name="year" hidden>
-                        <input class="button fs-4 form-control fw-bold text-center" type="text" value="<?php echo $semana?>" name="semana" hidden>
+                        <input type="text" value="<?php echo $year?>" name="year" hidden>
+                        <input type="text" value="<?php echo $semana?>" name="semana" hidden>
                         <input class="button fs-4 form-control fw-bold text-center" type="submit" value="Editar">
                         <!-- <input class="button fs-4 form-control fw-bold text-center" type="reset" value="Borrar"> -->
                         <input class="button fs-4 form-control fw-bold text-center" type="button" value="Volver" onClick="history.go(-1);">
@@ -102,6 +102,9 @@
                         <th class="table__font" >LOTE 4</th>
                         <th class="table__font" >LOTE 5</th>
                         <th class="table__font" >LOTE 6</th>
+                        <th class="table__font" >LOTE 7</th>
+                        <th class="table__font" >LOTE 8</th>
+                        <th class="table__font" >LOTE 9</th>
                         <th class="table__font" >COCIDO</th>
                         <th class="table__font" >EMBARQUES</th>
                     </tr>
@@ -117,6 +120,9 @@
                         <td class='table_font' id="L4Lun__tipo"><?php  echo $L4Lun__tipo?></td>
                         <td class='table_font' id="L5Lun__tipo"><?php  echo $L5Lun__tipo?></td>
                         <td class='table_font' id="L6Lun__tipo"><?php  echo $L6Lun__tipo?></td>
+                        <td class='table_font' id="L7Lun__tipo"><?php  echo $L7Lun__tipo?></td>
+                        <td class='table_font' id="L8Lun__tipo"><?php  echo $L8Lun__tipo?></td>
+                        <td class='table_font' id="L9Lun__tipo"><?php  echo $L9Lun__tipo?></td>
                         <td class='table_font'><?php echo $ProLun__cocido?></td>
                         <td class='table_font'><?php echo $ProLun__embarque?></td>
                     </tr>
@@ -128,6 +134,9 @@
                         <td class='table_font' id="L4Lun__proceso"><?php echo $L4Lun__proceso?></td>
                         <td class='table_font' id="L5Lun__proceso"><?php echo $L5Lun__proceso?></td>
                         <td class='table_font' id="L6Lun__proceso"><?php echo $L6Lun__proceso?></td>
+                        <td class='table_font' id="L7Lun__proceso"><?php echo $L7Lun__proceso?></td>
+                        <td class='table_font' id="L8Lun__proceso"><?php echo $L8Lun__proceso?></td>
+                        <td class='table_font' id="L9Lun__proceso"><?php echo $L9Lun__proceso?></td>
                         <td class='table_font'><?php echo $OpeLun__cocido?></td>
                         <td class='table_font'><?php echo $OpeLun__embarque?></td>
                     </tr>
@@ -139,6 +148,9 @@
                         <td class='table_font'><?php echo $L4Lun__granja?></td>
                         <td class='table_font'><?php echo $L5Lun__granja?></td>
                         <td class='table_font'><?php echo $L6Lun__granja?></td>
+                        <td class='table_font'><?php echo $L7Lun__granja?></td>
+                        <td class='table_font'><?php echo $L8Lun__granja?></td>
+                        <td class='table_font'><?php echo $L9Lun__granja?></td>
                         <td class='table_font'><?php echo $ExtLun__cocido?></td>
                         <td class='table_font'><?php echo $ExtLun__embarque?></td>
                     </tr>
@@ -150,6 +162,9 @@
                         <td class='table_font'><?php if($L4Lun__cantidad!=0){echo $L4Lun__cantidad;}?></td>
                         <td class='table_font'><?php if($L5Lun__cantidad!=0){echo $L5Lun__cantidad;}?></td>
                         <td class='table_font'><?php if($L6Lun__cantidad!=0){echo $L6Lun__cantidad;}?></td>
+                        <td class='table_font'><?php if($L7Lun__cantidad!=0){echo $L7Lun__cantidad;}?></td>
+                        <td class='table_font'><?php if($L8Lun__cantidad!=0){echo $L8Lun__cantidad;}?></td>
+                        <td class='table_font'><?php if($L9Lun__cantidad!=0){echo $L9Lun__cantidad;}?></td>
                         <td class='table_font'><?php echo $ExtLun__cocido2?></td>
                         <td class='table_font'><?php echo $ExtLun__embarque2?></td>
                     </tr>
@@ -164,6 +179,9 @@
                         <td class='table_font' id="L4Mar__tipo"><?php  echo $L4Mar__tipo?></td>
                         <td class='table_font' id="L5Mar__tipo"><?php  echo $L5Mar__tipo?></td>
                         <td class='table_font' id="L6Mar__tipo"><?php  echo $L6Mar__tipo?></td>
+                        <td class='table_font' id="L7Mar__tipo"><?php  echo $L7Mar__tipo?></td>
+                        <td class='table_font' id="L8Mar__tipo"><?php  echo $L8Mar__tipo?></td>
+                        <td class='table_font' id="L9Mar__tipo"><?php  echo $L9Mar__tipo?></td>
                         <td class='table_font'><?php echo $ProMar__cocido?></td>
                         <td class='table_font'><?php echo $ProMar__embarque?></td>
                     </tr>
@@ -175,6 +193,9 @@
                         <td class='table_font' id="L4Mar__proceso"><?php echo $L4Mar__proceso?></td>
                         <td class='table_font' id="L5Mar__proceso"><?php echo $L5Mar__proceso?></td>
                         <td class='table_font' id="L6Mar__proceso"><?php echo $L6Mar__proceso?></td>
+                        <td class='table_font' id="L7Mar__proceso"><?php echo $L7Mar__proceso?></td>
+                        <td class='table_font' id="L8Mar__proceso"><?php echo $L8Mar__proceso?></td>
+                        <td class='table_font' id="L9Mar__proceso"><?php echo $L9Mar__proceso?></td>
                         <td class='table_font'><?php echo $OpeMar__cocido?></td>
                         <td class='table_font'><?php echo $OpeMar__embarque?></td>
                     </tr>
@@ -186,6 +207,9 @@
                         <td class='table_font'><?php echo $L4Mar__granja?></td>
                         <td class='table_font'><?php echo $L5Mar__granja?></td>
                         <td class='table_font'><?php echo $L6Mar__granja?></td>
+                        <td class='table_font'><?php echo $L7Mar__granja?></td>
+                        <td class='table_font'><?php echo $L8Mar__granja?></td>
+                        <td class='table_font'><?php echo $L9Mar__granja?></td>
                         <td class='table_font'><?php echo $ExtMar__cocido?></td>
                         <td class='table_font'><?php echo $ExtMar__embarque?></td>
                     </tr>
@@ -197,6 +221,9 @@
                         <td class='table_font'><?php if($L4Mar__cantidad!=0){echo $L4Mar__cantidad;}?></td>
                         <td class='table_font'><?php if($L5Mar__cantidad!=0){echo $L5Mar__cantidad;}?></td>
                         <td class='table_font'><?php if($L6Mar__cantidad!=0){echo $L6Mar__cantidad;}?></td>
+                        <td class='table_font'><?php if($L7Mar__cantidad!=0){echo $L7Mar__cantidad;}?></td>
+                        <td class='table_font'><?php if($L8Mar__cantidad!=0){echo $L8Mar__cantidad;}?></td>
+                        <td class='table_font'><?php if($L9Mar__cantidad!=0){echo $L9Mar__cantidad;}?></td>
                         <td class='table_font'><?php echo $ExtMar__cocido2?></td>
                         <td class='table_font'><?php echo $ExtMar__embarque2?></td>
                     </tr>
@@ -211,6 +238,9 @@
                         <td class='table_font' id="L4Mie__tipo"><?php echo $L4Mie__tipo?></td>
                         <td class='table_font' id="L5Mie__tipo"><?php echo $L5Mie__tipo?></td>
                         <td class='table_font' id="L6Mie__tipo"><?php echo $L6Mie__tipo?></td>
+                        <td class='table_font' id="L7Mie__tipo"><?php echo $L7Mie__tipo?></td>
+                        <td class='table_font' id="L8Mie__tipo"><?php echo $L8Mie__tipo?></td>
+                        <td class='table_font' id="L9Mie__tipo"><?php echo $L9Mie__tipo?></td>
                         <td class='table_font'><?php echo $ProMie__cocido?></td>
                         <td class='table_font'><?php echo $ProMie__embarque?></td>
                     </tr>
@@ -222,6 +252,9 @@
                         <td class='table_font' id="L4Mie__proceso"><?php echo $L4Mie__proceso?></td>
                         <td class='table_font' id="L5Mie__proceso"><?php echo $L5Mie__proceso?></td>
                         <td class='table_font' id="L6Mie__proceso"><?php echo $L6Mie__proceso?></td>
+                        <td class='table_font' id="L7Mie__proceso"><?php echo $L7Mie__proceso?></td>
+                        <td class='table_font' id="L8Mie__proceso"><?php echo $L8Mie__proceso?></td>
+                        <td class='table_font' id="L9Mie__proceso"><?php echo $L9Mie__proceso?></td>
                         <td class='table_font'><?php echo $OpeMie__cocido?></td>
                         <td class='table_font'><?php echo $OpeMie__embarque?></td>
                     </tr>
@@ -233,6 +266,9 @@
                         <td class='table_font'><?php echo $L4Mie__granja?></td>
                         <td class='table_font'><?php echo $L5Mie__granja?></td>
                         <td class='table_font'><?php echo $L6Mie__granja?></td>
+                        <td class='table_font'><?php echo $L7Mie__granja?></td>
+                        <td class='table_font'><?php echo $L8Mie__granja?></td>
+                        <td class='table_font'><?php echo $L9Mie__granja?></td>
                         <td class='table_font'><?php echo $ExtMie__cocido?></td>
                         <td class='table_font'><?php echo $ExtMie__embarque?></td>
                     </tr>
@@ -244,6 +280,9 @@
                         <td class='table_font'><?php if($L4Mie__cantidad!=0){echo $L4Mie__cantidad;}?></td>
                         <td class='table_font'><?php if($L5Mie__cantidad!=0){echo $L5Mie__cantidad;}?></td>
                         <td class='table_font'><?php if($L6Mie__cantidad!=0){echo $L6Mie__cantidad;}?></td>
+                        <td class='table_font'><?php if($L7Mie__cantidad!=0){echo $L7Mie__cantidad;}?></td>
+                        <td class='table_font'><?php if($L8Mie__cantidad!=0){echo $L8Mie__cantidad;}?></td>
+                        <td class='table_font'><?php if($L9Mie__cantidad!=0){echo $L9Mie__cantidad;}?></td>
                         <td class='table_font'><?php echo $ExtMie__cocido2?></td>
                         <td class='table_font'><?php echo $ExtMie__embarque2?></td>
                     </tr>
@@ -257,8 +296,11 @@
                         <td class='table_font' id="L2Jue__tipo"><?php echo $L2Jue__tipo?></td>
                         <td class='table_font' id="L3Jue__tipo"><?php echo $L3Jue__tipo?></td>
                         <td class='table_font' id="L4Jue__tipo"><?php echo $L4Jue__tipo?></td>
-                        <td class='table_font' id="L5Jue__tipo"><?php  echo $L5Jue__tipo?></td>
-                        <td class='table_font' id="L6Jue__tipo"><?php  echo $L6Jue__tipo?></td>
+                        <td class='table_font' id="L5Jue__tipo"><?php echo $L5Jue__tipo?></td>
+                        <td class='table_font' id="L6Jue__tipo"><?php echo $L6Jue__tipo?></td>
+                        <td class='table_font' id="L7Jue__tipo"><?php echo $L7Jue__tipo?></td>
+                        <td class='table_font' id="L8Jue__tipo"><?php echo $L8Jue__tipo?></td>
+                        <td class='table_font' id="L9Jue__tipo"><?php echo $L9Jue__tipo?></td>
                         <td class='table_font'><?php echo $ProJue__cocido?></td>
                         <td class='table_font'><?php echo $ProJue__embarque?></td>
                     </tr>
@@ -270,6 +312,9 @@
                         <td class='table_font' id="L4Jue__proceso"><?php echo $L4Jue__proceso?></td>
                         <td class='table_font' id="L5Jue__proceso"><?php echo $L5Jue__proceso?></td>
                         <td class='table_font' id="L6Jue__proceso"><?php echo $L6Jue__proceso?></td>
+                        <td class='table_font' id="L7Jue__proceso"><?php echo $L7Jue__proceso?></td>
+                        <td class='table_font' id="L8Jue__proceso"><?php echo $L8Jue__proceso?></td>
+                        <td class='table_font' id="L9Jue__proceso"><?php echo $L9Jue__proceso?></td>
                         <td class='table_font'><?php echo $OpeJue__cocido?></td>
                         <td class='table_font'><?php echo $OpeJue__embarque?></td>
                     </tr>
@@ -282,6 +327,9 @@
                         <td class='table_font'><?php echo $L4Jue__granja?></td>
                         <td class='table_font'><?php echo $L5Jue__granja?></td>
                         <td class='table_font'><?php echo $L6Jue__granja?></td>
+                        <td class='table_font'><?php echo $L7Jue__granja?></td>
+                        <td class='table_font'><?php echo $L8Jue__granja?></td>
+                        <td class='table_font'><?php echo $L9Jue__granja?></td>
                         <td class='table_font'><?php echo $ExtJue__cocido?></td>
                         <td class='table_font'><?php echo $ExtJue__embarque?></td>
                     </tr>
@@ -293,6 +341,9 @@
                         <td class='table_font'><?php if($L4Jue__cantidad!=0){echo $L4Jue__cantidad;}?></td>
                         <td class='table_font'><?php if($L5Jue__cantidad!=0){echo $L5Jue__cantidad;}?></td>
                         <td class='table_font'><?php if($L6Jue__cantidad!=0){echo $L6Jue__cantidad;}?></td>
+                        <td class='table_font'><?php if($L7Jue__cantidad!=0){echo $L7Jue__cantidad;}?></td>
+                        <td class='table_font'><?php if($L8Jue__cantidad!=0){echo $L8Jue__cantidad;}?></td>
+                        <td class='table_font'><?php if($L9Jue__cantidad!=0){echo $L9Jue__cantidad;}?></td>
                         <td class='table_font'><?php echo $ExtJue__cocido2?></td>
                         <td class='table_font'><?php echo $ExtJue__embarque2?></td>
                     </tr>
@@ -305,8 +356,11 @@
                         <td class='table_font' id="L2Vie__tipo"><?php echo $L2Vie__tipo?></td>
                         <td class='table_font' id="L3Vie__tipo"><?php echo $L3Vie__tipo?></td>
                         <td class='table_font' id="L4Vie__tipo"><?php echo $L4Vie__tipo?></td>
-                        <td class='table_font' id="L5Vie__tipo"><?php  echo $L5Vie__tipo?></td>
-                        <td class='table_font' id="L6Vie__tipo"><?php  echo $L6Vie__tipo?></td>
+                        <td class='table_font' id="L5Vie__tipo"><?php echo $L5Vie__tipo?></td>
+                        <td class='table_font' id="L6Vie__tipo"><?php echo $L6Vie__tipo?></td>
+                        <td class='table_font' id="L7Vie__tipo"><?php echo $L7Vie__tipo?></td>
+                        <td class='table_font' id="L8Vie__tipo"><?php echo $L8Vie__tipo?></td>
+                        <td class='table_font' id="L9Vie__tipo"><?php echo $L9Vie__tipo?></td>
                         <td class='table_font'><?php echo $ProVie__cocido?></td>
                         <td class='table_font'><?php echo $ProVie__embarque?></td>
                     </tr>
@@ -318,6 +372,9 @@
                         <td class='table_font' id="L4Vie__proceso"><?php echo $L4Vie__proceso?></td>
                         <td class='table_font' id="L5Vie__proceso"><?php echo $L5Vie__proceso?></td>
                         <td class='table_font' id="L6Vie__proceso"><?php echo $L6Vie__proceso?></td>
+                        <td class='table_font' id="L7Vie__proceso"><?php echo $L7Vie__proceso?></td>
+                        <td class='table_font' id="L8Vie__proceso"><?php echo $L8Vie__proceso?></td>
+                        <td class='table_font' id="L9Vie__proceso"><?php echo $L9Vie__proceso?></td>
                         <td class='table_font'><?php echo $OpeVie__cocido?></td>
                         <td class='table_font'><?php echo $OpeVie__embarque?></td>
                     </tr>
@@ -329,6 +386,9 @@
                         <td class='table_font'><?php echo $L4Vie__granja?></td>
                         <td class='table_font'><?php echo $L5Vie__granja?></td>
                         <td class='table_font'><?php echo $L6Vie__granja?></td>
+                        <td class='table_font'><?php echo $L7Vie__granja?></td>
+                        <td class='table_font'><?php echo $L8Vie__granja?></td>
+                        <td class='table_font'><?php echo $L9Vie__granja?></td>
                         <td class='table_font'><?php echo $ExtVie__cocido?></td>
                         <td class='table_font'><?php echo $ExtVie__embarque?></td>
                     </tr>
@@ -340,6 +400,9 @@
                         <td class='table_font'><?php if($L4Vie__cantidad!=0){echo $L4Vie__cantidad;}?></td>
                         <td class='table_font'><?php if($L5Vie__cantidad!=0){echo $L5Vie__cantidad;}?></td>
                         <td class='table_font'><?php if($L6Vie__cantidad!=0){echo $L6Vie__cantidad;}?></td>
+                        <td class='table_font'><?php if($L7Vie__cantidad!=0){echo $L7Vie__cantidad;}?></td>
+                        <td class='table_font'><?php if($L8Vie__cantidad!=0){echo $L8Vie__cantidad;}?></td>
+                        <td class='table_font'><?php if($L9Vie__cantidad!=0){echo $L9Vie__cantidad;}?></td>
                         <td class='table_font'><?php echo $ExtVie__cocido2?></td>
                         <td class='table_font'><?php echo $ExtVie__embarque2?></td>
                     </tr>
@@ -352,8 +415,11 @@
                         <td class='table_font' id="L2Sab__tipo"><?php echo $L2Sab__tipo?></td>
                         <td class='table_font' id="L3Sab__tipo"><?php echo $L3Sab__tipo?></td>
                         <td class='table_font' id="L4Sab__tipo"><?php echo $L4Sab__tipo?></td>
-                        <td class='table_font' id="L5Sab__tipo"><?php  echo $L5Sab__tipo?></td>
-                        <td class='table_font' id="L6Sab__tipo"><?php  echo $L6Sab__tipo?></td>
+                        <td class='table_font' id="L5Sab__tipo"><?php echo $L5Sab__tipo?></td>
+                        <td class='table_font' id="L6Sab__tipo"><?php echo $L6Sab__tipo?></td>
+                        <td class='table_font' id="L7Sab__tipo"><?php echo $L7Sab__tipo?></td>
+                        <td class='table_font' id="L8Sab__tipo"><?php echo $L8Sab__tipo?></td>
+                        <td class='table_font' id="L9Sab__tipo"><?php echo $L9Sab__tipo?></td>
                         <td class='table_font'><?php echo $ProSab__cocido?></td>
                         <td class='table_font'><?php echo $ProSab__embarque?></td>
                     </tr>
@@ -365,6 +431,9 @@
                         <td class='table_font' id="L4Sab__proceso"><?php echo $L4Sab__proceso?></td>
                         <td class='table_font' id="L5Sab__proceso"><?php echo $L5Sab__proceso?></td>
                         <td class='table_font' id="L6Sab__proceso"><?php echo $L6Sab__proceso?></td>
+                        <td class='table_font' id="L7Sab__proceso"><?php echo $L7Sab__proceso?></td>
+                        <td class='table_font' id="L8Sab__proceso"><?php echo $L8Sab__proceso?></td>
+                        <td class='table_font' id="L9Sab__proceso"><?php echo $L9Sab__proceso?></td>
                         <td class='table_font'><?php echo $OpeSab__cocido?></td>              
                         <td class='table_font'><?php echo $OpeSab__cocido?></td>       
                     </tr>
@@ -376,6 +445,9 @@
                         <td class='table_font'><?php echo $L4Sab__granja?></td>
                         <td class='table_font'><?php echo $L5Sab__granja?></td>
                         <td class='table_font'><?php echo $L6Sab__granja?></td>
+                        <td class='table_font'><?php echo $L7Sab__granja?></td>
+                        <td class='table_font'><?php echo $L8Sab__granja?></td>
+                        <td class='table_font'><?php echo $L9Sab__granja?></td>
                         <td class='table_font'><?php echo $ExtSab__cocido?></td>
                         <td class='table_font'><?php echo $ExtSab__embarque?></td>
                     </tr>
@@ -387,6 +459,9 @@
                         <td class='table_font'><?php if($L4Sab__cantidad!=0){echo $L4Sab__cantidad;}?></td>
                         <td class='table_font'><?php if($L5Sab__cantidad!=0){echo $L5Sab__cantidad;}?></td>
                         <td class='table_font'><?php if($L6Sab__cantidad!=0){echo $L6Sab__cantidad;}?></td>
+                        <td class='table_font'><?php if($L7Sab__cantidad!=0){echo $L7Sab__cantidad;}?></td>
+                        <td class='table_font'><?php if($L8Sab__cantidad!=0){echo $L8Sab__cantidad;}?></td>
+                        <td class='table_font'><?php if($L9Sab__cantidad!=0){echo $L9Sab__cantidad;}?></td>
                         <td class='table_font'><?php echo $ExtSab__cocido2?></td>
                         <td class='table_font'><?php echo $ExtSab__embarque2?></td>
                     </tr>

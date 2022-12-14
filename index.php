@@ -40,28 +40,33 @@
             </div>
         </nav>
     </header><br>
+
+
+    <?php
+/* 
+	session_start();
+	if (isset($_SESSION["admin_login"]))	//Condicion admin
+	{
+		header("location: index.php");
+	}elseif (isset($_SESSION["personal_login"]))	//Condicion personal
+	{
+		header("location: index.php");
+	}elseif (isset($_SESSION["usuarios_login"]))	//Condicion Usuarios
+	{
+		header("location: index.php");
+	}else{
+        header("location: http://192.168.1.113/");
+    } */
+
+    ?>
+
+
     <main class="main2 d-inline-flex flex-column justify-content-center w-25">
-        <?php
-            /* $semana = date('W', time()); */
-        ?>
-<!--         <form class="d-inline-flex flex-column justify-content-center" action="pages/mostrar.php" method="GET">
-            <input type="text" value="<?php echo $semana1 = $semana -1;?>" name="semana" hidden>
-            <input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='submit' value='Semana Anterior'>
-        </form>
-        <form class="d-inline-flex flex-column justify-content-center" action="pages/mostrar.php" method="GET">
-            <input type="text" value="<?php echo $semana?>" name="semana" hidden>
-            <input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='submit' value='Semana Actual'>
-        </form>
-        <form class="d-inline-flex flex-column justify-content-center" action="pages/mostrar.php" method="GET">
-            <input type="text" value="<?php echo $semana3 = $semana + 1;?>" name="semana" hidden>
-            <input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='submit' value='Semana Próxima'>
-        </form><br> -->
         <div class="d-inline-flex flex-column justify-content-center">
             <a class="a" href="pages/semAnterior.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Anterior'></a>
             <a class="a" href="pages/semActual.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Actual'></a>
             <a class="a" href="pages/semProxima.php"><input class="button fs-4 form-control fw-bold text-center flex-grow-2" type='button' value='Semana Próxima'></a>
         </div><br>
-
         <form class="d-inline-flex flex-column justify-content-center" action="pages/mostrar2.php" method="GET">
             <input class="button flex-fill fs-4 form-control fw-bold text-center" type="text" value="Otras semanas" readonly>
             <div class="d-flex">
