@@ -894,7 +894,7 @@ $resultado->execute();
 $L9Jue__faena=$resultado->fetch(PDO::FETCH_ASSOC);
 $resultado->closeCursor ();
 
-$L9Jue__tipo=$L9Mie__faena["tipo"];
+$L9Jue__tipo=$L9Jue__faena["tipo"];
 $L9Jue__proceso=$L9Jue__faena["proceso"];
 $L9Jue__granja=$L9Jue__faena["granja"];
 $L9Jue__cantidad=$L9Jue__faena["cantidad"];

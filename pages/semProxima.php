@@ -49,20 +49,21 @@
                         $semana=($_GET['semana']); */
                         /* ------------------------------------ */
                         
+                        $prevSem=$semana-1;
+                        $nextSem=$semana+1;
+                        
+                        if($semana<=1){
+                            $prevSem=52;
+                        }
+                        
+                        if($semana>=52){
+                            $nextSem=1;
+                        }
+                        
                         include("conexion2.php");
                         include("querys.php");
                         include("variables.php");
                         
-                        $prevSem=$semana-1;
-                        $nextSem=$semana+1;
-                        
-                        if($prevSem<1){
-                            $semana=52;
-                        }
-                        
-                        if($nextSem>52){
-                            $semana=1;
-                        }
                     ?>
                     <form class="d-flex justify-content-end" action="editar2.php" method="GET">
                         <input class="btn btn-danger fs-4 fw-bold text-center" type="button" value="Total: <?php echo $total?>">&nspb&nspb
