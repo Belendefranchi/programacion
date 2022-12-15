@@ -96,18 +96,18 @@
             <table class="table-responsive table__font" id="target" style="margin: auto;">
                 <thead>
                     <tr class="table__font">
-                        <th class="table__font" >FECHA</th>
-                        <th class="table__font" >LOTE 1</th>
-                        <th class="table__font" >LOTE 2</th>
-                        <th class="table__font" >LOTE 3</th>
-                        <th class="table__font" >LOTE 4</th>
-                        <th class="table__font" >LOTE 5</th>
-                        <th class="table__font" >LOTE 6</th>
-                        <th class="table__font" >LOTE 7</th>
-                        <th class="table__font" >LOTE 8</th>
-                        <th class="table__font" >LOTE 9</th>
-                        <th class="table__font" >COCIDO</th>
-                        <th class="table__font" >EMBARQUES</th>
+                        <th class="table__font text-nowrap" >FECHA</th>
+                        <th class="table__font text-nowrap" >LOTE 1</th>
+                        <th class="table__font text-nowrap" >LOTE 2</th>
+                        <th class="table__font text-nowrap" >LOTE 3</th>
+                        <th class="table__font text-nowrap" >LOTE 4</th>
+                        <th class="table__font text-nowrap" >LOTE 5</th>
+                        <th class="table__font text-nowrap" >LOTE 6</th>
+                        <th class="table__font text-nowrap" >LOTE 7</th>
+                        <th class="table__font text-nowrap" >LOTE 8</th>
+                        <th class="table__font text-nowrap" >LOTE 9</th>
+                        <th class="table__font text-nowrap" >COCIDO</th>
+                        <th class="table__font text-nowrap" >EMBARQUES</th>
                     </tr>
                 </thead>
 
@@ -143,17 +143,17 @@
                     </tr>
                     <tr class="table__row--dark">
                         <th class="total"><?php if($totLun!=0){echo "TOTAL";}?></th>
-                        <td class='table_font'><?php echo $L1Lun__granja?></td>
-                        <td class='table_font'><?php echo $L2Lun__granja?></td>
-                        <td class='table_font'><?php echo $L3Lun__granja?></td>
-                        <td class='table_font'><?php echo $L4Lun__granja?></td>
-                        <td class='table_font'><?php echo $L5Lun__granja?></td>
-                        <td class='table_font'><?php echo $L6Lun__granja?></td>
-                        <td class='table_font'><?php echo $L7Lun__granja?></td>
-                        <td class='table_font'><?php echo $L8Lun__granja?></td>
-                        <td class='table_font'><?php echo $L9Lun__granja?></td>
-                        <td class='table_font'><?php echo $ExtLun__cocido?></td>
-                        <td class='table_font'><?php echo $ExtLun__embarque?></td>
+                        <td class='table_font text-nowrap'><?php echo $L1Lun__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L2Lun__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L3Lun__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L4Lun__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L5Lun__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L6Lun__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L7Lun__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L8Lun__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L9Lun__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $ExtLun__cocido?></td>
+                        <td class='table_font text-nowrap'><?php echo $ExtLun__embarque?></td>
                     </tr>
                     <tr class="table__row--light">
                         <th class="total table_font" scope="row"><?php if($totLun!=0){echo $totLun;}?></th>
@@ -202,17 +202,17 @@
                     </tr>
                     <tr class="table__row--dark">
                         <th class="total"><?php if($totMar!=0){echo "TOTAL";}?></th>
-                        <td class='table_font'><?php echo $L1Mar__granja?></td>
-                        <td class='table_font'><?php echo $L2Mar__granja?></td>
-                        <td class='table_font'><?php echo $L3Mar__granja?></td>
-                        <td class='table_font'><?php echo $L4Mar__granja?></td>
-                        <td class='table_font'><?php echo $L5Mar__granja?></td>
-                        <td class='table_font'><?php echo $L6Mar__granja?></td>
-                        <td class='table_font'><?php echo $L7Mar__granja?></td>
-                        <td class='table_font'><?php echo $L8Mar__granja?></td>
-                        <td class='table_font'><?php echo $L9Mar__granja?></td>
-                        <td class='table_font'><?php echo $ExtMar__cocido?></td>
-                        <td class='table_font'><?php echo $ExtMar__embarque?></td>
+                        <td class='table_font text-nowrap'><?php echo $L1Mar__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L2Mar__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L3Mar__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L4Mar__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L5Mar__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L6Mar__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L7Mar__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L8Mar__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L9Mar__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $ExtMar__cocido?></td>
+                        <td class='table_font text-nowrap'><?php echo $ExtMar__embarque?></td>
                     </tr>
                     <tr class="table__row--light">
                         <th class="total table_font" scope="row"><?php if($totMar!=0){echo $totMar;}?></th>
@@ -261,17 +261,17 @@
                     </tr>
                     <tr class="table__row--dark">
                         <th class="total"><?php if($totMie!=0){echo "TOTAL";}?></th>
-                        <td class='table_font'><?php echo $L1Mie__granja?></td>
-                        <td class='table_font'><?php echo $L2Mie__granja?></td>
-                        <td class='table_font'><?php echo $L3Mie__granja?></td>
-                        <td class='table_font'><?php echo $L4Mie__granja?></td>
-                        <td class='table_font'><?php echo $L5Mie__granja?></td>
-                        <td class='table_font'><?php echo $L6Mie__granja?></td>
-                        <td class='table_font'><?php echo $L7Mie__granja?></td>
-                        <td class='table_font'><?php echo $L8Mie__granja?></td>
-                        <td class='table_font'><?php echo $L9Mie__granja?></td>
-                        <td class='table_font'><?php echo $ExtMie__cocido?></td>
-                        <td class='table_font'><?php echo $ExtMie__embarque?></td>
+                        <td class='table_font text-nowrap'><?php echo $L1Mie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L2Mie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L3Mie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L4Mie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L5Mie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L6Mie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L7Mie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L8Mie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L9Mie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $ExtMie__cocido?></td>
+                        <td class='table_font text-nowrap'><?php echo $ExtMie__embarque?></td>
                     </tr>
                     <tr class="table__row--light">
                         <th class="total table_font" scope="row"><?php if($totMie!=0){echo $totMie;}?></th>
@@ -322,17 +322,17 @@
 
                     <tr class="table__row--dark">
                         <th class="total"><?php if($totJue!=0){echo "TOTAL";}?></th>
-                        <td class='table_font'><?php echo $L1Jue__granja?></td>
-                        <td class='table_font'><?php echo $L2Jue__granja?></td>
-                        <td class='table_font'><?php echo $L3Jue__granja?></td>
-                        <td class='table_font'><?php echo $L4Jue__granja?></td>
-                        <td class='table_font'><?php echo $L5Jue__granja?></td>
-                        <td class='table_font'><?php echo $L6Jue__granja?></td>
-                        <td class='table_font'><?php echo $L7Jue__granja?></td>
-                        <td class='table_font'><?php echo $L8Jue__granja?></td>
-                        <td class='table_font'><?php echo $L9Jue__granja?></td>
-                        <td class='table_font'><?php echo $ExtJue__cocido?></td>
-                        <td class='table_font'><?php echo $ExtJue__embarque?></td>
+                        <td class='table_font text-nowrap'><?php echo $L1Jue__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L2Jue__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L3Jue__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L4Jue__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L5Jue__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L6Jue__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L7Jue__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L8Jue__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L9Jue__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $ExtJue__cocido?></td>
+                        <td class='table_font text-nowrap'><?php echo $ExtJue__embarque?></td>
                     </tr>
                     <tr class="table__row--light">
                         <th class="total table_font" scope="row"><?php if($totJue!=0){echo $totJue;}?></th>
@@ -381,17 +381,17 @@
                     </tr>
                     <tr class="table__row--dark">
                         <th class="total"><?php if($totVie!=0){echo "TOTAL";}?></th>
-                        <td class='table_font'><?php echo $L1Vie__granja?></td>
-                        <td class='table_font'><?php echo $L2Vie__granja?></td>
-                        <td class='table_font'><?php echo $L3Vie__granja?></td>
-                        <td class='table_font'><?php echo $L4Vie__granja?></td>
-                        <td class='table_font'><?php echo $L5Vie__granja?></td>
-                        <td class='table_font'><?php echo $L6Vie__granja?></td>
-                        <td class='table_font'><?php echo $L7Vie__granja?></td>
-                        <td class='table_font'><?php echo $L8Vie__granja?></td>
-                        <td class='table_font'><?php echo $L9Vie__granja?></td>
-                        <td class='table_font'><?php echo $ExtVie__cocido?></td>
-                        <td class='table_font'><?php echo $ExtVie__embarque?></td>
+                        <td class='table_font text-nowrap'><?php echo $L1Vie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L2Vie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L3Vie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L4Vie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L5Vie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L6Vie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L7Vie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L8Vie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L9Vie__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $ExtVie__cocido?></td>
+                        <td class='table_font text-nowrap'><?php echo $ExtVie__embarque?></td>
                     </tr>
                     <tr class="table__row--light">
                         <th class="total table_font" scope="row"><?php if($totVie!=0){echo $totVie;}?></th>
@@ -440,17 +440,17 @@
                     </tr>
                     <tr class="table__row--dark">
                         <th class="total"><?php if($totSab!=0){echo "TOTAL";}?></th>
-                        <td class='table_font'><?php echo $L1Sab__granja?></td>
-                        <td class='table_font'><?php echo $L2Sab__granja?></td>
-                        <td class='table_font'><?php echo $L3Sab__granja?></td>
-                        <td class='table_font'><?php echo $L4Sab__granja?></td>
-                        <td class='table_font'><?php echo $L5Sab__granja?></td>
-                        <td class='table_font'><?php echo $L6Sab__granja?></td>
-                        <td class='table_font'><?php echo $L7Sab__granja?></td>
-                        <td class='table_font'><?php echo $L8Sab__granja?></td>
-                        <td class='table_font'><?php echo $L9Sab__granja?></td>
-                        <td class='table_font'><?php echo $ExtSab__cocido?></td>
-                        <td class='table_font'><?php echo $ExtSab__embarque?></td>
+                        <td class='table_font text-nowrap'><?php echo $L1Sab__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L2Sab__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L3Sab__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L4Sab__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L5Sab__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L6Sab__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L7Sab__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L8Sab__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $L9Sab__granja?></td>
+                        <td class='table_font text-nowrap'><?php echo $ExtSab__cocido?></td>
+                        <td class='table_font text-nowrap'><?php echo $ExtSab__embarque?></td>
                     </tr>
                     <tr class="table__row--light">
                         <th class="total table_font" scope="row"><?php if($totSab!=0){echo $totSab;}?></th>
